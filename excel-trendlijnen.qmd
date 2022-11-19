@@ -1,0 +1,206 @@
+# Excel Trendlijnen {#sec-excel-trendlijnen}
+
+Excel kent een zestal trendlijnen. Het is niet altijd direct duidelijk welk soort trendlijn het beste bij een verzameling gegevens past. Soms zie je dat meteen en anders moet je een aantal verschillende soorten trendlijnen proberen.
+
+De kwaliteit van een trendlijn kun je beoordelen door de waarde van R-kwadraat ($R^2$) uit te laten rekenen. Dit is een getal van 0 tot 1 dat aangeeft hoe dicht de berekende waarden via de formule van de trendlijn liggen bij de werkelijke waarden. Hoe dichter bij 1 hoe beter de trendlijn. Bij het toevoegen van een trendlijn kan geselecteerd worden dat R-kwadraat en de vergelijking van de trendlijn in de grafiek moeten worden weergegeven.
+
+Bij het maken van voorspellingen heb je de coëfficienten van de vergelijking van de trendlijn nodig. Excel voorziet in werkbladfuncties voor deze coëfficienten.
+
+## Lineaire trendlijn {#sec-trendlijn-lineair}
+
+Een lineaire trendlijn is een zo goed mogelijk passende rechte lijn die gebruikt wordt voor eenvoudige lineaire gegevensverzamelingen. Deze trendlijn wordt meestal gebruikt om een regelmatige stijging of daling weer te geven.
+
+De vergelijking van de trendlijn is: $y = a \cdot x + b$ met
+
+-   $a$ = richtingscoëfficient
+-   $b$ = snijpunt met de verticale as
+
+::: {#prp-xlstrend-lineair}
+[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+
+Verkoop van het aantal wasmachines door een bepaald bedrijf voor acht achtereenvolgende jaren.
+
+1.  Open het bestand en selecteer het werkblad [***Lineair***]{.uicontrol}.
+2.  Selecteer een willekeurige cel in het gegevensgebied.
+3.  Voeg een spreidingsdiagram in.
+4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
+5.  Selecteer bij Opties voor trendlijn [Lineair]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-lineair) is aangegeven.
+7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
+
+![Voorbeeld lineaire trendlijn.](images/timeseries/vb-trend-lineair.png){#fig-vb-trend-lineair}
+:::
+
+### Werkbladfuncties {#sec-trendlijn-lineair-functies .unnumbered}
+
+Vergelijking: $y = a \cdot x + b$
+
+Richtingscoëfficient $a$
+
+-   `RICHTING(y-bekend;x-bekend)`
+-   `INDEX(LIJNSCH(y-bekend ; x-bekend) ; 1; 1)`
+
+Snijpunt met Y-as $b$
+
+-   `SNIJPUNT(y-bekend;x-bekend)`
+-   `INDEX(LIJNSCH(y-bekend ; x-bekend) ; 1; 2))`
+
+Correlatiecoëfficient $R$
+
+-   `CORRELATIE(y-bekend ; x-bekend)`
+
+R-kwadraat vind je door de gevonden waarde te kwadrateren.
+
+## Logaritmische trendlijn {#sec-trendlijn-logaritmisch}
+
+Een logaritmische trendlijn is een zo goed mogelijk passende gebogen lijn die goed past bij gegevens die in het begin snel stijgen (of dalen) en zich daarna stabiliseren. Er mogen geen nulwaarden in de gegevensverzameling zitten!
+
+De vergelijking van de trendlijn is: $y = a \cdot LN(x) + b$ met $a$ en $b$ als constanten.
+
+::: {#prp-xlstrend-logaritme}
+[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+
+Groei van het aantal bacteriën in een kweek
+
+1.  Open het bestand en selecteer het werkblad [***Logaritmisch***]{.uicontrol}.
+2.  Selecteer een willekeurige cel in het gegevensgebied.
+3.  Voeg een Spreidingsdiagram in.
+4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
+5.  Selecteer bij Opties voor trendlijn [Logaritmisch]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-logaritme) is aangegeven.
+7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
+
+![Voorbeeld logaritmische trendlijn.](images/timeseries/vb-trend-logaritme.png){#fig-vb-trend-logaritme}
+:::
+
+### Werkbladfuncties {#sec-trendlijn-logaritmisch-functies .unnumbered}
+
+Vergelijking: $y = a \cdot LN(x) + b$
+
+-   $a$ = `INDEX(LIJNSCH(y-bekend ; LN(x-bekend)) ; 1 ; 1)`
+-   $b$ = `INDEX(LIJNSCH(y-bekend ; LN(x-bekend)) ; 1 ; 2)`
+
+## Polynoom trendlijn {#sec-trendlijn-polynoom}
+
+Een polynoom trendlijn is een gebogen lijn die vaak goed past bij schommelende gegevens.
+
+De vergelijking van de trendlijn heeft de vorm: $y = a_n \cdot x^n ... + a_2 \cdot x^2 + a_1 \cdot x + a_0$ De getallen $a_0, a_1, a_2, ... a_n$ heten de coëfficiënten van de polynoom en het getal $n$ heet de graad van de polynoom.
+
+De graad van de polynoom wordt bepaald door het aantal schommelingen (pieken en dalen) in de gegevens:
+
+-   1e graad, hetzelfde als de lineaire trendlijn.
+-   2e graad, meestal slechts één piek of dal in de lijn. Lijn heet ook wel parabool.
+-   3e graad, meestal één of twee pieken of dalen.
+-   4e graad, meestal maximaal drie pieken of dalen.
+
+In de praktijk zul je moeten experimenteren met de graad om uit te zoeken welke de best passende is.
+
+::: {#prp-xlstrend-polynoom}
+[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+
+Prestatie (in km per liter brandstof) van een auto bij verschillende snelheden (in km/uur).
+
+1.  Open het bestand en selecteer het werkblad [***Polynoom***]{.uicontrol}.
+2.  Selecteer een willekeurige cel in het gegevensgebied.
+3.  Voeg een Spreidingsdiagram in.
+4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
+5.  Selecteer bij Opties voor trendlijn [Polynoom volgorde 3]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-polynoom) is aangegeven.
+7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
+
+![Voorbeeld polynoom trendlijn](images/timeseries/vb-trend-polynoom.png){#fig-vb-trend-polynoom}
+:::
+
+### Werkbladfuncties {#sec-trendlijn-polynoom-functies .unnumbered}
+
+Vergelijking: $y = a \cdot x^2 + b \cdot x + c$
+
+-   $a$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 1)`
+-   $b$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 2)`
+-   $c$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 3)`
+
+## Machtstrendlijn {#sec-trendlijn-macht}
+
+Een machtstrendlijn is een gebogen lijn die zeer geschikt is voor verzamelingen van gegevens die in een bepaald tempo toenemen, bijvoorbeeld de acceleratie van een Formule 1 auto. Er mogen geen nulwaarden of negatieve waarden in de gegevensverzameling zitten!
+
+De vergelijking van de trendlijn is: $y = a \cdot x^b$ waarbij $a$ en $b$ constanten zijn.
+
+::: {#prp-xlstrend-macht}
+[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+
+Afgelegde afstand van een optrekkende raceauto in intervallen van steeds 1 seconde.
+
+1.  Open het bestand en selecteer het werkblad ***Macht***.
+2.  Selecteer een willekeurige cel in het gegevensgebied.
+3.  Voeg een Spreidingsdiagram in.
+4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
+5.  Selecteer bij Opties voor trendlijn [Macht]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-macht) is aangegeven.
+7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
+
+![Voorbeeld macht trendlijn.](images/timeseries/vb-trend-macht.png){#fig-vb-trend-macht}
+:::
+
+### Werkbladfuncties {#sec-trendlijn-macht-functies .unnumbered}
+
+Vergelijking: $y = a \cdot x^b$
+
+-   $a$ = `EXP(INDEX(LIJNSCH(LN(y-bekend) ; LN(x-bekend)) ; 2))`
+-   $b$ = `INDEX(LIJNSCH(LN(y-bekend) ; LN(x-bekend)) ; 1)`
+
+## Exponentiële trendlijn {#sec-trendlijn-exponentieel}
+
+Een exponentiële trendlijn is een gebogen trendlijn die vooral geschikt is voor gegevensverzamelingen waarvan de waarden steeds sneller stijgen of dalen. Er mogen geen nulwaarden of negatieve waarden in de gegevensverzameling zitten!
+
+De vergelijking van de trendlijn is: $y = a \cdot e^{bx}$ waarbij $a$ en $b$ constanten zijn.
+
+::: {#prp-xlstrend-exponentieel}
+[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+
+Aantal spelers in een tennistoernooi dat na elke ronde overblijft. Het toernooi is met 128 spelers begonnen.
+
+1.  Open het bestand en selecteer het werkblad ***Exponentieel***.
+2.  Selecteer een willekeurige cel in het gegevensgebied.
+3.  Voeg een Spreidingsdiagram in.
+4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
+5.  Selecteer bij Opties voor trendlijn [Exponentieel]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-exponentieel) is aangegeven.
+7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
+
+![Voorbeeld exponentiële trendlijn.](images/timeseries/vb-trend-exponentieel.png){#fig-vb-trend-exponentieel}
+
+De trendlijn is hier perfect omdat er exacte waarden zijn gebruikt.
+:::
+
+### Werkbladfuncties {#sec-trendlijn-exponentieel-functies .unnumbered}
+
+Vergelijking: $y = a \cdot e^{bx}$
+
+-   $a$ = `EXP(INDEX(LIJNSCH(LN(y-bekend) ; x-bekend) ; 1 ; 2))`
+-   $b$ = `INDEX(LIJNSCH(LN(y-bekend) ; LN(x-bekend)) ; 1)`
+
+## Zwevend gemiddelde lijn {#sec-trendlijn-gemiddelde}
+
+Een zwevend gemiddelde (voortschrijdend gemiddelde) (trend)lijn strijkt schommelingen in de gegevens glad, waardoor het patroon duidelijker zichtbaar wordt.
+
+Het zwevend gemiddelde is het gemiddelde van een vast aantal opeenvolgende waarden in een tijdreeks. De tijdsduur voor het vaste aantal elementen heet de periode. De lijn door deze gemiddeldes is de trendlijn. Sterke schommelingen worden hierdoor afgezwakt. Het kost soms wat experimenteren om een geschikte periode te vinden.
+
+Deze lijn heeft geen formule en ook de R-kwadraatswaarde kan niet berekend worden. Voor de beoordeling van de kwaliteit zijn andere methodes beschikbaar.
+
+::: {#prp-xlstrend-ma}
+[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+
+Koers van een aandeel gedurende 20 dagen. Het zwevend gemiddelde wordt berekend voor een periode van 3 dagen. Zo kan de eerste waarde voor het zwevend gemiddelde pas op dag 3 berekend worden en de waarde is het gemiddelde van dag 1, 2 en 3. De volgende waarde bij dag 4 is het gemiddelde van de waarden op dag 2, 3 en 4. Enzovoorts.
+
+1.  Open het bestand en selecteer het werkblad ***ZwevendGemiddelde***.
+2.  Selecteer een willekeurige cel in het gegevensgebied.
+3.  Voeg een Spreidingsdiagram in.
+4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
+5.  Selecteer bij Opties voor trendlijn [Zwevend gemiddelde met Periode 3]{.uicontrol}.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-zwevend-gemiddelde) is aangegeven.
+7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
+
+![Voorbeeld zwevend gemiddelde lijn.](images/timeseries/vb-zwevend-gemiddelde.png){#fig-vb-zwevend-gemiddelde}
+
+Duidelijk is te zien dat de trendlijn de scherpe kantjes van de koersbeweging afhaalt.
+:::

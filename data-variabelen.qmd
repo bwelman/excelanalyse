@@ -1,0 +1,311 @@
+# Data en Variabelen {#sec-data-variabelen}
+
+```{r, file = "R/webex.R", include = FALSE}
+```
+
+::: {.callout-note appearance="simple" icon="false"}
+**Doelstellingen**
+
+Data bestaat uit waarnemingen van meetgegevens, dat zijn de variabelen. In dit hoofdstuk wordt uitgelegd welke soort variabelen er zijn en welke bewerkingen je mag toepassen.
+
+Wanneer je data uit externe bronnen importeert, heb je geen controle over de indeling en het type gegevens en de manier waarop de data is georganiseerd. Voordat je met de analyse kunt beginnen moet je daarom vaak veel tijd steken om de data te herstructureren. Het tweede deel van dit hoofdstuk gaat hierover.
+:::
+
+## Variabelen {#sec-variabelen}
+
+Bij het importeren van de gegevens heb je de variabelen al gedefinieerd en zijn ze van een naam voorzien. Je moet verder ook nog weten wat voor een soort waarden de variabele kan hebben om later te kunnen bepalen welke statistische methodes geschikt zijn voor de variabele. In grote lijnen zijn alle variabelen ofwel *numerieke* variabelen waarvan de gegevens uit een getelde of gemeten hoeveelheid bestaat, of *categoriale* variabelen waarvan de gegevens categorieën vertegenwoordigen. Zo is een variabele `weekomzet` een numerieke variabele omdat de waarden hiervan hoeveelheden zijn. En een variabele `geslacht` met de categorieën `Man` en `Vrouw` is een categoriale variabele.
+
+Soms moet je een numerieke variabele verder specificeren als *discreet* of *continu*. Discrete numerieke variabelen hebben waarden die voortkomen uit tellingen, ze vertegenwoordigen een aantal van iets, zoals het aantal leerlingen in een klas. Continue numerieke variabelen hebben waarden die voortkomen uit metingen, zoals de lengte van een persoon, welke in principe elke waarde binnen een interval kan aannemen (afhankelijk van de nauwkeurigheid van het meetinstrument).
+
+### Meetschaal {.unnumbered}
+
+Variabelen worden in vier meetniveaus (schalen) ingedeeld: nominaal, ordinaal, interval en ratio.
+
+Categorie variabelen
+
+:   Met deze variabelen kun je geen berekeningen uitvoeren, zoals het berekenen van een gemiddelde. Ze worden onderverdeeld in nominaal en ordinaal.
+
+-   `Nominaal`: Variabelen met namen als waarde (naam is in het Latijn nomen), zonder rangorde of logische volgorde. Voorbeelden: nationaliteit, oogkleur, studierichting, beroep, godsdienst, geslacht, industrietak.
+
+-   `Ordinaal`: De waarden zijn kwalitatief van aard en hebben een logische volgorde. Je kunt ze sorteren maar er geen rekenkundige bewerkingen mee uitvoeren. Voorbeelden: beoordeling (1=zeer slecht, 2=slecht, 3=matig, 4=goed, 5=zeer goed), medaille (goud, zilver, brons), T-shirt maten (S, M, L, XL).
+
+Numerieke variabelen
+
+:   Deze worden onderverdeeld in interval en ratio.
+
+-   `Interval`: de gegevens hebben geen natuurlijk nulpunt, de keuze van een nulpunt is arbitrair. Het verschil tussen de waarden heeft wel betekenis. Zo is het verschil tussen 10°C en 15°C even groot als tussen 20°C en 25°C, maar je kunt niet zeggen dat 20°C twee keer zo warm is als 10°C. Sommige rekenkundige bewerkingen kun je wel uitvoeren zoals optellen, aftrekken en gemiddelde bepalen.
+
+-   `Ratio`: de gegevens hebben een natuurlijk nulpunt. Hier kun je wel uitspraken doen over verhoudingen. Zo is een salaris van €4000 twee keer zo groot als een salaris van €2000. Voorbeelden: inkomen, vermogen, gewicht. Voor statistische doeleinden hoef je meestal geen verschil te maken tussen ratio- en intervalgegevens.
+
+![Meetniveaus van variabelen](images/data/meetniveaus.png){#fig-meetniveaus}
+
+**Testvragen**
+
+1.  Welk type variabele is de medaillesoort die een atleet op de Olympische spelen kan winnen? `r mcq(c("Interval", "Nominaal", answer = "Ordinaal", "Ratio"))`
+
+2.  Welk type variabele is de tijd van een atleet voor het lopen van een marathon? `r mcq(c("Interval", "Nominaal", "Ordinaal", answer = "Ratio"))`
+
+3.  De Nederlandse nationale politie kent een aantal rangen. Welk type variabele is de rang? `r mcq(c("Interval", "Nominaal", answer = "Ordinaal", "Ratio"))`
+
+## Gestructureerde gegevens
+
+Vaak zijn de gegevens zijn niet goed gestructureerd, waardoor je niet met draaitabellen kunt werken of de gewenste grafieken niet kunt maken. Wanneer de gegevens goed gestructureerd zijn kun je ze gemakkelijker modelleren, visualiseren en transformeren waardoor de analyse eenvoudiger wordt.
+
+Gestructureerde gegevens moeten voldoen aan de volgende voorwaarden:
+
+1.  Elke gemeten variabele staat in een kolom.
+
+2.  Elke waarneming van de variabele staat in een rij.
+
+![Grafische weergave van gestructureerde gegevens, bestaande uit 5 waarnemingen van drie variabelen. Totaal dus 15 meetwaarden.](images/data/tidy-data.png){#fig-tidy-data}
+
+
+In @tbl-exp1 staan de gegevens van een meting bij een klein denkbeeldig experiment in een formaat dat je veel tegenkomt.
+
+| Naam    | Behandeling A | Behandeling B |
+|---------|---------------|---------------|
+| Melissa | 6             | 7             |
+| Roger   |               | 18            |
+| Vicky   | 4             | 1             |
+
+: Personen als rij. {#tbl-exp1}
+
+Wanneer je de rijen en kolommen verwisselt heb je dezelfde gegevens, maar de tabel ziet er dan iets anders uit, zie @tbl-exp2.
+
+| Behandeling   | Melissa | Roger | Vicky |
+|---------------|---------|-------|-------|
+| Behandeling A | 6       |       | 4     |
+| Behandeling B | 7       | 18    | 1     |
+
+: Behandelingen als rij. {#tbl-exp2}
+
+Gestructureerd ziet de gegevensverzameling er uit zoals in @tbl-exp3.
+
+| Naam    | Behandeling   | Meetwaarde |
+|---------|---------------|------------|
+| Melissa | Behandeling A | 6          |
+| Melissa | Behandeling B | 7          |
+| Roger   | Behandeling A |            |
+| Roger   | Behandeling B | 18         |
+| Vicky   | Behandeling A | 4          |
+| Vicky   | Behandeling B | 1          |
+
+: Gegevens in gestructureerde vorm. {#tbl-exp3}
+
+Dit maakt de waarden, variabelen en waarnemingen duidelijker.
+
+Echte gegevensverzamelingen zijn vaak op bijna elke denkbare manier in strijd met de voorwaarden voor gestructureerde gegevens. De meest voorkomende problemen bij niet goed gestructureerde gegevensverzamelingen zijn:
+
+-   Kolomkoppen bevatten waarden van een variabele i.p.v. een variabelenaam.
+-   Combinatie van variabelen in een kolom.
+-   Variabelen in zowel rijen als kolommen.
+
+In de taken hierna zullen in kleine voorbeelden deze problemen gedemonstreerd worden en opgelost worden met behulp van Power Query.
+
+### Kolomkoppen met waarden {.unnumbered}
+
+Een veel voorkomende vorm van een gegevensverzameling is een tabelvorm waarbij de kolomkoppen waarden zijn en geen variabelenamen. De volgende tabel is hier een voorbeeld van. Hierin staat het aantal mannelijke en vrouwelijke studenten dat een bepaalde score (A t/m E) behaald heeft.
+
+![Tabel waarin de kolomkoppen man en vrouw in feite waarden van de variabele geslacht zijn.](images/data/scores1-data.png){#fig-scores1-data}
+
+Deze gegevensverzameling heeft in feite drie variabelen:
+
+-   `score` - met de waarden `A` t/m `E`
+-   `geslacht` - met de waarden `man` en `vrouw`
+-   `aantal` - met het aantal keren dat de score behaald is, de frequentie
+
+Het probleem is dus dat de waarden van de variabele `geslacht` in twee kolomkoppen staat.
+
+De eerste variabele `score` is al een kolom, dat moet dus zo blijven. Voor de variabelen `geslacht` en `aantal` moeten nieuwe kolommen gemaakt worden. Voor elke combinatie van `score` en `geslacht` moet een rij gemaakt worden.
+
+::: {#prp-data-scores1}
+[Hulpbestand]{.smallcaps}: `scores1.xlsx`
+
+1.  Open het hulpbestand.
+
+2.  Selecteer een willekeurige cel met gegevens en kies [tab Gegevens \> Vanaf blad (Gegevens ophalen en transformeren)]{.uicontrol}. Het dialoogvenster ***Tabel maken*** verschijnt, waarin de tabelgegevens gespecificeerd kunnen worden. Het gegevensgebied is standaard al goed ingevuld.
+
+3.  Zorg er voor dat de optie voor kopteksten geselecteerd is en klik [OK]{.uicontrol}. Op het werkblad worden de gegevens allereerst in een Excel tabel omgezet. Daarna wordt in een nieuw venster de Power Query-editor opgestart die de gegevens uit de tabel inleest.
+
+4.  Selecteer in de Power Query editor de eerste kolom `score`.
+
+5.  Kies [tab Transformeren \> Draaitabel opheffen voor kolommen (groep Alle kolommen) \> Draaitabel voor andere kolommen opheffen]{.uicontrol}. Er worden twee nieuwe kolommen gemaakt. Een kolom `Kenmerk` (met de waarden voor variabele `geslacht`) en een kolom `Waarde` met de aantallen. En voor elke combinatie van `score` en `geslacht` is een rij gemaakt.
+
+6.  Selecteer kolom `Kenmerk`, dan [Rechter muisklik \> Naam wijzigen]{.uicontrol} en wijzig de naam in `geslacht`.
+
+7.  Wijzig op dezelfde manier de naam van kolom `Waarde` in `aantal`.
+
+8.  Kies [tab Startpagina \> Sluiten en laden \> Sluiten en laden]{.uicontrol}.
+
+Het resultaat is een tabel met gestructureerde gegevens. Elke kolom is één variabele en elke rij is één waarneming.
+
+![Scores1 in een gestructureerde tabel.](images/data/scores1-result.png){#fig-scores1-result}
+:::
+
+### Kolomkoppen zijn gecombineerde variabelen {.unnumbered}
+
+Soms zijn kolommen een combinatie van meerdere onderliggende variabelen. Dit is het geval bij de gegevensverzameling in @fig-scores2-data. Deze is gelijkwaardig aan die in de vorige taak. Alleen zijn er nu twee verschillende klassen (klas1 en klas2) en staat het aantal voor elk geslacht in elke klas in een eigen kolom. Ook in deze gegevensverzameling zijn de kolomkoppen waarden van variabelen. Maar er zijn twee variabelen, `geslacht` en `klas`, in één kolom gecombineerd.
+
+![Tabel met kolomkoppen die een combinatie van de variabelen geslacht en klas zijn.](images/data/scores2-data.png){#fig-scores2-data}
+
+::: {#prp-data-scores2}
+[Hulpbestand]{.smallcaps}: `scores2.xlsx`
+
+1.  Open het hulpbestand.
+
+2.  Selecteer een willekeurige cel met gegevens en kies [tab Gegevens \> Vanaf blad (Gegevens ophalen en transformeren)]{.uicontrol}. Het dialoogvenster ***Tabel maken*** verschijnt, waarin de tabelgegevens gespecificeerd kunnen worden. Het gegevensgebied is standaard al goed ingevuld.
+
+3.  Zorg er voor dat de optie voor kopteksten geselecteerd is en klik [OK]{.uicontrol}. Op het werkblad worden de gegevens allereerst in een Excel tabel omgezet. Daarna wordt in een nieuw venster de Power Query-editor opgestart die de gegevens uit de tabel inleest.
+
+4.  Selecteer in de Power Query editor de eerste kolom `score`.
+
+5.  Kies [tab Transformeren \> Draaitabel opheffen voor kolommen (groep Alle kolommen) \> Draaitabel voor andere kolommen opheffen]{.uicontrol}. Er worden twee nieuwe kolommen gemaakt. Een kolom `Kenmerk` (met de waarden voor `geslacht_klas`) en een kolom `Waarde` met de aantallen. En voor elke combinatie van `score` en `geslacht_klas` is een rij gemaakt.
+
+6.  Selecteer kolom `Kenmerk` en kies [tab Transformeren \> Kolom splitsen (groep Kolom Tekst) \> Op scheidingsteken]{.uicontrol}. In het dialoogvenster is reeds het juiste scheidingsteken (`_`) waarop gesplitst moet worden, geselecteerd.
+
+7.  Klik [OK]{.uicontrol}. De kolom `Kenmerk` is gesplitst in kolom `Kenmerk.1` (met de waarden voor variabele `geslacht`) en `Kenmerk.2` (met de waarden voor variabele `klas`).
+
+8.  Wijzig de namen van de kolommen `Kenmerk.1`, `Kenmerk.2` en `Waarde` in respectievelijk `geslacht`, `klas` en `aantal`.
+
+9.  Kies [tab Startpagina \> Sluiten en laden \> Sluiten en laden]{.uicontrol}.
+
+Het resultaat is een tabel met gestructureerde gegevens. Elke kolom is één variabele en elke rij is één waarneming.
+
+![Scores2 gestructureerd.](images/data/scores2-result.png){#fig-scores2-result}
+:::
+
+### Variabelen in rijen en kolommen {.unnumbered}
+
+Een meer gecompliceerde vorm van rommelige gegevens krijg je wanneer er variabelen in zowel rijen als kolommen staan. In het voorbeeld hierna staan de beoordelingen voor een tussentoets en een eindtoets voor vijf studenten, waarbij elk van hen in precies twee van de vijf mogelijke klassen is geplaatst.
+
+![Een tabel met variabelen in zowel rijen als kolommen.](images/data/scores3-data.png){#fig-scores3-data}
+
+De eerste kolom met de variabele `naam` is in orde en moet zo blijven. De koppen van de laatste vijf kolommen zijn allemaal waarden van de variabele `klas`. De waarden in de tweede kolom, `tussentoets` en `eindtoets`, moeten eigen variabelen worden met als waarde de beoordeling van de student op dit onderdeel.
+
+::: {#prp-data-scores3}
+[Hulpbestand]{.smallcaps}: `scores3.xlsx`
+
+1.  Open het hulpbestand.
+
+2.  Selecteer een willekeurige cel met gegevens en kies [tab Gegevens \> Vanaf blad (Gegevens ophalen en transformeren)]{.uicontrol}. Het dialoogvenster ***Tabel maken*** verschijnt, waarin de tabelgegevens gespecificeerd kunnen worden. Het gegevensgebied is standaard al goed ingevuld.
+
+3.  Zorg er voor dat de optie voor kopteksten geselecteerd is en klik [OK]{.uicontrol}. Op het werkblad worden de gegevens allereerst in een Excel tabel omgezet. Daarna wordt in een nieuw venster de Power Query-editor opgestart die de gegevens uit de tabel inleest.
+
+4.  Selecteer in de Power Query editor de laatste vijf kolommen `klas1` t/m `klas5`.
+
+5.  Kies [tab Transformeren \> Draaitabel opheffen voor kolommen (groep Alle kolommen) \> Draaitabel opheffen voor kolommen]{.uicontrol}. Er worden twee nieuwe kolommen gemaakt. Een kolom `Kenmerk` (met de waarden voor variabele `klas`) en een kolom `Waarde` met de beoordeling. En voor elke combinatie van `naam`, `toets` en `klas` is een rij gemaakt.
+
+6.  Wijzig de naam van kolom `Kenmerk` in `klas`.
+
+7.  Selecteer kolom `toets` en kies [tab Transformeren \> Draaikolom (groep Alle kolommen)]{.uicontrol}. Het dialoogvenster ***Draaikolom*** verschijnt
+
+8.  Kies als [Waardenkolom]{.uicontrol} `Waarde`. En geef onder [Geavanceerde opties]{.uicontrol} aan dat er niet samengevoegd moet worden.
+
+![Instellingen voor de draaikolom.](images/data/scores3_pivotcolumn.png){#fig-scores3-pivotcolumn}
+
+9.  Klik [OK]{.uicontrol}.
+
+10. Kies [tab Startpagina \> Sluiten en laden \> Sluiten en laden]{.uicontrol}.
+
+Het resultaat is een tabel met gestructureerde gegevens. Elke kolom is één variabele en elke rij is één waarneming.
+
+![Scores3 gestructureerd.](images/data/scores3-result.png){#fig-scores3-result}
+:::
+
+## TAAK: Populatie Benelux {#sec-benelux-populatie}
+
+@fig-benelux-data bevat de populatie mannen en vrouwen in de landen van de Benelux voor de jaren 2000, 2005, 2010 en 2015.
+
+![Populatie Benelux voor de jaren 2000, 2005, 2010 en 2015.](images/data/benelux-data.png){#fig-benelux-data}
+
+Deze gegevens wil je analyseren en bijvoorbeeld de ontwikkeling van de populatie per geslacht per jaar bestuderen en dat eventueel nog per land. Een draaitabel en draaigrafiek lenen zich daar het beste voor.
+
+Echter de gegevens staan niet in een goed gestructureerde Exceltabel. In feite heeft deze tabel vier variabelen: `Land`, `Geslacht`, `Jaar` en `Populatie`. De eerste twee variabelen staan in een eigen kolom, dat moet zo blijven. De laatste vier kolomkoppen zijn de waarden van de variabele `Jaar` en de inhoud van deze kolommen is de waarde van de variabele `Populatie`. De tabel moet dus eerst gestructureerd worden voordat met de analyse begonnen kan worden.
+
+::: {#prp-data-benelux}
+[Hulpbestand]{.smallcaps}: `benelux-populatie.xlsx`
+
+*Structureren data*
+
+1.  Open het hulpbestand.
+
+2.  Selecteer een willekeurige cel met gegevens en kies [tab Gegevens \> Vanaf blad (Gegevens ophalen en transformeren)]{.uicontrol}. Het dialoogvenster ***Tabel maken*** verschijnt, waarin de tabelgegevens gespecificeerd kunnen worden. Het gegevensgebied is standaard al goed ingevuld.
+
+3.  Zorg er voor dat de optie voor kopteksten geselecteerd is en klik [OK]{.uicontrol}. Op het werkblad worden de gegevens allereerst in een Excel tabel omgezet. Daarna wordt in een nieuw venster de Power Query-editor opgestart die de gegevens uit de tabel inleest.
+
+4.  Selecteer in de Power Query editor de eerste twee kolommen, met `Land` en `Geslacht`.
+
+5.  Kies [tab Transformeren \> Draaitabel opheffen voor kolommen (groep Alle kolommen) \> Draaitabel voor andere kolommen opheffen]{.uicontrol}. Er worden twee nieuwe kolommen gemaakt. Een kolom `Kenmerk` (met de waarden voor variabele `Jaar`) en een kolom `Waarde` met de populatiegetallen. En voor elke combinatie van `Land`, `Geslacht` en `Jaar` is een rij gemaakt.
+
+::: {.callout-note appearance="minimal"}
+Je had er ook voor kunnen kiezen om de laatste vier kolommen met de jaartallen te selecteren en dan te kiezen voor het opheffen van de draaitabel voor deze kolommen. Dit heeft als nadeel dat de query niet meer goed werkt wanneer er later in de brongegevens een nieuwe kolom met de populatie voor het jaar 2020 wordt toegevoegd.
+:::
+
+6.  Wijzig de namen van de kolommen `Kenmerk` en `Waarde` in respectievelijk `Jaar` en `Populatie`.
+
+7.  Kies [tab Startpagina \>Sluiten en laden (groep Sluiten)]{.uicontrol}. De gegevens worden nu in een nieuwe tabel in een nieuw werkblad gezet.
+
+De gegevens staan nu in een gestructureerde Excel tabel en zijn nu geschikt voor het maken van draaitabellen en draaigrafieken.
+
+![Tabel met gestructureerde populatiedata van de Benelux.](images/data/benelux-tidy.png){#fig-benelux-tidy}
+
+*Analyse*
+
+8.  Maak de volgende draaitabel en draaigrafiek.
+
+![Draaitabel en draaigrafiek van de populatie per geslacht per jaar.](images/data/benelux-pivot-chart.png){#fig-benelux-pivot-chart}
+:::
+
+## Opgaven {#sec-opg-data}
+
+::: {#exr-data-waarnemingen}
+**waarnemingen en variabelen**
+
+In @fig-demotabel zie je een tabel uit een Excel werkblad met een aantal persoonsgegevens.
+
+![Voorbeeldtabel met kenmerken van een aantal personen.](images/data/demotabel.png){#fig-demotabel}
+
+a.  Hoeveel waarnemingen en hoeveel variabelen telt de dataset in @tab-demotabel?
+b.  Geef voor elke variabele aan tot welk meetniveau deze variabele behoort.
+:::
+
+::: {#exr-data-tekstberichten}
+**Tekstberichten**
+
+Bij een onderzoek wordt aan personen gevraagd om bij te houden hoeveel tekstberichten ze per dag versturen en hoeveel tijd ze hieraan besteden. Welke variabelen heb je hier en zijn deze discreet of continu?
+:::
+
+::: {#exr-data-koffieprijzen}
+**Koffieprijzen**
+
+Het bestand `koffieprijzen.xlsx` bevat een aantal koffieprijzen van Starbucks, zie de tabel in @fig-koffieprijzen-data.
+
+![Starbucks koffieprijzen voor drie verschillende groottes.](images/data/koffieprijzen-data.png){#fig-koffieprijzen-data}
+
+a.  Ga na dat de tabel in feite drie variabelen bevat en dat de waarden van een van de variabelen in de kolomkoppen staat.
+b.  Maak hiervan een gestructureerde dataset.
+:::
+
+::: {#exr-data-levensonderhoud}
+**Kosten levensonderhoud**
+
+Om de kosten van levensonderhoud in Europa te vergelijken zijn via de website van [Numbeo](https://www.numbeo.com/cost-of-living/) voor een aantal plaatsen de gemiddelde marktprijzen verzameld voor brood (wit, 500 gram), kaas(lokaal, 1 kg), melk (gewoon, 1 liter) en rijst (wit, 1 kg). De data staan in het bestand `levensonderhoud.xlsx`. Voor de eerste 8 plaatsen zijn de gegevens te zien in de tabel in @fig-levensonderhoud-data.
+
+![Gemiddelde prijzen voor vier produkten.](images/data/levensonderhoud-data.png){#fig-levensonderhoud-data}
+
+a.  Maak hiervan een gestructureerde dataset.
+b.  In welk land is rijst gemiddeld het goedkoopst en in welk land het duurst?
+:::
+
+::: {#exr-data-basisschool}
+**Toets basisschool**
+
+Op een bepaalde basischool krijgt elke leerling krijgt in elk kwartaal (Herfst, Winter en Lente) van elk jaar een toets voor rekenen en taal. Het bestand `rekenentaal.xlsx` bevat een beperkte gegevensverzameling hiervan en is te zien in de tabel in @fig-rekenentaal-data.
+
+![Schoolresultaten voor rekenen en taal.](images/data/rekenentaal-data.png){#fig-rekenentaal-data}
+
+De analyse-eenheid is ID-Jaar-Kwartaal. Dus elke waarneming is die van een leerling gedurende een kwartaal in een bepaald jaar.
+
+a.  Maak hiervan een gestructureerde gegevensverzameling.
+b.  Maak een draaigrafiek (staafdiagram) van de gemiddelde scores voor rekenen en taal per jaar.
+:::

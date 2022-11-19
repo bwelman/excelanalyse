@@ -1,0 +1,7 @@
+---
+title: Pagina niet gevonden
+---
+
+De opgevraagde pagina kan niet worden gevonden (misschien is deze verplaatst of hernoemd).
+
+Je kunt proberen om via *Zoeken* de nieuwe locatie van de pagina te vinden, of de inhoudsopgave gebruiken.

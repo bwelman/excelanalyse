@@ -1,0 +1,100 @@
+# Addin Gegevensanalyse {#sec-analysis-toolpak}
+
+Gegevensanalyse (Engels: Data Analysis Toolpak) is een hulpprogramma voor het uitvoeren van analyses. Het wordt standaard met Excel meegeleverd, je hoeft het dus niet te installeren. Echter het moet wel geactiveerd zijn en dat is niet altijd het geval. In @fig-lint-toolpak kun je zien waar je kunt controleren of Gegevensanalyse beschikbaar is.
+
+![Plek waar je Gegevensanalyse kunt vinden: Onder tab Gegevens in de groep Analyse.](images/app-toolpak/lint-toolpak.png){#fig-lint-toolpak}
+
+Zie je [Gegevensanalyse]{.uicontrol} niet staan, dan moet het eenmalig geactiveerd worden.
+
+**Activering Gegevensanalyse**
+
+1.  Kies [Tab Bestand \> Opties \> categorie Invoegtoepassingen]{.uicontrol}.
+
+2.  Selecteer in het vak [Beheren]{.uicontrol} de optie [Excel-invoegtoepassingen]{.uicontrol} en klik op [Start]{.uicontrol}.
+
+3.  Selecteer in het vak [Invoegtoepassingen]{.uicontrol} het selectievakje [Analysis ToolPak]{.uicontrol}.
+
+    -   Als Analysis ToolPak niet voorkomt in het vak [Beschikbare invoegtoepassingen]{.uicontrol}, klik je op [Bladeren]{.uicontrol} om naar de invoegtoepassing te zoeken.
+    -   Je hoeft [Analysis ToolPak - VBA]{.uicontrol} niet te installeren.
+
+4.  Klik op [OK]{.uicontrol}.
+
+5.  Controleer of je [Gegevensanalyse]{.uicontrol} nu wel beschikbaar hebt, zie @fig-lint-toolpak.
+
+Via [Gegevensanalyse]{.uicontrol} heb je de beschikking over diverse functies die hierna in alfabetische volgorde staan genoemd, met een korte toelichting waarvoor je de functie kunt gebruiken. Een aantal van deze functies zullen in bepaalde hoofdstukken verder toegelicht worden.
+
+Aselecte getallen
+
+:   Voor het vullen van een bereik met willekeurige getallen uit een van de bekende theoretische kansverdelingen. Zie verder @sec-excel-aselect.
+
+Beschrijvende statistiek
+
+:   Voor het genereren van een statistisch rapport van gegevens, waaronder informatie over het centrum en de spreiding van de gegevens. Wordt gebruikt in @sec-beschrijvend.
+
+Correlatie
+
+:   Voor het bepalen van de correlatiecoëfficient tussen twee variabelen. Wordt gebruikt in @sec-linregressie.
+
+Covariantie
+
+:   Voor het bepalen van de correlatiecoëfficient tussen twee variabelen. Zie ook @sec-linregressie.
+
+Exponentiële demping
+
+:   Voor het analyseren van tijdreeksen via exponentiële demping. Zie ook @sec-timeseries.
+
+Fourier-analyse
+
+:   Voor het oplossen van vraagstukken in lineaire systemen.
+
+Histogram
+
+:   Voor het bepalen van frequenties en het tekenen van een bijbehorend histogram.
+
+F-toets voor twee steekproeven
+
+:   Voor het uitvoeren van een F-toets om na te gaan of de varianties van twee normale verdelingen verschillen..
+
+Multifactoriële variantie-analyse met herhaling
+
+:   Voor het uitvoeren van een variantieanalyse waarbij er voor elke groep herhaalde waarnemingen zijn.
+
+Multifactoriële variantie-analyse zonder herhaling
+
+:   Voor het uitvoeren van een variantieanalyse waarbij voor elk paar nu één waarneming is.
+
+Rang en percentiel
+
+:   Voor het genereren van een tabel met rangordes en percentielwaarden.
+
+Regressie
+
+:   Voor het uitvoeren van een lineaire regressieanalyse. Wordt gebruikt in @sec-linregressie.
+
+Steekproef
+
+:   Voor het trekken van een steekproef uit een populatie, desgewenst ook voor seizoensafhankelijke gegevens.
+
+T-toets
+
+:   twee gepaarde steekproeven met gelijke varianties: Voor het toetsen of de populatiegemiddelden van twee steekproeven (met gelijke varianties) hetzelfde zijn. Ook wel homoscedastische T-toets genoemd.
+
+T-toets
+
+:   twee gepaarde steekproeven voor gemiddelden: Voor het toetsen of de populatiegemiddelden van twee gepaarde steekproeven hetzelfde zijn.
+
+T-toets
+
+:   twee steekproeven met ongelijke varianties: Voor het toetsen of de populatiegemiddelden van twee steekproeven (met ongelijke varianties) hetzelfde zijn. Ook wel heteroscedastische T-toets genoemd.
+
+Unifactoriële variantie-analyse
+
+:   Voor het uitvoeren van een variantie-analyse op gegevens van twee of meer steekproeven. Getoetst wordt of elke steekproef al dan niet getrokken is uit dezelfde onderliggende kansverdeling. Bij twee steekproeven kun je ook de T-Toets gebruiken.
+
+Z-toets
+
+:   twee steekproeven voor gemiddelden: Voor het uitvoeren van een Z-toets om te bepalen of de gemiddelden van twee steekproeven met bekende varianties al dan niet van elkaar verschillen.
+
+Zwevend gemiddelde
+
+:   Voor het bepalen van een voortschrijdend gemiddelde over een bepaald aantal waarden in voorafgaande perioden. Wordt gebruikt in @sec-timeseries.

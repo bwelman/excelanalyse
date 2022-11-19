@@ -1,0 +1,34 @@
+/*-- scss:defaults --*/
+
+$tbGray:   #7E7E7E;    /* Gray            , hsl(0,0,49)    , rgb(126,126,126)  */
+$tbLGray:  #7E7E7E1A;  /* Light Gray , 10% Gray */
+
+$body-bg: #FFFAF0; /* Floral white */
+
+/*-- scss:rules --*/
+
+.figure-caption {
+	font-size: .9rem;
+}
+
+.example {
+  padding: 0.5rem;
+  border: 1px solid $tbGray;
+  border-radius: 5px;
+}
+
+/* proposion wordt gebruikt voor taken */
+
+.proposition {
+  padding: 0.5rem;
+  background-color: $tbLGray;
+  border: 1px solid $tbGray;
+  border-radius: 5px;
+}
+
+/* MS Office specific */
+
+.uicontrol {
+  font-style: italic;
+  font-size: 0.9em;
+}

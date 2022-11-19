@@ -1,0 +1,235 @@
+# Prognoses {#sec-prognoses}
+
+```{r, file = "R/webex.R", include = FALSE}
+```
+
+::: {.callout-note appearance="simple" icon="false"}
+**Doelstellingen**
+
+Voor het schatten van toekomstige waarden zijn verschillende (statistische) technieken beschikbaar. Naast de zeer eenvoudige naïeve prognose komt de meer geavanceerdere exponentïele vereffening (smoothing) aan bod. Ook wordt gekeken naar maatstaven om de nauwkeurigheid van de voorspelde waarden te beoordelen.
+:::
+
+## Nauwkeurigheid prognoses {#sec-prognoses-nauwkeurigheid}
+
+Hoe nauwkeurig zijn de voorspellingen die zijn verkregen met een bepaalde prognosetechniek? Om deze vraag te beantwoorden worden een aantal verschillende kentallen voor de voorspelling van de nauwkeurigheid geïntroduceerd.
+
+Alles begint bij het bepalen van de *prognosefout*.
+
+$$\text{(prognose)fout} = \text{werkelijke waarde} - \text{voorspelde waarde}$$
+
+Je wilt uiteraard dat de prognosefouten zo klein mogelijk zijn. Omdat de fouten zowel positief als negatief kunnen zijn, heb je niet veel aan het gemiddelde van deze fouten. Vandaar dat altijd de absolute waarde van de fouten genomen wordt.
+
+Er zijn verschillende kentallen ontwikkeld om de nauwkeurigheid te beoordelen. Deze worden meestal met hun Engelstalige afkorting gebruikt. Een paar veel voorkomende kentallen staan in @tab-kentallen genoemd.
+
+| Kental | Engelstalig                    | Nederlandstalig                      |
+|:-----------------|:------------------------|:----------------------------|
+| MAE    | Mean Absolute Error            | Gemiddelde absolute fout             |
+| MAPE   | Mean Absolute Percentage Error | Gemiddelde absolute procentuele fout |
+| MSE    | Mean Squared Error             | Gemiddelde kwadratische afwijking    |
+| RMSE   | Root Mean Squared Error        | Wortel kwadratische afwijking        |
+
+: Enkele maatstaven voor de naukeurigheid van prognoses. {#tbl-kentallen}
+
+Je kunt niet zomaar een van deze kentallen als het beste kental beschouwen. In het algemeen geldt voor elk kental: hoe kleiner de waarde, des te beter.
+
+## Naïeve prognose {#sec-prognoses-naief}
+
+Een van de meest eenvoudige prognosemethodes is de ***naïeve prognose***. Hierbij is de prognose op een bepaald tijdstip gelijk aan de waarde op het voorgaande tijdstip. Voor het bepalen hiervan heb je geen ingewikkelde formules nodig. Ondanks dat deze methode erg simpel is, zijn de resultaten vaak verrassend goed. Het is aan te raden om altijd hiermee te starten en daarna andere methodes hiermee te vergelijken.
+
+::: {#prp-prog-naief}
+[Hulpbestand]{.smallcaps}: `benzineverkoop.xlsx`
+
+In het bestand is gedurende drie maanden de wekelijkse verkoop van benzine door een brandstofhandelaar bijgehouden. De variabelen zijn `week` (het weeknummer) en `volume` (liters x 1000).
+
+1.  Open het hulpbestand.
+
+2.  Maak een grafiek van het verkoopvolume tegen het weeknummer. Eventueel voeg je een horizontale lijn voor het gemiddelde toe.
+
+In @fig-benzineverkoop-lijn zie je dat het verkoopvolume een horizontaal patroon met willekeurige fluctuaties rond het gemiddelde van 71,25 is.
+
+![Aantal verkochte liters benzine (x 1000) per week met een lijn die de gemiddelde weekverkoop weergeeft.](images/prognoses/benzineverkoop-lijn.png){#fig-benzineverkoop-lijn}
+
+3.  Maak een naïeve prognose van de wekelijkse verkoop en bereken MAE, MAPE, MSE en RMSE. Het resultaat is te zien in @fig-benzineverkoop-naief.
+
+![Naïeve prognose van de wekelijkse verkopen en berekening van een aantal kenmerken voor de nauwkeurigheid.](images/prognoses/benzineverkoop-naief.png){#fig-benzineverkoop-naief}
+
+Toelichting:
+
+-   `naïeve prognose`: formule C2 wordt `=B1` enzovoort
+-   `fout`: `= volume - naïeve prognose`
+-   `absolute fout`: `= ABS(fout)`
+-   `absolute procentuele fout`: `= absolute fout / volume`
+-   `kwadratische fout`: `= fout^2`
+-   `MAE`, `MAPE` en `MSE` zijn berekend met de formule `= GEMIDDELDE(...)`
+-   `RMSE`: `= WORTEL(MSE)`
+
+4.  Bewaar het bestand voor gebruik in oefeningen hierna.
+:::
+
+**Vraag:** Wat is de verkoopprognose voor week 13? `r fitb("74", num = TRUE)` `r hide("Hint")` De prognose voor week 13 is de waarde van de voorgaande periode, dus van week 12. `r unhide()`
+
+::: callout-note
+Voor een tijdreeks met een seizoenscomponent verloopt de naïeve prognose iets anders. In dat geval is de prognose op een bepaald tijdstip gelijk aan de waarde in hetzelfde seizoen in de voorgaande periode.
+:::
+
+## Voortschrijdend gemiddelde {#sec-prognoses-ma}
+
+Via de methode van het voortschrijdend gemiddelde (zie @sec-timeseries) kun je ook prognoses maken. Bij bijvoorbeeld een 3-weeks voortschrijdend gemiddelde kun je het gemiddelde van week 1 tm week 3 gebruiken als prognose voor week 4.
+
+::: {#prp-prog-ma}
+[Bestand]{.smallcaps}: `benzineverkoop.xlsx`
+
+1.  Bereken met de formule `=GEMIDDELDE(...)` een 3-weeks voortschrijdend gemiddelde van het verkoopvolume en gebruik deze waarde als prognose voor de volgende week.
+
+2.  Bereken tevens de MAE, MAPE, MSE en RMSE, analoog aan de oefening bij de naïeve prognose. Het resultaat is te zien in @fig-benzineverkoop-ma.
+
+![Prognose van het wekelijkse volume via een 3-weeks Voortschrijdend gemiddelde.](images/prognoses/benzineverkoop-ma.png){#fig-benzineverkoop-ma}
+
+Gelet op de kentallen voor de nauwkeurigheid zie je dat het voortschrijdend gemiddelde iets beter presteert dan de naïeve prognose, maar niet erg veel beter. Je kunt uiteraard proberen of een andere vensterbreedte betere resultaten oplevert.
+:::
+
+**Vraag:** Wat is de verkoopprognose voor week 13 (op 1 decimaal nauwkeurig)? `r fitb(c("67,7", "67.7"))` `r hide("Hint")` De prognose voor week 13 is het gemiddelde van week 10 t/m 12. `r unhide()`
+
+## Exponentiële demping {#sec-prognoses-expsmooth}
+
+Exponentiële demping (effening, smoothing) is een analysemethode voor tijdreeksen waarbij gewichten aan de waarnemingen worden toegekend. Het exponentiële smoothing model heeft de volgende vorm
+
+$F_{t+1} = \alpha Y_t + (1-\alpha)F_t$ , met
+
+-   $F_{t+1}$: de prognose (Forecast) op tijdstip $t+1$
+-   $Y_t$: de werkelijke waarde op tijdstip $t$
+-   $F_t$: de prognose op tijdstip $t$
+-   $\alpha$: dempingscoëfficient (dempingsconstante) met $0 \le \alpha \le 1$
+
+De prognose op tijdstip $t+1$ is dus een gewogen gemiddelde van de werkelijke waarde op tijdstip $t$ en de prognose voor tijdstip $t$, met als wegingsfactoren respectievelijk $\alpha$ en $1 - \alpha$. Bij een grote waarde van $\alpha$ tellen de meest recente waarnemingen zwaarder mee dan de oudere waarnemingen. De prognoses kunnen daardoor sneller reageren op veranderende omstandigheden.
+
+Voor het tijdstip $t = 1$ (het eerste tijdstip) kun je geen prognose berekenen. Voor tijdstip $t = 2$ (het tweede tijdstip) wordt de prognose gelijk aan de werkelijke waarde op tijdstip $t = 1$. Voor alle volgende tijdstippen wordt de prognose berekend met de formule.
+
+::: {#prp-prog-exponentieel}
+[Bestand]{.smallcaps}: `benzineverkoop.xlsx`
+
+Gebruik @fig-benzineverkoop-ets om een prognose van de wekelijkse benzineverkoop te maken via exponentiële demping.
+
+![Prognose van de wekelijkse benzineverkopen via exponentiële demping met α=0,2.](images/prognoses/benzineverkoop-ets.png){#fig-benzineverkoop-ets}
+
+Gelet op de nauwkeurigheidswaarden zijn dit tot nu toe de beste voorspellingen.
+:::
+
+**Vraag:** Wat is de verkoopprognose voor week 13 (op 1 decimaal nauwkeurig)? `r fitb(c("71,0", "71.0"))` `r hide("Hint")` De prognose voor week 13 is $\alpha * \text{laatste week} + (1-\alpha) * \text{een na laatste week}$ `r unhide()`
+
+::: callout-tip
+**Keuze alpha**
+
+Als de tijdreeks een behoorlijke willekeurige variabiliteit heeft kun je het beste een kleine waarde voor $\alpha$ nemen. En bij een tijdreeks met weinig variabiliteit heeft een grotere waarde de voorkeur.
+
+De meest wenselijke waarde voor $\alpha$ is die waarde die de minste fouten oplevert, dus die zorgt voor de laagste gemiddelde kwadratische fout (MSE). In de praktijk ga je meestal proberen of een andere waarde voor $\alpha$ een nauwkeuriger voorspelling oplevert.
+:::
+
+### Via Gegevensanalyse {#sec-ets-gegevensanalyse}
+
+In plaats van zelf de formules te bedenken en in te voeren kun je ook gebruik maken van Gegevensanalyse.
+
+::: {#prp-prog-gegevensanalyse}
+[Bestand]{.smallcaps}: `benzineverkoop.xlsx`
+
+1.  Kies [Gegevens \> Gegevensanalyse \> Exponentiële demping]{.uicontrol}.
+
+2.  In het dialoogscherm, zie @fig-dialoog-exp-demping, specificeer je:
+
+    -   [Invoerbereik]{.uicontrol}: het gebied met de werkelijke waarden.
+    -   [Dempingsfactor]{.uicontrol}: de waarde van $1 - \alpha$
+    -   [Grafiek maken]{.uicontrol}: geeft een lijngrafiek met de werkelijke waarden en de prognoses.
+
+![Dialoogscherm voor exponentiële demping. Voor de dempingsfactor moet je de waarde van 1-alpha invullen.](images/prognoses/dialoog-exp-demping.png){#fig-dialoog-exp-demping}
+
+Voor de prognoses krijg je dezelfde resultaten.
+
+![Lijndiagram van de benzineverkoop en de voorspelling via exponentiële demping met alpha=0,2.](images/prognoses/benzineverkoop-etsgrafiek.png){#fig-benzineverkoop-etsgrafie}
+
+:::
+
+Dit is een eenvoudige en gemakkelijke methode. Daar staat tegenover dat wanneer je met andere waarden voor $\alpha$ wilt experimenteren, je de procedure steeds weer opnieuw moet uitvoeren.
+
+## Voorspellingenblad {#sec-prognoses-voorspellingenblad}
+
+De exponentiële effenings methoden zijn op dit moment de beste en meest gebruikte methoden. Het grootste voordeel van de *ETS (Exponential Triple Smoothing)* methode is dat deze de mogelijkheid heeft om automatisch seizoenpatronen te ontdekken in de gegevensreeks en voorspellingen met betrouwbaarheidsintervallen kan leveren.
+
+::: callout-note
+Je kunt het beste deze methode gebruiken wanneer de tijdreeks zowel een trend als een seizoenspatroon laat zien.
+:::
+
+In de nieuwere versies van Excel ( Excel 365, Excel 2016, Excel 2019, ...) zijn de volgende werkbladfuncties voor het uitvoeren van de ETS methode beschikbaar:
+
+-   `VOORSPELLEN.ETS`
+-   `VOORSPELLEN.ETS.SEASONALITY`
+-   `VOORSPELLEN.ETS.CONFINT`
+-   `VOORSPELLEN.ETS.STAT`
+
+Eenvoudiger is het gebruik van het *Voorspellingblad* of *prognosewerkblad* dat in die nieuwere Excel versies aanwezig is. Onder de motorkop worden de `VOORSPELLEN.ETS` functies gebruikt.
+
+Via het Voorspellingenblad wordt een nieuw werkblad gemaakt met daarin een tabel met de oorspronkelijke gegevens en de voorspelde waarden. Deze toekomstige waarden worden berekend op basis van het Holt-Winters ETS algoritme. Ook wordt een grafiek gemaakt met de oorspronkelijke en voorspelde waarden en een aantal schattingen van meetwaarden voor de nauwkeurigheid. Hiermee wordt het maken van geavanceerde prognoses een stuk eenvoudiger.
+
+::: {#prp-prog-voorspellingenblad}
+[Bestand]{.smallcaps}: `verkopen.xlsx` (uit @exr-imp-csv)
+
+1.  Open het eerder gemaakte bestand `verkopen.xlsx`.
+
+2.  Selecteer een willekeurige cel in het gegevensgebied.
+
+3.  Kies [tab Gegevens \> Voorspellingblad (groep Voorspelling)]{.uicontrol}. Het dialoogvenster ***Prognosewerkblad maken*** verschijnt.
+
+![Prognosewerkblad maken.](images/prognoses/sales_fcast_sheet.png){#fig-prognosewerkblad}
+
+In dit venster kun je een aantal keuzes maken. Zie @sec-excel-voorspellingenblad voor een toelichting.
+
+4.  Stel [Einde van prognose]{.uicontrol} in op 1 december 2013.
+
+5.  Klik op [Opties{.uicontrol}.
+
+![Opties prognosewerkblad.](images/prognoses/sales_fcast_options.png){#fig-sales-fcast-options}
+
+6.  Klik op [Maken]{.uicontrol}. Er wordt een nieuw werkblad gemaakt met daarin de historische gegevens, de voorspelde waarden, betrouwbaarheidsgrenzen (standaard 95%) en een grafiek.
+
+De resultaten van de voorspellingen staan in @tbl-voorspelling weergegeven.
+
+| Datum      | Voorspelling | Ondergrens | Bovengrens |
+|------------|--------------|------------|------------|
+| 01-10-2013 | 4264177      | 3869915    | 4658439    |
+| 01-11-2013 | 4033806      | 3639542    | 4428070    |
+| 01-12-2013 | 4033625      | 3639358    | 4427892    |
+
+: Voorspelde waarden en betrouwbaarheidsgrenzen. {#tbl-voorspelling}
+
+:::
+
+## Opgaven {#sec-opg-prognoses}
+
+::: {#exr-prog-autoverkopen}
+**Autoverkopen**
+
+In het bestand `autoverkoop.xlsx` staan de de autoverkopen per kwartaal van 4 jaren. Maak met behulp van het Voorspellingenblad een prognose van de verkopen voor de vier kwartalen van jaar 5.
+:::
+
+::: {#exr-prog-omzet}
+**Omzetvoorspelling**
+
+In het bestand `bedrijfsomzet.xlsx` staan de omzetten van een bedrijf over de jaren 2007-2015.
+
+a.  Maak een spreidingsdiagram van de omzet tegen het jaar.
+b.  Voeg achtereenvolgens de volgende trendlijnen toe; lineair, logaritmisch en exponentieel. Verzamel voor elk van deze trendlijnen de waarde van R-kwadraat. Maak op basis hiervan een keuze voor het meest geschikte model.
+c.  Maak via de opties voor de trendlijn een voorspelling van de omzet voor 2016 en lees de waarde in de grafiek af.
+d.  Experimenteer met de opties voor de trendlijn om uit te zoeken wanneer een omzet van €25.000.000 te verwachten is.
+e.  Bereken een voorspelling van de omzet voor 2016 met een werkbladformule. Welke formule je hiervoor kunt gebruiken hangt af van het gekozen model.
+f.  Maak m.b.v. het Voorspellingenblad een prognose voor de omzet van 2016, alsmede een 95% betrouwbaarheidsinterval hiervoor.
+g.  Vergelijk de drie voorspelde waarden met elkaar.
+:::
+
+::: {#exr-prog-tv}
+**Televisieverkoop**
+
+In het bestand `televisies.xlsx` staan de verkochte aantallen televisies per kwartaal gedurende vier jaar.
+
+a.  Maak een grafiek van de tijdreeks.
+b.  Is er een trend of een seizoenspatroon in de tijdreeks te ontdekken.
+c.  Maak een voorspelling van de verkoop voor de kwartalen van het volgende daar. Denk eerst na over welke prognosemethode je wilt gebruiken.
+:::

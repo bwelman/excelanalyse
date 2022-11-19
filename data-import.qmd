@@ -1,0 +1,387 @@
+# Importeren van data {#sec-data-import}
+
+```{r, file = "R/webex.R", include = FALSE}
+```
+
+::: {.callout-note appearance="simple" icon="false"}
+**Doelstellingen**
+
+Bij de analyse van data probeer je antwoorden te vinden op vragen door statistische methodes toe te passen op waarnemingen. Deze waarnemingen - verzameld uit rapportages, enquêtes en experimenten - vormen de ruggegraat van een statistisch onderzoek en worden *data* genoemd. In de praktijk komen veel gegevens uit externe bronnen: txt/csv, web, excel bestanden, databases, ... Om deze gegevens in Excel te analyseren, moeten ze eerst geïmporteerd worden en soms worden getransformeerd en opgeschoond. Dat gebeurt met **Power Query**.
+:::
+
+In Excel is Power Query beschikbaar onder de groep [Gegevens ophalen en transformeren]{.uicontrol} in het lint [Gegevens]{.uicontrol}. Hiermee kun je verbindingen maken met meerdere gegevensbronnen en daarna die gegevens structureren (bijvoorbeeld een kolom verwijderen, een gegevenstype wijzigen) of de gegevens omzetten (transformeren) naar wat anders. Uiteindelijk komen de gegevens dan in een Excel werkblad beschikbaar. Alle stappen die je met de Power Query Editor uitvoert worden in een **script** vastgelegd.
+
+Deze aanbevolen werkwijze heeft de volgende voordelen:
+
+-   De oorspronkelijke gegevens blijven onveranderd.
+-   Omdat de uitgevoerde acties in een script zijn vastgelegd heb je tevens een vorm van documentatie van wat je met de gegevens gedaan hebt.
+-   In het script kun je eenvoudig een stap wijzigen, ongedaan maken of een nieuwe stap toevoegen.
+-   Wanneer er wijzigingen of aanvullingen in de brondata komen hoef je de query alleen maar opnieuw uit te voeren waarna de gewijzigde gegevens in het werkblad verschijnen.
+
+## Gegevens ophalen en transformeren {#sec-import-lint}
+
+Om Gegevens ophalen en transformeren in Excel te gebruiken, maak je eigenlijk een query in de werkmap. Met een query kun je een verbinding maken met een breed scala aan beschikbare gegevensbronnen, een voorbeeld van de gegevens bekijken en de gegevens transformeren.
+
+De eerste stap is het maken van een verbinding met een gegevensbron. Wanneer de verbinding is gemaakt, krijg je een voorbeeld van de gegevens te zien. Daarna kun je stappen toevoegen om de gegevens te structureren en te transformeren. Hiervoor wordt een Query Editor gestart om een aantal instructies te maken die de acties uitvoeren. De laatste stap is het laden van de gegevens als een tabel in een werkblad.
+
+::: callout-note
+-   Je hebt ook de mogelijkheid om de gegevens te laden in het ingebouwde gegevensmodel.
+-   Je kunt de query later ook wijzigen en/of de gegevens vernieuwen.
+:::
+
+Voor het maken van een query gebruik je de [tab Gegevens]{.uicontrol} in het lint, waarna je een van de mogelijke acties in de [Gegevens ophalen en transformeren]{.uicontrol} groep kiest.
+
+![Lint gegevens.](images/importdata/ribbon_queries.png){#fig-ribbon-queries}
+
+Er zijn knoppen voor het ophalen van gegevens uit tekst/csv, web en een Excel tabel/bereik. Deze gegevensbronnen en nog veel meer zijn beschikbaar via de knop [Gegevens ophalen]{.uicontrol}.
+
+De groep [Query's en verbindingen]{.uicontrol} heeft een knop voor het vernieuwen van query's en een knop om bestaande query's en verbindingen te bekijken en te beheren.
+
+## Importeren van een tekst/csv bestand {#sec-import-csv}
+
+Veel gegevens in externe bronnen zijn beschikbaar als tekst (bestandstype .txt) of via komma (of karakter) gescheiden waarden (bestandstype .csv).
+
+::: {#prp-imp-txtcsv}
+[Hulpbestand]{.smallcaps}: `SalesJan2009.csv`
+
+1.  Open in Excel een nieuwe lege werkmap.
+
+2.  Kies [tab Gegevens \> Uit tekst/CSV (groep Gegevens ophalen en transformeren)]{.uicontrol}.
+
+3.  Blader naar het bestand `SalesJan2009.csv` en klik [Importeren]{.uicontrol}. Een voorbeeld van de gegevens wordt getoond.
+
+![Voorbeeld van SalesJan2009 gegevens.](images/importdata/salesjan2009_preview.png){#fig-salesjan2009-preview}
+
+4.  Klik op [Gegevens transformeren]{.uicontrol}. De Query Editor wordt gestart in een nieuw venster. In de rechterzijbalk [Queryinstellingen]{.uicontrol} zie je onder [Toegepaste Stappen]{.uicontrol} de stappen die reeds zijn uitgevoerd.
+
+5.  Selecteer de kolommen `Account_Aangemaakt` en `Laatste_Login` door op de kolomkop te klikken met ingedrukte CTRL toets. Kies dan [Kolommen verwijderen (groep Kolommen beheren) \> Kolommen verwijderen]{.uicontrol}. De kolommen worden verwijderd en de stap is toegevoegd aan [Toegepaste Stappen]{.uicontrol}.
+
+::: {.callout-note appearance="minimal"}
+Als alternatief kun je de rechtermuisknop gebruiken en dan de gewenste actie uit het snelmenu kiezen.
+
+In elke kolomkop zit aan de linkerkant een knopje welke het toegepaste gegevenstype weergeeft. Wanneer je een kolom selecteert zie je het gegevenstype ook op het lint. En dit is tevens de plek waar je het gegevenstype kunt wijzigen.
+
+Als bij het importeren het automatisch ontdekken van het gegevenstype goed gegaan is heeft kolom `Prijs` het gegevenstype `Geheel getal` (zie @fig-datatype-prijs ), kolom `Transactie_Datum` het gegevenstype `Datum/Tijd` en de andere kolommen het gegevenstype `Tekst`.
+
+![Gegevenstype.](images/importdata/ribbon_datatype_wholenumber.png){#fig-datatype-prijs}
+:::
+
+6.  Controleer dat kolom `Transactie_Datum` het juiste gegevenstype heeft. Zo niet, wijzig deze dan via [Gegevenstype (groep Transformeren) \> Datum/Tijd]{.uicontrol}. Wanneer er een dialoogscherm komt met de vraag of de bestaande conversie vervangen moet worden, kies dan voor [Vervangen van de huidige conversie]{.uicontrol}.
+
+7.  In kolom `Naam` beginnen de meeste namen met een hoofdletter, maar niet allemaal. Dat dient gecorrigeerd te worden. Selecteer kolom `Naam`, rechtermuisklik en kies [Transformeren \> Elk Woord Met Een Hoofdletter]{.uicontrol}.
+
+8.  Kies [Sluiten en laden(groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
+:::
+
+::: callout-tip
+Het is altijd mogelijk om de query achteraf te wijzigen. Selecteer hiervoor een cel in de tabel en kies [tab Query \> Bewerken (groep Bewerken)]{.uicontrol}. De Query Editor wordt weer opgestart. Van hieruit kun je tevens de gegevens vernieuwen, alle stappen worden dan herhaald.
+:::
+
+## Importeren van een webtabel {#sec-import-web}
+
+In webpagina's tref je vaak tabellen. Bekijk maar eens de pagina [Europees kampioenschap voetbal mannen](https://nl.wikipedia.org/wiki/Europees_kampioenschap_voetbal_mannen). Power Query in Excel kan deze tabellen herkennen en importeren. In deze taak ga je uit de tabel `Erelijst` de kolommen `Jaar` en `Winnaar` importeren voor de jaren waarvoor ook een winnaar bekend is.
+
+::: {#prp-imp-web}
+Import tabel Wikipedia
+
+1.  Open een nieuwe lege werkmap.
+
+2.  Kies [tab Gegevens \> Van het web (groep Gegevens ophalen en transformeren)]{.uicontrol}. Er wordt een dialoogvenster weergegeven waarin de URL van de webpagina moet worden ingevoerd.
+
+![Dialoogvenster voor invoer URL.](images/importdata/web_url_textbox.png){#fig-weburl-textbox}
+
+3.  Voer voor de URL in\
+    `https://nl.wikipedia.org/wiki/Europees_kampioenschap_voetbal_mannen`\
+    en klik [OK]{.uicontrol}.
+
+Er wordt een verbinding met de webpagina gemaakt. Wanneer de verbinding gerealiseerd is wordt een ***Navigator*** venster getoond waarin een lijst met alle tabellen in de webpagina te zien is. Door op een tabel te klikken verschijnt aan de rechterkant van het venster een voorbeeld van de gegevens.
+
+![Venster Navigator voor UEFA pagina op Wikipedia.](images/importdata/ek-voetbal-navigator.png){#fig-ek-voetbal-navigator}
+
+4.  Selecteer tabel `Erelijst[bewerken]` en klik dan op de knop [Gegevens transformeren]{.uicontrol}. De Query Editor wordt gestart in een nieuw venster. Aan de rechterkant onder [Queryinstellingen]{.uicontrol} en onder [Toegepaste Stappen]{.uicontrol} zie je de stappen die reeds zijn toegepast.
+
+Vervolgens kun je de gegevens naar behoefte structureren, wijzigen en opschonen.
+
+5.  Selecteer de kolommen `Jaar` en `Winnaar` door op deze kolomkoppen te klikken met ingedrukte CTRL toets. Kies dan [Kolommen verwijderen (groep Kolommen beheren) \> Andere kolommen verwijderen]{.uicontrol}.
+
+6.  Selecteer kolom `Jaar` en kies [Waarden vervangen (groep Transformeren)]{.uicontrol}. Het dialoogvenster ***Waarden vervangen*** wordt weergegeven.
+
+![Dialoogvenster Waarden vervangen.](images/importdata/replace_values_dialogbox.png){#fig-replace-values-dialogbox}
+
+7.  Type `Details` in het tekstvak [Te zoeken waarde]{.uicontrol}, laat het tekstvak [Vervangen door]{.uicontrol} leeg. Klik daarna op [OK]{.uicontrol}.
+
+8.  Selecteer kolom `Winnaar` en klik op de filter keuzepijl in de kolomkop. Deselecteer de optie [leeg]{.uicontrol} en klik [OK]{.uicontrol}.
+
+9.  Kies [Sluiten en laden(groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
+
+![Tabel met winnaars van het EK voetbal voor mannen.](images/importdata/ek-voetbal-resultaat.png){#fig-ek-voetbal-resultaat}
+:::
+
+## Importeren uit een Access database {#sec-import-accessdatabase}
+
+In een database zit de data in tabellen die meestal aan elkaar gekoppeld zijn. Via queries in de database kun je ook nog eens bepaalde gegevens selecteren en eventueel berekeningen op gegevens uitvoeren. In deze oefening wordt gewerkt met de eenvoudige database olympischesporten.accdb.
+
+Deze database bevat de Engelstalige en Nederlandstalige namen van de olympische sporten en disciplines voor de twee versies van de spelen (zomer, winter), alsmede de afkorting van de sportbond, het beginjaar en het eventuele eindjaar van de disciplines.
+
+::: callout-note
+De door het IOC gebruikte definitie van sport is een verzameling van disciplines die door één sportbond worden vertegenwoordigd. Zo vallen onder de sport "Volleybal" de disciplines "Zaalvolleybal" en "Beachvolleybal", vertegenwoordigd door de sportbond FIVB (Fédération Internationale de Volleyball).
+:::
+
+### Uit een query
+
+::: {#prp-imp-access-query}
+[Hulpbestand]{.smallcaps}: `olympischesporten.accdb`
+
+1.  Open in Excel een nieuwe lege werkmap.
+
+2.  Kies [tab Gegevens \> Gegevens ophalen (groep Gegevens ophalen en transformeren) \> Uit database \> Uit Microsoft Access-database]{.uicontrol}.
+
+3.  Blader naar het bestand `olympischesporten.accdb` en klik [Importeren]{.uicontrol}. Het dialoogvenster ***Navigator*** verschijnt waarin je de gewenste items uit de database kunt selecteren.
+
+![Dialoogvenster Navigator met als selecteerbare items 2 tabellen en 1 query.](images/importdata/olympic-navigator.png){#fig-olympic-navigator}
+
+4.  Selecteer de query `NL sporten en disciplines` waarna in het rechterdeel van het venster een voorbeeld van de gegevens verschijnt.
+
+5.  Kies [Laden \> Laden]{.uicontrol}. De gegevens worden in een tabel in een nieuw werkblad geladen.
+:::
+
+### Uit tabellen
+
+::: {#prp-imp-access-tabel}
+[Hulpbestand]{.smallcaps}: `olympischesporten.accdb`
+
+1.  Kies [tab Gegevens \> Gegevens ophalen (groep Gegevens ophalen en transformeren) \> Uit database \> Uit Microsoft Access-database]{.uicontrol}.
+
+2.  Blader naar het bestand `olympischesporten.accdb` en klik [Importeren]{.uicontrol}. Het dialoogvenster ***Navigator*** (@fig-olympic-navigator) verschijnt weer.
+
+3.  Vink het selectievakje [Meerdere items selecteren]{.uicontrol} aan en selecteer daarna de twee tabellen `Discipline` en `Sport`.
+
+4.  Kies [Laden \> Laden]{.uicontrol}. Je ziet nu de gegevens niet in het werkblad verschijnen, ze zitten wel in het *gegevensmodel*.
+
+Wanneer je twee of meer tabellen tegelijk importeert wordt er automatisch een *gegevensmodel* gemaakt. Deze integreert de geïmporteerde tabellen waarbij de bestaande relaties tussen de tabellen gebruikt worden. Je kunt dit met Power Pivot bekijken en bewerken. Dit gaat als volgt.
+
+Kies [tab Power Pivot \> Beheren]{.uicontrol}. Er verschijnt nu een nieuw venster ***Power Pivot voor Excel*** met linksonder de tabbladen voor de geïmporteerde tabellen. Wanneer je de relatie wilt zien kies je in dit venster voor [Diagramweergave (groep Weergave)]{.uicontrol}. Wanneer je alles bekeken hebt kun je dit venster weer sluiten.
+:::
+
+### Analyse
+
+Voor het analyseren van de gegevens wordt een draaitabel gebruikt.
+
+::: {#prp-imp-access}
+Analyse met draaitabel
+
+Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het gegevensmodel geselecteerd is (zie @fig-olympic-draaitabelmaken).
+
+![Dialoogvenster Draaitabel maken. Selecteer het gebruik van het gegevensmodel.](images/importdata/olympic-draaitabelmaken.png){#fig-olympic-draaitabelmaken}
+:::
+
+**Testvragen**
+
+1.  Hoeveel disciplines waren er in het beginjaar van de zomerspelen? `r fitb("10", num = TRUE)`
+
+2.  Hoeveel disciplines zijn er nu voor de zomerspelen? `r fitb("50", num = TRUE)`
+
+3.  Hoeveel disciplines zijn er totaal verdwenen? `r fitb("14", num = TRUE)`
+
+4.  Welke sport heeft de meeste disciplines? `r fitb(c("Skiën", "Skien", "Skieen"), ignore_case = TRUE)`
+
+5.  Hoeveel nieuwe disciplines zijn er voor de zomerspelen 2020 bijgekomen? `r fitb("6", num = TRUE)`
+
+<!-- 6:  3x3 Basketbal, Karate, Klimsport, Skateboarden, Surfen en BMX freestyle -->
+
+## TAAK: Marktwaarde Voetbalclub {#sec-voetbalclub}
+
+Het Duitse bedrijf Transfermarkt publiceert veel data over clubs en spelers, waaronder ook hun inschatting van de marktwaarde van de spelers. Naast een algemene url heeft het bedrijf ook landspecifieke urls's:
+
+-   Algemeen: https://www.transfermarkt.com/
+-   Duitsland: https://www.transfermarkt.de/
+-   Nederland: https://www.transfermarkt.nl/
+-   ...
+
+Via een webquery kun je deze gegevens met behulp van Power Query ophalen. Om analyses met Excel uit te kunnen voeren moeten deze gegevens in een daartoe geschikt formaat in een werkblad beschikbaar zijn. Dat is in dit geval redelijk complex. Vandaar dat de werkwijze uitvoerig voor de club FC Twente beschreven wordt, maar je kunt het natuurlijk ook voor jouw eigen favoriete club uitvoeren. De enige aanpassing is dan de url van de club.
+
+**URL voetbalclub**
+
+Wanneer je de [Nederlandse url van Transfermarkt](https://www.transfermarkt.nl/) gebruikt is het land `Nederland` al voor je geselecteerd. Daarna kies je als competitie de `Eredivisie` en vervolgens de `club`, in dit voorbeeld dus FC Twente. Voor FC Twente wordt dat `https://www.transfermarkt.nl/fc-twente/startseite/verein/317`.
+
+### Query maken
+
+1.  Open in Excel een nieuwe lege werkmap.
+
+2.  Kies [tab Gegevens \> Van het web]{.uicontrol}. Voer de genoteerde URL in en klik [OK]{.uicontrol}.\
+    Na een tijdje verschijnt het venster ***Navigator*** met in de linkerkant de mogelijke tabellen.
+
+::: callout-note
+Je moet nu uitzoeken in welke tabel de gezochte informatie zit. Wanneer je een tabel selecteert krijg je in het rechterdeel een voorbeeld van de gegevens te zien.
+:::
+
+3.  Selecteer `Table 0`.
+
+![Selectie van de juiste tabel in Navigator.](images/importdata/fctwente-01.png){#fig-fctwente-01}
+
+::: callout-warning
+Door gewijzigde omstandigheden kunnen spelers en hun marktwaarde ondertussen gewijzigd zijn.
+:::
+
+4.  Klik [Gegevens transformeren]{.uicontrol}. Power Query Editor wordt nu opgestart met daarin de gegevens.
+
+![Startscherm Power Query Editor.](images/importdata/fctwente-02.png){#fig-fctwente-02}
+
+5.  Verwijder de eerste twee kolommen.
+
+6.  Hernoem de kolom met de namen van de spelers in `Speler`.
+
+7.  Wijzig de naam van de query in `qryfctwente`.
+
+![Kolommen verwijderd, kolomnamen gewijzigd](images/importdata/fctwente-03.png){#fig-fctwente-03}
+
+De inhoud van de kolommen `Geb./leeftijd` en `Marktwaarde` is niet zodanig dat je er in Excel goed mee kunt werken. Een geboortedatum is het handigste in de vorm `16-11-1996`. En voor de marktwaarde moet alleen een getal komen. Voor dit herstructureren van gegevens leent Power Query zich uitstekend.
+
+### Geboortedatum
+
+Wanneer je de gegevens in de kolom `Geb./leeftijd` bekijkt dan zie dat dag, maand, jaartal en leeftijd steeds van elkaar gescheiden worden door een spatie. Dat betekent dat je de inhoud van deze kolom op basis van dit scheidingsteken kunt splitsen en over vier nieuwe kolommen kunt verdelen.
+
+1.  Selecteer kolom `Geb./leeftijd` en kies dan [tab Transformeren \> Kolom splitsen (groep Kolom Tekst) \> Op scheidingsteken]{.uicontrol}.
+
+2.  Selecteer [spatie]{.uicontrol} als scheidingsteken en ook dat er op elke spatie gesplitst moet worden.
+
+![Dialoogscherm kolom splitsen.](images/importdata/fctwente-04.png){#fig-fctwente-04}
+
+3.  Klik op [OK]{.uicontrol}. De oude kolom is nu verdwenen en er zijn vier nieuwe kolommen voor terug gekomen met de namen `Geb./leeftijd.1` t/m `Geb./leeftijd.4`.
+
+4.  Wijzig de namen van de eerste drie kolommen in resp. `Dag`, `Maand` en `Jaar`.
+
+Achter de maandnaam staat een punt. Deze moet verwijderd worden anders kunnen de datumfuncties van Excel er niet mee overweg.
+
+5.  Selecteer kolom `Maand` en kies [tab Transformeren \> Waarden vervangen (groep Alle kolommen)]{.uicontrol}.
+
+6.  Specificeer voor de te zoeken waarde een punt en laat het vakje voor de te vervangen waarde leeg. Klik [OK]{.uicontrol}.
+
+Nu moet er uit dag, maand en jaar een nieuwe kolom met de geboortedata gemaakt worden.
+
+7.  Kies [tab Kolom toevoegen \> Aangepaste kolom]{.uicontrol} en specificeer:
+
+    -   Nieuwe kolomnaam: `Geboortedatum`
+    -   Aangepaste kolomformule: `= Text.From([Dag]) & "-" & [Maand] & "-" & Text.From([Jaar])`
+
+![Aangepaste kolom.](images/importdata/fctwente-05.png){#fig-fctwente-05}
+
+8.  Klik op [OK]{.uicontrol}.
+
+Het gegevenstype van deze kolom moet nog op Datum gezet worden.
+
+9.  Zorg dat kolom `Geboortedatum` geselecteerd blijft en kies [tab Start \> Gegevenstype (groep Transformeren) \> Datum]{.uicontrol}.
+
+### Leeftijd
+
+De leeftijden zijn negatief, veroorzaakt doordat in de brondata de leeftijden tussen haakjes staan. Dat kan gewijzigd worden door een nieuwe kolom `Leeftijd` te maken met daarin de absolute waarde van het veld.
+
+1.  Kies [tab Kolom toevoegen \> Aangepaste kolom]{.uicontrol} en specificeer:
+
+    -   Nieuwe kolomnaam: `Leeftijd`
+    -   Aangepaste kolomformule: `= Number.Abs([#"Geb. / leeftijd.4"])`
+
+::: callout-tip
+Zodra je begint met het intypen van het woord `Number` verschijnen automatisch de mogelijke functies. In plaats van de formule in te typen kun je ook de functie selecteren. En velden kun je via een dubbelklik invoegen. Deze methode is aan te raden omdat het typefouten voorkomt.
+:::
+
+2.  Verwijder nu de overbodige kolommen `Dag`, `Maand`, `Jaar` en `Geb. / leeftijd.4`.
+
+![Nu met kolom Leeftijd.](images/importdata/fctwente-06.png){#fig-fctwente-06}
+
+### Marktwaarde
+
+De gegevens in de kolom `Marktwaarde` eindigen allemaal met `. €`. Dit moet eerst verwijderd worden.
+
+1.  Selecteer kolom `Marktwaarde` en kies [tab Transformeren \> Waarden vervangen (groep Alle kolommen)]{.uicontrol}.
+
+2.  Specificeer voor de te zoeken waarde `. €` en laat het vakje voor de te vervangen waarde leeg. Klik [OK]{.uicontrol}.
+
+De inhoud van de kolom `Marktwaarde` bestaat nu uit een getal en een tekstaanduiding voor de eenheid, welke van elkaar gescheiden zijn door een spatie.
+
+3.  Splits kolom `Marktwaarde` op basis van de spatie. De oude kolom wordt hierdoor vervangen door twee nieuwe kolommen: `Marktwaarde.1` met het getal en `Marktwaarde.2` met de eenheid.
+
+De tekst van deze eenheid ga je nu vervangen door het overeenkomstige getal.
+
+4.  Selecteer kolom `Marktwaarde.2`. Vervang nu de waarde `dzd` door `1000` en daarna de waarde `mln` door `1000000`. Wijzig daarna het gegevenstype van deze kolom in [Geheel getal]{.uicontrol}.
+
+Nu kan er een nieuwe kolom `Marktwaarde` gemaakt worden door de inhoud van de twee kolommen met elkaar te vermenigvuldigen.
+
+5.  Kies [tab Kolom toevoegen \> Aangepaste kolom]{.uicontrol} en specificeer:
+
+    -   Nieuwe kolomnaam: `Marktwaarde`
+    -   Aangepaste kolomformule: `= [Marktwaarde.1]*[Marktwaarde.2]`
+
+6.  Klik [OK]{.uicontrol}.
+
+7.  Verwijder de overbodig geworden kolommen `Marktwaarde.1` en `Marktwaarde.2`.
+
+8.  Wijzig gegevenstype van kolom `Marktwaarde` in [Valuta]{.uicontrol}.
+
+![Kolom Marktwaarde opgenomen.](images/importdata/fctwente-07.png){#fig-fctwente-07}
+
+### Laden in Excel
+
+De query is nu klaar en de gegevens kunnen in een Excel werkblad geladen worden.
+
+1.  Kies [tab Startpagina \> Sluiten en laden]{.uicontrol}. Dit kan even duren.
+
+2.  Maak in het Excel werkblad de inhoud van `Marktwaarde` op als Valuta zonder decimalen.
+
+3.  Voeg een totaalrij toe via [tab Tabelontwerp \> aanvinken Totaalrij (groep Opties voor tabelstijlen)]{.uicontrol}.
+
+![De tabel in het Excel werkblad.](images/importdata/fctwente-08.png){#fig-fctwente-08}
+
+4.  Bewaar het bestand onder de naam **marktwaarde-fctwente.xlsx**, of met de naam van een andere voetbalclub wanneer je die gebruikt hebt. Je hebt dit bestand later nodig voor case @sec-case-marktwaarde.
+
+Wanneer de marktwaarde van een speler wijzigt, er spelers vertrekken of bijkomen, hoef je alleen maar de query te vernieuwen via [tab Gegevens \> Alles vernieuwen (groep Query's en verbindingen)]{.uicontrol}.
+
+::: callout-warning
+Wanneer je het bestand op een later moment weer opent, krijg je waarschijnlijk een beveiligingswaarschuwing dat externe gegevensverbindingen uitgeschakeld zijn. Je moet dan in het meldingsvenster klikken op de knop [Inhoud inschakelen]{.uicontrol}.
+:::
+
+## Opgaven {#sec-opg-importdata}
+
+::: {#exr-imp-csv}
+**Een csv bestand importeren**
+
+a.  Open eerst het bestand `verkopen.csv` met een kale tekstverwerker (Kladblok, Notepad) om te onderzoeken hoe het bestand er uit ziet. Het is belangrijk om te weten is of er veldnamen in staan en welk scheidingssymbool gebruikt is. Meestal herkent Power Query dit zelf, maar het is toch wel nuttig om dit zelf eerst na te gaan.
+
+b.  Importeer de gegevens via [Gegevens ophalen en transformeren]{.uicontrol}.
+
+`r hide("Aanwijzingen")` + De veldnamen staan in de eerste rij. Om deze te veranderen in de kolomkoppen kies je [Start \> De eerste rij als veldnamen gebruiken (groep Transformeren)\> De eerste rij als veldnamen gebruiken{.uicontrol}. + Door de transformatie naar veldnamen wordt ook het gegevenstype aangepast. Controleer of de kolommen naar het juiste gegevenstype zijn omgezet. Zo niet, wijzig dan het gevenstype. `r unhide()`
+
+c.  Bewaar het bestand voor later gebruik onder de naam **verkopen.xlsx**.
+:::
+
+::: {#exr-imp-access}
+**Een Access database importeren**
+
+a.  Open in Excel een nieuwe lege werkmap en importeer uit het bestand `snoeporders2010.accdb` de drie tabellen via [Gegevens ophalen en transformeren]{.uicontrol}.
+
+b.  Maak via een draaitabel een lijngrafiek van het aantal orders per maand.
+
+c.  Maak via een draaitabel een kolomdiagram van het aantal orders per provincie, gesorteerd van hoog naar laag.
+:::
+
+::: {#exr-imp-aex}
+**AEX koersen**
+
+Zoek op het internet naar een website die de actuele beurskoersen van de bedrijven in de AEX index als een tabel in een pagina aanbiedt. Haal vervolgens deze data via Power Query in een Excel werkblad binnen.
+:::
+
+::: {#exr-imp-gemeenten}
+**Nederlandse gemeenten**
+
+Deze [wikipediapagina](https://nl.wikipedia.org/wiki/Lijst_van_Nederlandse_gemeenten) bevat een tabel van Nederlandse gemeenten met een aantal gegevens over die gemeenten.
+
+a.  Importeer via Power Query deze tabel in Excel en neem alleen de kolommen Gemeente, Provincie, Inwoneraantal en Oppervlakte op.
+
+b.  Maak een draaitabel van het aantal gemeenten per provincie. Welke provincie telt de meeste gemeentes?
+
+c.  Maak draaigrafiek van het inwoneraantal per provincie, gesorteerd van groot naar klein.
+
+d.  Maak draaigrafiek van het Land-oppervlak per provincie, gesorteerd van groot naar klein.
+
+e.  Bedenk een manier om met een draaitabel de bevolkingsdichtheid van elke provincie te bepalen.
+:::

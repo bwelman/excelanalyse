@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: e1b06ae3-3667-4db9-a31b-5ebe1c529545
+      url: 'https://excelanalyse.netlify.app'

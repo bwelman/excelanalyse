@@ -1,0 +1,62 @@
+# Power Query opties {#sec-powerquery-options}
+
+Je kunt op twee manieren naar de queryopties navigeren.
+
+-   Vanuit Excel: [tab Gegevens \> Gegevens ophalen (groep gegevens ophalen en transformeren) \> Queryopties]{.uicontrol}
+
+-   Vanuit Query Editor: [Bestand \> Opties en instellingen \> Queryopties]{.uicontrol}
+
+Een aantal verschillende instellingen spreken voor zich. Alleen de meest relevante instellingen worden behandeld.
+
+### GLOBAAL Gegevens laden {.unnumbered}
+
+Met behulp van een van de bovengenoemde methoden krijg je het volgende venster.
+
+![Globale query opties voor het laden van gegevens.](images/app-powerquery/q_options_global_data.png){#fig-q-options-global-data}
+
+Het is belangrijk om onderscheid te maken tussen de instellingen voor [GLOBAAL]{.uicontrol} en [HUIDIGE WERKMAP]{.uicontrol}.
+
+-   [GLOBAAL]{.uicontrol}: instellingen zijn van invloed op alle projecten die je maakt.
+-   [HUIDIGE WERKMAP]{.uicontrol}: instellingen zijn alleen van invloed op het huidige Excel-bestand.
+
+#### Standaardinstellingen voor het laden van query's {.unnumbered}
+
+De instellingen voor het laden van gegevens zijn van invloed op de manier waarop de query's worden geladen. De standaardinstellingen voor het laden zijn:
+
+-   Bij het laden van een enkele query wordt de query in een nieuw werkblad geladen.
+-   Bij het laden van meerdere query's worden de query's in het gegevensmodel geladen.
+
+Een aanbevolen methode is om een query handmatig te laden. In dat geval selecteer je [Geef aangepaste standaardinstellingen voor het laden op]{.uicontrol} en deselecteer beide keuzes. Er wordt dan alleeen een verbinding gemaakt en je moet dan de query handmatig op een van de volgende manieren laden.
+
+-   In Excel: [tab Gegevens \> Query's en verbindingen \> Rechter muisklik op een query \> Laden naar]{.uicontrol}
+-   In Query Editor: [tab Startpagina \> Sluiten en laden \> Laden naar]{.uicontrol}
+
+#### Snel gegevens laden {.unnumbered}
+
+Door het selecteren van de optie Snel gegevens laden, duurt het laden van de query's minder lang, maar Excel reageert mogelijk lange tijd niet.
+
+#### Beheeropties voor gegevenscache {.unnumbered}
+
+Er worden kopieën van de voorbeeldresultaten van de query's op de lokale schijf opgeslagen zodat ze later sneller kunnen worden weergegeven. Je kunt deze cache wissen of configureren hoeveel schijfruimte mag worden gebruikt.
+
+Het wissen van de cache kan handig zijn als iets niet werkt zoals verwacht.
+
+### GLOBAAL Power Query-editor {.unnumbered}
+
+![Globale query opties voor de Power Query-editor.](images/app-powerquery/q_options_global_editor.png){#fig-q-options-global-editor}
+
+Deze opties hebben voornamelijk te maken met hoe de Query-editor wordt weergegeven. De formulebalk vertaalt de acties naar de *Power Query M* taal. Het is mogelijk om de code in de formulebalk te bewerken. Als je wilt kun je ervoor kiezen om de voorbeeldinhoud in monospace-lettertype weer te geven en voor het niet tonen van witruimte en regeleinden.
+
+Sommige van deze opties kunnen ook gevonden worden met [tab Weergeven]{.uicontrol} in de Query Editor.
+
+### GLOBAAL Privacy {.unnumbered}
+
+![Globale query opties voor privacy instellingen.](images/app-powerquery/q_options_global_privacy.png){#fig-q-options-global-privacy}
+
+Wanneer je gegevens uit verschillende bronnen combineert, is het mogelijk dat je veel foutmeldingen krijgt omdat deze acties kunnen conflicteren met jouw privacyniveau-instellingen. Deze berichten hebben meestal geen zin voor de eindgebruiker. Om deze berichten te voorkomen, kun je veilig selecteren [Privacyniveau-instellingen altijd negeren]{.uicontrol}.
+
+### HUIDIGE WERKMAP Regionale instellingen {.unnumbered}
+
+![Query opties voor regionale instellingen in de huidige werkmap.](images/app-powerquery/q_options_current_regional.png){#fig-q-options-current-regional}
+
+De regionale instellingen beïnvloeden de manier waarop Power Query datums, valuta's en andere functies manipuleert die specifiek zijn voor regio's en landen.

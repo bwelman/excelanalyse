@@ -1,0 +1,69 @@
+project:
+  type: book
+  pre-render: R/hulpbestanden.R
+
+book:
+  title: "Data Analyse met Excel"
+  subtitle: "Een cursusboek over het analyseren van data met Excel."
+  author: "Ben Welman"
+  date: today
+  date-format: long
+  google-analytics: "G-CMGT59LG7K"
+  site-url: https://excelanalyse.netlify.app/
+  chapters:
+    - index.qmd
+    - voorwoord.qmd
+    - data-import.qmd
+    - data-variabelen.qmd
+    - beschrijvend.qmd
+    - linregressie.qmd
+    - tijdreeksen.qmd
+    - prognoses.qmd
+    - eda.qmd
+    - cases.qmd
+  appendices:
+    - analysis-toolpak.qmd
+    - powerquery-options.qmd
+    - excel-trendlijnen.qmd
+    - excel-voorspellingenblad.qmd
+    - excel-aselect.qmd
+    - referenties.qmd
+
+execute:
+  freeze: auto
+
+lang: nl
+
+language:
+  en:
+    crossref-prp-title: "Task"
+  nl:
+    crossref-prp-title: "Taak"
+
+format:
+  html:
+    include-after-body: include/webex.js
+    css: include/webex.css
+    theme:
+      - cosmo
+      - include/textbook.scss
+    cover-image: images/cover.png
+    fig-width: 6
+    fig-asp: 0.618
+    code-fold: false
+    link-external-icon: true
+    link-external-newwindow: true
+    callout-appearance: simple
+
+  # pdf:
+  #   documentclass: scrbook
+  #   papersize: a4
+  #   include-in-header: latex/preamble.tex
+  #   links-as-notes: true
+
+knitr:
+  opts_chunk:
+    echo: false
+    warning: false
+    message: false
+    cache: false

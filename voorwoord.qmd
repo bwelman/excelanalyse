@@ -1,0 +1,48 @@
+# Voorwoord {.unnumbered}
+
+Er zijn twee hoofdtakken binnen de statistiek:
+
+Inferentiële statistiek
+
+:   Hierbij wordt een kleine steekproef gebruikt om conclusies te trekken over een grote populatie van gegevens. Deze statistiek komt weinig aan bod in deze cursus.
+
+Beschrijvende statistiek
+
+:   Hierbij worden kenmerken van gegevens beschreven met behulp van samenvattende gegevens, grafieken en tabellen.
+
+In dit studieboek zal voornamelijk aandacht besteed worden aan
+
+-   *Beschrijvende statistiek* - Het verzamelen, organiseren, visualiseren en interpreteren van gegevens.
+-   *Exploratieve Data Analyse* - Het verkennen en samenvatten van de belangrijkste kenmerken van de dataset met voornamelijk grafische technieken.
+-   *Regressie* - Het zoeken naar verbanden tussen gegevens.
+-   *Voorspellen* - Het schatten van toekomstige waarden, vooral bij tijdreeksen.
+
+Statistiek speelt een belangrijke rol bij de besluitvorming voor het bedrijfsleven en de overheid, waaronder marketing, strategische planning, productie, financiën, kwaliteitscontrole, voorraadtellingen, cycle-counting, voorspellingen (afzet, cashflow, orders, drukte, ...)
+
+Belangrijk is ook het meten van *onzekerheid*. Onzekerheid is de fout bij het schatten van een parameter, zoals het gemiddelde van een steekproef, of het verschil in gemiddelden tussen twee experimentele behandelingen, of de voorspelde toekomstige omzet. Onzekerheid ontstaat door variatie in de gegevens.
+
+Excel is niet ontworpen om als een statistische toepassing te dienen en heeft daardoor wel enige beperkingen vergeleken met echte statistische programma's als SPSS, SAS, Stata en R. Ook een programmeertaal als Python heeft meer mogelijkheden. Desondanks heeft Excel meerdere statistische mogelijkheden die niet bij iedereen bekend zijn. En waar Excel tekortkomingen heeft kun je die uitbreiden met zogenaamde add-ins. Een zo'n add-in is [Real Statistics](http://www.real-statistics.com/) welke gratis te gebruiken is. Bij de onderdelen in deze tutorial wordt alleen van de standaard in Excel aanwezige mogelijkheden gebruik gemaakt.
+
+## Organisatie studieboek {.unnumbered}
+
+Dit studieboek heeft een logische opbouw, beginnend met het verkrijgen van de data, het bestuderen daarvan, het onderzoeken van verbanden tot het trekken van conclusies. Daarna kan de verkregen kennis toegepast worden in cases.
+
+-   @sec-data-import richt zich op het verkrijgen van data en het eventuele opschonen hiervan. Dat gebeurt met de in Excel ingebouwde Power Query Editor. Dit hoofdstuk kun je overslaan wanneer je met dit proces voldoende bekend bent.
+
+-   @sec-data-variabelen behandelt soorten data en het structureren hiervan zodat de data geschikt is voor verdere analyse.
+
+-   @sec-beschrijvend behandelt de beschrijvende statistiek, het ordenen en samenvatten van de data. Met in @sec-grafieken de belangrijkste grafiektypes.
+
+-   @sec-linregressie behandelt de samenhang tussen variabelen en enkelvoudige lineaire regressie.
+
+-   @sec-timeseries legt uit wat tijdreeksen zijn, waaruit deze bestaan en hoe je een voortschrijdend gemiddelde maakt.
+
+-   @sec-prognoses wordt ingegaan op een aantal mogelijkheden om prognoses (voorspellingen) van toekomstige waarden te maken.
+
+-   @sec-eda gaat in op het proces van de Exploratieve Data Analyse (EDA).
+
+-   @sec-cases bevat een aantal cases.
+
+## Software {.unnumbered}
+
+In dit studieboek wordt gewerkt met **Excel 365 NL**. Voor het grootste deel van de inhoud kun je ook met Excel 2010, 2013, 2016 en 2019 werken.

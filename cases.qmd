@@ -1,0 +1,212 @@
+# Cases {#sec-cases}
+
+## Pinguins {#sec-case-pinguins}
+
+Op het [Palmer Station, Antarctica](https://pal.lternet.edu/) is door dr. Kristen Gorman gedurende de jaren 2007-2009 een onderzoek bij pinguïns uitgevoerd. Van de drie pinguinsoorten die zijn waargenomen op drie eilanden in de Palmerarchipel zijn gegevens verzameld gedurende de onderzoeksperiode.
+
+::: {#fig-pinguins layout-ncol="2"}
+![De drie soorten](images/cases/palmerpenguins.png){#fig-palmerpenguins-1}
+
+![Snavelafmetingen.](images/cases/pinguinsnavel.png){#fig-palmerpenguins-2}
+
+Palmer pinguins.
+:::
+
+**Data**
+
+Van de originele dataset is een vereenvoudigde versie gemaakt. Het bestand `pinguins.csv` is een in het Nederlands vertaalde versie hiervan met de volgende variabelen:
+
+-   `soort` - Pinguïnsoort (Adélie, Chinstrap, Gentoo)
+-   `eiland` - Eiland in de Palmerarchipel Antarctica (Biscoe, Dream, Torgersen)
+-   `snavellengte` - Snavellengte (mm)
+-   `snaveldiepte` - Snaveldiepte (mm)
+-   `vleugellengte` - Vleugellengte (mm)
+-   `gewicht` - Lichaamsgewicht (gram)
+-   `geslacht` - Geslacht (vrouwtje, mannetje)
+-   `jaar` - Het jaar waarin de pinguin onderzocht is (2007, 2008, 2009)
+
+**Opdracht**
+
+Voer een exploratieve data analyse uit voor deze dataset. Ga hiertoe als volgt te werk.
+
+1.  Importeer de gegevens uit het bestand `pinguins.csv` via Power Query in Excel en sla het daarna als een Excelbestand op.
+2.  Bestudeer de Exceltabel. Wanneer je wat zaken opvallen, noteer deze dan.
+3.  Formuleer een eerste serie met vragen die je beantwoord wilt zien.
+4.  Ga creatief aan het werk om deze vragen te beantwoorden. Dat hoeft in deze fase nog niet te resulteren in "nette" resultaten.
+5.  Wanneer het onderzoek hiertoe aanleiding geeft, herformuleer dan de eerste serie vragen en vul deze aan met eventuele nieuwe vragen.
+6.  Ga hiermee door totdat je de indruk hebt dat je de dataset redelijk kent en de belangrijkste zaken weer kunt geven.
+7.  Maak een samenvattend eindverslag van het onderzoek waarin de belangrijkste conclusies naar voren komen. Hierin aanwezige grafieken en tabellen moeten wel netjes opgemaakt en voor de lezers te begrijpen zijn.
+
+## Fooien {#sec-case-fooien}
+
+![Een fooi van een tevreden klant.](images/cases/fooi.png){#fig-fooi}
+
+Een ober noteerde informatie over elke fooi die hij gedurende een periode van een paar maanden in een restaurant kreeg. Hij verzamelde de volgende variabelen:
+
+-   `rekening` - totale kosten maaltijd (euro)
+-   `fooi` - grootte fooi (euros)
+-   `sexe` - geslacht persoon die rekening betaalde (m, v)
+-   `dag` - dag van de week (do, vr, za, zo)
+-   `tijdstip` - tijdstip van de dag (middag, avond)
+-   `groep` - aantal personen gezelschap
+
+**Data**
+
+De data staan in het bestand `fooien.xlsx`. Bewaar de analyse in een Excelbestand met de naam **fooien-analyse.xlsx**.
+
+**Opdracht**
+
+De hoofdvraag van het onderzoek is: *Wat zijn de factoren die de grootte van de fooi beïnvloeden?*
+
+Voer een exploratieve data analyse uit om de onderzoeksvraag te beantwoorden.
+
+**Suggesties voor het onderzoek**:
+
+-   Bepaal de meetschaal van de 6 variabelen.
+-   Maak frequentietabellen.
+-   Maak een samenvattingsinfo via gegevensanalyse
+-   Maak een histogram voor de belangrijkste variabele `fooi`. De conclusies die je uit een histogram trekt hangen vaak af van de keuze voor de klassebreedte. Experimenteer daarom met verschillende bingroottes van een halve, een hele en twee euro. Kijk welke het meeste inzicht geeft.
+-   Ga na of een fooi vaak afgerond wordt op de dichtstbijzijnde 50ct of hele euro.
+-   Ga na of een fooi samen met de rekening tot een geheel bedrag wordt afgerond.
+-   Ga na of er een relatie is tussen de fooi en de hoogte van de rekening.
+-   Zijn er opvallende fooien gegeven?
+-   Wat is het gemiddelde percentage voor een fooi?
+-   Wat is het prijsniveau van het restaurant?
+-   Is er verschil tussen mannen en vrouwen bij het bepalen van de fooi?
+-   Is er verschil tussen middag en avond bij het bepalen van de fooi?
+-   Is er verschil tussen de dagen?
+
+<!-- Inspiratiebron: boek "Interactive and Dynamic Graphics for Data Analysis", Cook & Swayne, pag. 4 -->
+
+## Marktwaarde Voetbalclub {#sec-case-marktwaarde}
+
+![Elftalfoto FC Twente, augustus 2020, © Emiel Muijderman.](images/cases/fctwente-elftal.png){#fig-elftalfoto}
+
+In deze case voer je een analyse uit naar de marktwaarde van de selectie van voetbalclub FC Twente of van jouw favoriete club.
+
+**Data**
+
+In @sec-voetbalclub heb je daarvoor een webquery voor de club FC Twente (of jouw favoriete club) gemaakt die de benodigde gegevens binnenhaalt van de website van [Transfermarkt](https://www.transfermarkt.nl/), daarop diverse bewerkingen uitvoert en het resultaat in een Excel werkblad plaatst. Het bestand is opgeslagen onder de naam `marktwaarde-fctwente.xlsx`, of met de naam van een andere voetbalclub wanneer je die gebruikt hebt.
+
+Wanneer je geen eigen bestand gemaakt hebt kun je het hulpbestand `marktwaarde-fctwente.xlsx` gebruiken.
+
+::: callout-important
+1.  Wanneer je een bestand met een webquery opent, krijg je waarschijnlijk een beveiligingswaarschuwing dat externe gegevensverbindingen uitgeschakeld zijn. Je moet dan in het meldingsvenster klikken op de knop [Inhoud inschakelen]{.uicontrol}.
+
+2.  Je kunt de gegevens actualiseren via [tab Gegevens \> Alles vernieuwen (groep Query's en verbindingen)]{.uicontrol}.
+
+3.  Bij gebruik van een webquery moet je in rapportages altijd de datum vermelden waarop de data verzameld is.
+:::
+
+**Opdracht**
+
+Voer een verkennnend onderzoek onderzoek uit naar de dataset. Enkele suggesties hiervoor zijn:
+
+-   Bij een aantal spelers is geen nationaliteit vermeld is, terwijl op de website deze wel te zien is. Probeer hiervoor een verklaring te vinden.
+
+-   Van sommige voetbalclubs wordt wel eens gezegd dat de selectie een vreemdelingenlegioen is. Is dat bij deze club ook het geval?
+
+-   Bepaal kenmerkende statistieken voor `Leeftijd` en `Marktwaarde`.
+
+-   Is het een jonge selectie?
+
+-   Maak een frequentieverdeling van `Leeftijd` met een bijbehorende kolomdiagram.
+
+-   Zit de grootste salarisdruk bij de oudere spelers?
+
+-   Verdienen buitenlandse spelers gemiddeld meer dan Nederlandse spelers?
+
+-   Welke leeftijdsgroep verdient gemiddeld het meest?
+
+-   Is er een relatie tussen `Leeftijd` en `Marktwaarde`?
+
+## Gemiddelde betaaltermijn {#sec-case-betaaltermijn}
+
+![Iris.](images/cases/iris.jpg){#fig-betaaltermijn}
+
+IRIS BV heeft cashflow problemen sinds de uitbraak van de Corona crisis. In deze bijzondere tijden is het voor het bedrijf nog belangrijker dan anders om de liquiditeitspositie onder controle te houden. Belangrijk is dat de debiteuren sneller aan IRIS BV gaan betalen. Vanaf 1 juli 2020 is er daarom speciale actie van kracht. Klanten krijgen korting op de volgende orde als ze sneller betalen. Een medewerker is vrijgemaakt om bij de klanten langs te gaan en ze over deze actie te informeren. Die medewerker gaat actief achter debiteuren aan als een factuur meer dan 30 dagen openstaat.
+
+**Data**
+
+In het databestand `Gemiddelde betaaltermijn.xlsx` vind je de benodigde gegevens.
+
+**Opdracht**
+
+Beantwoord de volgende vragen:
+
+1.  Wat was de gemiddelde betaaltermijn per klant in de eerste helft van 2020?
+2.  Wat was de gemiddelde betaaltermijn in totaal in de eerste helft van 2020?
+3.  Wat was de gemiddelde betaaltermijn per klant in de tweede helft van 2020?
+4.  Wat was de gemiddelde betaaltermijn in totaal in de tweede helft van 2020?
+5.  Welke data zou je nog meer nodig hebben om uit te rekenen of de actie financieel wat heeft opgeleverd voor IRIS BV?
+
+## Beisterkamp {#sec-case-beisterkamp}
+
+![Een van de vrachtwagens van Beisterkamp.](images/cases/beisterkamp.png){#fig-vrachtwagen}
+
+Beisterkamp Transport BV is een middelgrote transportonderneming gevestigd in Oldenzaal. Het bedrijf heeft een kleine vloot van 10 vrachtwagens en heeft evenveel chauffeurs in dienst. De concurrentie in de transportwereld is groot en de marges per kilometer zijn klein. Belangrijke kostenposten voor het bedrijf zijn het dieselverbruik en de uren van de chauffeurs. De directie wil weten of er op deze twee posten geld bespaard kan worden. Jij bent net begonnen als junior-controller bij Beisterkamp en de directie heeft jou gevraagd om met adviezen te komen.
+
+**Data**
+
+In het databestand `beisterkamp.csv` vind je de data over de afgelegde kilometers, het dieselverbruik in liters en het aantal geboekte uren in 2020. Begin met een nieuwe lege werkmap, importeer hierin de gegevens en voer hierin alle analyses uit. Bewaar het bestand onder de naam `beisterkamp.xlsx`.
+
+Zie hieronder de data van week 1.
+
+![Data week 1.](images/cases/beisterkamp-week1.png){#fig-week1-data}
+
+Belangrijk om te weten:
+
+-   Het aantal gereden kilometers wordt aan het eind van elke week uitgelezen uit de boardcomputers van de vrachtwagens. Dit systeem is echter niet helemaal foutloos. Soms zit er een niet te verklaren afwijking met de werkelijkheid in.
+
+-   De gegevens over het dieselverbruik komen van het eigen kleine tankstation in Oldenzaal. Chauffeurs zijn verplicht om daar aan het einde van de dag, de vrachtwagen weer vol te tanken. Ook in dit systeem zitten helaas nog wat storingen. Een enkele keer klopt de geregistreerde getankte hoeveelheid niet.
+
+-   Alle chauffeurs moeten in principe elke dag, maar in ieder geval elke week, hun uren boeken in het uren-registratie systeem van Beisterkamp. De chauffeurs worden betaald aan de hand van de geboekte uren. Niet alle chauffeurs zijn even handig en nauwkeurig bij het boeken van de uren in het verouderde systeem.
+
+-   De chauffeurs hebben geen vaste vrachtwagen voor het hele jaar, maar wisselen per week van vrachtwagen.
+
+-   De chauffeurs hebben geen vaste routes en/of klanten. Het werk wordt willekeurig verdeeld.
+
+-   Elke vrachtwagen heeft een navigatiesysteem. Dit systeem berekent de optimale route per dag door Nederland voor de chauffeurs. De chauffeurs zijn verplicht deze voorgestelde route te volgen.
+
+-   Chauffeurs mogen rijtijd, laad/lostijd, tanken en pauzes als uren registreren.
+
+**Opdracht**
+
+De hoofdvraag van het onderzoek is: *Welke adviezen kun je de directie van Beisterkamp geven om te besparen op het dieselverbruik en het aantal uren?*
+
+**Deelvragen**
+
+1.  Is er een verschil in gemiddeld dieselverbruik tussen de chauffeurs? Wie rijdt het zuinigst en wie heeft het hoogste verbruik?
+2.  Is er een verschil in gemiddeld dieselverbruik tussen de vrachtwagens? Welke rijdt het zuinigst en welke heeft het hoogste verbruik?
+3.  Is er een verschil in het gemiddeld aantal geboekte uren tussen de chauffeurs? Wie boekt gemiddeld het meest en wie het minst in totaal en per kilometer?
+4.  Welke fouten in de registratie van kilometers, dieselverbruik en uren kun je ontdekken? Maak bijvoorbeeld gebruik van een spreidingsdiagram om deze storingen zichtbaar te krijgen.
+5.  Moeten deze fouten niet eerst worden opgelost voor je deelvraag 1, 2 en 3 kunt beantwoorden? Bedenk zelf een manier om van de fouten af te komen en beantwoordt deelvraag 1, 2 en 3 opnieuw.
+
+## Ziekteverzuim {#sec-case-ziekteverzuim}
+
+Een bedrijf heeft een onderzoek naar het ziekteverzuim en tevredenheid uitgevoerd onder al haar 75 werknemers. Voor het tevredenheidsonderzoek zijn een twaalftal stellingen voorgelegd aan de medewerkers. Per stelling kon de medewerker een score op een 5-punts schaal geven. Die scores zijn opgeteld en weergegeven in de kolom Tevreden. De cijfers met betrekking tot het ziekteverzuim komen van de afdeling administratie.
+
+**Data**
+
+De data staan in het bestand `ziekteverzuim.xlsx`. In het werkblad `Data` staan de verzamelde gegevens en in het werkblad `Codeboek` vind je een toelichting op de variabelen.
+
+Het bestand geeft informatie over geslacht, leeftijd, afdeling waar de werknemer actief is, burgerlijke staat, het aantal dienstjaren bij de onderneming, een functieschaal en een salarisindicatie. De laatste 4 kolommen geven informatie over ziekmelding en ziektedagen in 2012 en 2013.
+
+**Opdracht**
+
+De hoofdvraag van het onderzoek is: *Breng het ziekteverzuim in beeld en onderzoek of er een relatie is met de tevredenheid van de werknemer.*
+
+Voer een exploratieve data analyse uit om de onderzoeksvraag te beantwoorden.
+
+**Suggesties voor het onderzoek**:
+
+-   Maak een beschrijving van de gegevens via samenvattingen en grafieken. Denk hierbij ook na over wat je aan moet met de vraagtekens in de tabel.
+-   Onderzoek de leeftijdsopbouw.
+-   Onderzoek of er samenhang is tussen de verschillende werknemerskenmerken en het ziekteverzuim. Bijvoorbeeld
+    -   tussen mannen en vrouwen
+    -   tussen de afdelingen
+    -   verband met het salaris
+    -   verband met de tevredenheid
+-   Onderzoek of er samenhang is tussen andere variabelen.
+-   Vergelijk de salarissen van mannen en vrouwen bij deze onderneming, wat is je conclusie?
+-   Is het ziekteverzuim in 2013 significant hoger of lager dan in 2012, hoe stel je dat vast?
