@@ -21,6 +21,7 @@ $body-bg: #FFFAF0; /* Floral white */
 
 .proposition {
   padding: 0.5em;
+  margin: 10px 0 10px 0;      /* top right bottom left */
   background-color: $tbLGray;
   border: 1px solid $tbGray;
   border-radius: 5px;

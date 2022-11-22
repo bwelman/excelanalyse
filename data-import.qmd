@@ -39,7 +39,7 @@ De groep [Query's en verbindingen]{.uicontrol} heeft een knop voor het vernieuwe
 
 ## Importeren van een tekst/csv bestand {#sec-import-csv}
 
-Veel gegevens in externe bronnen zijn beschikbaar als tekst (bestandstype .txt) of via komma (of karakter) gescheiden waarden (bestandstype .csv).
+Veel gegevens in externe bronnen zijn beschikbaar als tekst (bestandstype `.txt`) of via komma (of karakter) gescheiden waarden (bestandstype `.csv`).
 
 ::: {#prp-imp-txtcsv}
 [Hulpbestand]{.smallcaps}: `SalesJan2009.csv`

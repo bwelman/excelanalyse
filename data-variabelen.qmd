@@ -265,7 +265,7 @@ In @fig-demotabel zie je een tabel uit een Excel werkblad met een aantal persoon
 
 ![Voorbeeldtabel met kenmerken van een aantal personen.](images/data/demotabel.png){#fig-demotabel}
 
-a.  Hoeveel waarnemingen en hoeveel variabelen telt de dataset in @tab-demotabel?
+a.  Hoeveel waarnemingen en hoeveel variabelen telt de dataset in @fig-demotabel?
 b.  Geef voor elke variabele aan tot welk meetniveau deze variabele behoort.
 :::
 
