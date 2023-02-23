@@ -10,6 +10,8 @@ book:
   date-format: long
   google-analytics: "G-CMGT59LG7K"
   site-url: https://excelanalyse.netlify.app/
+  repo-url: https://github.com/bwelman/excelanalyse
+  repo-actions: [issue]
   chapters:
     - index.qmd
     - voorwoord.qmd
