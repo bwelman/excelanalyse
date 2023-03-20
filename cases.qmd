@@ -184,6 +184,8 @@ De hoofdvraag van het onderzoek is: *Welke adviezen kun je de directie van Beist
 
 ## Ziekteverzuim {#sec-case-ziekteverzuim}
 
+![Zo pakt Universiteit Wageningen het ziekteverzuim aan.](images/cases/ziekteverzuim.png){#fig-ziekteverzuim}
+
 Een bedrijf heeft een onderzoek naar het ziekteverzuim en tevredenheid uitgevoerd onder al haar 75 werknemers. Voor het tevredenheidsonderzoek zijn een twaalftal stellingen voorgelegd aan de medewerkers. Per stelling kon de medewerker een score op een 5-punts schaal geven. Die scores zijn opgeteld en weergegeven in de kolom Tevreden. De cijfers met betrekking tot het ziekteverzuim komen van de afdeling administratie.
 
 **Data**
