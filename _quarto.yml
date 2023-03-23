@@ -29,6 +29,7 @@ book:
     - excel-trendlijnen.qmd
     - excel-voorspellingenblad.qmd
     - excel-aselect.qmd
+    - databronnen.qmd
     - referenties.qmd
 
 execute:
