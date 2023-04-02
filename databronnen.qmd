@@ -32,6 +32,7 @@
 
 **Wereld**
 
+-   [World Bank Open Data](https://data.worldbank.org/) : Tijdreeksgegevens over diverse onderwerpen. Je kunt je eigen query's maken.
 -   [UNdata](http://data.un.org/) : Dataportaal voor het zoeken en downloaden van verschillende statistische bronnen die zijn samengesteld door het statistische systeem van de Verenigde Naties.
 -   [UN World Population Prospects](https://population.un.org/wpp/) : Bevolkingsgegevens van de afdeling Economische en Sociale Zaken van de VN.
 -   [Our world in Data](https://ourworldindata.org/) : Open Access arikelen over diverse onderwerpen met bijbehorende data.
