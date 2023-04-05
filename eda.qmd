@@ -418,7 +418,7 @@ d.  Maak opnieuw een draaitabel met draaigrafiek van de omzet op een nieuw werkb
 
 e.  Voeg een slicer toe waarmee je op productsoort kunt selecteren. Bestudeer achtereenvolgens de grafieken voor elk product en noteer de bijzonderheden.
 
-f.  Selecteer in de slicer A en E en vergelijk het verloop van deze producten. Valt je iets op?
+f.  Selecteer in de slicer de producten A en E en vergelijk het verloop van deze producten. Valt je iets op?
 
 `r hide("Antwoord")` In de eerste drie jaren gaan hoge verkopen van A in de eerste twee kwartalen gepaard met lage verkopen van E. Ze lijken negatief gecorreleerd te zijn. `r unhide()`
 :::
@@ -426,7 +426,7 @@ f.  Selecteer in de slicer A en E en vergelijk het verloop van deze producten. V
 ::: {#exr-eda-raddraaier}
 **Raddraaier**
 
-Het fietsenbedrijf Raddraaier dat fietsen, accessoires en kleding verkoopt in zes landen neemt in 2017 een nieuwe verkoopmanager aan. Om deze kennis te laten maken met het bedrijf, het productportfolio en de verkoopprestaties sinds 2011 wordt door de IT-afdeling het bestand `raddraaier.xlsx` aangeverd dat de volgende gegevens bevat.
+Het fietsenbedrijf Raddraaier dat fietsen, accessoires en kleding verkoopt in zes landen neemt in 2017 een nieuwe verkoopmanager aan. Om deze kennis te laten maken met het bedrijf, het productportfolio en de verkoopprestaties sinds 2011 wordt door de IT-afdeling het bestand `raddraaier.xlsx` aangeleverd dat de volgende gegevens bevat.
 
 ![Verkoopgegevens 2011-2016](images/eda/raddraaier-data.png){#fig-raddraaier-data width="500"}
 
