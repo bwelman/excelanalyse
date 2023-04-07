@@ -3,7 +3,7 @@
 ```{r, file = "R/webex.R", include = FALSE}
 ```
 
-::: {.callout-note appearance="simple" icon="false"}
+::: callout
 **Doelstellingen**
 
 Voor het schatten van toekomstige waarden zijn verschillende (statistische) technieken beschikbaar. Naast de zeer eenvoudige naïeve prognose komt de meer geavanceerdere exponentïele vereffening (smoothing) aan bod. Ook wordt gekeken naar maatstaven om de nauwkeurigheid van de voorspelde waarden te beoordelen.

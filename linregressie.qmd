@@ -1,6 +1,6 @@
 # Samenhang en lineaire regressie {#sec-linregressie}
 
-::: {.callout-note appearance="simple" icon="false"}
+::: callout
 **Doelstellingen**
 
 Voor het nemen van beslissingen is het van belang om te weten of er samenhang tussen variabelen bestaat. Ook kan het zijn dat je de waarde van een variabele wilt schatten op basis van de waarde van andere variabelen. Onderzoek naar een mogelijk verband tussen variabelen is dan nodig. Is er een verband dan kan een model voor het verband worden opgesteld.

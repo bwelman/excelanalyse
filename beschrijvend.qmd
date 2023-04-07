@@ -3,7 +3,7 @@
 ```{r, file = "R/webex.R", include = FALSE}
 ```
 
-::: {.callout-note appearance="simple" icon="false"}
+::: callout
 **Doelstellingen**
 
 Bij wat de beschrijvende statistiek genoemd wordt, gaat het om het beschrijven van een gegevensverzameling door de gegevens te ordenen, samen te vatten en weer te geven op een informatieve manier. Dit kan in numerieke vorm door een aantal statistieken (samenvattende getallen) te berekenen, maar ook in grafische vorm. Hierdoor ben je sneller in staat om de gegevensverzameling te begrijpen. Welke vorm je gebruikt hangt vooral af van de gewenste informatie over de gegevens. Bij het gebruik van de verschillende technieken moet je een onderscheid maken tussen categoriale variabelen en numerieke variabelen.

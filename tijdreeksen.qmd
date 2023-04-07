@@ -1,6 +1,6 @@
 # Tijdreeksen {#sec-timeseries}
 
-::: {.callout-note appearance="simple" icon="false"}
+::: callout
 **Doelstellingen**
 
 -   Introductie in de analyse van tijdreeksen

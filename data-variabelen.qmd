@@ -3,7 +3,7 @@
 ```{r, file = "R/webex.R", include = FALSE}
 ```
 
-::: {.callout-note appearance="simple" icon="false"}
+::: callout
 **Doelstellingen**
 
 Data bestaat uit waarnemingen van meetgegevens, dat zijn de variabelen. In dit hoofdstuk wordt uitgelegd welke soort variabelen er zijn en welke bewerkingen je mag toepassen.

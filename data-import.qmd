@@ -3,7 +3,7 @@
 ```{r, file = "R/webex.R", include = FALSE}
 ```
 
-::: {.callout-note appearance="simple" icon="false"}
+::: callout
 **Doelstellingen**
 
 Bij de analyse van data probeer je antwoorden te vinden op vragen door statistische methodes toe te passen op waarnemingen. Deze waarnemingen - verzameld uit rapportages, enquêtes en experimenten - vormen de ruggegraat van een statistisch onderzoek en worden *data* genoemd. In de praktijk komen veel gegevens uit externe bronnen: txt/csv, web, excel bestanden, databases, ... Om deze gegevens in Excel te analyseren, moeten ze eerst geïmporteerd worden en soms worden getransformeerd en opgeschoond. Dat gebeurt met **Power Query**.
