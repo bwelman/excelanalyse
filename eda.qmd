@@ -311,7 +311,9 @@ De variabelen `eruptietijd` en `wachttijd` worden eerst afzonderlijk bekeken, da
 
 Maak een samenvattingsinfo voor de variabele `eruptietijd` in een nieuw werkblad.
 
+::: {.content-visible when-format="html:js"}
 `r hide("Hint")` Via [Gegevens \> Gegevensanalyse \> Beschrijvende statistiek]{.uicontrol}, laat de uitvoer in een nieuw werkblad plaatsen en rond een aantal getallen af. `r unhide()`
+:::
 
 ![Samenvattende statistieken eruptietijd.](images/eda/ff-et-statistieken.png){#fig-ff-et-statistieken}
 
@@ -319,7 +321,9 @@ Maak een samenvattingsinfo voor de variabele `eruptietijd` in een nieuw werkblad
 
 Maak een boxplot voor `eruptietijd`.
 
+::: {.content-visible when-format="html:js"}
 `r hide("Hint")` Via [Invoegen \> Aanbevolen grafieken \> Alle grafieken \> Box-and-whisker]{.uicontrol} `r unhide()`
+:::
 
 ![Boxplot eruptietijd.](images/eda/ff-et-boxplot.png){#fig-ff-et-boxplot}
 
@@ -333,7 +337,9 @@ Maak een histogram van de eruptietijden via [Invoegen \> Aanbevolen grafieken \>
 
 Experimenteer met Bin-breedtes van 2, 5, 10, 15, 30 en 50 sec.
 
+::: {.content-visible when-format="html:js"}
 `r hide("Hint")` Selecteer de X-as en kies daarna [As opmaken \> Bin-breedte \> breedte invullen]{.uicontrol}. Het venster met opties moet je meestal wat breder maken om de bin-breedte in te kunnen vullen! `r unhide()`
+:::
 
 ::: {#fig-ff-et-histogram layout-ncol="2"}
 ![standaarddiagram met een binbreedte van 37.](images/eda/ff-et-histogram37.png){#fig-ff-bin37}
@@ -367,23 +373,11 @@ De procedure heeft hier een bin-breedte van `13,5` genomen, deze geeft net wat m
 
 Voer gelijke opdrachten uit voor de variabele `wachttijd`.
 
-`r hide("Statistieken")`
-
 ![Samenvattende statistieken wachttijd.](images/eda/ff-wt-statistieken.png){#fig-ff-wt-statistieken}
-
-`r unhide()`
-
-`r hide("Boxplot")`
 
 ![Boxplot wachttijd.](images/eda/ff-wt-boxplot.png){#fig-ff-wt-boxplot}
 
-`r unhide()`
-
-`r hide("Histogram")`
-
 ![Histogram wachttijd met een bin-breedte van 4.](images/eda/ff-wt-histogram4.png){#fig-ff-wt-histogram}
-
-`r unhide()`
 
 Het overall beeld is gelijk aan dat van de eruptietijden: een links scheve verdeling. Ook hier twee pieken die in de buurt van `55` min. en `80` min. liggen.
 
@@ -414,13 +408,18 @@ c.  Maak een draaitabel met draaigrafiek van de omzet op een nieuw werkblad. De 
 
 d.  Maak opnieuw een draaitabel met draaigrafiek van de omzet op een nieuw werkblad, waarin jaar en kwartaal de rijgegevens vormen en de productsoorten de kolommen. De grafiek moet je wijzigen in een lijndiagram met markeringen. Bestudeer de tabel en grafiek. Welke zaken vallen je op?
 
+::: {.content-visible when-format="html:js"}
 `r hide("Hint")` - Kijk eens naar de omzetten van product A per kwartaal. Zit daar veel variatie in? - Kijk eens naar de omzetten van product D per kwartaal. Zit daar veel variatie in? `r unhide()`
+:::
 
 e.  Voeg een slicer toe waarmee je op productsoort kunt selecteren. Bestudeer achtereenvolgens de grafieken voor elk product en noteer de bijzonderheden.
 
 f.  Selecteer in de slicer de producten A en E en vergelijk het verloop van deze producten. Valt je iets op?
 
+::: {.content-visible when-format="html:js"}
 `r hide("Antwoord")` In de eerste drie jaren gaan hoge verkopen van A in de eerste twee kwartalen gepaard met lage verkopen van E. Ze lijken negatief gecorreleerd te zijn. `r unhide()`
+:::
+
 :::
 
 ::: {#exr-eda-raddraaier}
@@ -438,6 +437,7 @@ a.  Verplaats je in de rol van deze verkoopmanager. Maak aan de hand van deze ge
     -   Verkoopt elke categorie in elk land even goed?
     -   ...
 
+::: {.content-visible when-format="html:js"}
 `r hide("Tip")` De vorm waarin de data is aangeleverd in het bestand raddraaier.xlsx is een kruistabel, welke niet echt geschikt is om bijvoorbeeld draaitabellen en draaigrafieken te maken voor de analyses. Hiervoor moeten de gegevens eerst gestructureerd worden. Dit kan als volgt:
 
 1.  Selecteer een cel met data. Kies [Gegevens \> Van tabel/bereik \> OK]{.uicontrol}.
@@ -455,6 +455,7 @@ De data wordt in een nieuw werkblad geladen en ziet er als volgt uit:
 ![Gestructureerde verkoopgegevens](images/eda/raddraaier-tidy.png){#fig-raddraaier-tidy width="250"}
 
 `r unhide()`
+:::
 
 b.  Voor een verdere verdieping van de analyse heb je meer gedetailleerde gegevens nodig. Maak een lijstje met gegevens die de IT-afdeling voor jou moet aanleveren.
 :::

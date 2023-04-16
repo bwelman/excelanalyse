@@ -66,7 +66,9 @@ Toelichting:
 4.  Bewaar het bestand voor gebruik in oefeningen hierna.
 :::
 
+::: {.content-visible when-format="html:js"}
 **Vraag:** Wat is de verkoopprognose voor week 13? `r fitb("74", num = TRUE)` `r hide("Hint")` De prognose voor week 13 is de waarde van de voorgaande periode, dus van week 12. `r unhide()`
+:::
 
 ::: callout-note
 Voor een tijdreeks met een seizoenscomponent verloopt de naïeve prognose iets anders. In dat geval is de prognose op een bepaald tijdstip gelijk aan de waarde in hetzelfde seizoen in de voorgaande periode.
@@ -88,7 +90,9 @@ Via de methode van het voortschrijdend gemiddelde (zie @sec-timeseries) kun je o
 Gelet op de kentallen voor de nauwkeurigheid zie je dat het voortschrijdend gemiddelde iets beter presteert dan de naïeve prognose, maar niet erg veel beter. Je kunt uiteraard proberen of een andere vensterbreedte betere resultaten oplevert.
 :::
 
+::: {.content-visible when-format="html:js"}
 **Vraag:** Wat is de verkoopprognose voor week 13 (op 1 decimaal nauwkeurig)? `r fitb(c("67,7", "67.7"))` `r hide("Hint")` De prognose voor week 13 is het gemiddelde van week 10 t/m 12. `r unhide()`
+:::
 
 ## Exponentiële demping {#sec-prognoses-expsmooth}
 
@@ -115,7 +119,9 @@ Gebruik @fig-benzineverkoop-ets om een prognose van de wekelijkse benzineverkoop
 Gelet op de nauwkeurigheidswaarden zijn dit tot nu toe de beste voorspellingen.
 :::
 
+::: {.content-visible when-format="html:js"}
 **Vraag:** Wat is de verkoopprognose voor week 13 (op 1 decimaal nauwkeurig)? `r fitb(c("71,0", "71.0"))` `r hide("Hint")` De prognose voor week 13 is $\alpha * \text{laatste week} + (1-\alpha) * \text{een na laatste week}$ `r unhide()`
+:::
 
 ::: callout-tip
 **Keuze alpha**

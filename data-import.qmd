@@ -175,6 +175,7 @@ Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het 
 ![Dialoogvenster Draaitabel maken. Selecteer het gebruik van het gegevensmodel.](images/importdata/olympic-draaitabelmaken.png){#fig-olympic-draaitabelmaken}
 :::
 
+::: {.content-visible when-format="html:js"}
 **Testvragen**
 
 1.  Hoeveel disciplines waren er in het beginjaar van de zomerspelen? `r fitb("10", num = TRUE)`
@@ -188,6 +189,7 @@ Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het 
 5.  Hoeveel nieuwe disciplines zijn er voor de zomerspelen 2020 bijgekomen? `r fitb("6", num = TRUE)`
 
 <!-- 6:  3x3 Basketbal, Karate, Klimsport, Skateboarden, Surfen en BMX freestyle -->
+:::
 
 ## TAAK: Marktwaarde Voetbalclub {#sec-voetbalclub}
 
@@ -349,7 +351,14 @@ a.  Open eerst het bestand `verkopen.csv` met een kale tekstverwerker (Kladblok,
 
 b.  Importeer de gegevens via [Gegevens ophalen en transformeren]{.uicontrol}.
 
-`r hide("Aanwijzingen")` + De veldnamen staan in de eerste rij. Om deze te veranderen in de kolomkoppen kies je \[Start \> De eerste rij als veldnamen gebruiken (groep Transformeren)\> De eerste rij als veldnamen gebruiken{.uicontrol}. + Door de transformatie naar veldnamen wordt ook het gegevenstype aangepast. Controleer of de kolommen naar het juiste gegevenstype zijn omgezet. Zo niet, wijzig dan het gevenstype. `r unhide()`
+::: {.content-visible when-format="html:js"}
+`r hide("Aanwijzingen")`
+
+-   De veldnamen staan in de eerste rij. Om deze te veranderen in de kolomkoppen kies je [Start > De eerste rij als veldnamen gebruiken (groep Transformeren) > De eerste rij als veldnamen gebruiken]{.uicontrol}.
+
+-   Door de transformatie naar veldnamen wordt ook het gegevenstype aangepast. Controleer of de kolommen naar het juiste gegevenstype zijn omgezet. Zo niet, wijzig dan het gevenstype.
+`r unhide()`
+:::
 
 c.  Bewaar het bestand voor later gebruik onder de naam **verkopen.xlsx**.
 :::

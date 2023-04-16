@@ -186,6 +186,7 @@ Excel formules:
 -   `MODUS.MEERV(data)` - Geeft een verticale matrix van de meest voorkomende waarden
 -   `MODUS(data)` - Verouderd, geeft dezelfde resultaten als `MODUS.ENKELV()`
 
+::: {.content-visible when-format="html:js"}
 #### Testvragen {.unnumbered}
 
 Typ bij de volgende vragen het antwoord in het vakje. Voor eventuele decimalen moet je een punt gebruiken en geen komma!
@@ -205,6 +206,7 @@ Typ bij de volgende vragen het antwoord in het vakje. Voor eventuele decimalen m
 3.  Welke centrummaat kun je toepassen bij nominale data? `r mcq(c("Gemiddelde", "Mediaan", answer = "Modus"))`
 
 4.  In een normale verdeling zijn gemiddelde, mediaan en modus `r mcq(sample(c(answer = "hetzelfde", "samen nul", "altijd verschillend")))`.
+:::
 
 ### Spreiding dataset
 

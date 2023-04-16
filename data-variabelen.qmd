@@ -39,6 +39,7 @@ Numerieke variabelen
 
 ![Meetniveaus van variabelen](images/data/meetniveaus.png){#fig-meetniveaus}
 
+::: {.content-visible when-format="html:js"}
 **Testvragen**
 
 1.  Welk type variabele is de medaillesoort die een atleet op de Olympische spelen kan winnen? `r mcq(c("Interval", "Nominaal", answer = "Ordinaal", "Ratio"))`
@@ -46,6 +47,7 @@ Numerieke variabelen
 2.  Welk type variabele is de tijd van een atleet voor het lopen van een marathon? `r mcq(c("Interval", "Nominaal", "Ordinaal", answer = "Ratio"))`
 
 3.  De Nederlandse nationale politie kent een aantal rangen. Welk type variabele is de rang? `r mcq(c("Interval", "Nominaal", answer = "Ordinaal", "Ratio"))`
+:::
 
 ## Gestructureerde gegevens
 
