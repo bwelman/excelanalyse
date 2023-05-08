@@ -1,6 +1,6 @@
 # Importeren van data {#sec-data-import}
 
-```{r, file = "R/webex.R", include = FALSE}
+```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
 ::: callout
@@ -189,6 +189,7 @@ Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het 
 5.  Hoeveel nieuwe disciplines zijn er voor de zomerspelen 2020 bijgekomen? `r fitb("6", num = TRUE)`
 
 <!-- 6:  3x3 Basketbal, Karate, Klimsport, Skateboarden, Surfen en BMX freestyle -->
+
 :::
 
 ## TAAK: Marktwaarde Voetbalclub {#sec-voetbalclub}
