@@ -194,18 +194,21 @@ Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het 
 
 ## TAAK: Marktwaarde Voetbalclub {#sec-voetbalclub}
 
-Het Duitse bedrijf Transfermarkt publiceert veel data over clubs en spelers, waaronder ook hun inschatting van de marktwaarde van de spelers. Naast een algemene url heeft het bedrijf ook landspecifieke urls's:
+Het Duitse bedrijf [Transfermarkt](https://www.transfermarkt.com) publiceert veel data over clubs en spelers, waaronder ook hun inschatting van de marktwaarde van de spelers. Naast een algemene url zijn er ook landspecifieke urls's, zo is die voor Nederland: <https://www.transfermarkt.nl/>
 
--   Algemeen: https://www.transfermarkt.com/
--   Duitsland: https://www.transfermarkt.de/
--   Nederland: https://www.transfermarkt.nl/
--   ...
+Via een webquery kun je deze gegevens met behulp van Power Query ophalen. Om analyses met Excel uit te kunnen voeren moeten deze gegevens in een daartoe geschikt formaat in een werkblad beschikbaar zijn. Dat is in dit geval redelijk complex. In deze taak wordt dat uitvoerig beschreven voor de club FC Twente, maar je kunt dit eenvoudig wijzigen voor jouw eigen favoriete club. De enige aanpassing is dan de url van de club.
 
-Via een webquery kun je deze gegevens met behulp van Power Query ophalen. Om analyses met Excel uit te kunnen voeren moeten deze gegevens in een daartoe geschikt formaat in een werkblad beschikbaar zijn. Dat is in dit geval redelijk complex. Vandaar dat de werkwijze uitvoerig voor de club FC Twente beschreven wordt, maar je kunt het natuurlijk ook voor jouw eigen favoriete club uitvoeren. De enige aanpassing is dan de url van de club.
+### URL voetbalclub
 
-**URL voetbalclub**
+Om clubgegevens via een query in Excel binnen te halen moet je eerst de url van de club te weten zien te komen.
 
-Wanneer je de [Nederlandse url van Transfermarkt](https://www.transfermarkt.nl/) gebruikt is het land `Nederland` al voor je geselecteerd. Daarna kies je als competitie de `Eredivisie` en vervolgens de `club`, in dit voorbeeld dus FC Twente. Voor FC Twente wordt dat `https://www.transfermarkt.nl/fc-twente/startseite/verein/317`.
+Wanneer je de [Nederlandse url van Transfermarkt](https://www.transfermarkt.nl/) gebruikt is het land `Nederland` al voor je geselecteerd.
+
+![Keuzemenu voor land, competitie, club en speler.](images/importdata/transfermarkt-nl.png){#fig-transfermarkt-nl}
+
+Kies nu als competitie de `Eredivisie` en vervolgens de `club`, voor deze taak dus FC Twente. Selecteer voor deze taak geen speler. Klik nu op de knop `>>` achter de clubnaam.
+
+In de adresbalk van de browser kun je nu de url zien. Voor FC Twente is dat `https://www.transfermarkt.nl/fc-twente/startseite/verein/317`. Kopieer de url en bewaar deze ergens.
 
 ### Query maken
 
