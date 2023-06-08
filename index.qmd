@@ -8,21 +8,27 @@ Dit is ook geen cursus statistiek. Weliswaar worden statistische begrippen bij d
 
 Er komen interactieve onderdelen in het leerboek voor om je te helpen de inhoud beter te begrijpen. Deze interactieve inhoud werkt alleen als je dit materiaal opent via een webbrowser welke javascript ondersteunt. Dit is ook de reden dat het boek op dit moment niet beschikbaar is in PDF-, ePub- en Kindle-formaten.
 
-Dit studieboek is een levend document en zal regelmatig worden gecontroleerd en bijgewerkt voor verbeteringen. Mocht je problemen hebben met het gebruik van het boek of vragen, neem dan [contact](mailto:bwelman@gmail.com) op.
+Dit studieboek is een levend document en zal regelmatig worden gecontroleerd en bijgewerkt voor verbeteringen.
 
 ::: callout-important
-## Hulpbestanden
+## Databestanden
 
-Bij dit studieboek horen hulpbestanden. Deze heb je nodig om de oefeningen uit te voeren. Je kunt ze via één zipbestand downloaden: [Download databestanden](bestanden-excelanalyse.zip).
+Bij dit studieboek horen databestanden. Deze heb je nodig om de oefeningen uit te voeren. Je kunt ze via één zipbestand downloaden: [Download databestanden](bestanden-excelanalyse.zip).
 :::
 
-## Licentie {.unnumbered}
+### Hulp
+
+-   [Rapporteer een probleem](https://github.com/bwelman/excelanalyse/issues)
+
+-   [Stel een vraag](https://github.com/bwelman/excelanalyse/discussions)
+
+### Licentie {.unnumbered}
 
 [![](images/creativecommons-by-nc-sa.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl)
 
 Dit werk valt onder een [Creative Commons Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal-licentie](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl).
 
-## Over de auteur {.unnumbered}
+### Over de auteur {.unnumbered}
 
 ![Ben Welman](images/benw2.png){.quarto-cover-image .image-fluid width="150"}Ik heb Chemische Technologie gestudeerd aan de THT, de huidige Universiteit Twente. Na eerst een aantal jaren scheikunde en wiskunde te hebben gegeven op middelbare scholen ben ik als docent informatica en statistiek gaan werken bij de opleiding Commercieel Technische Bedrijfskunde van de Hogeschool Enschede, nu Saxion Hogescholen. Van daaruit intern overgestapt naar MeetingPoint dat zich voornamelijk bezighield met het ontwikkelen en ondersteunen van e-learning. In 1993 heb ik [Softwijs](https://bwelman.github.io/softwijs/) opgericht waarmee ik eind 2018 ben gestopt.
 
@@ -33,7 +39,7 @@ Ben Welman
 Andere studieboeken:
 
 | Nederlandstalig                                        | Engelstalig                                      |
-|--------------------------------------------------------|--------------------------------------------------|
+|--------------------------------------|----------------------------------|
 | [Leer Excel](https://leerexcel.netlify.app/)           | [Learn Excel](https://learnexcel.netlify.app/)   |
 | [Leer Access](https://leeraccess.netlify.app/)         | [Learn Access](https://learnaccess.netlify.app/) |
 | [Cursus bierbrouwen](https://brouwjebier.netlify.app/) |                                                  |
