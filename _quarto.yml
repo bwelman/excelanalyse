@@ -6,7 +6,7 @@ book:
   title: "Data Analyse met Excel"
   subtitle: "Een cursusboek over het analyseren van data met Excel."
   author: "Ben Welman"
-  date: last-modified
+  date: today
   date-format: long
   google-analytics: "G-CMGT59LG7K"
   site-url: https://excelanalyse.netlify.app/

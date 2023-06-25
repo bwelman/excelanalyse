@@ -1,6 +1,6 @@
 # Welkom {.unnumbered}
 
-Dit is de online versie van het studieboek **Data Analyse met Excel**. Hierin leer je hoe je met Excel datasets kunt verkennen, onderzoeken en samenvatten.
+Dit is de gratis online versie van het studieboek **Data Analyse met Excel**. Hierin leer je hoe je met Excel datasets kunt verkennen, onderzoeken en samenvatten.
 
 Dit is geen cursus Excel. Er wordt vanuit gegaan dat je goed met Excel kunt werken. Het importeren van gegevens in Excel en het maken van draaitabellen en grafieken zijn vaardigheden die je moet beheersen.
 
