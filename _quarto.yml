@@ -54,7 +54,7 @@ format:
     fig-width: 6
     fig-asp: 0.618
     code-fold: false
-    link-external-icon: true
+    link-external-icon: false
     link-external-newwindow: true
     callout-appearance: simple
     author-meta: "Ben Welman"
