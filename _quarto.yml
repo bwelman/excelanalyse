@@ -59,7 +59,7 @@ format:
     callout-appearance: simple
     author-meta: "Ben Welman"
     description-meta: "Leer aan de hand van dit studieboek hoe je inzicht in gegevens kunt krijgen door de data te analyseren met Excel."
-    keywords: ["Excel", "Power Query", "exploratieve data analyse", "gegevensanalyse", "studieboek", "cursusboek", "statistiek", "tijdreeksen", "regressie", "voorspellingen"]
+    # keywords: ["Excel", "Power Query", "exploratieve data analyse", "gegevensanalyse", "statistiek", "tijdreeksen", "regressie", "voorspellingen"]
 
   # pdf:
   #   documentclass: scrbook
