@@ -232,7 +232,7 @@ Hierin zijn zowel de werkelijke waarden als de voorspelde waarden van $y$ uitgez
 
 ![Spreidingsdiagram waarin de werkelijke y-waarden en de berekende y-waarden zijn uitgezet ten x.](images/linregressie/sim1-lijnen.png){#fig-sim1-lijnen}
 
-::: {#prp-linreg-formules}
+::: {#prp-linreg-druktemp}
 [Hulpbestand]{.smallcaps}: `sim2.csv`
 
 Bij een bepaald natuurkundig experiment wil men onderzoeken of de druk lineair afhankelijk is van de temperatuur. Daartoe zijn 10 waarnemingen verzameld.
