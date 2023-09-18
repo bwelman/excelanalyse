@@ -7,6 +7,12 @@ $body-bg: #FFFAF0; /* Floral white */
 
 /*-- scss:rules --*/
 
+/* All textbooks */
+
+.quarto-cover-image {
+	max-width: 50%;
+}
+
 .figure-caption {
 	font-size: .9em;
 }
