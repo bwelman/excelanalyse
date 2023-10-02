@@ -1,0 +1,37 @@
+# Machine Learning {#sec-ml}
+
+## Inleiding {#sec-ml-inleiding}
+
+Machine learning (ML), in het Nederlands ook wel *statistisch leren* of *machinaal leren* genoemd, is een concept waarbij een machine (programma, algoritme) kan "leren" van voorbeelden om patronen in gegevens te ontdekken. Enkele voorbeelden:
+
+-   Je hebt gegevens over een patiënt (hartslag, laboratoriumwaarden, ...) en je wilt voorspellen of deze patiënt binnenkort een hartinfarct krijgt.
+
+-   Je beschikt over sensorgegevens van machines (temperatuur, oliedruk, laadniveau van de batterij, stroomverbruik, ...) en je wilt voorspellen welke machines in de nabije toekomst kunnen uitvallen zodat je preventief onderhoud kunt doen om deze storingen te voorkomen.
+
+-   Je hebt veel gegevens over klanten en je wilt voorspellen welke van de klanten waarschijnlijk geïnteresseerd is in het kopen van een bepaald nieuw product (denk aan "misschien vind je dit ook leuk ...").
+
+In de gegevensverzameling heb je een *doelvariabele* (afhankelijke variabele, uitkomstvariabele, respons) waarvan de waarde moet worden voorspeld op basis van de waarden van andere variabelen (onfhankelijke variabelen, voorspelvariabelen).
+
+Er zijn twee soorten ML algoritmen: *supervised* (begeleid, gecontroleerd) en *unsupervised* (onbegeleid, ongecontroleerd). Bij een supervised methode heb je een trainingsdataset nodig om het algoritme te "trainen" tot je over de resultaten tevreden bent.
+
+In de trainingsdataset weet je wat de waarde van de doelvariabele is, deze is bekend. Het ML algoritme kan uit de waarden van de onafhankelijke variabelen een waarde voor de doelvariabele berekenen. Door het instellen van de parameters van het algoritme probeer je een optimale situatie te bereiken waarbij de berekende waarden van de doelvariabele zo goed mogelijk bij de bekende waarden passen. Dit is dus het trainen. Dit trainen wordt ook wel *modelleren* genoemd en de optimale situatie het *model*.
+
+Voor nieuwe invoergegevens waarbij dus de waarde van de doelvariabele onbekend is, kan dan door het algoritme een voorspelling gemaakt worden op basis van het model. Wanneer op een later tijdstip de echte waarde van de doelvariabele bekend is, kan de voorspelling geëvalueerd worden op nauwkeurigheid. Als de nauwkeurigheid niet acceptabel is, kun je het ML-algoritme opnieuw trainen met een steeds grotere trainingsdataset. Het algoritme leert op deze manier om steeds beter voorspellingen voor nieuwe gegevens te maken.
+
+Bij een supervised methode wordt de totale dataset gesplitst in een groot gedeelte voor het trainen van het algoritme en een kleiner gedeelte voor het testen van het getrainde algoritme.
+
+Bij een unsupervised methode heb je dit niet. Het model probeert patronen en relaties in de dataset te vinden door er *clusters* in te maken. Het model kan geen labels aan de clusters toekennen. Het kan dus niet zeggen dat zijn appels en dat zijn peren. Het model kan wel een hoop appels en peren in twee clusters verdelen, dus de appels van de peren scheiden op basis van verschillen in kenmerken. Bij een toevoegen van een nieuwe vrucht (appel of peer) kan het deze dan aan een van beide clusters toevoegen.
+
+Het doel is om de gegevens te verkennen en er een structuur in te vinden. Deze leertechniek werkt goed op transactiegegevens. Het kan bijvoorbeeld segmenten van klanten met vergelijkbare kenmerken maken die vervolgens op dezelfde manier kunnen worden behandeld in marketingcampagnes.
+
+**Excel**
+
+Excel is niet echt geschikt om Machine Learning technieken toe te passen. Daarvoor kun je beter software als R, Python, Tableau, RapidMiner, ... gebruiken. Wel kun je het principe van sommige technieken, zoals KNN, goed met behulp van Excel uitleggen.
+
+Met Excel kun je transparant met gegevens werken. Bij elke stap kun je direct het resultaat zien. Je kunt tussenresultaten in de berekeningen opnemen om te zien hoe het algoritme uitgevoerd wordt, waardoor je een goed inzicht in het proces krijgt.
+
+Voor het echte werk is Excel te beperkt en zijn de ML-methodes te complex.
+
+{{< include ml-knn.qmd >}}
+
+{{< include ml-kmeans.qmd >}}

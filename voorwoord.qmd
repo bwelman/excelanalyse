@@ -43,6 +43,8 @@ Dit studieboek heeft een logische opbouw, beginnend met het verkrijgen van de da
 
 -   @sec-cases bevat een aantal cases.
 
+-   @sec-ml is een hoofdstuk in ontwikkeling waarin met kleine eenvoudige voorbeelden enkele Machine Learning methodes worden uitgelegd. 
+
 ## Software {.unnumbered}
 
 In dit studieboek wordt gewerkt met **Excel 365 NL**. Voor het grootste deel van de inhoud kun je ook met Excel 2010, 2013, 2016 en 2019 werken.

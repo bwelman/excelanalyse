@@ -1,0 +1,112 @@
+## K-Means clustering
+
+K-Means is een unsupervised ML methode om clusters van waarnemingen in een dataset te ontdekken. Er zijn meerdere methodes om te clusteren, maar k-means is een van de oudste en meest toegankelijke.
+
+Het doel van clustering is om de waarnemingen groeperen in clusters die vergelijkbare kenmerken hebben. De waarnemingen binnen een cluster lijken meer op elkaar dan op waarnemingen in andere clusters.
+
+Clustering wordt door bedrijven gebruikt voor het segmenteren van klanten in groepen met een vergelijkbare aankoopgeschiedenis, die dan gebruikt kunnen worden voor gerichte advertentiecampagnes.
+
+Bij k-means is `k` het aantal clusters en wordt elke cluster gekenmerkt door een centrum (zwaartepunt). Een waarneming wordt ondergebracht in de dichtsbijzijnde cluster, dat is de cluster met de kortste afstand naar het centrum ervan.
+
+Er bestaan verschillende manieren om de afstand te bepalen. De meest gebruikte is de Euclidische afstand (bekend van de stelling van Pythagoras).
+
+::: callout-note
+**Euclidische afstand**
+
+Heb je twee punten met de coördinaten $(x_1, x_2)$ en $(y_1, y_2)$ dan is de Euclidische afstand uit te rekenen via de bekende Stelling van Pythagoras.
+
+$$\text{afstand = } \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2}$$
+
+Zijn er meer variabelen voor elke waarneming, bijvoorbeeld $(x_1, x_2, x_3, x_4)$ en $(y_1, y_2, y_3, y_4)$ dan wordt de afstand op analoge wijze bepaald. Bijvoorbeeld voor vier variabelen:
+
+$$\text{afstand = } \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2 + (x_3 - y_3)^2 + (x_4 - y_4)^2}$$
+:::
+
+Het algoritme werkt als volgt.
+
+1.  Begonnen wordt met het willekeurig kiezen van het centrum voor elke cluster.
+
+2.  Daarna wordt voor elke waarneming de afstand tot het centrum van elke cluster bepaald.
+
+3.  Elke waarneming wordt nu ingedeeld bij het cluster met de kortste afstand tot het centrum.
+
+4.  Voor elke cluster wordt een nieuw centrum bepaald op basis van de gemiddelde waarden van alle waarnemingen binnen dat cluster.
+
+5.  De stappen 2 t/m 5 worden herhaald tot de positie van de clustercentra niet meer wijzigt.
+
+**Voorbeeld**
+
+Het gegevensbestand `ml-kmeans.xlsx` bevat een werkblad `data` met 10 waarnemingen van de gemiddelde uitgaven voor `voeding` en `kleding` (zie @fig-kmeans-data).
+
+![Dataset met 10 waarnemingen van twee variabelen.](images/ml/kmeans-data.png){#fig-kmeans-data}
+
+Wanneer je de waarnemingen uitzet in een spreidingsdiagram, zie @fig-kmeans-data-diagram, dan kun je visueel de waarnemingen al in 2 clusters indelen, een groep linksboven en een groep rechtsonder. Eventueel kun je de groep linksboven nog verder opsplitsen in twee groepen zodat het totaal aantal clusters dan 3 wordt.
+
+![Spreidingsdiagram van de variabelen voeding en kleding.](images/ml/kmeans-data-diagram.png){#fig-kmeans-data-diagram}
+
+Voor de implementatie van k-means wordt een model met 3 clusters opgezet. Aan het eind wordt nog bekeken of een model met 2 clusters een betere optie is.
+
+**Model met 3 clusters**
+
+Om de oorspronkelijke dataset intact te houden wordt een kopie van het werkblad `data` gemaakt en hernoemd als `model3`.
+
+In @fig-kmeans-model-k3-start zie je het gemaakte k-means model.
+
+![K-means model met startwaarden voor de centra van 3 clusters.](images/ml/kmeans-model-k3-start.png){#fig-kmeans-model-k3-start}
+
+In de cellen B17:C19 zie je de willekeurig gekozen waarden voor het centrum van de drie clusters.
+
+Om inzichtelijk te maken waar elk centrum ligt ten opzichte van de waarnemingen zijn deze ook aan het spreidingsdiagram toegevoegd, zie @fig-kmeans-model-k3-diagram-start. Wanneer je naar het spreidingsdiagram kijkt, dan zijn er betere waarden voor de clustercentra mogelijk.
+
+![Spreidingsdiagram van de waarnemingen met daaraan toegevoegd het centrum van de drie clusters.](images/ml/kmeans-model-k3-diagram-start.png){#fig-kmeans-model-k3-diagram-start}
+
+De kolom met de naam `1` bevat de afstand van elke waarneming tot het centrum van cluster 1, kolom `2` de afstand tot het centrum van cluster 2 en kolom `3` de afstand tot het centrum van cluster 3.
+
+De formule in cel D3 is `=WORTEL(($B3-$B$17)^2+($C3-$C$17)^2)`. Deze kun je daarna naar rechts en naar beneden kopieren zodat het bereik D3:F12 met de berekende afstanden gevuld wordt.
+
+De kolom met de naam `minumum` bevat de kortste afstand van de waarneming naar een van de drie centra. De formule in cel G3 is `=MIN(D3:F3)` en deze kun je weer naar beneden kopieren tot G12. In cel G13 wordt het totaal van deze kortste afstanden berekend.
+
+In de kolom met de naam `cluster` wordt vervolgens vastgesteld in welke cluster de waarneming moet vallen. In cel H3 staat hiervoor de formule `=VERGELIJKEN(G3;D3:F3;0)` welke je weer naar beneden kunt kopieren.
+
+Nu voor elke cluster bekend is welke waarnemingen tot de cluster behoren, kan voor elke cluster een nieuwe waarde voor het centrum berekend worden. Hiervoor worden de gemiddeldes van `voeding` en `kleding` berekend voor de waarnemingen binnen elke cluster. Dat is gebeurd in de cellen B23:C25. Zo is de formule in cel B23 `=GEMIDDELDE.ALS($H$3:$H$12;$A23;B$3:B$12)`. Ook deze kun je weer kopieren zodat het bereik B23:C25 de juiste formules bevat.
+
+Nu kan het iteratieproces beginnen. Kopieer de nieuwe centrumwaarden naar B17:C19.
+
+::: callout-important
+Let er op dat je de waarden kopieert via [Plakken Speciaal > Waarden plakken]{.uicontrol} en dat niet de formules gekopieerd worden.
+:::
+
+Er worden nu weer nieuwe centrumwaarden berekend en ook neemt de som van de minimum afstanden af. In de grafiek kun je ook zien dat de drie centra verschuiven in de richting van de cluster.
+
+Herhaal dit proces totdat er nauwelijks meer wijzigingen optreden. Dat is bij dit voorbeeld al snel het geval. In @fig-kmeans-model-k3-eind zie je de gevonden waarden voor de drie centra en de clusterindeling voor de waarnemingen.
+
+![Eindresultaat met de waarden voor de centra en de clusterindelingen.](images/ml/kmeans-model-k3-eind.png){#fig-kmeans-model-k3-eind}
+
+En in @fig-kmeans-model-k3-diagram-eind kun je de lokaties van de clusters waarnemen die waarschijnlijk wel overeenkomen met de eerste gedachte.
+
+![Spreidingsdiagram van het eindresultaat.](images/ml/kmeans-model-k3-diagram-eind.png){#fig-kmeans-model-k3-diagram-eind}
+
+**Model met 2 clusters (k=2)**
+
+Het handigste om een model met 2 clusters te maken is door te beginnen met het maken van een kopie van werkblad `model3` en deze te hernoemen naar `model2`. Vervolgens verwijder je de kolom D3 en de rijen voor cluster 3.
+
+Start met willekeurig gekozen beginwaarden voor de clustercentra. De eindresultaten zijn te zien in @fig-kmeans-model-k2-eind en @fig-kmeans-model-k2-diagram-eind.
+
+![Eindresultaat met de waarden voor het model met 2 clusters.](images/ml/kmeans-model-k2-eind.png){#fig-kmeans-model-k2-eind}
+
+![Spreidingsdiagram van het eindresultaat voor het model met 2 clusters.](images/ml/kmeans-model-k2-diagram-eind.png){#fig-kmeans-model-k2-diagram-eind}
+
+**De beste waarde voor k**
+
+Om de beste waarde voor k te vinden wordt naar de som van de minimale afstanden gekeken, welke je zo klein mogelijk wilt hebben. Bij dit voorbeeld is dat het geval voor k=3.
+
+| k   | som minimale afstanden |
+|-----|------------------------|
+| 2   | 25,241                 |
+| 3   | 17,218                 |
+
+::: callout-note
+**Slotopmerking**
+
+In deze uitwerking iheb je de iteraties handmatig uitgevoerd door steeds betere centrumwaarden te bepalen en deze weer in het model te gebruiken. In plaats daarvan zou je ook gebruik kunnen maken van de [Oplosser]{.uicontrol}, een met Excel meegeleverde invoegtoepassing. In dat geval is de te minimaliseren doelfunctie de cel met de som van de minimale afstanden en zijn de centrumwaarden de variabele cellen.
+:::

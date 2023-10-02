@@ -23,6 +23,7 @@ book:
     - prognoses.qmd
     - eda.qmd
     - cases.qmd
+    - ml.qmd
   appendices:
     - analysis-toolpak.qmd
     - powerquery-options.qmd
