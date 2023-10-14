@@ -73,7 +73,7 @@ Uiteraard kun je dit standaarddiagram nog op de bekende manieren verder verfraai
 
 Wanneer het aantal waarnemingen van een numerieke variabele niet al te groot is kun je een beter gevoel voor de data krijgen door deze te ordenen (sorteren) van klein naar groot. Je ziet dan snel het bereik van de waarden. Bij een groter aantal data kun je beter van een *frequentietabel* gebruik maken.
 
-### Frequentieverdelingen {#sec-frequentieverdelingen .unnumbered}
+### Frequentieverdelingen {#sec-frequentieverdelingen}
 
 Bij een *frequentieverdeling* van een numerieke variabele wordt het bereik van de waarden opgedeeld in een aantal geordende *klassen* en geteld hoeveel waarden in elke klasse voorkomen. De grenzen van een klasse, de ondergrens en bovengrens, worden met een combinatie van ronde haken `()` en blokhaken `[]` aangeduid. Een ronde haak betekent dat de grenswaarde niet tot de klasse behoort. Een blokhaak betekent dat de grenswaarde wel tot de klasse behoort. Zo hoort bij een klasse aangeduid met `[25,40)` de waarde 25 wel tot de klasse, maar de waarde 40 niet.
 
@@ -99,7 +99,7 @@ Cumulatieve frequentieverdeling
 
 :   De cumulatieve frequentie is de som van alle frequenties tot en met de frequentie van de desbetreffende waarde. Met name wanneer je gebruik maakt van percentages heb je een manier om te laten zien welk percentage waarden kleiner is dan een bepaalde waarde.
 
-### Functie INTERVAL {.unnumbered}
+### Functie INTERVAL {#sec-func-interval}
 
 Syntax: `INTERVAL(gegevensmatrix;interval_verw)`
 
@@ -126,7 +126,7 @@ Sluit de werkmap nog niet want je hebt deze nog nodig voor de volgende oefening.
 ![Frequenties bepaald met functie INTERVAL.](images/beschrijvend/freq-interval.png){#fig-freq-interval}
 :::
 
-### Draaitabel methode {#sec-draaitabel-methode .unnumbered}
+### Draaitabel methode {#sec-draaitabel-methode}
 
 ::: {#prp-freq-draaitabel}
 [Hulpbestand]{.smallcaps}: `frequenties.xlsx`

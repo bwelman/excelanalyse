@@ -17,7 +17,7 @@ Bij het importeren van de gegevens heb je de variabelen al gedefinieerd en zijn 
 
 Soms moet je een numerieke variabele verder specificeren als *discreet* of *continu*. Discrete numerieke variabelen hebben waarden die voortkomen uit tellingen, ze vertegenwoordigen een aantal van iets, zoals het aantal leerlingen in een klas. Continue numerieke variabelen hebben waarden die voortkomen uit metingen, zoals de lengte van een persoon, welke in principe elke waarde binnen een interval kan aannemen (afhankelijk van de nauwkeurigheid van het meetinstrument).
 
-### Meetschaal {.unnumbered}
+### Meetschaal {#sec-meetschaal}
 
 Variabelen worden in vier meetniveaus (schalen) ingedeeld: nominaal, ordinaal, interval en ratio.
 
@@ -104,7 +104,7 @@ Echte gegevensverzamelingen zijn vaak op bijna elke denkbare manier in strijd me
 
 In de taken hierna zullen in kleine voorbeelden deze problemen gedemonstreerd worden en opgelost worden met behulp van Power Query.
 
-### Kolomkoppen met waarden {.unnumbered}
+### Kolomkoppen met waarden
 
 Een veel voorkomende vorm van een gegevensverzameling is een tabelvorm waarbij de kolomkoppen waarden zijn en geen variabelenamen. De volgende tabel is hier een voorbeeld van. Hierin staat het aantal mannelijke en vrouwelijke studenten dat een bepaalde score (A t/m E) behaald heeft.
 
@@ -144,7 +144,7 @@ Het resultaat is een tabel met gestructureerde gegevens. Elke kolom is één var
 ![Scores1 in een gestructureerde tabel.](images/data/scores1-result.png){#fig-scores1-result}
 :::
 
-### Kolomkoppen zijn gecombineerde variabelen {.unnumbered}
+### Kolomkoppen zijn gecombineerde variabelen
 
 Soms zijn kolommen een combinatie van meerdere onderliggende variabelen. Dit is het geval bij de gegevensverzameling in @fig-scores2-data. Deze is gelijkwaardig aan die in de vorige taak. Alleen zijn er nu twee verschillende klassen (klas1 en klas2) en staat het aantal voor elk geslacht in elke klas in een eigen kolom. Ook in deze gegevensverzameling zijn de kolomkoppen waarden van variabelen. Maar er zijn twee variabelen, `geslacht` en `klas`, in één kolom gecombineerd.
 
@@ -176,7 +176,7 @@ Het resultaat is een tabel met gestructureerde gegevens. Elke kolom is één var
 ![Scores2 gestructureerd.](images/data/scores2-result.png){#fig-scores2-result}
 :::
 
-### Variabelen in rijen en kolommen {.unnumbered}
+### Variabelen in rijen en kolommen
 
 Een meer gecompliceerde vorm van rommelige gegevens krijg je wanneer er variabelen in zowel rijen als kolommen staan. In het voorbeeld hierna staan de beoordelingen voor een tussentoets en een eindtoets voor vijf studenten, waarbij elk van hen in precies twee van de vijf mogelijke klassen is geplaatst.
 

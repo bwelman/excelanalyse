@@ -43,7 +43,7 @@ Voor alleen de sterkte van de correlatie wordt meestal gewerkt met het kwadraat 
 
 Deze R-kwadraat geeft tevens aan welk deel (of percentage bij vermenigvuldiging met 100) van de variantie de variabelen met elkaar delen. Of met andere woorden, welk deel van de variantie in de ene variabele verklaard wordt door de variantie in de andere variabele. Dit wordt de *verklaarde variantie* genoemd. De resterende variantie heet dan ook *onverklaarde variantie*.
 
-### Excel formules {.unnumbered}
+### Excel formules
 
 -   `COVARIANTIE.P()` - Covariantie populatie
 -   `COVARIANTIE.S()` - Covariantie steekproef
@@ -95,7 +95,7 @@ Je kunt in Excel op een aantal manieren een (lineaire) regressie uitvoeren.
 -   Via een spreidingsdiagram met regressielijn.
 -   Via Gegevensanalyse, de enige methode om echte analyses uit te voeren.
 
-### Via Werkbladformules {.unnumbered}
+### Via Werkbladformules
 
 De regressiecoëfficienten kun je met de volgende formules bepalen:
 
@@ -118,7 +118,7 @@ De regressiecoëfficienten kun je met de volgende formules bepalen:
 
 Voor verdere analyses, zoals het berekenen van de residuen, zul je zelf formules moeten maken. Met de methode via *Gegevensanalyse* kan Excel dit automatisch voor je doen.
 
-### Via Spreidingsdiagram {.unnumbered}
+### Via Spreidingsdiagram
 
 Bij het maken van een spreidingsdiagram kun je bij de opmaak aangeven dat de vergelijking van de lijn in de grafiek moet worden weergegeven. Je krijgt dan de gevonden waarden voor $\beta_0$ en $\beta_1$ te zien. Voor visualisatie is dit wel nuttig, maar verder kun je hier niets mee doen. Ook kun je de waarde van $R^2$ laten weergeven.
 
@@ -140,7 +140,7 @@ Uiteraard heb je nog meer opmaakmogelijkheden. Zo is in @fig-sim1-spreiding de g
 4.  Bewaar het bestand voor de oefeningen hierna.
 :::
 
-### Via Gegevensanalyse {.unnumbered}
+### Via Gegevensanalyse
 
 Met deze methode kun je een uitvoerige analyse maken. Met [tab Gegevens \> Gegevensanalyse \> Regressie]{.uicontrol} krijg je het volgende dialoogscherm:
 
