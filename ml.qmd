@@ -2,13 +2,17 @@
 
 ## Inleiding {#sec-ml-inleiding}
 
-Machine learning (ML), in het Nederlands ook wel *statistisch leren* of *machinaal leren* genoemd, is een concept waarbij een machine (programma, algoritme) kan "leren" van voorbeelden om patronen in gegevens te ontdekken. Enkele voorbeelden:
+Bij Machine Learning (ML), in het Nederlands ook wel *statistisch leren* of *machinaal leren* genoemd, draait alles om voorspellen. Het is een concept waarbij een programma (dit is de machine) kan "leren" van voorbeelden om patronen in gegevens te ontdekken. Je voorspelt een uitkomst op basis van een of meer kenmerken. Enkele voorbeelden.
 
--   Je hebt gegevens over een patiënt (hartslag, laboratoriumwaarden, ...) en je wilt voorspellen of deze patiënt binnenkort een hartinfarct krijgt.
+-   Heeft een patiënt een bepaalde ziekte? De uitkomst van de voorspelling is het al dan niet hebben van de ziekte. En de kenmerken waar je dat op baseert zouden kunnen zijn hartslag, laboratoriumwaarden, leeftijd, geslacht, familiegeschiedenis, ...
 
--   Je beschikt over sensorgegevens van machines (temperatuur, oliedruk, laadniveau van de batterij, stroomverbruik, ...) en je wilt voorspellen welke machines in de nabije toekomst kunnen uitvallen zodat je preventief onderhoud kunt doen om deze storingen te voorkomen.
+-   Zal een klant overstappen naar een andere energieleverancier? De uitkomst van de voorspelling is dat de klant overstapt of niet. Mogelijke kenmerken om de voorspelling op te baseren zouden kunnen zijn verbruikscijfers gas en electra, soort en duur van het contract, inkomen, betalingsachterstanden, ...
 
--   Je hebt veel gegevens over klanten en je wilt voorspellen welke van de klanten waarschijnlijk geïnteresseerd is in het kopen van een bepaald nieuw product (denk aan "misschien vind je dit ook leuk ...").
+-   Kun je de naam van een plant voorspellen op basis van een foto van die plant? De uitkomst van de voorspelling is de plantennaam of de conclusie onherkenbaar. Mogelijke kenmerken zouden kunnen zijn bladvorm, bloem, kleur, grootte, ...
+
+-   Je beschikt over sensorgegevens van machines (temperatuur, oliedruk, batterijconditie, stroomverbruik, ...) en je wilt voorspellen welke machines in de nabije toekomst kunnen uitvallen zodat je preventief onderhoud kunt doen om deze storingen te voorkomen.
+
+Bij de ML technieken wordt gekeken naar *gelijkenis*. In het voorbeeld van de energieleverancier kijk je naar andere klanten uit het verleden enen selecteert degenen die qua kenmerken het meest op de huidige klant lijken. Zijn de meeste daarvan overgestapt dan is de voorspelling dat de huidige klant ook overstapt. Bedenk wel dat het een voorspelling is.
 
 In de gegevensverzameling heb je een *doelvariabele* (afhankelijke variabele, uitkomstvariabele, respons) waarvan de waarde moet worden voorspeld op basis van de waarden van andere variabelen (onfhankelijke variabelen, voorspelvariabelen).
 
