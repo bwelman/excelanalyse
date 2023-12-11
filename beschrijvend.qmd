@@ -11,7 +11,7 @@ Bij wat de beschrijvende statistiek genoemd wordt, gaat het om het beschrijven v
 
 ## Ordening Categoriale variabelen {#sec-var-categorical}
 
-Voor categoriale variabelen kun je geen zinvolle statistieken als gemiddelde, minimum of maximum bepalen. Wel kun je samenvattingen maken door de frequenties van de waarden te tellen. In Excel gaat dit het handigste met *draaitabellen*. Behalve als absolute aantallen voor elke categorie (frequenties) kun je ook percentages voor elke categorie weergeven (relatieve frequenties). Verschillen tussen categorieën zijn hierdoor snel zichtbaar.
+Voor categoriale variabelen kun je geen zinvolle statistieken als gemiddelde, minimum of maximum bepalen. Wel kun je samenvattingen maken door de frequenties van de waarden te tellen. In Excel gaat dit het handigste met *draaitabellen*. Naast absolute aantallen voor elke categorie (frequenties) kun je ook percentages voor elke categorie weergeven (relatieve frequenties). Verschillen tussen categorieën zijn hierdoor snel zichtbaar.
 
 ### Frequentietabel {#sec-vakanties-frequentietabel}
 
@@ -43,7 +43,7 @@ Sluit de werkmap nog niet want je hebt deze nog nodig voor de volgende oefening.
 
 ### Kruistabel {#sec-vakanties-kruistabel}
 
-Voor het vergelijken van twee (of meer) categoriale variabelen onderling maak je een *kruistabel*. Hierin staan de categorieën van de ene variabele (de rijvariabele) in de rijen en de categorieën van de andere variabele (de kolomvariabele) in de kolommen. In de cel waar een rijwaarde en een kolomwaarde elkaar kruisen staat het aantal dat tot beide categorieën behoort.
+Om een verband tussen twee categoriale veriabelen te onderzoeken gebruik je een *kruistabel*. Hierin staan de categorieën van de ene variabele (de rijvariabele) in de rijen en de categorieën van de andere variabele (de kolomvariabele) in de kolommen. In de cel waar een rijwaarde en een kolomwaarde elkaar kruisen staat het aantal dat tot beide categorieën behoort.
 
 Behalve als aantal (= frequentie) kunnen de tellingen ook worden weergegeven als een percentage van het totale totaal, van het rijtotaal of van het kolomtotaal. Door deze weergave kun je patronen bestuderen die tussen de variabelen kunnen bestaan. Kruistabellen maak je ook het beste maken met draaitabellen.
 
@@ -69,13 +69,13 @@ Visualisatie met een kolomdiagram.
 Uiteraard kun je dit standaarddiagram nog op de bekende manieren verder verfraaien.
 :::
 
-## Ordening Numerieke variabelen
+## Ordening kwantitatieve variabelen
 
-Wanneer het aantal waarnemingen van een numerieke variabele niet al te groot is kun je een beter gevoel voor de data krijgen door deze te ordenen (sorteren) van klein naar groot. Je ziet dan snel het bereik van de waarden. Bij een groter aantal data kun je beter van een *frequentietabel* gebruik maken.
+Wanneer het aantal waarnemingen van een kwantitatieve variabele niet al te groot is kun je een beter gevoel voor de data krijgen door deze te ordenen (sorteren) van klein naar groot. Je ziet dan snel het bereik van de waarden. Bij een groter aantal data kun je beter van een *frequentietabel* gebruik maken.
 
 ### Frequentieverdelingen {#sec-frequentieverdelingen}
 
-Bij een *frequentieverdeling* van een numerieke variabele wordt het bereik van de waarden opgedeeld in een aantal geordende *klassen* en geteld hoeveel waarden in elke klasse voorkomen. De grenzen van een klasse, de ondergrens en bovengrens, worden met een combinatie van ronde haken `()` en blokhaken `[]` aangeduid. Een ronde haak betekent dat de grenswaarde niet tot de klasse behoort. Een blokhaak betekent dat de grenswaarde wel tot de klasse behoort. Zo hoort bij een klasse aangeduid met `[25,40)` de waarde 25 wel tot de klasse, maar de waarde 40 niet.
+Bij een *frequentieverdeling* van een kwantitatieve variabele wordt het bereik van de waarden opgedeeld in een aantal geordende *klassen* en geteld hoeveel waarden in elke klasse voorkomen. De grenzen van een klasse, de ondergrens en bovengrens, worden met een combinatie van ronde haken `()` en blokhaken `[]` aangeduid. Een ronde haak betekent dat de grenswaarde niet tot de klasse behoort. Een blokhaak betekent dat de grenswaarde wel tot de klasse behoort. Zo hoort bij een klasse aangeduid met `[25,40)` de waarde 25 wel tot de klasse, maar de waarde 40 niet.
 
 De *klassebreedte* is het verschil tussen de bovengrens en de ondergrens van een klasse. Zo heeft de klasse `[25,40)` een klassebreedte 15. Om een bruikbare frequentieverdeling te maken moet je een beslissing nemen over het aantal klassen en dus over de klassebreedte. Bij teveel of te weinig klassen kun je weinig informatie uit de frequentieverdeling halen. In de praktijk zie je vaak 5 tot 15 klassen.
 
@@ -356,7 +356,9 @@ Grafieken zijn een onmisbaar hulpmiddel bij de analyse van gegevens. Veel gebrui
 
 ### Histogram {#sec-graf-histogram}
 
-Een histogram is een grafische weergave van een frequentieverdeling in de vorm van een kolomdiagram. Een histogram kan antwoord geven op de volgende vragen:
+Een histogram is een grafische weergave van de frequentieverdeling van een kwantitatieve variabele in de vorm van een kolomdiagram. De waarden van de variabelen worden in een vooraf gedefinieerd aantal delen (bins) verdeeld, die fungeren als containers voor de waarden. Het aantal waarden in elke bin zijn dan de frequenties.
+
+Een histogram kan antwoord geven op de volgende vragen:
 
 -   Van wat voor soort verdeling zijn de gegevens afkomstig?
 -   Waar bevinden de gegevens zich?

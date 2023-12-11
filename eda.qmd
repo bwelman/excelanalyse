@@ -29,6 +29,8 @@ Bij EDA gaat het om
 -   Het testen van aannames die zijn gedaan over het voorspellende en/of verklarende vermogen van de data.
 -   Het spaarzaam ontwikkelen van modellen en het testen van onderliggende aannames hierbij.
 
+Bij een goed gedocumenteerde dataset hoort ook een codeboek (data dictionary) dat kenmerken van de dataset beschrijft, zoals de betekenis en de meetniveaus van de variabelen. Wanneer dit document niet aanwezig is, zul je de betekenis van de variabelen uit hun naam moeten afleiden.
+
 Een eerste stap is meestal de beschrijvende statistiek, waarbij je de belangrijkste statistische kenmerken van de variabelen vastlegt. Daarna stap je al snel over op visualisaties en grafieken. Deze zijn meestal gemakkelijker te interpreteren en vereisen geen geavanceerde statistische kennis. Door de gegevens te visualiseren worden verwachte of juist onverwachte eigenschappen intuïtief zichtbaar.
 
 Voor het verkrijgen van inzicht in een gegevensverzameling kun je niet alleen afgaan op een aantal statistieken, maar moet je ook altijd grafieken maken om ideeën te onderzoeken. Tijdens verkenningen in de beginfase zijn deze grafieken (nog) niet voor publicatie bedoeld, waardoor je aan de opmaak nauwelijks aandacht hoeft te besteden. Het gaat er in eerste instantie om dat je de data leert begrijpen. Wanneer een grafiek in een latere rapportage wordt opgenomen is de opmaak natuurlijk wel van belang, dan moeten anderen jouw grafiek kunnen interpreteren.
@@ -62,7 +64,7 @@ In het begin van het onderzoek is het lastig om kwalitatief goede vragen op te s
 
 Een aantal handige vragen die je bijna altijd kunt gebruiken zijn:
 
-1.  Welke variabelen heeft de dataset? Zijn ze numeriek (discreet / continu) of categoriaal? wat is de schaling? Welke waarden kunnen deze variabelen aannemen?
+1.  Welke variabelen heeft de dataset? Zijn ze kwantitatief (discreet / continu) of categoriaal? wat is de schaling? Welke waarden kunnen deze variabelen aannemen?
 2.  Welke variatie komt er voor in de variabelen? Dus hoe gedragen zich de waarden van een variabele.
 3.  Welke covariatie komt er voor tussen variabelen? Dus hoe gedragen zich de waarden tussen variabelen.
 4.  Is er een verband te ontdekken tussen variabelen?
@@ -73,7 +75,7 @@ Op welke manier je data kunt samenvatten en welke grafiek het meest geschikt is 
 
 ![Schema voor selectie samenvatting en visualisatie. In plaats van een kolomdiagram (verticaal) kun je ook een staafdiagram (horizontaal) nemen.](images/eda/diagramselectie.png){#fig-diagramselectie}
 
-## Eén categorie variabele {#sec-eda-cat1}
+## Eén categoriale variabele {#sec-eda-cat1}
 
 Frequentietabellen
 
@@ -173,7 +175,7 @@ Verdeling haarkleur per geslacht.
 :::
 :::
 
-## Eén numerieke variabele {#sec-eda-num1}
+## Eén kwantitatieve variabele {#sec-eda-num1}
 
 Statistieken
 
@@ -226,7 +228,7 @@ Histogrammen van de maandinkomens, links met een breedte van 250 en rechts 500.
 Uit de statistieken, boxplot en histogrammen krijg je een behoorlijke indruk van de verdeling.
 :::
 
-## Numerieke en categoriale variabele {#sec-eda-numcat}
+## Kwantitatieve en categoriale variabele {#sec-eda-numcat}
 
 Boxplot (gegroepeerd)
 
@@ -245,19 +247,19 @@ Bij een vergelijkend onderzoek van een lamptype van twee verschillende merken is
 
 :::
 
-## Twee numerieke variabelen {#sec-eda-num2}
+## Twee kwantitatieve variabelen {#sec-eda-num2}
 
 Spreidingsdiagram
 
-:   Voor het onderzoeken van een verband tussen twee numerieke variabelen.
+:   Voor het onderzoeken van een verband tussen twee kwantitatieve variabelen.
 
 Lijndiagram
 
-:   Gebruik je voornamelijk wanneer een van de numerieke variabelen een tijd weergeeft.
+:   Gebruik je voornamelijk wanneer een van de kwantitatieve variabelen een tijd weergeeft.
 
-Bij het vergelijken van twee numerieke variabelen is er meestal eerst al naar elke variabele afzonderlijk gekeken (zie @sec-eda-num1). Bij de onderlinge vergelijking gaat het om te onderzoeken of er een mogelijk verband tussen de twee variabelen bestaat.
+Bij het vergelijken van twee kwantitatieve variabelen is er meestal eerst al naar elke variabele afzonderlijk gekeken (zie @sec-eda-num1). Bij de onderlinge vergelijking gaat het om te onderzoeken of er een mogelijk verband tussen de twee variabelen bestaat.
 
-Bij het onderzoek naar de relatie tussen twee numerieke variabelen worden de variabelen in een grafiek tegen elkaar uitgezet. Hierna kan eventueel een vervolgonderzoek komen naar de aard van de relatie. In @sec-linregressie wordt op dit laatste verder ingegaan.
+Bij het onderzoek naar de relatie tussen twee kwantitatieve variabelen worden de variabelen in een grafiek tegen elkaar uitgezet. Hierna kan eventueel een vervolgonderzoek komen naar de aard van de relatie. In @sec-linregressie wordt op dit laatste verder ingegaan.
 
 ::: {#prp-eda-ijsverkoop}
 [Hulpbestand]{.smallcaps}: `ijsverkoop.xlsx`

@@ -13,15 +13,15 @@ Wanneer je data uit externe bronnen importeert, heb je geen controle over de ind
 
 ## Variabelen {#sec-variabelen}
 
-Bij het importeren van de gegevens heb je de variabelen al gedefinieerd en zijn ze van een naam voorzien. Je moet verder ook nog weten wat voor een soort waarden de variabele kan hebben om later te kunnen bepalen welke statistische methodes geschikt zijn voor de variabele. In grote lijnen zijn alle variabelen ofwel *numerieke* variabelen waarvan de gegevens uit een getelde of gemeten hoeveelheid bestaat, of *categoriale* variabelen waarvan de gegevens categorieën vertegenwoordigen. Zo is een variabele `weekomzet` een numerieke variabele omdat de waarden hiervan hoeveelheden zijn. En een variabele `geslacht` met de categorieën `Man` en `Vrouw` is een categoriale variabele.
+Bij het importeren van de gegevens heb je de variabelen al gedefinieerd en zijn ze van een naam voorzien. Je moet verder ook nog weten wat voor een soort waarden de variabele kan hebben om later te kunnen bepalen welke statistische methodes geschikt zijn voor de variabele. In grote lijnen zijn alle variabelen ofwel **kwantitatieve** (numerieke) variabelen waarvan de gegevens uit een getelde of gemeten hoeveelheid bestaat, of **categoriale** variabelen waarvan de gegevens groepen (categorieën) vertegenwoordigen. Zo is een variabele `weekomzet` een kwantitatieve variabele omdat de waarden hiervan hoeveelheden zijn. En een variabele als `geslacht` met de categorieën `Man` en `Vrouw` is een categoriale variabele.
 
-Soms moet je een numerieke variabele verder specificeren als *discreet* of *continu*. Discrete numerieke variabelen hebben waarden die voortkomen uit tellingen, ze vertegenwoordigen een aantal van iets, zoals het aantal leerlingen in een klas. Continue numerieke variabelen hebben waarden die voortkomen uit metingen, zoals de lengte van een persoon, welke in principe elke waarde binnen een interval kan aannemen (afhankelijk van de nauwkeurigheid van het meetinstrument).
+Soms moet je een kwantitatieve variabele verder specificeren als *discreet* of *continu*. Discrete kwantitatieve variabelen hebben waarden die voortkomen uit tellingen, ze vertegenwoordigen een aantal van iets, zoals het aantal leerlingen in een klas. Continue kwantitatieve variabelen hebben waarden die voortkomen uit metingen, zoals de lengte van een persoon, welke in principe elke waarde binnen een interval kan aannemen (afhankelijk van de nauwkeurigheid van het meetinstrument).
 
 ### Meetschaal {#sec-meetschaal}
 
 Variabelen worden in vier meetniveaus (schalen) ingedeeld: nominaal, ordinaal, interval en ratio.
 
-Categorie variabelen
+Categoriale variabelen
 
 :   Met deze variabelen kun je geen berekeningen uitvoeren, zoals het berekenen van een gemiddelde. Ze worden onderverdeeld in nominaal en ordinaal.
 
@@ -29,7 +29,7 @@ Categorie variabelen
 
 -   `Ordinaal`: De waarden zijn kwalitatief van aard en hebben een logische volgorde. Je kunt ze sorteren maar er geen rekenkundige bewerkingen mee uitvoeren. Voorbeelden: beoordeling (1=zeer slecht, 2=slecht, 3=matig, 4=goed, 5=zeer goed), medaille (goud, zilver, brons), T-shirt maten (S, M, L, XL).
 
-Numerieke variabelen
+Kwantitatieve variabelen
 
 :   Deze worden onderverdeeld in interval en ratio.
 
@@ -38,6 +38,10 @@ Numerieke variabelen
 -   `Ratio`: de gegevens hebben een natuurlijk nulpunt. Hier kun je wel uitspraken doen over verhoudingen. Zo is een salaris van €4000 twee keer zo groot als een salaris van €2000. Voorbeelden: inkomen, vermogen, gewicht. Voor statistische doeleinden hoef je meestal geen verschil te maken tussen ratio- en intervalgegevens.
 
 ![Meetniveaus van variabelen](images/data/meetniveaus.png){#fig-meetniveaus}
+
+::: callout-note
+Een jaartal, bijvoorbeeld het bouwjaar van een auto, wordt doorgaans beschouwd als een discrete kwantitatieve variabele en niet als een ordinale variabele. Echter afhankelijk van de context kan het nodig zijn om een jaarvariabele als een ordinale variabele te behandelen.
+:::
 
 ::: {.content-visible when-format="html:js"}
 **Testvragen**

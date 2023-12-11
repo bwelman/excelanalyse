@@ -18,10 +18,10 @@ $$\text{Onafhankelijke/Verklarende variabele(n) } \Longrightarrow \text{Afhankel
 
 De waarden van een variabele kunnen samenhangen met de waarden van een andere variabele. Zo zal meestal de benzineprijs stijgen wanneer de prijs van een vat ruwe olie stijgt. De variabelen benzineprijs en olieprijs vertonen dan een positieve samenhang. Het omgekeerde kan ook, wanneer bijvoorbeeld de werkloosheid stijgt dan dalen de consumentenuitgaven. De variabelen werkloosheidspercentage en consumentenuitgaven vertonen een negatieve samenhang.
 
-Of er een mogelijk verband tussen numerieke variabelen is kun je onderzoeken
+Een mogelijk verband tussen kwantitatieve variabelen kun je onderzoeken door
 
--   door ze in een spreidingsdiagram tegen elkaar uit te zetten en dan te kijken of er een patroon zichtbaar is.
--   door de covariantie of correlatiecoëfficiënt te berekenen.
+-   ze in een spreidingsdiagram tegen elkaar uit te zetten en dan te kijken of er een patroon zichtbaar is.
+-   de covariantie of correlatiecoëfficiënt te berekenen.
 
 Wanneer er een verband tussen twee variabelen is, dan zal ook de variantie van de variabelen samenhang vertonen. Er is dan sprake van *covariantie* (gedeelde variantie). Vandaar dat variabelen die aan elkaar gerelateerd zijn en dus een deel van hun variantie delen, ook wel *covariaten* genoemd worden. Een maatstaf om de samenhang tussen twee variabelen in uit te drukken is de *covariantie*, welke aangeeft of en hoeveel de waarden van de ene variabele toe- dan wel afnemen bij toenemende waarden van de andere variabele.
 
@@ -52,7 +52,7 @@ Deze R-kwadraat geeft tevens aan welk deel (of percentage bij vermenigvuldiging 
 
 ## Lineair verband
 
-Wiskundig gezien is een verband tussen twee numerieke variabelen lineair wanneer je dat verband grafisch weer kunt geven met een rechte lijn. Bij een niet-lineair verband heb je een gebogen lijn.
+Wiskundig gezien is een verband tussen twee kwantitatieve variabelen lineair wanneer je dat verband grafisch weer kunt geven met een rechte lijn. Bij een niet-lineair verband heb je een gebogen lijn.
 
 Heb je te maken met maar één verklarende variabele dan wordt dat *enkelvoudige lineaire regressie* genoemd. Zijn er meerdere verklarende variabelen dan heet dat *meervoudige lineaire regressie*.
 
