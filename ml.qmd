@@ -12,7 +12,7 @@ Bij Machine Learning (ML), in het Nederlands ook wel *statistisch leren* of *mac
 
 -   Je beschikt over sensorgegevens van machines (temperatuur, oliedruk, batterijconditie, stroomverbruik, ...) en je wilt voorspellen welke machines in de nabije toekomst kunnen uitvallen zodat je preventief onderhoud kunt doen om deze storingen te voorkomen.
 
-Bij de ML technieken wordt gekeken naar *gelijkenis*. In het voorbeeld van de energieleverancier kijk je naar andere klanten uit het verleden enen selecteert degenen die qua kenmerken het meest op de huidige klant lijken. Zijn de meeste daarvan overgestapt dan is de voorspelling dat de huidige klant ook overstapt. Bedenk wel dat het een voorspelling is.
+Bij de ML technieken wordt gekeken naar *gelijkenis*. In het voorbeeld van de energieleverancier kijk je naar andere klanten uit het verleden en selecteert degenen die qua kenmerken het meest op de huidige klant lijken. Zijn de meeste daarvan overgestapt dan is de voorspelling dat de huidige klant ook overstapt. Bedenk wel dat het een voorspelling is.
 
 In de gegevensverzameling heb je een *doelvariabele* (afhankelijke variabele, uitkomstvariabele, respons) waarvan de waarde moet worden voorspeld op basis van de waarden van andere variabelen (onfhankelijke variabelen, voorspelvariabelen).
 

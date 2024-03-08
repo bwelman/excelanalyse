@@ -55,7 +55,7 @@ In @fig-benzineverkoop-lijn zie je dat het verkoopvolume een horizontaal patroon
 
 Toelichting:
 
--   `naïeve prognose`: formule C2 wordt `=B1` enzovoort
+-   `naïeve prognose`: formule C3 wordt `=B2` enzovoort
 -   `fout`: `= volume - naïeve prognose`
 -   `absolute fout`: `= ABS(fout)`
 -   `absolute procentuele fout`: `= absolute fout / volume`
