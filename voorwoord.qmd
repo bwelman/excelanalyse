@@ -1,4 +1,4 @@
-# Voorwoord {.unnumbered}
+# Voorwoord {#sec-voorwoord .unnumbered}
 
 Er zijn twee hoofdtakken binnen de statistiek:
 
@@ -43,8 +43,16 @@ Dit studieboek heeft een logische opbouw, beginnend met het verkrijgen van de da
 
 -   @sec-cases bevat een aantal cases.
 
--   @sec-ml is een hoofdstuk in ontwikkeling waarin met kleine eenvoudige voorbeelden enkele Machine Learning methodes worden uitgelegd. 
+-   @sec-ml is een hoofdstuk in ontwikkeling waarin met kleine eenvoudige voorbeelden enkele Machine Learning methodes worden uitgelegd.
 
 ## Software {.unnumbered}
 
 In dit studieboek wordt gewerkt met **Excel 365 NL**. Voor het grootste deel van de inhoud kun je ook met Excel 2010, 2013, 2016 en 2019 werken.
+
+::: callout-important
+**Data Analysis Toolpak (Gegevensanalyse)**
+
+Voor veel opdrachten en taken in dit studieboek heb je de invoegtoepassing **Data Analysis Toolpak (Gegevensanalyse)** nodig. Deze bevat diverse hulpmiddelen voor het uitvoeren van analyses. Het wordt standaard met Excel meegeleverd, je hoeft het dus niet te installeren. Echter het moet wel geactiveerd zijn en dat is niet altijd het geval.
+
+In @sec-analysis-toolpak wordt aangegeven hoe je dit kunt controleren en zonodig de activering kunt uitvoeren.
+:::

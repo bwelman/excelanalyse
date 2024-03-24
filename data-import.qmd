@@ -191,13 +191,9 @@ Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het 
 <!-- 6:  3x3 Basketbal, Karate, Klimsport, Skateboarden, Surfen en BMX freestyle -->
 :::
 
-## TAAK: Marktwaarde Voetbalclub {#sec-voetbalclub}
+<!-- ## TAAK: Marktwaarde Voetbalclub {#sec-voetbalclub} -->
 
-::: callout-important
-Vanwege structurele veranderingen op de website van [transfermarkt](https://www.transfermarkt.nl/) werkt de gebruikte workflow voor het importeren en verwerken van de data met Power Query niet meer.
-
-Helaas moet daarom deze mooie taak geschrapt worden totdat een mogelijke oplossing gevonden wordt.
-:::
+<!-- Vanwege structurele veranderingen op de website van [transfermarkt](https://www.transfermarkt.nl/) werkt de gebruikte workflow voor het importeren en verwerken van de data met Power Query niet meer. Helaas moet daarom deze mooie taak geschrapt worden totdat een mogelijke oplossing gevonden wordt. -->
 
 ## Opgaven {#sec-opg-importdata}
 

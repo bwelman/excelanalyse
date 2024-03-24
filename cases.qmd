@@ -78,14 +78,6 @@ Voer een exploratieve data analyse uit om de onderzoeksvraag te beantwoorden.
 
 <!-- Inspiratiebron: boek "Interactive and Dynamic Graphics for Data Analysis", Cook & Swayne, pag. 4 -->
 
-## Marktwaarde Voetbalclub {#sec-case-marktwaarde}
-
-::: callout-important
-Vanwege structurele veranderingen op de website van [transfermarkt](https://www.transfermarkt.nl/) werkt de gebruikte workflow voor het importeren en verwerken van de data met Power Query niet meer.
-
-Helaas moet daarom deze case geschrapt worden totdat een mogelijke oplossing gevonden wordt.
-:::
-
 ## Gemiddelde betaaltermijn {#sec-case-betaaltermijn}
 
 ![Iris.](images/cases/iris.jpg){#fig-betaaltermijn}

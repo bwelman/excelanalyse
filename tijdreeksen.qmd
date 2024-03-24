@@ -67,6 +67,7 @@ Bij een nauwkeuriger analyse van een tijdreeks is het nuttig wanneer je dergelij
 
 ![Componenten van een tijdreeks.](images/timeseries/ts-componenten.png){#fig-ts-componenten}
 
+::: {.panel-tabset}
 ### Trend {#sec-ts-comp-trend}
 
 De neiging om over langere tijd te stijgen (positieve trend) of te dalen (negatieve trend). Deze hoeft niet lineair te zijn. Soms wordt alleen naar een trend verwezen als de richting (stijgend of dalen) waarin de veranderingen plaatsvinden.
@@ -94,6 +95,7 @@ Het lijkt er op dat deze component niet volledig willekeurig is, omdat er in het
 ### Cyclisch {#sec-ts-comp-cyclic}
 
 Dit zijn schommelingen (golfbewegingen) over een langere periode, vaak vele jaren, door schommelingen in de conjunctuur. Kenmerkend is ook dat deze periodes geen vaste lengte hebben. In veel gevallen wordt de cyclische component weggelaten of gecombineerd met de trend tot één trendcyclus.
+:::
 
 ## Modellen {#sec-ts-model}
 

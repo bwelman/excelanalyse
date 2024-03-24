@@ -1,10 +1,12 @@
 # Addin Gegevensanalyse {#sec-analysis-toolpak}
 
-Gegevensanalyse (Engels: Data Analysis Toolpak) is een hulpprogramma voor het uitvoeren van analyses. Het wordt standaard met Excel meegeleverd, je hoeft het dus niet te installeren. Echter het moet wel geactiveerd zijn en dat is niet altijd het geval. In @fig-lint-toolpak kun je zien waar je kunt controleren of Gegevensanalyse beschikbaar is.
+De invoegtoepassing **Gegevensanalyse (Data Analysis Toolpak)** wordt standaard met Excel meegeleverd, maar is vaak niet geactiveerd waardoor je dit hulpmiddel niet kunt gebruiken..
+
+Om te controleren of deze invoegtoepassing geactiveerd is klik je op het tabblad [Gegevens]{.uicontrol}. In het lint moet dan [Gegevensanalyse (groep Analyse)]{.uicontrol} zichtbaar zijn, zie @fig-lint-toolpak.
 
 ![Plek waar je Gegevensanalyse kunt vinden: Onder tab Gegevens in de groep Analyse.](images/app-toolpak/lint-toolpak.png){#fig-lint-toolpak}
 
-Zie je [Gegevensanalyse]{.uicontrol} niet staan, dan moet het eenmalig geactiveerd worden.
+Wanneer dit het geval is hoef je verder niets te doen. Zie je [Gegevensanalyse]{.uicontrol} niet staan, dan moet het eenmalig geactiveerd worden.
 
 **Activering Gegevensanalyse**
 
@@ -21,7 +23,7 @@ Zie je [Gegevensanalyse]{.uicontrol} niet staan, dan moet het eenmalig geactivee
 
 5.  Controleer of je [Gegevensanalyse]{.uicontrol} nu wel beschikbaar hebt, zie @fig-lint-toolpak.
 
-Via [Gegevensanalyse]{.uicontrol} heb je de beschikking over diverse functies die hierna in alfabetische volgorde staan genoemd, met een korte toelichting waarvoor je de functie kunt gebruiken. Een aantal van deze functies zullen in bepaalde hoofdstukken verder toegelicht worden.
+Hierna zie je in alfabetische volgorde een lijst met functies die bia [Gegevensanalyse]{.uicontrol} beschikbaar zijn. Een aantal van deze functies worden in sommige hoofdstukken gebruikt en daar verder toegelicht.
 
 Aselecte getallen
 

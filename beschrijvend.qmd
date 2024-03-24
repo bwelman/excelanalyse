@@ -368,7 +368,7 @@ Een histogram kan antwoord geven op de volgende vragen:
 
 Excel heeft twee mogelijkheden voor het genereren van een histogram:
 
--   via Gegevensanalyse
+-   via invoegtoepassing Gegevensanalyse (voor activering zie @sec-analysis-toolpak)
 -   via grafiektype histogram.
 
 #### Via Gegevensanalyse {.unnumbered}
@@ -419,10 +419,11 @@ Er wordt geen tabel met frequenties gegenereerd. Je kunt desgewenst de frequenti
 
 De standaard grafiek in @fig-freq-grafiektype-histogram met drie intervallen laat te weinig details zien. In de volgende oefening wordt het aantal bins vergroot door de bin-breedte kleiner te maken.
 
-::: {#prp-histogram-gegevensanalyse}
+::: {#prp-histogram-grafiektype-bins}
 [Hulpbestand]{.smallcaps}: `frequenties.xlsx`
 
-1, [Selecteer horizontale as \> Rechter muisklik \> As opmaken]{.uicontrol}. Maak het eigenschappenvenster breed genoeg, anders zijn niet alle invulvelden zichtbaar!
+1.  [Selecteer horizontale as \> Rechter muisklik \> As opmaken]{.uicontrol}.\
+    **Maak het eigenschappenvenster breed genoeg, anders zijn niet alle invulvelden zichtbaar!**
 
 2.  Zet de bin-breedte op `2`.
 

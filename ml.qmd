@@ -1,7 +1,5 @@
 # Machine Learning {#sec-ml}
 
-## Inleiding {#sec-ml-inleiding}
-
 Bij Machine Learning (ML), in het Nederlands ook wel *statistisch leren* of *machinaal leren* genoemd, draait alles om voorspellen. Het is een concept waarbij een programma (dit is de machine) kan "leren" van voorbeelden om patronen in gegevens te ontdekken. Je voorspelt een uitkomst op basis van een of meer kenmerken. Enkele voorbeelden.
 
 -   Heeft een patiënt een bepaalde ziekte? De uitkomst van de voorspelling is het al dan niet hebben van de ziekte. En de kenmerken waar je dat op baseert zouden kunnen zijn hartslag, laboratoriumwaarden, leeftijd, geslacht, familiegeschiedenis, ...
@@ -30,7 +28,7 @@ Het doel is om de gegevens te verkennen en er een structuur in te vinden. Deze l
 
 **Excel**
 
-Excel is niet echt geschikt om Machine Learning technieken toe te passen. Daarvoor kun je beter software als R, Python, Tableau, RapidMiner, ... gebruiken. Wel kun je het principe van sommige technieken, zoals KNN, goed met behulp van Excel uitleggen.
+Excel is niet echt geschikt om Machine Learning technieken toe te passen. Daarvoor kun je beter software als R, Python, Tableau, RapidMiner, ... gebruiken. Wel kun je het principe van sommige technieken, zoals KNN, goed met behulp van Excel leren begrijpen.
 
 Met Excel kun je transparant met gegevens werken. Bij elke stap kun je direct het resultaat zien. Je kunt tussenresultaten in de berekeningen opnemen om te zien hoe het algoritme uitgevoerd wordt, waardoor je een goed inzicht in het proces krijgt.
 

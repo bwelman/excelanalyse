@@ -65,7 +65,6 @@ Gestructureerde gegevens moeten voldoen aan de volgende voorwaarden:
 
 ![Grafische weergave van gestructureerde gegevens, bestaande uit 5 waarnemingen van drie variabelen. Totaal dus 15 meetwaarden.](images/data/tidy-data.png){#fig-tidy-data}
 
-
 In @tbl-exp1 staan de gegevens van een meting bij een klein denkbeeldig experiment in een formaat dat je veel tegenkomt.
 
 | Naam    | Behandeling A | Behandeling B |
@@ -85,7 +84,7 @@ Wanneer je de rijen en kolommen verwisselt heb je dezelfde gegevens, maar de tab
 
 : Behandelingen als rij. {#tbl-exp2}
 
-Gestructureerd ziet de gegevensverzameling er uit zoals in @tbl-exp3.
+In feite telt deze gegevensverzameling drie variabelen: `Naam`, `Behandeling` en `Meetwaarde`. Gestructureerd ziet deze gegevensverzameling er uit zoals in @tbl-exp3.
 
 | Naam    | Behandeling   | Meetwaarde |
 |---------|---------------|------------|
