@@ -19,7 +19,7 @@ $$\text{(prognose)fout} = \text{werkelijke waarde} - \text{voorspelde waarde}$$
 
 Je wilt uiteraard dat de prognosefouten zo klein mogelijk zijn. Omdat de fouten zowel positief als negatief kunnen zijn, heb je niet veel aan het gemiddelde van deze fouten. Vandaar dat altijd de absolute waarde van de fouten genomen wordt.
 
-Er zijn verschillende kentallen ontwikkeld om de nauwkeurigheid te beoordelen. Deze worden meestal met hun Engelstalige afkorting gebruikt. Een paar veel voorkomende kentallen staan in @tab-kentallen genoemd.
+Er zijn verschillende kentallen ontwikkeld om de nauwkeurigheid te beoordelen. Deze worden meestal met hun Engelstalige afkorting gebruikt. Een paar veel voorkomende kentallen staan in @tbl-kentallen genoemd.
 
 | Kental | Engelstalig                    | Nederlandstalig                      |
 |:-----------------|:------------------------|:----------------------------|
@@ -34,7 +34,7 @@ Je kunt niet zomaar een van deze kentallen als het beste kental beschouwen. In h
 
 ## Naïeve prognose {#sec-prognoses-naief}
 
-Een van de meest eenvoudige prognosemethodes is de ***naïeve prognose***. Hierbij is de prognose op een bepaald tijdstip gelijk aan de waarde op het voorgaande tijdstip. Voor het bepalen hiervan heb je geen ingewikkelde formules nodig. Ondanks dat deze methode erg simpel is, zijn de resultaten vaak verrassend goed. Het is aan te raden om altijd hiermee te starten en daarna andere methodes hiermee te vergelijken.
+Een van de meest eenvoudige prognosemethodes is de ***naïeve prognose***. Hierbij is de prognose op een bepaald tijdstip gelijk aan de waarde op het voorgaande tijdstip. Voor het bepalen hiervan heb je geen ingewikkelde formules nodig. Ondanks dat deze methode erg simpel is, zijn de resultaten vaak verrassend goed. Het is aan te raden om altijd hiermee te starten en daarna de resultaten van andere methodes hiermee te vergelijken.
 
 ::: {#prp-prog-naief}
 [Hulpbestand]{.smallcaps}: `benzineverkoop.xlsx`
