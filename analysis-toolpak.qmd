@@ -1,6 +1,6 @@
 # Addin Gegevensanalyse {#sec-analysis-toolpak}
 
-De invoegtoepassing **Gegevensanalyse (Data Analysis Toolpak)** wordt standaard met Excel meegeleverd, maar is vaak niet geactiveerd waardoor je dit hulpmiddel niet kunt gebruiken..
+Met de invoegtoepassing **Gegevensanalyse (Data Analysis Toolpak)** voor Excel kun je automatisch een aantal statistische berekeningen uitvoeren. Deze invoegtoepassing wordt standaard met Excel meegeleverd, maar is vaak niet geactiveerd waardoor je dit hulpmiddel niet kunt gebruiken..
 
 Om te controleren of deze invoegtoepassing geactiveerd is klik je op het tabblad [Gegevens]{.uicontrol}. In het lint moet dan [Gegevensanalyse (groep Analyse)]{.uicontrol} zichtbaar zijn, zie @fig-lint-toolpak.
 
