@@ -13,7 +13,7 @@ Voor het schatten van toekomstige waarden zijn verschillende (statistische) tech
 
 Hoe nauwkeurig zijn de voorspellingen die zijn verkregen met een bepaalde prognosetechniek? Om deze vraag te beantwoorden worden een aantal verschillende kentallen voor de voorspelling van de nauwkeurigheid geïntroduceerd.
 
-Alles begint bij het bepalen van de *prognosefout*.
+Alles begint bij het bepalen van de **prognosefout**.
 
 $$\text{(prognose)fout} = \text{werkelijke waarde} - \text{voorspelde waarde}$$
 
@@ -151,7 +151,6 @@ In plaats van zelf de formules te bedenken en in te voeren kun je ook gebruik ma
 Voor de prognoses krijg je dezelfde resultaten.
 
 ![Lijndiagram van de benzineverkoop en de voorspelling via exponentiële demping met alpha=0,2.](images/prognoses/benzineverkoop-etsgrafiek.png){#fig-benzineverkoop-etsgrafie}
-
 :::
 
 Dit is een eenvoudige en gemakkelijke methode. Daar staat tegenover dat wanneer je met andere waarden voor $\alpha$ wilt experimenteren, je de procedure steeds weer opnieuw moet uitvoeren.
@@ -190,7 +189,7 @@ In dit venster kun je een aantal keuzes maken. Zie @sec-excel-voorspellingenblad
 
 4.  Stel [Einde van prognose]{.uicontrol} in op 1 december 2013.
 
-5.  Klik op [Opties{.uicontrol}.
+5.  Klik op \[Opties{.uicontrol}.
 
 ![Opties prognosewerkblad.](images/prognoses/sales_fcast_options.png){#fig-sales-fcast-options}
 
@@ -205,7 +204,6 @@ De resultaten van de voorspellingen staan in @tbl-voorspelling weergegeven.
 | 01-12-2013 | 4033625      | 3639358    | 4427892    |
 
 : Voorspelde waarden en betrouwbaarheidsgrenzen. {#tbl-voorspelling}
-
 :::
 
 ## Opgaven {#sec-opg-prognoses}

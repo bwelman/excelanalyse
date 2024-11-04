@@ -122,38 +122,13 @@ myplot <- forecast::autoplot(AirPassengers) +
 ggsave(filename = "images/timeseries/airpassengers.png", plot = myplot, width = 5.50, height = 4.30, dpi = 300)
 
 
-# ap-trend ------------------------------------------------
-ap.components <- decompose(AirPassengers,type='multiplicative')
-
-myplot <- autoplot(ap.components$trend) +
-	labs(title = "",
-		 x = "Tijd",
-		 y = "") +
+# white-noise -----------------------------------------------
+set.seed(123)
+wn <- ts(rnorm(n=200)) # white noise
+myplot <- forecast::autoplot(wn, xlab="Tijd", ylab="") +
 	theme_bw()
 
-ggsave(filename = "images/timeseries/ap-trend.png", plot = myplot, width = 5.50, height = 4.30, dpi = 300)
-
-# ap-season -----------------------------------------------
-ap.components <- decompose(AirPassengers,type='multiplicative')
-
-myplot <- autoplot(ap.components$seasonal) +
-	labs(title = "",
-		 x = "Tijd",
-		 y = "") +
-	theme_bw()
-
-ggsave(filename = "images/timeseries/ap-season.png", plot = myplot, width = 5.50, height = 4.30, dpi = 300)
-
-# ap-random -----------------------------------------------
-ap.components <- decompose(AirPassengers,type='multiplicative')
-
-myplot <- autoplot(ap.components$random) +
-	labs(title = "",
-		 x = "Tijd",
-		 y = "") +
-	theme_bw()
-
-ggsave(filename = "images/timeseries/ap-random.png", plot = myplot, width = 5.50, height = 4.30, dpi = 300)
+ggsave(filename = "images/timeseries/white-noise.png", plot = myplot, width = 5.50, height = 4.30, dpi = 300)
 
 # scheefheid ----------------------------------------------
 dfs <- data.frame(
