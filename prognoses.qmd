@@ -3,9 +3,7 @@
 ```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
-::: callout
-**Doelstellingen**
-
+::: {.callout title="Doelstellingen"}
 Voor het schatten van toekomstige waarden zijn verschillende (statistische) technieken beschikbaar. Naast de zeer eenvoudige naïeve prognose komt de meer geavanceerdere exponentïele vereffening (smoothing) aan bod. Ook wordt gekeken naar maatstaven om de nauwkeurigheid van de voorspelde waarden te beoordelen.
 :::
 
@@ -123,9 +121,7 @@ Gelet op de nauwkeurigheidswaarden zijn dit tot nu toe de beste voorspellingen.
 **Vraag:** Wat is de verkoopprognose voor week 13 (op 1 decimaal nauwkeurig)? `r fitb(c("71,0", "71.0"))` `r hide("Hint")` De prognose voor week 13 is $\alpha * \text{laatste week} + (1-\alpha) * \text{een na laatste week}$ `r unhide()`
 :::
 
-::: callout-tip
-**Keuze alpha**
-
+::: {.callout-tip title="Keuze alpha"}
 Als de tijdreeks een behoorlijke willekeurige variabiliteit heeft kun je het beste een kleine waarde voor $\alpha$ nemen. En bij een tijdreeks met weinig variabiliteit heeft een grotere waarde de voorkeur.
 
 De meest wenselijke waarde voor $\alpha$ is die waarde die de minste fouten oplevert, dus die zorgt voor de laagste gemiddelde kwadratische fout (MSE). In de praktijk ga je meestal proberen of een andere waarde voor $\alpha$ een nauwkeuriger voorspelling oplevert.

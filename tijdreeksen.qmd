@@ -1,8 +1,6 @@
 # Tijdreeksen {#sec-timeseries}
 
-::: callout
-**Doelstellingen**
-
+::: {.callout title="Doelstellingen"}
 -   Introductie in de analyse van tijdreeksen
 -   Introductie van prognosetechnieken in het algemeen en de mogelijkheden met Excel
 -   Het opdoen van praktische vaardigheden via taken en oefeningen
@@ -24,8 +22,8 @@ Voor een gedegen begrip van tijdreeksen en de verschillende prognosetechnieken i
 
 Een tijdreeks is een reeks waarnemingen van een variabele gemeten op opeenvolgende tijdstippen of over opeenvolgende periodes. Wanneer de gegevens een bepaald patroon in de tijd vormen, dan kan dit patroon gebruikt worden om een prognose voor een toekomstige waarde te maken.
 
-::: callout-note
-Het kan ook zijn dat de waarde van een variabele afhangt van andere variabelen dan de tijd. Zo zou er een verband kunnen zijn tussen de hoogte van de bloeddruk en de leeftijd. Je hebt dan een onafhankelijke variabele (leeftijd) en een afhankelijke variabele (bloeddruk). Dergelijke verbanden tussen variabelen worden onderzocht met *regressie-analyse*. Wanneer je de tijd als een onafhankelijke variabele beschouwt, dan kan regressie-analyse ook bij tijdreeksen worden gebruikt.
+::: {.callout-note title="regressie-analyse"}
+Het kan ook zijn dat de waarde van een variabele afhangt van andere variabelen dan de tijd. Zo zou er een verband kunnen zijn tussen de hoogte van de bloeddruk en de leeftijd. Je hebt dan een onafhankelijke variabele (leeftijd) en een afhankelijke variabele (bloeddruk). Dergelijke verbanden tussen variabelen worden onderzocht met regressie-analyse. Wanneer je de tijd als een onafhankelijke variabele beschouwt, dan kan regressie-analyse ook bij tijdreeksen worden gebruikt.
 :::
 
 De meetgegevens van de variabele bestaan uit herhaalde metingen op vaste tijdstippen zoals elk uur, dag, week, maand, kwartaal, jaar of elke regelmatige periode. De gegevens zijn dus geordend in de tijd en de tijd tussen elke waarneming is constant.
@@ -139,7 +137,7 @@ De trend wordt gemeten in eenheden van de variabele in de tijdreeks. De seizoens
 
 In @fig-airpassengers zie je de seizoenseffecten steeds groter worden, hier past dus een multiplicatief model bij.
 
-::: callout-note
+::: {.callout-note title="Multiplicatief model omzetten in Additief model"}
 Een multiplicatieve tijdreeks kan via de logaritme functie omgezet worden in een additieve tijdreeks:
 
 $log(T*S*C*R) = log(T) + log(S) + log(C) + log(R)$
@@ -349,7 +347,7 @@ En een lijngrafiek met de data en een voortschrijdend gemiddelde:
 
 De seizoensafhankelijkheid is duidelijk zichtbaar. Het voortschrijdend gemiddelde verwijdert deze afhankelijkheid en de ruis. De overblijvende trend is nagenoeg lineair en licht stijgend.
 
-::: callout-tip
+::: {.callout-tip title="Grafiek verbeteren"}
 Voor een eerste indruk is de kwaliteit van deze grafiek voldoende. Voor publicatiedoeleinden moet je de standaardgrafiek wel verbeteren, zie bijvoorbeeld @fig-autoverkoop-ma-aangepast.
 
 ![Aangepaste grafiek voortschrijdend gemiddeldes.](images/timeseries/autoverkoop-ma-aangepast.png){#fig-autoverkoop-ma-aangepast}

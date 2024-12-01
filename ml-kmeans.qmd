@@ -10,8 +10,7 @@ Bij k-means is `k` het aantal clusters en wordt elke cluster gekenmerkt door een
 
 Er bestaan verschillende manieren om de afstand te bepalen. De meest gebruikte is de Euclidische afstand (bekend van de stelling van Pythagoras).
 
-::: callout-note
-**Euclidische afstand**
+::: {.callout-note title="Euclidische afstand"}
 
 Heb je twee punten met de coördinaten $(x_1, x_2)$ en $(y_1, y_2)$ dan is de Euclidische afstand uit te rekenen via de bekende Stelling van Pythagoras.
 
@@ -105,8 +104,6 @@ Om de beste waarde voor k te vinden wordt naar de som van de minimale afstanden 
 | 2   | 25,241                 |
 | 3   | 17,218                 |
 
-::: callout-note
-**Slotopmerking**
-
+::: {.callout-note title="Slotopmerking"}
 In deze uitwerking heb je de iteraties handmatig uitgevoerd door steeds betere centrumwaarden te bepalen en deze weer in het model te gebruiken. In plaats daarvan zou je ook gebruik kunnen maken van de [Oplosser]{.uicontrol}, een met Excel meegeleverde invoegtoepassing. In dat geval is de te minimaliseren doelfunctie de cel met de som van de minimale afstanden en zijn de centrumwaarden de variabele cellen.
 :::

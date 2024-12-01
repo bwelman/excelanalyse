@@ -3,9 +3,7 @@
 ```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
-::: callout
-**Doelstellingen**
-
+::: {.callout title="Doelstellingen"}
 Bij wat de beschrijvende statistiek genoemd wordt, gaat het om het beschrijven van een gegevensverzameling door de gegevens te ordenen, samen te vatten en weer te geven op een informatieve manier. Dit kan in numerieke vorm door een aantal statistieken (samenvattende getallen) te berekenen, maar ook in grafische vorm. Hierdoor ben je sneller in staat om de gegevensverzameling te begrijpen. Welke vorm je gebruikt hangt vooral af van de gewenste informatie over de gegevens. Bij het gebruik van de verschillende technieken moet je een onderscheid maken tussen categoriale variabelen en numerieke variabelen.
 :::
 
@@ -85,7 +83,7 @@ Voor het maken van klassen (*bins* geheten in Excel) gelden de volgende regels:
 
 -   Voor elke waarneming moet er een klasse beschikbaar zijn. Dus alle waarnemingen moeten in een klasse ondergebracht kunnen worden. Vaak worden daarom de eerste en laatste klasse extra groot gemaakt.
 
-::: callout-note
+::: {.callout-note title="Klassebreedte"}
 1.  Als het kan maak dan de klassen even breed. Excel kan hier beter mee overweg dan wanneer de klassen niet even breed zijn. Voor de eerste en de laatste klasse lukt dat niet alijd omdat alle waarnemingen opgevangen moeten worden. Daarnaast kunnen er ook andere redenen zijn om de klassen niet even breed te maken. Ook worden soms klassen waarin weinig waarnemingen zitten samengevoegd waardoor een bredere klasse ontstaat.
 
 2.  De klassen moeten wel voldoende differentieren (verschillen vertonen) anders levert de frequentieverdeling te weinig informatie op. Zo heeft het weinig zin om voor de inkomensverdeling in Nederland een klasse van €10.000 tot €60.000 te maken, omdat hierin bijna alle inkomens (\> 90%) vallen.
@@ -228,8 +226,8 @@ $$standaarddeviatie (\sigma) = \sqrt{variantie}$$
 
 Zowel de variantie als de standaarddeviatie kunnen nooit negatief zijn.
 
-::: callout-note
-Bij een **steekproef** met $n$ waarnemeningen uit de populatie wordt de variantie aangeduid met $s^2$ en berekend via $s^2 = \frac{1}{n-1}\sum_{i=1}^{n}{(x_i- \bar{x})}^2$, waarbij $\bar{x}$ het steekproefgemiddelde is.
+::: {.callout-note title="Steekproef"}
+Bij een steekproef met $n$ waarnemeningen uit de populatie wordt de variantie aangeduid met $s^2$ en berekend via $s^2 = \frac{1}{n-1}\sum_{i=1}^{n}{(x_i- \bar{x})}^2$, waarbij $\bar{x}$ het steekproefgemiddelde is.
 :::
 
 Excel formules:

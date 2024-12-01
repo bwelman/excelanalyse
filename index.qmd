@@ -10,9 +10,7 @@ Er komen interactieve onderdelen in het leerboek voor om je te helpen de inhoud 
 
 Dit studieboek is een levend document en zal regelmatig worden gecontroleerd en bijgewerkt voor verbeteringen.
 
-::: callout-important
-## Databestanden
-
+::: {.callout-important title="Databestanden"}
 Bij dit studieboek horen databestanden. Deze heb je nodig om de oefeningen uit te voeren. Je kunt ze via één zipbestand downloaden: [Download databestanden](bestanden-excelanalyse.zip).
 :::
 
@@ -38,8 +36,8 @@ Ben Welman
 
 Andere studieboeken:
 
-| Nederlandstalig                                        | Engelstalig                                      |
+| Nederlandstalig | Engelstalig |
 |--------------------------------------|----------------------------------|
-| [Leer Excel](https://leerexcel.netlify.app/)           | [Learn Excel](https://learnexcel.netlify.app/)   |
-| [Leer Access](https://leeraccess.netlify.app/)         | [Learn Access](https://learnaccess.netlify.app/) |
-| [Cursus bierbrouwen](https://brouwjebier.netlify.app/) |                                                  |
+| [Leer Excel](https://leerexcel.netlify.app/) | [Learn Excel](https://learnexcel.netlify.app/) |
+| [Leer Access](https://leeraccess.netlify.app/) | [Learn Access](https://learnaccess.netlify.app/) |
+| [Cursus bierbrouwen](https://brouwjebier.netlify.app/) |  |

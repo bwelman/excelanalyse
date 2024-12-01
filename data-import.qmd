@@ -3,9 +3,7 @@
 ```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
-::: callout
-**Doelstellingen**
-
+::: {.callout title="Doelstellingen"}
 Bij de analyse van data probeer je antwoorden te vinden op vragen door statistische methodes toe te passen op waarnemingen. Deze waarnemingen - verzameld uit rapportages, enquêtes en experimenten - vormen de ruggegraat van een statistisch onderzoek en worden *data* genoemd. In de praktijk komen veel gegevens uit externe bronnen: txt/csv, web, excel bestanden, databases, ... Om deze gegevens in Excel te analyseren, moeten ze eerst geïmporteerd worden en soms worden getransformeerd en opgeschoond. Dat gebeurt met **Power Query**.
 :::
 
@@ -123,7 +121,7 @@ In een database zit de data in tabellen die meestal aan elkaar gekoppeld zijn. V
 
 Deze database bevat de Engelstalige en Nederlandstalige namen van de olympische sporten en disciplines voor de twee versies van de spelen (zomer, winter), alsmede de afkorting van de sportbond, het beginjaar en het eventuele eindjaar van de disciplines.
 
-::: callout-note
+::: {.callout-note title="IOC definitie van een sport"}
 De door het IOC gebruikte definitie van sport is een verzameling van disciplines die door één sportbond worden vertegenwoordigd. Zo vallen onder de sport "Volleybal" de disciplines "Zaalvolleybal" en "Beachvolleybal", vertegenwoordigd door de sportbond FIVB (Fédération Internationale de Volleyball).
 :::
 

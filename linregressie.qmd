@@ -1,8 +1,6 @@
 # Samenhang en lineaire regressie {#sec-linregressie}
 
-::: callout
-**Doelstellingen**
-
+::: {.callout title="Doelstellingen"}
 Voor het nemen van beslissingen is het van belang om te weten of er samenhang tussen variabelen bestaat. Ook kan het zijn dat je de waarde van een variabele wilt schatten op basis van de waarde van andere variabelen. Onderzoek naar een mogelijk verband tussen variabelen is dan nodig. Is er een verband dan kan een model voor het verband worden opgesteld.
 :::
 
@@ -27,7 +25,7 @@ Wanneer er een verband tussen twee variabelen is, dan zal ook de variantie van d
 
 <!-- De covariatie is het gemiddelde van de produkten van de deviaties (afwijkingen van het gemiddelde) voor ieder gegevenspaar. -->
 
-::: callout-note
+::: {.callout-note title="Variantie en meetschaal"}
 Het lastige is echter dat variantie afhangt van de meetschaal. Stap je bijvoorbeeld bij het meten van de lengte over van meters naar centimeters, dan worden de meetwaarden zelf 100 keer zo groot, maar de variantie wordt 10.000 keer zo groot. De variantie is dus gevoelig voor veranderingen in de schaal. Daarom kun je door simpelweg naar de covariantie te kijken niet zeggen of de variabelen veel of weinig van hun variantie delen. De covariantie is hierdoor een minder bruikbaar getal en zal dan ook verder bij de analyses niet bekeken worden.
 :::
 
@@ -208,9 +206,7 @@ Dit is wel het belangrijkste deel in de uitvoer. Je ziet de reeds eerder genoemd
 
 In @fig-sim1-residuplot zijn de residuen uitgezet tegen de bijbehorende `x`-waarde. De residuen vormen de variatie in de data die niet door het regressiemodel verklaard worden. Bij een positief residu wordt de waarde *onderschat* door het model en bij een negatief residu wordt de waarde *overschat*.
 
-::: callout-note
-**Residuen**
-
+::: {.callout-note title="Residuen"}
 Deze zijn belangrijk bij het evalueren hoe goed een model bij de dataset past. Het diagram met residuen moet altijd goed bestudeerd worden. Bij een goed model moet het gemiddelde en de som van de residuen dicht bij 0 liggen. En in de grafiek moeten de residuen een willekeurig patroon laten zien. Is dat niet het geval en is er nog een patroon zichtbaar, dan moet het model aangepast worden. In het voorbeeld "Druk-Temperatuur" verderop is dat het geval.
 :::
 
@@ -328,8 +324,8 @@ Op basis hiervan wordt een meervoudig lineair model opgesteld met de formule
 
 $\text{Aandelenindex} = \beta_0 + \beta_1 * \text{Renteperc} + \beta_2 * \text{Werkloosheidsperc} + \epsilon$
 
-::: callout-tip
-Voor de uitvoering in Excel kies je [Gegevens \> Gegevensanalyse \> Regressie]{.uicontrol}. Let er op dat je beide onafhankelijke variabelen in het invoerbereik voor `x` opneemt, zie @fig-ecdata-regressie.
+::: {.callout-tip title="Uitvoering met Excel"}
+Voor de uitvoering met Excel kies je [Gegevens \> Gegevensanalyse \> Regressie]{.uicontrol}. Let er op dat je beide onafhankelijke variabelen in het invoerbereik voor `x` opneemt, zie @fig-ecdata-regressie.
 
 ![Dialoogscherm regressie voor economiedata.](images/linregressie/ecdata-regressie.png){#fig-ecdata-regressie}
 :::

@@ -3,9 +3,7 @@
 ```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
-::: callout
-**Doelstellingen**
-
+::: {.callout title="Doelstellingen"}
 Data bestaat uit waarnemingen van meetgegevens, dat zijn de variabelen. In dit hoofdstuk wordt uitgelegd welke soort variabelen er zijn en welke bewerkingen je mag toepassen.
 
 Wanneer je data uit externe bronnen importeert, heb je geen controle over de indeling en het type gegevens en de manier waarop de data is georganiseerd. Voordat je met de analyse kunt beginnen moet je daarom vaak veel tijd steken om de data te herstructureren. Het tweede deel van dit hoofdstuk gaat hierover.
