@@ -39,7 +39,7 @@ De groep [Query's en verbindingen]{.uicontrol} heeft een knop voor het vernieuwe
 
 Veel gegevens in externe bronnen zijn beschikbaar als tekst (bestandstype `.txt`) of via komma (of karakter) gescheiden waarden (bestandstype `.csv`).
 
-::: {#prp-imp-txtcsv}
+:::: {#prp-imp-txtcsv}
 [Hulpbestand]{.smallcaps}: `SalesJan2009.csv`
 
 1.  Open in Excel een nieuwe lege werkmap.
@@ -69,7 +69,7 @@ Als bij het importeren het automatisch ontdekken van het gegevenstype goed gegaa
 7.  In kolom `Naam` beginnen de meeste namen met een hoofdletter, maar niet allemaal. Dat dient gecorrigeerd te worden. Selecteer kolom `Naam`, rechtermuisklik en kies [Transformeren \> Elk Woord Met Een Hoofdletter]{.uicontrol}.
 
 8.  Kies [Sluiten en laden(groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
-:::
+::::
 
 ::: callout-tip
 Het is altijd mogelijk om de query achteraf te wijzigen. Selecteer hiervoor een cel in de tabel en kies [tab Query \> Bewerken (groep Bewerken)]{.uicontrol}. De Query Editor wordt weer opgestart. Van hieruit kun je tevens de gegevens vernieuwen, alle stappen worden dan herhaald.
@@ -193,9 +193,85 @@ Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het 
 
 <!-- Vanwege structurele veranderingen op de website van [transfermarkt](https://www.transfermarkt.nl/) werkt de gebruikte workflow voor het importeren en verwerken van de data met Power Query niet meer. Helaas moet daarom deze mooie taak geschrapt worden totdat een mogelijke oplossing gevonden wordt. -->
 
+## Importeren van een JSON bestand {#sec-import-json}
+
+JSON staat voor **J**ava**S**cript **O**bject **N**otation, een tekst gebaseerd gegevensformaat dat leesbaar is voor mens en machine. Het werd ooit geïntroduceerd als onderdeel van Javascript, maar heeft zich geleidelijk aan uitgebreid tot een veel gebruikte standaard voor het uitwisselen van gegevens, vooral tussen een webserver en een webclient.
+
+Een JSON object is een verzameling van **naam:waarde** paren (**key:value**) tussen accolades: `{ "naam": waarde }`
+
+**Vereisten**
+
+-   De **naam (key)** moet tussen dubbele aanhalingstekens staan.
+
+-   De **waarde (value)** moet een geldig JSON gegevenstype zijn:
+
+    -   **string** (tussen aanhalingstekens, enkele of dubbele)
+    -   **getal** (decimaal scheidingssymbool is een punt)
+    -   **boolean** (`true` of `false`)
+    -   **array** (een lijst met waarden tussen blokhaken, waarden van elkaar gescheiden door een komma)
+    -   **object** (tussen accolades)
+    -   **null** (dit betekent geen waarde)
+
+-   Tussen naam en waarde moet een **dubbele punt** staan.
+
+-   Paren worden onderling van elkaar gescheiden door een **komma**.
+
+Voor een schematische uitleg van de syntax zie [Inleiding tot JSON](https://www.json.org/json-nl.html).
+
+Een voorbeeld van een JSON object:
+
+``` json
+{{< include data/medewerkers-1.json >}}
+```
+
+De waarde van `medewerker` is een array (list) van vier objecten.
+
+::: callout-note
+Een andere manier om naar de JSON-syntax te kijken, is door de ogen van de computer die het leest. De volgende tekens ziet de computer als een instructie over hoe de gegevens gelezen moeten worden:
+
+-   `{` (linker accolade) zegt "begin object"
+-   `}` (rechter accolade) zegt "einde object"
+-   `[` (linker vierkante haak) zegt "begin array"
+-   `]` (rechter vierkante haak) zegt "einde array"
+-   `:` (dubbele punt) zegt "scheiding van een naam en een waarde in een paar"
+-   `,` (komma) zegt "scheiding van een naam:waarde paar in een object" of "scheiding van een waarde in een arrayy". Kan ook worden gelezen als "hier komt er nog een"
+:::
+
+::: {#prp-imp-json}
+[Hulpbestand]{.smallcaps}: `medewerkers-1.json`
+
+1.  Open in Excel een nieuwe lege werkmap.
+
+2.  Kies [tab Gegevens \> Gegevens ophalen]{.uicontrol} \> Uit bestand \> Uit JSON
+
+3.  Blader naar het bestand `medewerkers-1.json` en klik [Importeren]{.uicontrol}. Power Query wordt geopend.
+
+![De gegevens als één List.](images/importdata/json-01.png){#fig-json-01}
+
+4.  Klik op `List` om deze open te vouwen. Er verschijnt nu een lijst met 4 records.
+
+![Opsplitsing van de List in records.](images/importdata/json-02.png){#fig-json-02}
+
+5.  Klik in de linkerbovenhoek op [Naar tabel]{.uicontrol} en in het vervolgvenster op [OK]{.uicontrol}.
+
+![De list omgezet naar een tabel.](images/importdata/json-03.png){#fig-json-03}
+
+6.  Om te kiezen welke kolommen je in je spreadsheet wilt houden, klik je naast "Column1" op het dubbele-pijl-pictogram.
+
+![Selecteren van de kolommen](images/importdata/json-04.png){#fig-json-04}
+
+7.  Selecteer [Alle kolommen selecteren]{.uicontrol} en deselecteer de optie [Oorspronkelijke kolomnaam gebruiken als voorvoegsel]{.uicontrol}. Daarna [OK]{.uicontrol}.
+
+8.  De gegevens zijn nu zichtbaar als rijen en kolommen.
+
+![De gegevens in de vorm van rijen en kolommen.](images/importdata/json-05.png){#fig-json-05}
+
+8.  Klik to slot op [Sluiten en Laden]{.uicontrol}.
+:::
+
 ## Opgaven {#sec-opg-importdata}
 
-::: {#exr-imp-csv}
+:::: {#exr-imp-csv}
 **Een csv bestand importeren**
 
 a.  Open eerst het bestand `verkopen.csv` met een kale tekstverwerker (Kladblok, Notepad) om te onderzoeken hoe het bestand er uit ziet. Het is belangrijk om te weten is of er veldnamen in staan en welk scheidingssymbool gebruikt is. Meestal herkent Power Query dit zelf, maar het is toch wel nuttig om dit zelf eerst na te gaan.
@@ -211,7 +287,7 @@ b.  Importeer de gegevens via [Gegevens ophalen en transformeren]{.uicontrol}.
 :::
 
 c.  Bewaar het bestand voor later gebruik onder de naam **verkopen.xlsx**.
-:::
+::::
 
 ::: {#exr-imp-access}
 **Een Access database importeren**

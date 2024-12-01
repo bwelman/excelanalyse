@@ -1,0 +1,8 @@
+{
+"medewerker": [
+  {"voornaam":"Roger", "achternaam":"Rood", "leeftijd": 23, "bril": true},
+  {"voornaam":"Vicky", "achternaam":"Violet", "leeftijd": 19, "bril": false},
+  {"voornaam":"Marie", "achternaam":"Magenta", "leeftijd": 20, "bril": false},
+  {"voornaam":"Gerrit", "achternaam":"Groen", "leeftijd": 21, "bril": false}
+ ]
+}
