@@ -96,7 +96,7 @@ Er wordt een verbinding met de webpagina gemaakt. Wanneer de verbinding gerealis
 
 ![Venster Navigator voor UEFA pagina op Wikipedia.](images/importdata/ek-voetbal-navigator.png){#fig-ek-voetbal-navigator}
 
-4.  Selecteer tabel `Erelijst[bewerken]` en klik dan op de knop [Gegevens transformeren]{.uicontrol}. De Query Editor wordt gestart in een nieuw venster. Aan de rechterkant onder [Queryinstellingen]{.uicontrol} en onder [Toegepaste Stappen]{.uicontrol} zie je de stappen die reeds zijn toegepast.
+4.  Selecteer de tabel die de gegevens in @fig-ek-voetbal-navigator weergeeft en klik dan op de knop [Gegevens transformeren]{.uicontrol}. De Query Editor wordt gestart in een nieuw venster. Aan de rechterkant onder [Queryinstellingen]{.uicontrol} en onder [Toegepaste Stappen]{.uicontrol} zie je de stappen die reeds zijn toegepast.
 
 Vervolgens kun je de gegevens naar behoefte structureren, wijzigen en opschonen.
 
