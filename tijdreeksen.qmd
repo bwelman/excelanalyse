@@ -395,7 +395,7 @@ Een voorbeeld van een uitwerking is te zien in @fig-covid. Laat je niet weerhoud
 ::: {#exr-ts-gtrends}
 **Google Trends**
 
-Google houdt de populariteit van zoektermen in de loop van de tijd bij op http://www.google.com/trends . Je kunt dagelijkse gegevens bekijken door een tijdsperiode van minder dan 90 dagen te selecteren en bij een langere tijdsperiode krijg je wekelijkse of maandelijkse gegevens. De opdracht is om het volgende te vinden:
+Google houdt de populariteit van zoektermen in de loop van de tijd bij op <https://trends.google.com/trends/>. Je kunt dagelijkse gegevens bekijken door een tijdsperiode van minder dan 90 dagen te selecteren en bij een langere tijdsperiode krijg je wekelijkse of maandelijkse gegevens. De opdracht is om het volgende te vinden:
 
 a.  Een zoekterm waarin een seizoenspatroon (wekelijks of jaarlijks) herkenbaar is.
 b.  Een zoekterm waarin een stijgende trend herkenbaar is.

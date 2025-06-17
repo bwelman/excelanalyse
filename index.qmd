@@ -1,6 +1,48 @@
 # Welkom {.unnumbered}
 
-Dit is de gratis online versie van het studieboek **Data Analyse met Excel**. Hierin leer je hoe je met Excel datasets kunt verkennen, onderzoeken en samenvatten.
+**Data-analyse** is het proces waarbij ruwe data wordt omgezet in bruikbare informatie om inzichten te verkrijgen en beslissingen te ondersteunen. Het omvat:
+
+1.  **Verzamelen** van relevante data.
+2.  **Opschonen** van data en controleren op fouten of ontbrekende waarden.
+3.  **Verkennen** van de data (bijv. via grafieken of statistieken).
+4.  **Analyseren** met behulp van statistische of algoritmische methoden.
+5.  **Interpreteren** van de resultaten om conclusies te trekken.
+6.  **Presenteren** van de bevindingen op een duidelijke manier (bijv. in rapporten of dashboards).
+
+Kort gezegd: data-analyse is het proces van het omzetten van data in kennis.
+
+**Statistiek en Data-analyse**
+
+Statistiek is essentieel om data op een betrouwbare en gestructureerde manier te analyseren. Het helpt om:
+
+1.  **Inzicht te krijgen**: Statistiek maakt het mogelijk om patronen, trends en relaties in data te ontdekken.
+2.  **Beslissingen te onderbouwen**: Statistische analyses geven een wetenschappelijke basis voor het nemen van beslissingen, in plaats van te vertrouwen op onderbuikgevoel.
+3.  **Variatie en onzekerheid te begrijpen**: Statistiek helpt inschatten hoe betrouwbaar data is, en hoeveel toeval een rol speelt.
+4.  **Conclusies te trekken**: Met behulp van statistische toetsen kun je bepalen of een waargenomen effect ‘echt’ is of toeval.
+
+Kortom: statistiek vertaalt ruwe data naar bruikbare informatie.
+
+**Excel en Data-analyse**
+
+Je kunt met Excel data-analyses uitvoeren, vooral voor eenvoudige tot middelmatig complexe analyses. Excel biedt veel functies en hulpmiddelen zoals:
+
+-   **Formules en functies**
+-   **Draaitabellen**: voor het samenvatten van data.
+-   **Grafieken**: voor visualisaties.
+-   **Invoegtoepassing Gegevensanalyse**: voor regressie, t-toetsen, variantie-analyse enz.
+
+Excel heeft echter ook beperkingen bij data-analyse zoals
+
+-   **Beperkte schaalbaarheid**: kan traag of instabiel worden bij grote datasets.
+-   **Beperkte automatisering**: complexe of herhaalde analyses zijn moeilijk te automatiseren zonder VBA.
+-   **Beperkte statistische diepgang**: niet geschikt voor geavanceerde analyses (machine learning, multivariate modellen).
+-   **Foutgevoeligheid**: formules zijn handmatig, waardoor de kans op menselijke fouten groter is.
+
+Conclusie: Excel is prima voor basis- tot gemiddelde data-analyse, vooral bij kleinere datasets. Voor complexe of grootschalige analyses en machine learning is gespecialiseerde software zoals [R](https://www.r-project.org/), [Python](https://www.python.org/) of [SPSS](https://www.ibm.com/spss) beter geschikt.
+
+## Studieboek Data-analyse met Excel {.unnumbered}
+
+Dit is de gratis online versie van het studieboek **Data-analyse met Excel**. Hierin leer je hoe je met Excel datasets kunt verkennen, onderzoeken en samenvatten.
 
 Dit is geen cursus Excel. Er wordt vanuit gegaan dat je goed met Excel kunt werken. Het importeren van gegevens in Excel en het maken van draaitabellen en grafieken zijn vaardigheden die je moet beheersen.
 
@@ -28,16 +70,16 @@ Dit werk valt onder een [Creative Commons Naamsvermelding-NietCommercieel-Gelijk
 
 ### Over de auteur {.unnumbered}
 
-![Ben Welman](images/benw2.png){.quarto-cover-image .image-fluid width="150"}Ik heb Chemische Technologie gestudeerd aan de THT, de huidige Universiteit Twente. Na eerst een aantal jaren scheikunde en wiskunde te hebben gegeven op middelbare scholen ben ik als docent informatica en statistiek gaan werken bij de opleiding Commercieel Technische Bedrijfskunde van de Hogeschool Enschede, nu Saxion Hogescholen. Van daaruit intern overgestapt naar MeetingPoint dat zich voornamelijk bezighield met het ontwikkelen en ondersteunen van e-learning. In 1993 heb ik [Softwijs](https://bwelman.github.io/softwijs/) opgericht waarmee ik eind 2018 ben gestopt.
+![Ben Welman](images/benw2.png){.quarto-cover-image .image-fluid width="150"}Ik heb Chemische Technologie gestudeerd aan de THT, de huidige Universiteit Twente. Na eerst een aantal jaren scheikunde en wiskunde te hebben gegeven op middelbare scholen ben ik als docent informatica en statistiek gaan werken bij de opleiding Commercieel Technische Bedrijfskunde van de Hogeschool Enschede, nu Saxion Hogescholen. Van daaruit ben ik intern overgestapt naar MeetingPoint, dat zich richtte op de ontwikkeling en ondersteuning van e-learning. In 1993 heb ik [Softwijs](https://bwelman.github.io) opgericht waarmee ik eind 2018 ben gestopt.
 
-Na mijn pensionering heb ik tijd voor mijn hobby's: biljarten, bridgen, bierbrouwen, broodbakken en reizen (vooral met de camper en de fiets mee). Daarnaast hou ik naast het maken van studieboeken nog wat tijd over om me te verdiepen in data analyse en dan vooral met [R](https://en.wikipedia.org/wiki/R_(programming_language)) en wat minder met [Python](https://www.python.org/).
+Sinds mijn pensioen geniet ik van mijn hobby's: biljarten, bridgen, bier brouwen, brood bakken en reizen (vooral met mijn camper en fiets). Naast het maken van leerboeken besteed ik ook tijd aan het analyseren van data, met name met [R](https://nl.wikipedia.org/wiki/R_(softwarepakket)) en in mindere mate met [Python](https://nl.wikipedia.org/wiki/Python_(programmeertaal)).
 
 Ben Welman
 
 Andere studieboeken:
 
 | Nederlandstalig | Engelstalig |
-|--------------------------------------|----------------------------------|
+|----|----|
 | [Leer Excel](https://leerexcel.netlify.app/) | [Learn Excel](https://learnexcel.netlify.app/) |
 | [Leer Access](https://leeraccess.netlify.app/) | [Learn Access](https://learnaccess.netlify.app/) |
 | [Cursus bierbrouwen](https://brouwjebier.netlify.app/) |  |

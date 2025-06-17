@@ -46,7 +46,7 @@ Deze R-kwadraat geeft tevens aan welk deel (of percentage bij vermenigvuldiging 
 -   `COVARIANTIE.P()` - Covariantie populatie
 -   `COVARIANTIE.S()` - Covariantie steekproef
 -   `PEARSON()` - Pearson correlatiecoëfficiënt
--   `R-KWADRAAT()` - R-kwadraat
+-   `R.KWADRAAT()` - R-kwadraat
 
 ## Lineair verband
 
