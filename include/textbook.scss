@@ -1,20 +1,24 @@
 /*-- scss:defaults --*/
 
-$tbGray:   #7E7E7E;    /* Gray            , hsl(0,0,49)    , rgb(126,126,126)  */
+$tbGray:   #7E7E7E;    /* Gray, hsl(0,0,49), rgb(126,126,126) */
 $tbLGray:  #7E7E7E1A;  /* Light Gray , 10% Gray */
 
 $body-bg: #FFFAF0; /* Floral white */
+
+$font-family-sans-serif: "Montserrat", sans-serif;
+$font-family-monospace: "Source Code Pro", monospace;
 
 /*-- scss:rules --*/
 
 /* All textbooks */
 
-.quarto-cover-image {
-	max-width: 50%;
+h1, h2, h3, h4, h5 {
+	font-family: "Source Sans 3", serif;
 }
 
-.figure-caption {
-	font-size: .9em;
+
+.quarto-cover-image {
+	max-width: 50%;
 }
 
 .example {

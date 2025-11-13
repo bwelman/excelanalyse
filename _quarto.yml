@@ -8,6 +8,11 @@ book:
   author: "Ben Welman"
   date: today
   date-format: long
+  page-footer:
+    left: |
+      Data Analyse met Excel
+    right: |
+      Dit boek is gemaakt met <a href="https://quarto.org/">Quarto</a>
   google-analytics: "G-CMGT59LG7K"
   site-url: https://excelanalyse.netlify.app/
   repo-url: https://github.com/bwelman/excelanalyse
