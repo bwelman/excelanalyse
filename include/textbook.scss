@@ -1,9 +1,8 @@
 /*-- scss:defaults --*/
 
-$tbGray:   #7E7E7E;    /* Gray, hsl(0,0,49), rgb(126,126,126) */
-$tbLGray:  #7E7E7E1A;  /* Light Gray , 10% Gray */
+$tbGray:  #7E7E7E;    /* Gray, hsl(0,0,49), rgb(126,126,126) */
+$tbLGray: #7E7E7E1A;  /* Light Gray , 10% Gray */
 
-$body-bg: #FFFAF0; /* Floral white */
 
 $font-family-sans-serif: "Montserrat", sans-serif;
 $font-family-monospace: "Source Code Pro", monospace;
@@ -16,13 +15,13 @@ h1, h2, h3, h4, h5 {
 	font-family: "Source Sans 3", serif;
 }
 
-
 .quarto-cover-image {
 	max-width: 50%;
 }
 
 .example {
   padding: 0.5em;
+  margin: 10px 0 10px 0;      /* top right bottom left */
   border: 1px solid $tbGray;
   border-radius: 5px;
 }

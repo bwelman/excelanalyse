@@ -12,14 +12,14 @@ Beschrijvende statistiek
 
 In dit studieboek zal voornamelijk aandacht besteed worden aan
 
--   *Beschrijvende statistiek* - Het verzamelen, organiseren, visualiseren en interpreteren van gegevens.
--   *Exploratieve Data Analyse* - Het verkennen en samenvatten van de belangrijkste kenmerken van de dataset met voornamelijk grafische technieken.
--   *Regressie* - Het zoeken naar verbanden tussen gegevens.
--   *Voorspellen* - Het schatten van toekomstige waarden, vooral bij tijdreeksen.
+-   **Beschrijvende statistiek** - Het verzamelen, organiseren, visualiseren en interpreteren van gegevens.
+-   **Exploratieve Data Analyse** - Het verkennen en samenvatten van de belangrijkste kenmerken van de dataset met voornamelijk grafische technieken.
+-   **Regressie** - Het zoeken naar verbanden tussen gegevens.
+-   **Voorspellen** - Het schatten van toekomstige waarden, vooral bij tijdreeksen.
 
-Statistiek speelt een belangrijke rol bij de besluitvorming voor het bedrijfsleven en de overheid, waaronder marketing, strategische planning, productie, financiën, kwaliteitscontrole, voorraadtellingen, cycle-counting, voorspellingen (afzet, cashflow, orders, drukte, ...)
+Statistiek speelt een belangrijke rol bij de besluitvorming voor het bedrijfsleven en de overheid, waaronder marketing, strategische planning, productie, financiën, kwaliteitscontrole, voorraadtellingen, voorspellingen (afzet, cashflow, orders, drukte, ...)
 
-Belangrijk is ook het meten van *onzekerheid*. Onzekerheid is de fout bij het schatten van een parameter, zoals het gemiddelde van een steekproef, of het verschil in gemiddelden tussen twee experimentele behandelingen, of de voorspelde toekomstige omzet. Onzekerheid ontstaat door variatie in de gegevens.
+Belangrijk is ook het meten van **onzekerheid**. Onzekerheid is de fout bij het schatten van een parameter, zoals het gemiddelde van een steekproef, of het verschil in gemiddelden tussen twee experimentele behandelingen, of de voorspelde toekomstige omzet. Onzekerheid ontstaat door variatie in de gegevens.
 
 Excel is niet ontworpen om als een statistische toepassing te dienen en heeft daardoor wel enige beperkingen vergeleken met echte statistische programma's als SPSS, SAS, Stata en R. Ook een programmeertaal als Python heeft meer mogelijkheden. Desondanks heeft Excel meerdere statistische mogelijkheden die niet bij iedereen bekend zijn. En waar Excel tekortkomingen heeft kun je die uitbreiden met zogenaamde add-ins. Een zo'n add-in is [Real Statistics](http://www.real-statistics.com/) welke gratis te gebruiken is. Bij de onderdelen in deze tutorial wordt alleen van de standaard in Excel aanwezige mogelijkheden gebruik gemaakt.
 
@@ -50,7 +50,9 @@ Dit studieboek heeft een logische opbouw, beginnend met het verkrijgen van de da
 In dit studieboek wordt gewerkt met **Excel 365 NL**. Voor het grootste deel van de inhoud kun je ook met Excel 2010, 2013, 2016 en 2019 werken.
 
 ::: {.callout-important title ="Data Analysis Toolpak (Gegevensanalyse)"}
+
 Voor veel opdrachten en taken in dit studieboek heb je de invoegtoepassing **Data Analysis Toolpak (Gegevensanalyse)** nodig. Deze bevat diverse hulpmiddelen voor het uitvoeren van analyses. Het wordt standaard met Excel meegeleverd, je hoeft het dus niet te installeren. Echter het moet wel geactiveerd zijn en dat is niet altijd het geval.
 
 In @sec-analysis-toolpak wordt aangegeven hoe je dit kunt controleren en zonodig de activering kunt uitvoeren.
+
 :::

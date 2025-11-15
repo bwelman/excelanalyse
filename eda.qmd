@@ -71,7 +71,22 @@ Een aantal handige vragen die je bijna altijd kunt gebruiken zijn:
 
 Op welke manier je data kunt samenvatten en welke grafiek het meest geschikt is voor visualisatie hangt vooral van de soort variabele(n) en de vraag af. Het volgende schema kan je hierbij een handje helpen.
 
-![Schema voor selectie samenvatting en visualisatie. In plaats van een kolomdiagram (verticaal) kun je ook een staafdiagram (horizontaal) nemen.](images/eda/diagramselectie.png){#fig-diagramselectie}
+```{mermaid}
+%%| label: fig-diagramselectie
+%%| fig-cap: Schema voor selectie van samenvatting en visualisatie. In plaats van een kolomdiagram (verticaal) kun je ook een staafdiagram (horizontaal) nemen.
+
+flowchart TD
+  T(Type variabele) --> C1[1 categoriale<br/>variabele]
+  T --> C2(2 categoriale<br/>variabelen)
+  T --> K1(1 kwantitatieve<br/>variabele)
+  T --> K2(2 kwantitatieve<br/>variabelen)
+  T --> CK(1 categoriale<br/>1 kwantitatieve<br/>variabele)
+  C1 --> FCK[Frequentietabel<br/>Cirkeldiagram<br/>Kolomdiagram]
+  C2 --> KK[Kruistabel<br/>Kolomdiagram<br/>gegroepeerd]
+  K1 --> SHB[Statistieken<br/>Histogram<br/>Boxplot]
+  K2 --> SL[Spreidingsdiagram<br/>Lijndiagram]
+  CK --> B[Boxplot<br/>gegroepeerd]
+```
 
 ## Eén categoriale variabele {#sec-eda-cat1}
 

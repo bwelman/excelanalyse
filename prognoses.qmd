@@ -161,10 +161,12 @@ Je kunt het beste deze methode gebruiken wanneer de tijdreeks zowel een trend al
 
 In de nieuwere versies van Excel ( Excel 365, Excel 2016, Excel 2019, ...) zijn de volgende werkbladfuncties voor het uitvoeren van de ETS methode beschikbaar:
 
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
 -   `VOORSPELLEN.ETS`
 -   `VOORSPELLEN.ETS.SEASONALITY`
 -   `VOORSPELLEN.ETS.CONFINT`
 -   `VOORSPELLEN.ETS.STAT`
+:::
 
 Eenvoudiger is het gebruik van het *Voorspellingblad* of *prognosewerkblad* dat in die nieuwere Excel versies aanwezig is. Onder de motorkop worden de `VOORSPELLEN.ETS` functies gebruikt.
 

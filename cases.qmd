@@ -1,5 +1,7 @@
 # Cases {#sec-cases}
 
+{{< include _setup.qmd >}}
+
 ## Pinguins {#sec-case-pinguins}
 
 Op het [Palmer Station, Antarctica](https://pal.lternet.edu/) is door dr. Kristen Gorman gedurende de jaren 2007-2009 een onderzoek bij pinguïns uitgevoerd. Van de drie pinguinsoorten die zijn waargenomen op drie eilanden in de Palmerarchipel zijn gegevens verzameld gedurende de onderzoeksperiode.
@@ -108,9 +110,16 @@ Beisterkamp Transport BV is een middelgrote transportonderneming gevestigd in Ol
 
 In het databestand `beisterkamp.csv` vind je de data over de afgelegde kilometers, het dieselverbruik in liters en het aantal geboekte uren in 2020. Begin met een nieuwe lege werkmap, importeer hierin de gegevens en voer hierin alle analyses uit. Bewaar het bestand onder de naam `beisterkamp.xlsx`.
 
-Zie hieronder de data van week 1.
+In @tbl-bk-week1 zie je de gegevens van week 1.
 
-![Data week 1.](images/cases/beisterkamp-week1.png){#fig-week1-data}
+```{r}
+#| label: tbl-bk-week1
+#| echo: false
+#| tbl-cap: Gegevens van week 1.
+
+bk <- read.csv("data/beisterkamp.csv", sep=";", dec=",", header=TRUE)
+flextable(bk[bk$Weeknummer==1,]) |> autofit()
+```
 
 Belangrijk om te weten:
 

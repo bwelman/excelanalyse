@@ -44,9 +44,17 @@ Een tijdreeksanalyse is de analyse van gegevens die in de loop van een bepaalde 
 
 Een tijdreeksanalyse begint altijd met het weergeven van de tijdreeks in een grafiek, meestal een *lijngrafiek*. Op de horizontale as staat altijd de tijd en op de verticale as de te onderzoeken variabele. De grafiek geeft vaak al een eerste beeld van de kenmerken van de tijdreeks.
 
-![Tijdreeks van het aantal internationale vliegtuigpassagiers per maand (1949-1960)](images/timeseries/airpassengers.png){#fig-airpassengers width="500"}
+```{r}
+#| label: fig-airpassengers
+#| echo: false
+#| fig-cap: Tijdreeks van de maandelijkse aantallen vliegtuigpassagiers per maand (1949-1960)
+#| lightbox: true
 
-Je ziet hierin onmiddellijk een paar zaken:
+ plot(AirPassengers, xlab= "Jaar", ylab = "Aantal passagiers (x 1000)", 
+ 	 main="Vliegtuigpassagiers per maand gedurende 1949-1960")
+```
+
+In @fig-airpassengers (klik erop voor een groter beeld) zie je onmiddellijk een paar zaken:
 
 1.  Het aantal passagiers neemt in de loop van de tijd toe.
 2.  Er vinden jaarlijks terugkerende patronen plaats: periodiek gedrag.
@@ -63,7 +71,16 @@ Zaken waar je op moet letten zijn:
 
 Bij een nauwkeuriger analyse van een tijdreeks is het nuttig wanneer je dergelijke zaken apart zou kunnen bekijken. Daarvoor moet je een tijdreeks in de verschillende componenten kunnen splitsen. Bij de meest gebruikte systematiek gaat men er van uit dat een tijdreeks uit de volgende componenten bestaat:
 
-![Componenten van een tijdreeks.](images/timeseries/ts-componenten.png){#fig-ts-componenten}
+```{mermaid}
+%%| label: fig-ts-componenten
+%%| fig-cap: Componenten van een tijdreeks.
+
+flowchart TD
+  T(Tijdreeks) --> TC[Trend<br/>component]
+  T --> SC[Seizoen<br/>component]
+  T --> CC[Cyclische<br/>component]
+  T --> RC[Random<br/>component]
+```
 
 ::: panel-tabset
 ### Trend {#sec-ts-comp-trend}

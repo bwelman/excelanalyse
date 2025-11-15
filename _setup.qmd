@@ -1,0 +1,12 @@
+```{r}
+#| label: setup
+#| include: false
+#| warning: false
+#| message: false
+
+library(openxlsx2)      # voor excel bestandsmanipulatie
+library(flextable)      # voor opmaak tabellen
+library(tidyr)          # voor tidydata functies
+
+source("R/webex-nl.R")  # voor webex functies
+```

@@ -5,34 +5,6 @@ library(DiagrammeR)
 library(DiagrammeRsvg)
 library(rsvg)
 
-# meetniveaus van variabelen ------------------------------
-myd <- grViz("
-  digraph stat1 {
-    graph[rankdir = LR, bgcolor=transparent]
-    node[shape = oval, fontname = Arial]
-    V [label = 'Variabele']
-    node[shape = box, width = 1.2, fontsize = 12]
-    CA [label = 'Categoriaal']
-    NU [label = 'Kwantitatief']
-    node[shape = box, width = 0.8, fontsize = 10]
-    NO [label = 'Nominaal']
-    OR [label = 'Ordinaal']
-    IN [label = 'Interval']
-    RA [label = 'Ratio']
-
-    {rank=same CA NU}
-    V -> {CA,NU}
-    CA -> {NO,OR}
-    NU -> {IN,RA}
-  }
-")
-
-myd %>%
-	export_svg() %>%
-	charToRaw() %>%
-	rsvg_svg("images/data/meetniveaus.svg")
-
-rsvg_png(svg="images/data/meetniveaus.svg", file="images/data/meetniveaus.png")
 
 # diagramselectie -----------------------------------------
 myd <- grViz("

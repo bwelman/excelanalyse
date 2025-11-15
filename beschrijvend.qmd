@@ -105,7 +105,7 @@ Het eerste argument is de matrix met de waarden waarvan je de frequenties wilt b
 
 Om een frequentieverdeling van de gegevens te maken moet je als voorbereiding eerst de intervallen (bins) vaststellen waarin de waarden moeten vallen. Hiervoor maak je een kolom met de bovengrenzen van de intervallen.
 
-::: {#prp-freq-interval}
+:::: {#prp-freq-interval}
 [Hulpbestand]{.smallcaps}: `frequenties.xlsx`
 
 1.  Open het bestand `frequenties.xlsx` en daarin het werkblad *data*. De gegevens in de kolom `getal` zijn 25 willekeurige gehele getallen uit het interval \[1,10\].
@@ -122,7 +122,7 @@ Het resultaat van de intervalformule is te zien in @fig-freq-interval. Om duidel
 Sluit de werkmap nog niet want je hebt deze nog nodig voor de volgende oefening.
 
 ![Frequenties bepaald met functie INTERVAL.](images/beschrijvend/freq-interval.png){#fig-freq-interval}
-:::
+::::
 
 ### Draaitabel methode {#sec-draaitabel-methode}
 
@@ -166,23 +166,30 @@ Bij een analyse is het van belang om te weten bij welke waarde het grootste deel
 
 Voor een populatie wordt het gemiddelde aangegeven met het symbool $\mu$ en berekend door de som van alle waarnemingen te delen door het totaal aantal waarnemingen. Doordat alle waarnemingen meetellen bij het bepalen van het gemiddelde hebben uitschieters grote invloed. Wanneer er extreme waarden voorkomen kun je beter een andere maat voor het centrum gebruiken.
 
-Excel formule: `GEMIDDELDE(data)`
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+
+`GEMIDDELDE(data)`
+:::
 
 #### Mediaan {.unnumbered}
 
 De mediaan is de middelste waarneming van een van klein naar groot gesorteerde reeks. Deze splitst dus de verzameling in twee helften: de laagste 50% en de hoogste 50%. Bij een oneven aantal is de mediaan de middelste waarneming. Bij een even aantal zijn er twee waarden die het midden vormen en neem je het gemiddelde van deze twee waarden. Uitschieters hebben geen invloed op de mediaan, waardoor de mediaan een goed alternatief is voor het gemiddelde wanneer er extreme waarden aanwezig zijn.
 
-Excel formule: `MEDIAAN(data)`
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+
+`MEDIAAN(data)`
+:::
 
 #### Modus {.unnumbered}
 
 De modus is de waarde die het meest voorkomt in de reeks. Uitschieters hebben geen invloed op de modus. Wanneer er meerdere waarden zijn met de hoogste frequentie dan is er eigenlijk geen modus. Excel heeft wel een formule om in dat geval de waarden met de hoogste frequentie te bepalen.
 
-Excel formules:
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
 
 -   `MODUS.ENKELV(data)` - Geeft de meest voorkomende waarde
 -   `MODUS.MEERV(data)` - Geeft een verticale matrix van de meest voorkomende waarden
 -   `MODUS(data)` - Verouderd, geeft dezelfde resultaten als `MODUS.ENKELV()`
+:::
 
 ::: {.content-visible when-format="html:js"}
 #### Testvragen {.unnumbered}
@@ -230,13 +237,14 @@ Zowel de variantie als de standaarddeviatie kunnen nooit negatief zijn.
 Bij een steekproef met $n$ waarnemeningen uit de populatie wordt de variantie aangeduid met $s^2$ en berekend via $s^2 = \frac{1}{n-1}\sum_{i=1}^{n}{(x_i- \bar{x})}^2$, waarbij $\bar{x}$ het steekproefgemiddelde is.
 :::
 
-Excel formules:
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
 
 -   `VAR.P(data)` - Variantie voor een populatie
 -   `VAR.S(data)` - Variantie voor een steekproef
 -   `STDEV.P(data)` - Standaarddeviatie voor een populatie
 -   `STDEV.S(data)` - Standaarddeviatie voor een steekproef
 -   `DEV.KWAD(data)` - Som kwadratische afwijkingen
+:::
 
 #### Kwartielen {.unnumbered}
 
@@ -250,11 +258,12 @@ De afstand tussen het eerste kwartiel $Q_1$ en het derde kwartiel $Q_3$ heet de 
 Er zijn verschillende manieren waarop de kwartielen precies berekend worden, waardoor er kleine verschillen kunnen ontstaan tussen de verschillende applicaties. Veel applicaties splitsen de gegevens in twee helften en bepalen dan de mediaan van elke helft. Excel doet dat niet en berekent kwartielen via percentielen.
 :::
 
-Excel formules:
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
 
 -   `KWARTIEL.INC(data;kwartiel)` - Bepaling kwartiel (0,1,2,3,4) waarbij alle waarden meetellen, kun je het beste gebruiken.
 -   `KWARTIEL.EXC(data;kwartiel)` - Bepaling kwartiel (1,2,3) waarbij de uiterste waarden niet meegeteld worden
 -   `KWARTIEL(data;kwartiel)` - Verouderd, geeft dezelfde waarden als `KWARTIEL.INC()`
+:::
 
 #### 5-getallensamenvatting {.unnumbered}
 
@@ -264,19 +273,28 @@ Hiermee wordt bedoeld een opsomming van de waarden $Q_0$, $Q_1$, $Q_2$, $Q_3$ en
 
 De spreidingsbreedte is het verschil tussen de grootste en de kleinste waarneming. Deze maat is eenvoudig uit te rekenen, maar wel erg gevoelig voor extreme waarden (uitbijters).
 
-Excel formule: `MAX(data) - MIN(data)`
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+
+`MAX(data) - MIN(data)`
+:::
 
 #### Gemiddelde absolute afwijking {.unnumbered}
 
 Dit is het gemiddelde van de absolute waarden van het verschil van een waarneming met het gemiddelde.
 
-Excel formule: `GEM.DEVIATIE(data)`
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+
+`GEM.DEVIATIE(data)`
+:::
 
 #### Interkwartielafstand {.unnumbered}
 
 Dit is het verschil tussen het derde kwartiel en het eerste kwartiel, dus $Q_3 - Q_1$. Het is een manier om de spreiding van de middelste 50% van de gegevens weer te geven.
 
-Excel formule: `KWARTIEL(data;3) - KWARTIEL(data;1)`
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+
+`KWARTIEL(data;3) - KWARTIEL(data;1)`
+:::
 
 #### Variatiecoëfficient {.unnumbered}
 
@@ -340,13 +358,14 @@ Bij data-analyse is het concept van kurtosis belangrijk bij het onderzoeken van 
 In de financiële wereld wordt op het gebied van risicobeheer en beleggingsrendement vaak gekeken naar de kurtosis. Deze geeft aan of er enige kans is op extreme waarden van rendementen.
 :::
 
-#### Excel formules {.unnumbered}
+::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
 
 Er zijn verschillende formules om de scheefheid en kurtosis in een getal uit te drukken. Je kunt hier echter weinig mee. Het is beter om naar de frequentieverdeling te kijken.
 
 -   `SCHEEFHEID(data)`
 -   `SCHEEFHEID.P(data)` voor een populatie
 -   `KURTOSIS(data)`
+:::
 
 ## Grafieken {#sec-grafieken}
 
