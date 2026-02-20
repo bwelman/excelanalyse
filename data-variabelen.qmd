@@ -324,7 +324,14 @@ In @tbl-persoonskenmerken zie je een dataset met een aantal persoonsgegevens.
 #| echo: false
 #| tbl-cap: Kenmerken van een aantal personen.
 
-persoonskenmerken<- read.csv("data/persoonskenmerken.csv")
+persoonskenmerken <- data.frame(
+  voornaam = c("Chris", "Mari", "Otto", "Peter", "Vicky"), 
+  geslacht = c("m", "v", "m", "m", "v"),
+  haarkleur = c("bruin", "blond", "blond", "zwart", "rood"), 
+  lengte = c("groot", "groot", "normaal", "normaal", "klein"),
+  gewicht = c(185, 176, 181, 178, 164), 
+  iq = c(95, 104, 98, 108, 112))
+
 flextable(persoonskenmerken)
 ```
 
