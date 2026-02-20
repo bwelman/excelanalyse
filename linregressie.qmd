@@ -1,6 +1,6 @@
 # Samenhang en lineaire regressie {#sec-linregressie}
 
-::: {.callout title="Doelstellingen"}
+::: callout-intro
 Voor het nemen van beslissingen is het van belang om te weten of er samenhang tussen variabelen bestaat. Ook kan het zijn dat je de waarde van een variabele wilt schatten op basis van de waarde van andere variabelen. Onderzoek naar een mogelijk verband tussen variabelen is dan nodig. Is er een verband dan kan een model voor het verband worden opgesteld.
 :::
 
@@ -41,7 +41,7 @@ Voor alleen de sterkte van de correlatie wordt meestal gewerkt met het kwadraat 
 
 Deze R-kwadraat geeft tevens aan welk deel (of percentage bij vermenigvuldiging met 100) van de variantie de variabelen met elkaar delen. Of met andere woorden, welk deel van de variantie in de ene variabele verklaard wordt door de variantie in de andere variabele. Dit wordt de **verklaarde variantie** genoemd. De resterende variantie heet dan ook **onverklaarde variantie**.
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
+::: {.callout-tip title="Excel formules"}
 
 -   `COVARIANTIE.P()` - Covariantie populatie
 -   `COVARIANTIE.S()` - Covariantie steekproef
@@ -60,7 +60,7 @@ Hoewel regressie en correlatie vaak samen gebruikt worden, zijn het twee verschi
 -   *Regressie* heeft als doel om de soort relatie tussen $y$ en $x$ te bepalen. Bijvoorbeeld $y$ neemt lineair toe als $x$ toeneemt.
 -   *Correlatie* meet de sterkte van die relatie. Is die sterk of juist zwak.
 
-::: callout-important
+::: {.callout-important title="Geen oorzakelijk verband"}
 Regressie en correlatie verklaren de wijzigingen in de afhankelijke variabele, maar niet de oorzaak van deze wijzigingen. Er hoeft dus geen oorzakelijk verband te zijn.
 :::
 

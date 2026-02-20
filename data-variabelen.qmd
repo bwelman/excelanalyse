@@ -2,7 +2,7 @@
 
 {{< include _setup.qmd >}}
 
-::: {.callout title="Doelstellingen"}
+::: callout-intro
 Data bestaat uit waarnemingen van meetgegevens, dat zijn de variabelen. In dit hoofdstuk wordt uitgelegd welke soort variabelen er zijn en welke bewerkingen je mag toepassen.
 
 Wanneer je data uit externe bronnen importeert, heb je geen controle over de indeling en het type gegevens en de manier waarop de data is georganiseerd. Voordat je met de analyse kunt beginnen moet je daarom vaak veel tijd steken om de data te herstructureren. Het tweede deel van dit hoofdstuk gaat hierover.
@@ -293,7 +293,7 @@ Echter de gegevens staan niet in een goed gestructureerde Exceltabel. In feite h
 
 5.  Kies [tab Transformeren \> Draaitabel opheffen voor kolommen (groep Alle kolommen) \> Draaitabel voor andere kolommen opheffen]{.uicontrol}. Er worden twee nieuwe kolommen gemaakt. Een kolom `Kenmerk` (met de waarden voor variabele `Jaar`) en een kolom `Waarde` met de populatiegetallen. En voor elke combinatie van `Land`, `Geslacht` en `Jaar` is een rij gemaakt.
 
-::: {.callout-note appearance="minimal"}
+::: callout-note
 Je had er ook voor kunnen kiezen om de laatste vier kolommen met de jaartallen te selecteren en dan te kiezen voor het opheffen van de draaitabel voor deze kolommen. Dit heeft als nadeel dat de query niet meer goed werkt wanneer er later in de brongegevens een nieuwe kolom met de populatie voor het jaar 2020 wordt toegevoegd.
 :::
 

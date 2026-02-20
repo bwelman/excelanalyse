@@ -3,7 +3,7 @@
 ```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
-::: {.callout title="Doelstellingen"}
+::: callout-intro
 Bij de analyse van data probeer je antwoorden te vinden op vragen door statistische methodes toe te passen op waarnemingen. Deze waarnemingen - verzameld uit rapportages, enquêtes en experimenten - vormen de ruggegraat van een statistisch onderzoek en worden *data* genoemd. In de praktijk komen veel gegevens uit externe bronnen: txt/csv, web, excel bestanden, databases, ... Om deze gegevens in Excel te analyseren, moeten ze eerst geïmporteerd worden en soms worden getransformeerd en opgeschoond. Dat gebeurt met **Power Query**.
 :::
 
@@ -22,7 +22,7 @@ Om Gegevens ophalen en transformeren in Excel te gebruiken, maak je eigenlijk ee
 
 De eerste stap is het maken van een verbinding met een gegevensbron. Wanneer de verbinding is gemaakt, krijg je een voorbeeld van de gegevens te zien. Daarna kun je stappen toevoegen om de gegevens te structureren en te transformeren. Hiervoor wordt een Query Editor gestart om een aantal instructies te maken die de acties uitvoeren. De laatste stap is het laden van de gegevens als een tabel in een werkblad.
 
-::: callout-note
+::: {.callout-note title="Alternatieven"}
 -   Je hebt ook de mogelijkheid om de gegevens te laden in het ingebouwde gegevensmodel.
 -   Je kunt de query later ook wijzigen en/of de gegevens vernieuwen.
 :::
@@ -54,7 +54,7 @@ Veel gegevens in externe bronnen zijn beschikbaar als tekst (bestandstype `.txt`
 
 5.  Selecteer de kolommen `Account_Aangemaakt` en `Laatste_Login` door op de kolomkop te klikken met ingedrukte CTRL toets. Kies dan [Kolommen verwijderen (groep Kolommen beheren) \> Kolommen verwijderen]{.uicontrol}. De kolommen worden verwijderd en de stap is toegevoegd aan [Toegepaste Stappen]{.uicontrol}.
 
-::: {.callout-note appearance="minimal"}
+::: {.callout-note title="Alternatief"}
 Als alternatief kun je de rechtermuisknop gebruiken en dan de gewenste actie uit het snelmenu kiezen.
 
 In elke kolomkop zit aan de linkerkant een knopje welke het toegepaste gegevenstype weergeeft. Wanneer je een kolom selecteert zie je het gegevenstype ook op het lint. En dit is tevens de plek waar je het gegevenstype kunt wijzigen.
@@ -226,7 +226,7 @@ Een voorbeeld van een JSON object:
 
 De waarde van `medewerker` is een array (list) van vier objecten.
 
-::: callout-note
+::: {.callout-note title="JSON syntax"}
 Een andere manier om naar de JSON-syntax te kijken, is door de ogen van de computer die het leest. De volgende tekens ziet de computer als een instructie over hoe de gegevens gelezen moeten worden:
 
 -   `{` (linker accolade) zegt "begin object"

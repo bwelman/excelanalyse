@@ -2,7 +2,7 @@
 
 Een van de eenvoudigste algoritmes is KNN, wat staat voor *k-Nearest-Neighbor*, oftewel de $k$ dichstbijzijnde buren. Wanneer je het voor classificatie gebruikt, dan wordt een nieuw gegevenspunt in een doelgroep (klasse) ondergebracht op basis van de kenmerken van de $k$ buren, de dichtstbijgelegen gegevenspunten.
 
-::: {.callout-tip appearance="simple"}
+::: {.callout-tip}
 De gegevens voor onderstaande voorbeelden zitten in het bestand `ml-knn.xlsx` zodat je zelf hiermee kunt experimenteren.
 :::
 

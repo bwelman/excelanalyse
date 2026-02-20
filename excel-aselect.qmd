@@ -36,7 +36,7 @@ In @fig-aselect zie je hoe willekeurige getallen in het interval `[10,50)` zijn 
 
 ![Gegenereerde getallen uit het interval \[10,50) met de functie aselect.](images/app-aselect/aselect.png){#fig-aselect}
 
-::: callout-tip
+::: {.callout-tip title="Willekeurige gehele getallen"}
 
 Wanneer je gehele getallen wilt moet je de voorgaande formule binnnen de functie `INTEGER()` plaatsen, die een getal naar beneden afrondt op het dichtstbijzijnde gehele getal. De functie wordt dan `=INTEGER(10 + ASELECT()*40)`.
 :::
@@ -96,7 +96,7 @@ De formule is `= ASELECTTUSSEN(DATUM(2019;1;1); DATUM(2019;12;31))`
 
 ![Gegenereerde datums met functie ASELECTTUSSEN.](images/app-aselect/aselecttussen-datums.png){#fig-aselecttussen-datums}
 
-::: callout-note
+::: {.callout-note title="Alternatief"}
 In plaats van de functie `DATUM()` kun je hier ook de functie `DATUMWAARDE()` gebruiken. De formule wordt dan
 
 `= ASELECTTUSSEN(DATUMWAARDE("1-1-2019"); DATUMWAARDE("31-12-2019"))`.
