@@ -13,7 +13,7 @@ De verschillende mogelijkheden worden hierna toegelicht.
 
 De begindatum voor de prognose wordt automatisch door Excel geselecteerd. Je kunt deze wijzigen. Wanneer je een datum kiest vóór het einde van de historische gegevens, worden alleen gegevens vóór de begindatum gebruikt in de voorspelling (dit wordt soms ook wel *backcasting* genoemd).
 
-::: callout-note
+::: {.callout-note title="Startdatum prognose"}
 1.  Als je de prognose start vóór het laatste historische punt, krijg je een goed beeld van de nauwkeurigheid van de voorspelling, omdat je de voorspelde reeks kunt vergelijken met de werkelijke gegevens. Als je de prognose echter te vroeg start, is de gegenereerde prognose mogelijk niet hetzelfde als de prognose die je krijgt wanneer je alle historische gegevens gebruikt. De voorspelling wordt nauwkeuriger als je alle historische gegevens gebruikt.
 
 2.  Als de gegevens seizoensgebonden zijn, kun je het beste een prognose starten vóór het laatste historische punt.

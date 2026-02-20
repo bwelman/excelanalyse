@@ -1,6 +1,6 @@
 # Tijdreeksen {#sec-timeseries}
 
-::: {.callout title="Doelstellingen"}
+::: callout-intro
 -   Introductie in de analyse van tijdreeksen
 -   Introductie van prognosetechnieken in het algemeen en de mogelijkheden met Excel
 -   Het opdoen van praktische vaardigheden via taken en oefeningen
@@ -173,7 +173,7 @@ Als voorbeeld van een tijdreeks wordt de bierproductie (in megaliters) in Austra
 
 3.  Voeg het veld `Volume` toe aan het gebied [Waarden]{.uicontrol} en het veld `Datum` aan het gebied [As (categorieën)]{.uicontrol}. Naast het veld `Datum` worden automatisch ook de velden `Jaren` en `Kwartalen` aangemaakt.
 
-::: {.callout-note appearance="minimal"}
+::: {.callout-note}
 De naam van het eigenschapvenster en de namen van de gebieden die getoond worden hangen af van of je de grafiek of de draaitabel geselecteerd hebt.
 
 selectie grafiek
@@ -273,7 +273,7 @@ Omdat je met deze methode het voortschrijdend gemiddelde ook voor het laatste ti
 
 In de financiële wereld, vooral bij de analyse van aandelenkoersen, wordt voornamelijk met deze methode gewerkt.
 
-::: callout-note
+::: {.callout-note title="Weegfactoren"}
 Er zijn ook varianten met weegfactoren zodat je een *gewogen voortschrijdend gemiddelde* krijgt.
 :::
 

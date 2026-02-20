@@ -49,6 +49,9 @@ language:
   nl:
     crossref-prp-title: "Taak"
 
+filters:
+  - textbook
+
 format:
   html:
     include-after-body: include/webex-nl.js
@@ -64,7 +67,6 @@ format:
     code-fold: false
     link-external-icon: false
     link-external-newwindow: true
-    callout-appearance: simple
     author-meta: "Ben Welman"
     description-meta: "Leer aan de hand van dit studieboek hoe je inzicht in gegevens kunt krijgen door de data te analyseren met Excel."
     # keywords: ["Excel", "Power Query", "exploratieve data analyse", "gegevensanalyse", "statistiek", "tijdreeksen", "regressie", "voorspellingen"]

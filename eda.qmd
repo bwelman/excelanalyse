@@ -3,7 +3,7 @@
 ```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
-::: {.callout title="Doelstellingen"}
+::: callout-intro
 Exploratieve Data Analyse (EDA) is vaak de eerste stap naar het visualiseren en transformeren van de gegevens. Je leert de gegevens kennen, vaak resulterend in een eerste aanzet tot modelvorming.
 :::
 
@@ -124,7 +124,7 @@ De inrichting van het werkblad zou er dan als uit kunnen zien als in @fig-rokers
 
 3.  Selecteer cel `E2` en voer hier in de formule `=INTERVAL(leeftijden;C2:C5)`. Dit is een dynamische matixformule en de resultaten verschijnen in het overloopgebied `E2:E6`.
 
-::: {.callout-note appearance="minimal"}
+::: {.callout-note title="Overloopgebied"}
 Voor de berekening van de percentages moet er in cel `F2` een verwijzing naar het overloopgebied gemaakt worden. Dat doe je door het hash symbool `#` achter het adres van de eerste cel te plaatsen.
 
 In plaats van het intypen van het adres van het overloopgebied kun je bij het invoeren van de formule ook het overloopgebied selecteren. Excel plaatst dan automatisch het juiste adres.
@@ -212,7 +212,7 @@ Bij een steekproef van 715 personen is o.a. het netto maandinkomen verzameld. Je
 2.  Selecteer een cel in de tabel en kies [Gegevens \> Gegevensanalyse \> Beschrijvende statistiek]{.uicontrol}.\
     Specificeer het invoerbereik en selecteer bij [Uitvoeropties]{.uicontrol} dat er een samenvattingsinfo op een nieuw werkblad gemaakt moet worden.
 
-::: callout-note
+::: {.callout-note title="Verbeter leesbaarheid"}
 De berekende getallen bevatten veel decimalen die hier weinig betekenis hebben en alleen maar zorgen voor een chaotisch beeld. Een overzichtelijker opmaak is te zien in @fig-maandinkomen-statistieken.
 
 ![Statistieken van de maandinkomens.](images/eda/maandinkomen-statistieken.png){#fig-maandinkomen-statistieken}
@@ -368,7 +368,7 @@ Bij wijziging van de Bin-breedte zie je de vorm van het histogram veranderen en 
 
 Een bin-breedte van `15` lijkt hier redelijk geschikt. Het is niet goed mogelijk om de twee piekmomenten precies af te lezen. Wel kun je zien dat de eerste piek in het interval `[111, 126]` ligt en de tweede piek in het interval `[261, 276]`.
 
-::: {.callout-note appearance="simple"}
+::: {.callout-note title="Kernel dichtheidschatting"}
 Bij theoretische verdelingen zoals de normale verdeling, kun je **kansdichtheidsdiagrammen** maken waardoor je veel meer details in de verdeling kunt zien. Helaas lijkt de verdeling van de eruptietijden niet op een van de bekende verdelingsfuncties.
 
 Voor dergelijke situaties kun je als een goed alternatief een zogenaamde **Kernel dichtheidschattingsdiagram** maken, maar helaas wordt dit grafiektype niet door Excel aangeboden. Veel statistische add-ins ondersteunen dit grafiektype wel.

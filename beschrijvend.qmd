@@ -3,7 +3,7 @@
 ```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
-::: {.callout title="Doelstellingen"}
+::: callout-intro
 Bij wat de beschrijvende statistiek genoemd wordt, gaat het om het beschrijven van een gegevensverzameling door de gegevens te ordenen, samen te vatten en weer te geven op een informatieve manier. Dit kan in numerieke vorm door een aantal statistieken (samenvattende getallen) te berekenen, maar ook in grafische vorm. Hierdoor ben je sneller in staat om de gegevensverzameling te begrijpen. Welke vorm je gebruikt hangt vooral af van de gewenste informatie over de gegevens. Bij het gebruik van de verschillende technieken moet je een onderscheid maken tussen categoriale variabelen en numerieke variabelen.
 :::
 
@@ -113,7 +113,7 @@ Om een frequentieverdeling van de gegevens te maken moet je als voorbereiding ee
 3.  Typ in cel D1 de tekst `frequentie`.
 4.  Selecteer cel D2 en voer de volgende formule in: `=INTERVAL(A2:A26;C2:C6)`.
 
-::: {.callout-note appearance="minimal"}
+::: {.callout-note title="Matrixformule"}
 Deze formule is een zogenaamde *matrixformule*. Je kunt deze matrixformule gewoon in de begincel D2 invoeren en vervolgens op Enter drukken. Het resultaat is een kolommetje getallen, een matrix. Excel weet welke cellen nodig zijn voor de uitvoer en plaatst het resultaat van deze dynamische matrix in deze cellen. Deze cellen moeten wel leeg zijn anders krijg je een foutmelding.
 :::
 
@@ -166,7 +166,7 @@ Bij een analyse is het van belang om te weten bij welke waarde het grootste deel
 
 Voor een populatie wordt het gemiddelde aangegeven met het symbool $\mu$ en berekend door de som van alle waarnemingen te delen door het totaal aantal waarnemingen. Doordat alle waarnemingen meetellen bij het bepalen van het gemiddelde hebben uitschieters grote invloed. Wanneer er extreme waarden voorkomen kun je beter een andere maat voor het centrum gebruiken.
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+::: {.callout-tip title="Excel formule"}
 
 `GEMIDDELDE(data)`
 :::
@@ -175,7 +175,7 @@ Voor een populatie wordt het gemiddelde aangegeven met het symbool $\mu$ en bere
 
 De mediaan is de middelste waarneming van een van klein naar groot gesorteerde reeks. Deze splitst dus de verzameling in twee helften: de laagste 50% en de hoogste 50%. Bij een oneven aantal is de mediaan de middelste waarneming. Bij een even aantal zijn er twee waarden die het midden vormen en neem je het gemiddelde van deze twee waarden. Uitschieters hebben geen invloed op de mediaan, waardoor de mediaan een goed alternatief is voor het gemiddelde wanneer er extreme waarden aanwezig zijn.
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+::: {.callout-tip title="Excel formule"}
 
 `MEDIAAN(data)`
 :::
@@ -184,7 +184,7 @@ De mediaan is de middelste waarneming van een van klein naar groot gesorteerde r
 
 De modus is de waarde die het meest voorkomt in de reeks. Uitschieters hebben geen invloed op de modus. Wanneer er meerdere waarden zijn met de hoogste frequentie dan is er eigenlijk geen modus. Excel heeft wel een formule om in dat geval de waarden met de hoogste frequentie te bepalen.
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
+::: {.callout-tip title="Excel formules"}
 
 -   `MODUS.ENKELV(data)` - Geeft de meest voorkomende waarde
 -   `MODUS.MEERV(data)` - Geeft een verticale matrix van de meest voorkomende waarden
@@ -254,11 +254,11 @@ Je kunt een gesorteerde reeks ook in vier gelijke stukken verdelen, elk met 25% 
 
 De afstand tussen het eerste kwartiel $Q_1$ en het derde kwartiel $Q_3$ heet de *interkwartielafstand*.
 
-::: callout-note
+::: {.callout-note title="Verschillende waarden voor Kwartielen"}
 Er zijn verschillende manieren waarop de kwartielen precies berekend worden, waardoor er kleine verschillen kunnen ontstaan tussen de verschillende applicaties. Veel applicaties splitsen de gegevens in twee helften en bepalen dan de mediaan van elke helft. Excel doet dat niet en berekent kwartielen via percentielen.
 :::
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
+::: {.callout-tip title="Excel formules"}
 
 -   `KWARTIEL.INC(data;kwartiel)` - Bepaling kwartiel (0,1,2,3,4) waarbij alle waarden meetellen, kun je het beste gebruiken.
 -   `KWARTIEL.EXC(data;kwartiel)` - Bepaling kwartiel (1,2,3) waarbij de uiterste waarden niet meegeteld worden
@@ -273,7 +273,7 @@ Hiermee wordt bedoeld een opsomming van de waarden $Q_0$, $Q_1$, $Q_2$, $Q_3$ en
 
 De spreidingsbreedte is het verschil tussen de grootste en de kleinste waarneming. Deze maat is eenvoudig uit te rekenen, maar wel erg gevoelig voor extreme waarden (uitbijters).
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+::: {.callout-tip title="Excel formule"}
 
 `MAX(data) - MIN(data)`
 :::
@@ -282,7 +282,7 @@ De spreidingsbreedte is het verschil tussen de grootste en de kleinste waarnemin
 
 Dit is het gemiddelde van de absolute waarden van het verschil van een waarneming met het gemiddelde.
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+::: {.callout-tip title="Excel formule"}
 
 `GEM.DEVIATIE(data)`
 :::
@@ -291,7 +291,7 @@ Dit is het gemiddelde van de absolute waarden van het verschil van een waarnemin
 
 Dit is het verschil tussen het derde kwartiel en het eerste kwartiel, dus $Q_3 - Q_1$. Het is een manier om de spreiding van de middelste 50% van de gegevens weer te geven.
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formule"}
+::: {.callout-tip title="Excel formule"}
 
 `KWARTIEL(data;3) - KWARTIEL(data;1)`
 :::
@@ -354,11 +354,11 @@ Kurtosis is een statistische maatstaf die aangeeft in welke mate de data zich in
 
 Bij data-analyse is het concept van kurtosis belangrijk bij het onderzoeken van mogelijke relaties tussen variabelen. Bij een variabele met een hoge kurtosis liggen de waarden dicht bij elkaar (vandaar de piek) en is de kans op een relatie met andere variabelen klein.
 
-::: callout-note
+::: {.callout-note title="Kurtosis in de financiële wereld"}
 In de financiële wereld wordt op het gebied van risicobeheer en beleggingsrendement vaak gekeken naar de kurtosis. Deze geeft aan of er enige kans is op extreme waarden van rendementen.
 :::
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
+::: {.callout-tip title="Excel formules"}
 
 Er zijn verschillende formules om de scheefheid en kurtosis in een getal uit te drukken. Je kunt hier echter weinig mee. Het is beter om naar de frequentieverdeling te kijken.
 
@@ -428,7 +428,7 @@ De nieuwere Excelversies hebben de mogelijkheid tot het invoegen van een *grafie
 ![Standaard histogram via het invoegen van een grafiek.](images/beschrijvend/freq-grafiektype-histogram.png){#fig-freq-grafiektype-histogram}
 :::
 
-::: {.callout-note appearance="simple"}
+::: {.callout-note}
 In Excel wordt een histogram gewoonlijk als een kolomdiagram weergegeven met labels onder het midden van de kolom. En de kolommen worden standaard aaneensluitend getekend.
 
 Er wordt geen tabel met frequenties gegenereerd. Je kunt desgewenst de frequenties zichtbaar maken door via de grafiekopties gegevenslabels toe te voegen.
@@ -457,7 +457,7 @@ Een boxplot grafiek laat zien hoe de gegevens over de kwartielen verdeeld zijn. 
 
 ![Schematische weergave van een boxplot.](images/beschrijvend/boxplot.png){#fig-boxplot}
 
-::: callout-note
+::: {.callout-note title="Informatie uit een boxplot halen"}
 In een boxplot bevat de lengte van de kwartielen ook informatie. Zo is in @fig-boxplot het 2e kwartiel smaller dan het 3e kwartiel, de gegevens in het 2e kwartiel hebben dus een kleiner gegevensbereik dan die in het 3e kwartiel.
 :::
 

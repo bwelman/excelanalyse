@@ -3,7 +3,7 @@
 ```{r, file = "R/webex-nl.R", include = FALSE}
 ```
 
-::: {.callout title="Doelstellingen"}
+::: callout-intro
 Voor het schatten van toekomstige waarden zijn verschillende (statistische) technieken beschikbaar. Naast de zeer eenvoudige naïeve prognose komt de meer geavanceerdere exponentïele vereffening (smoothing) aan bod. Ook wordt gekeken naar maatstaven om de nauwkeurigheid van de voorspelde waarden te beoordelen.
 :::
 
@@ -68,7 +68,7 @@ Toelichting:
 **Vraag:** Wat is de verkoopprognose voor week 13? `r fitb("74", num = TRUE)` `r hide("Hint")` De prognose voor week 13 is de waarde van de voorgaande periode, dus van week 12. `r unhide()`
 :::
 
-::: callout-note
+::: {.callout-note title="Naïeve prognose bij seizoenscomponent"}
 Voor een tijdreeks met een seizoenscomponent verloopt de naïeve prognose iets anders. In dat geval is de prognose op een bepaald tijdstip gelijk aan de waarde in hetzelfde seizoen in de voorgaande periode.
 :::
 
@@ -155,13 +155,13 @@ Dit is een eenvoudige en gemakkelijke methode. Daar staat tegenover dat wanneer 
 
 De exponentiële effenings methoden zijn op dit moment de beste en meest gebruikte methoden. Het grootste voordeel van de *ETS (Exponential Triple Smoothing)* methode is dat deze de mogelijkheid heeft om automatisch seizoenpatronen te ontdekken in de gegevensreeks en voorspellingen met betrouwbaarheidsintervallen kan leveren.
 
-::: callout-note
+::: {.callout-note title="Wanneer ETS methode gebruiken?"}
 Je kunt het beste deze methode gebruiken wanneer de tijdreeks zowel een trend als een seizoenspatroon laat zien.
 :::
 
 In de nieuwere versies van Excel ( Excel 365, Excel 2016, Excel 2019, ...) zijn de volgende werkbladfuncties voor het uitvoeren van de ETS methode beschikbaar:
 
-::: {.callout-tip appearance="minimal" icon="false" title="Excel formules"}
+::: {.callout-tip title="Excel formules"}
 -   `VOORSPELLEN.ETS`
 -   `VOORSPELLEN.ETS.SEASONALITY`
 -   `VOORSPELLEN.ETS.CONFINT`

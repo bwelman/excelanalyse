@@ -104,6 +104,6 @@ Om de beste waarde voor k te vinden wordt naar de som van de minimale afstanden 
 | 2   | 25,241                 |
 | 3   | 17,218                 |
 
-::: {.callout-note title="Slotopmerking"}
+::: {.callout-note title="Oplosser van Excel"}
 In deze uitwerking heb je de iteraties handmatig uitgevoerd door steeds betere centrumwaarden te bepalen en deze weer in het model te gebruiken. In plaats daarvan zou je ook gebruik kunnen maken van de [Oplosser]{.uicontrol}, een met Excel meegeleverde invoegtoepassing. In dat geval is de te minimaliseren doelfunctie de cel met de som van de minimale afstanden en zijn de centrumwaarden de variabele cellen.
 :::
