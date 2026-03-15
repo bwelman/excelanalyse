@@ -17,6 +17,9 @@ book:
   site-url: https://excelanalyse.netlify.app/
   repo-url: https://github.com/bwelman/excelanalyse
   repo-actions: [issue]
+  description: "Een taakgericht studieboek."
+  # downloads: [pdf]
+
   chapters:
     - index.qmd
     - voorwoord.qmd
@@ -61,7 +64,7 @@ format:
       - include/textbook.scss
     mermaid:
       theme: neutral
-    cover-image: images/cover.png
+    cover-image: resources/DataAnalyseExcel.png
     fig-width: 6
     fig-asp: 0.618
     code-fold: false
@@ -73,9 +76,18 @@ format:
 
   # pdf:
   #   documentclass: scrbook
-  #   papersize: a4
+  #   classoption: oneside
   #   include-in-header: latex/preamble.tex
+  #   papersize: a4
+  #   geometry:
+  #    - top=25mm
+  #    - bottom=25mm
+  #    - left=25mm
+  #    - right=25mm
+  #   cite-method: biblatex
   #   links-as-notes: true
+  #   date: \today
+  #   author: [Ben Welman]
 
 knitr:
   opts_chunk:
