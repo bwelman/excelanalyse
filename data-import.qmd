@@ -102,15 +102,9 @@ Vervolgens kun je de gegevens naar behoefte structureren, wijzigen en opschonen.
 
 5.  Selecteer de kolommen `Jaar` en `Winnaar` door op deze kolomkoppen te klikken met ingedrukte CTRL toets. Kies dan [Kolommen verwijderen (groep Kolommen beheren) \> Andere kolommen verwijderen]{.uicontrol}.
 
-6.  Selecteer kolom `Jaar` en kies [Waarden vervangen (groep Transformeren)]{.uicontrol}. Het dialoogvenster ***Waarden vervangen*** wordt weergegeven.
+6.  Selecteer kolom `Winnaar` en klik op de filter keuzepijl in de kolomkop. Deselecteer de optie [leeg]{.uicontrol} en klik [OK]{.uicontrol}.
 
-![Dialoogvenster Waarden vervangen.](images/importdata/replace_values_dialogbox.png){#fig-replace-values-dialogbox}
-
-7.  Type `Details` in het tekstvak [Te zoeken waarde]{.uicontrol}, laat het tekstvak [Vervangen door]{.uicontrol} leeg. Klik daarna op [OK]{.uicontrol}.
-
-8.  Selecteer kolom `Winnaar` en klik op de filter keuzepijl in de kolomkop. Deselecteer de optie [leeg]{.uicontrol} en klik [OK]{.uicontrol}.
-
-9.  Kies [Sluiten en laden(groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
+7.  Kies [Sluiten en laden(groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
 
 ![Tabel met winnaars van het EK voetbal voor mannen.](images/importdata/ek-voetbal-resultaat.png){#fig-ek-voetbal-resultaat}
 :::
