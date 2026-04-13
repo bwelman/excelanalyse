@@ -312,7 +312,7 @@ De z-score van een waarde is het verschil tussen die waarde en het gemiddelde, g
 
 $z = \frac{x - \mu}{\sigma}$
 
-Het gemiddelde zelf heeft een z-score van 0. Waarden groter dan het gemiddelde hebben een positieve z-score en waarden kleiner dan het gemiddelde een negatieve z-score. De z-score geeft in feite aan hoeveel keer de standaaarddeviatie een waarde van het gemiddelde af ligt.
+Het gemiddelde zelf heeft een z-score van 0. Waarden groter dan het gemiddelde hebben een positieve z-score en waarden kleiner dan het gemiddelde een negatieve z-score. De z-score geeft in feite aan hoeveel keer de standaarddeviatie een waarde van het gemiddelde af ligt.
 
 Via de z-scores kun je ook gemakkelijker eventuele uitschieters opsporen. Een vuistregel is dat een waarde met een z-score kleiner dan -3 of groter dan 3 als een uitschieter beschouwd kan worden.
 
