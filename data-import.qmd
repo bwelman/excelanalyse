@@ -150,9 +150,15 @@ De door het IOC gebruikte definitie van sport is een verzameling van disciplines
 
 4.  Kies [Laden \> Laden]{.uicontrol}. Je ziet nu de gegevens niet in het werkblad verschijnen, ze zitten wel in het *gegevensmodel*.
 
-Wanneer je twee of meer tabellen tegelijk importeert wordt er automatisch een *gegevensmodel* gemaakt. Deze integreert de geïmporteerde tabellen waarbij de bestaande relaties tussen de tabellen gebruikt worden. Je kunt dit met Power Pivot bekijken en bewerken. Dit gaat als volgt.
+Wanneer je meerdere tabellen tegelijk importeert, dan wordt er automatisch een *gegevensmodel* gemaakt met deze tabellen. Echter de **relatie tussen de tabellen** (zoals gedefinieerd in Access wordt **niet automatisch overgenomen** in het Excel-gegevensmodel.
 
-Kies [tab Power Pivot \> Beheren]{.uicontrol}. Er verschijnt nu een nieuw venster ***Power Pivot voor Excel*** met linksonder de tabbladen voor de geïmporteerde tabellen. Wanneer je de relatie wilt zien kies je in dit venster voor [Diagramweergave (groep Weergave)]{.uicontrol}. Wanneer je alles bekeken hebt kun je dit venster weer sluiten.
+Je moet handmatig de relaties maken. In dit geval een een-op-veel relatie van tabel Sport naar tabel Discipline via het veld Sport-ID. Dit gaat als volgt.
+
+5.  Kies [Power Pivot \> Beheren \> Diagramweergave (groep Weergave)]{.uicontrol}.
+
+6.  Sleep veld `Sport-ID (tabel Sport)` op veld `Sport-ID (veld Discipline)`.
+
+7.  Sluit het venster
 :::
 
 ### Analyse
