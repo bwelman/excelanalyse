@@ -172,7 +172,7 @@ Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het 
 
 1.  Hoeveel disciplines waren er in het beginjaar van de zomerspelen? `r fitb("10", num = TRUE)`
 
-2.  Hoeveel disciplines zijn er nu voor de zomerspelen? `r fitb("50", num = TRUE)`
+2.  Hoeveel disciplines zijn er nu voor de zomerspelen? `r fitb("65", num = TRUE)`
 
 3.  Hoeveel disciplines zijn er totaal verdwenen? `r fitb("14", num = TRUE)`
 
