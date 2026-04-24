@@ -194,7 +194,7 @@ De modus is de waarde die het meest voorkomt in de reeks. Uitschieters hebben ge
 ::: {.content-visible when-format="html:js"}
 #### Testvragen {.unnumbered}
 
-Typ bij de volgende vragen het antwoord in het vakje. Voor eventuele decimalen moet je een punt gebruiken en geen komma!
+Typ bij de volgende vragen het antwoord in het vakje. **Voor eventuele decimalen moet je een punt gebruiken en geen komma!**
 
 1.  Een dataset bestaat uit de volgende verzameling getallen: `[8, 2, 3, 15, 8, 6, 0]`
 

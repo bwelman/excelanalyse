@@ -163,18 +163,20 @@ Je moet handmatig de relaties maken. In dit geval een een-op-veel relatie van ta
 
 ### Analyse
 
-Voor het analyseren van de gegevens wordt een draaitabel gebruikt.
+Het gegevensmodel uit de voorgaande paragraaf wordt nu gebruikt om de gegevens te analyseren met een draaitabel.
 
 ::: {#prp-imp-access}
 Analyse met draaitabel
 
-Kies [Invoegen \> Draaitabel]{.uicontrol}. Zorg er voor dat het gebruik van het gegevensmodel geselecteerd is (zie @fig-olympic-draaitabelmaken).
+Kies [Invoegen \> Draaitabel \> Vanuit Gegevensmodel]{.uicontrol} (zie @fig-olympic-draaitabelmaken).
 
 ![Dialoogvenster Draaitabel maken. Selecteer het gebruik van het gegevensmodel.](images/importdata/olympic-draaitabelmaken.png){#fig-olympic-draaitabelmaken}
 :::
 
 ::: {.content-visible when-format="html:js"}
 **Testvragen**
+
+Gebruik de draaitabel om de volgende vragen te beantwoorden.
 
 1.  Hoeveel disciplines waren er in het beginjaar van de zomerspelen? `r fitb("10", num = TRUE)`
 
