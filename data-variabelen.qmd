@@ -14,7 +14,7 @@ Bij het importeren van de gegevens heb je de variabelen al gedefinieerd en zijn 
 
 Soms moet je een kwantitatieve variabele verder specificeren als *discreet* of *continu*. Discrete kwantitatieve variabelen hebben waarden die voortkomen uit tellingen, ze vertegenwoordigen een aantal van iets, zoals het aantal leerlingen in een klas. Continue kwantitatieve variabelen hebben waarden die voortkomen uit metingen, zoals de lengte van een persoon, welke in principe elke waarde binnen een interval kan aannemen (afhankelijk van de nauwkeurigheid van het meetinstrument).
 
-### Meetschaal {#sec-meetschaal}
+### Meetniveaus {#sec-meetschaal}
 
 Variabelen worden in vier meetniveaus (schalen) ingedeeld: nominaal, ordinaal, interval en ratio.
 
@@ -31,21 +31,59 @@ flowchart LR
   K --> R[Ratio]
 ```
 
-Categoriale variabelen
+**Nominaal**
 
-:   Met deze variabelen kun je geen berekeningen uitvoeren, zoals het berekenen van een gemiddelde. Ze worden onderverdeeld in nominaal en ordinaal.
+Een variabele op **nominaal niveau** (ook wel een **categorische** variabele genoemd) is een variabele waarbij de waarden (**categorien**) uit namen (naam in het Latijn is *nomen*) bestaan waarbij ook geen relatie tussen de mogelijkheden bestaat. De gegevens zijn kwalitatief of beschrijvend. De waarden hebben ook geen logische volgorde. Je kunt niet aangeven dat de ene waarde groter is dan de andere waarde, of de gemiddelde waarde berekenen. Het enige dat je kunt zeggen is dat de mogelijkheden van elkaar verschillen.
 
--   `Nominaal`: Variabelen met namen als waarde (naam is in het Latijn nomen), zonder rangorde of logische volgorde. Voorbeelden: nationaliteit, oogkleur, studierichting, beroep, godsdienst, geslacht, industrietak.
+Voorbeelden: geslacht, nationaliteit, godsdienst, woonplaats, burgerlijke staat, oogkleur, beroep, studierichting, industrietak, ....
 
--   `Ordinaal`: De waarden zijn kwalitatief van aard en hebben een logische volgorde. Je kunt ze sorteren maar er geen rekenkundige bewerkingen mee uitvoeren. Voorbeelden: beoordeling (1=zeer slecht, 2=slecht, 3=matig, 4=goed, 5=zeer goed), medaille (goud, zilver, brons), T-shirt maten (S, M, L, XL).
+**Ordinaal**
 
-Kwantitatieve variabelen
+Variabelen op **ordinaal niveau** hebben iets meer structuur dan nominale variabelen, maar niet veel. Bij een ordinale variabele is er een natuurlijke zinvolle manier om de waarden te ordenen, bijvoorbeeld van klein naar groot of van meer dan minder. Voorbeelden: restaurantclassificatie (aantal sterren), enquêtevragen (*Likertschalen*: 1=zeer goed, 2=goed, ...), plaats in wedstrijduitslag (1, 2, 3, ...). Met de waarden kun je geen rekenkundige bewerkingen uitvoeren, zoals een gemiddelde berekenen.
 
-:   Deze worden onderverdeeld in interval en ratio.
+Zo is een restaurant met 2 sterren beter dan eentje met 1 ster, maar je kunt niet zomaar zeggen 2 keer beter. En bij de uitslag van een maraton is de eerste sneller dan de tweede en is deze weer sneller dan de derde, enz. Maar het verschil tussen de eerste plaats en de tweede plaats kan anders zijn dan het verschil tussen de tweede en de derde plaats.
 
--   `Interval`: de gegevens hebben geen natuurlijk nulpunt, de keuze van een nulpunt is arbitrair. Het verschil tussen de waarden heeft wel betekenis. Zo is het verschil tussen 10°C en 15°C even groot als tussen 20°C en 25°C, maar je kunt niet zeggen dat 20°C twee keer zo warm is als 10°C. Sommige rekenkundige bewerkingen kun je wel uitvoeren zoals optellen, aftrekken en gemiddelde bepalen.
+Voorbeelden: beoordeling (1=zeer slecht, 2=slecht, 3=matig, 4=goed, 5=zeer goed), medaille (goud, zilver, brons), T-shirt maten (S, M, L, XL), ...
 
--   `Ratio`: de gegevens hebben een natuurlijk nulpunt. Hier kun je wel uitspraken doen over verhoudingen. Zo is een salaris van €4000 twee keer zo groot als een salaris van €2000. Voorbeelden: inkomen, vermogen, gewicht. Voor statistische doeleinden hoef je meestal geen verschil te maken tussen ratio- en intervalgegevens.
+**Interval**
+
+In tegenstelling tot nominale en ordinale variabelen, zijn variabelen op **intervalniveau** en rationiveau variabelen waarbij de numerieke waarde echt van betekenis is. De gegevens zijn kwantitatief, maar hebben geen "natuurlijk" nulpunt. De keuze van een nulpunt is vaak arbitrair. De **verschillen** tussen de waarden (intervallen) heeft wel betekenis. Sommige rekenkundige bewerkingen kun je uitvoeren zoals optellen, aftrekken, gemiddelde bepalen. Maar je kunt niet vermenigvuldigen of delen.
+
+Een goed voorbeeld van een variabele op intervalniveau is het meten van temperatuur in graden Celsius. Het nulpunt van 0°C is willekeurig gekozen, namelijk de temperatuur waarbij water bevriest. De verschillen hebben betekenis. Zo is het verschil tussen 12°C en 18°C even groot als het verschil tussen 18°C en 24°C. Maar je kunt niet zeggen dat 24°C twee keer zo warm is als 12°C.
+
+Voorbeelden: jaartal, datum, kloktijd, ...
+
+**Ratio**
+
+Bij een variabele op **rationiveau** (verhoudingsniveau) is er een echt nulpunt, waarbij nul ook echt nul betekent. Een ratiovariabele meet dus de omvang van de variabele. Bij deze variabelen mag je wel vermenigvuldigen en delen. Zo is een salaris van €4000 twee keer zo groot als een salaris van €2000.
+
+Voorbeelden: inkomen, uitgaven, gewicht, lengte, snelheid, massa, reactietijd
+
+**Samengevat**
+
+-   kwalitatieve variabele (nominaal, ordinaal)
+    -   wordt niet numeriek gemeten, elke waarde heet ook wel categorie
+    -   geen rekenkundige bewerkingen, wel aantallen tellen per categorie
+-   kwantitatieve variabele (interval, ratio)
+    -   wordt numeriek gemeten
+    -   rekenkundige bewerkingen zijn mogelijk
+
+### Continue - discrete variabelen
+
+Er is nog een tweede soort onderscheid waar je op bedacht moet zijn bij de typen variabelen, namelijk het onderscheid tussen continue variabelen en discrete variabelen.
+
+- **Continue variabele**: een variabele waarbij het voor elke twee waarden die je kunt bedenken, logischerwijs altijd mogelijk is dat er nog een andere waarde tussen ligt.
+
+- **Discrete variabele** is in feite een variabele die niet continu is. Bij een discrete variabele is het soms zo dat er daartussenin niets mogelijk is.
+
+| meetniveau | continu    | discreet   |
+|------------|:----------:|:----------:|
+| nominaal   |            |$\checkmark$|
+| ordinaal   |            |$\checkmark$|
+| interval   |$\checkmark$|$\checkmark$|
+| ratio      |$\checkmark$|$\checkmark$|
+
+: Het verband tussen de meetschalen en het onderscheid tussen discreet en continu. Een vinkje geeft aan wat mogelijk is. {#tbl-meetniveau}
 
 ::: callout-note
 Een jaartal, bijvoorbeeld het bouwjaar van een auto, wordt doorgaans beschouwd als een discrete kwantitatieve variabele en niet als een ordinale variabele. Echter afhankelijk van de context kan het nodig zijn om een jaarvariabele als een ordinale variabele te behandelen.
