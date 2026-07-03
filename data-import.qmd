@@ -271,6 +271,32 @@ Een andere manier om naar de JSON-syntax te kijken, is door de ogen van de compu
 8.  Klik to slot op [Sluiten en Laden]{.uicontrol}.
 :::
 
+## Importeren uit een afbeelding {#sec-import-afbeelding}
+
+Excel heeft een ingebouwde functie om tabellen op afbeeldingen te importeren. Deze maakt gebruik van OCR-technologie (Optical Character Recognition) en herkent de tekst en de structuur van de tabel in de afbeelding.
+
+::: {.callout-tip title="Afbeelding bijsnijden"}
+Het is aan te raden om indien nodig vooraf de afbeelding te controleren bij te snijden zodat alleen de tabel in de afbeelding staat en alle overbodige tekst verwijderd is. De herkenning van de tabel verloopt daardoor beter.
+:::
+
+
+:::: {#prp-imp-txtcsv}
+[Hulpbestand]{.smallcaps}: `omzet_boeken.jpg`
+
+1.  Open in Excel een nieuwe lege werkmap.
+
+2.  Kies [tab Gegevens \> Gegevens ophalen (groep Gegevens ophalen en transformeren) \> Uit andere bronnen \> Uit afbeelding \> Afbeelding uit bestand]{.uicontrol}.
+
+3.  Blader naar het bestand `omzet_boeken.jpg` en klik [Invoegen]{.uicontrol}. Aan de rechterkant verschijnt een paneel waarin de gegevens geanalyseerd worden.
+
+4. Klik op [Gegevens invoegen]{.uicontrol}. De gegevens verschijnen nu in een werkblad.
+
+::: {.callout-note title="Controleren"}
+Het kan zijn dat er onderdelen zijn die niet goed kunnen worden herkend. In dat geval wordt de betreffende cel met een kleur gemarkeerd. Wanneer je vervolgens op de knop [Controleren]{.uicontrol} klikt verschijnt er een dialoogvenster waarin je de juiste waarde kunt invoeren.
+:::
+
+:::
+
 ## Opgaven {#sec-opg-importdata}
 
 :::: {#exr-imp-csv}
