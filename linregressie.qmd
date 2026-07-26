@@ -4,11 +4,11 @@
 Voor het nemen van beslissingen is het van belang om te weten of er samenhang tussen variabelen bestaat. Ook kan het zijn dat je de waarde van een variabele wilt schatten op basis van de waarde van andere variabelen. Onderzoek naar een mogelijk verband tussen variabelen is dan nodig. Is er een verband dan kan een model voor het verband worden opgesteld.
 :::
 
-De variabele waarvan je de waarde wilt schatten en die afhangt van de waarde van een andere variabele wordt heeft benamingen als afhankelijke variabele, verklaarde variabele of respons variabele.
+Bij het verklaren van de waarden van variabelen op basis van de waarden van andere variabelen is het belangrijk om de verschillende rollen van de variabelen duidelijk van elkaar te onderscheiden. In de praktijk kom je verschillende benamingen voor deze rollen tegen:
 
-En de variabelen waarvan deze afhangt worden de onafhankelijke variabelen, of verklarende variabelen genoemd.
+-  **onafhankelijke variabelen** of **voorspellers**: de variabelen die je gebruikt om iets te verklaren.
 
-$$\text{Onafhankelijke variabele(n) } \Longrightarrow \text{Afhankelijke variabele} $$
+-  **afhankelijke variabelen** of **uitkomsten**: de variabelen die worden verklaard.
 
 De techniek naar mogelijke verbanden wordt ook wel **regressie-analyse** genoemd.
 

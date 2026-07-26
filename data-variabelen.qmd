@@ -76,6 +76,7 @@ Er is nog een tweede soort onderscheid waar je op bedacht moet zijn bij de typen
 
 - **Discrete variabele** is in feite een variabele die niet continu is. Bij een discrete variabele is het soms zo dat er daartussenin niets mogelijk is.
 
+::: {#tbl-meetniveau}
 | meetniveau | continu    | discreet   |
 |------------|:----------:|:----------:|
 | nominaal   |            |$\checkmark$|
@@ -83,7 +84,8 @@ Er is nog een tweede soort onderscheid waar je op bedacht moet zijn bij de typen
 | interval   |$\checkmark$|$\checkmark$|
 | ratio      |$\checkmark$|$\checkmark$|
 
-: Het verband tussen de meetschalen en het onderscheid tussen discreet en continu. Een vinkje geeft aan wat mogelijk is. {#tbl-meetniveau}
+: Het verband tussen de meetschalen en het onderscheid tussen discreet en continu. Een vinkje geeft aan wat mogelijk is.
+:::
 
 ::: callout-note
 Een jaartal, bijvoorbeeld het bouwjaar van een auto, wordt doorgaans beschouwd als een discrete kwantitatieve variabele en niet als een ordinale variabele. Echter afhankelijk van de context kan het nodig zijn om een jaarvariabele als een ordinale variabele te behandelen.

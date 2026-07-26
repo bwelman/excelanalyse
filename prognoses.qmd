@@ -19,14 +19,16 @@ Je wilt uiteraard dat de prognosefouten zo klein mogelijk zijn. Omdat de fouten 
 
 Er zijn verschillende kentallen ontwikkeld om de nauwkeurigheid te beoordelen. Deze worden meestal met hun Engelstalige afkorting gebruikt. Een paar veel voorkomende kentallen staan in @tbl-kentallen genoemd.
 
+::: {#tbl-kentallen}
 | Kental | Engelstalig                    | Nederlandstalig                      |
-|:-----------------|:------------------------|:----------------------------|
+|:-------|:-------------------------------|:-------------------------------------|
 | MAE    | Mean Absolute Error            | Gemiddelde absolute fout             |
 | MAPE   | Mean Absolute Percentage Error | Gemiddelde absolute procentuele fout |
 | MSE    | Mean Squared Error             | Gemiddelde kwadratische afwijking    |
 | RMSE   | Root Mean Squared Error        | Wortel kwadratische afwijking        |
 
-: Enkele maatstaven voor de naukeurigheid van prognoses. {#tbl-kentallen}
+: Enkele maatstaven voor de naukeurigheid van prognoses.
+:::
 
 Je kunt niet zomaar een van deze kentallen als het beste kental beschouwen. In het algemeen geldt voor elk kental: hoe kleiner de waarde, des te beter.
 
@@ -53,13 +55,13 @@ In @fig-benzineverkoop-lijn zie je dat het verkoopvolume een horizontaal patroon
 
 Toelichting:
 
--   `naïeve prognose`: formule C3 wordt `=B2` enzovoort
--   `fout`: `= volume - naïeve prognose`
--   `absolute fout`: `= ABS(fout)`
--   `absolute procentuele fout`: `= absolute fout / volume`
--   `kwadratische fout`: `= fout^2`
--   `MAE`, `MAPE` en `MSE` zijn berekend met de formule `= GEMIDDELDE(...)`
--   `RMSE`: `= WORTEL(MSE)`
+- `naïeve prognose`: formule C3 wordt `=B2` enzovoort
+- `fout`: `= volume - naïeve prognose`
+- `absolute fout`: `= ABS(fout)`
+- `absolute procentuele fout`: `= absolute fout / volume`
+- `kwadratische fout`: `= fout^2`
+- `MAE`, `MAPE` en `MSE` zijn berekend met de formule `= GEMIDDELDE(...)`
+- `RMSE`: `= WORTEL(MSE)`
 
 4.  Bewaar het bestand voor gebruik in oefeningen hierna.
 :::
@@ -98,10 +100,10 @@ Exponentiële demping (effening, smoothing) is een analysemethode voor tijdreeks
 
 $F_{t+1} = \alpha Y_t + (1-\alpha)F_t$ , met
 
--   $F_{t+1}$: de prognose (Forecast) op tijdstip $t+1$
--   $Y_t$: de werkelijke waarde op tijdstip $t$
--   $F_t$: de prognose op tijdstip $t$
--   $\alpha$: dempingscoëfficient (dempingsconstante) met $0 \le \alpha \le 1$
+- $F_{t+1}$: de prognose (Forecast) op tijdstip $t+1$
+- $Y_t$: de werkelijke waarde op tijdstip $t$
+- $F_t$: de prognose op tijdstip $t$
+- $\alpha$: dempingscoëfficient (dempingsconstante) met $0 \le \alpha \le 1$
 
 De prognose op tijdstip $t+1$ is dus een gewogen gemiddelde van de werkelijke waarde op tijdstip $t$ en de prognose voor tijdstip $t$, met als wegingsfactoren respectievelijk $\alpha$ en $1 - \alpha$. Bij een grote waarde van $\alpha$ tellen de meest recente waarnemingen zwaarder mee dan de oudere waarnemingen. De prognoses kunnen daardoor sneller reageren op veranderende omstandigheden.
 
@@ -138,9 +140,9 @@ In plaats van zelf de formules te bedenken en in te voeren kun je ook gebruik ma
 
 2.  In het dialoogscherm, zie @fig-dialoog-exp-demping, specificeer je:
 
-    -   [Invoerbereik]{.uicontrol}: het gebied met de werkelijke waarden.
-    -   [Dempingsfactor]{.uicontrol}: de waarde van $1 - \alpha$
-    -   [Grafiek maken]{.uicontrol}: geeft een lijngrafiek met de werkelijke waarden en de prognoses.
+    - [Invoerbereik]{.uicontrol}: het gebied met de werkelijke waarden.
+    - [Dempingsfactor]{.uicontrol}: de waarde van $1 - \alpha$
+    - [Grafiek maken]{.uicontrol}: geeft een lijngrafiek met de werkelijke waarden en de prognoses.
 
 ![Dialoogscherm voor exponentiële demping. Voor de dempingsfactor moet je de waarde van 1-alpha invullen.](images/prognoses/dialoog-exp-demping.png){#fig-dialoog-exp-demping}
 
@@ -162,17 +164,17 @@ Je kunt het beste deze methode gebruiken wanneer de tijdreeks zowel een trend al
 In de nieuwere versies van Excel ( Excel 365, Excel 2016, Excel 2019, ...) zijn de volgende werkbladfuncties voor het uitvoeren van de ETS methode beschikbaar:
 
 ::: {.callout-tip title="Excel formules"}
--   `VOORSPELLEN.ETS`
--   `VOORSPELLEN.ETS.SEASONALITY`
--   `VOORSPELLEN.ETS.CONFINT`
--   `VOORSPELLEN.ETS.STAT`
+- `VOORSPELLEN.ETS`
+- `VOORSPELLEN.ETS.SEASONALITY`
+- `VOORSPELLEN.ETS.CONFINT`
+- `VOORSPELLEN.ETS.STAT`
 :::
 
 Eenvoudiger is het gebruik van het *Voorspellingblad* of *prognosewerkblad* dat in die nieuwere Excel versies aanwezig is. Onder de motorkop worden de `VOORSPELLEN.ETS` functies gebruikt.
 
 Via het Voorspellingenblad wordt een nieuw werkblad gemaakt met daarin een tabel met de oorspronkelijke gegevens en de voorspelde waarden. Deze toekomstige waarden worden berekend op basis van het Holt-Winters ETS algoritme. Ook wordt een grafiek gemaakt met de oorspronkelijke en voorspelde waarden en een aantal schattingen van meetwaarden voor de nauwkeurigheid. Hiermee wordt het maken van geavanceerde prognoses een stuk eenvoudiger.
 
-::: {#prp-prog-voorspellingenblad}
+:::: {#prp-prog-voorspellingenblad}
 [Bestand]{.smallcaps}: `verkopen.xlsx` (uit @exr-imp-csv)
 
 1.  Open het eerder gemaakte bestand `verkopen.xlsx`.
@@ -195,14 +197,16 @@ In dit venster kun je een aantal keuzes maken. Zie @sec-excel-voorspellingenblad
 
 De resultaten van de voorspellingen staan in @tbl-voorspelling weergegeven.
 
+::: {#tbl-voorspelling}
 | Datum      | Voorspelling | Ondergrens | Bovengrens |
 |------------|--------------|------------|------------|
 | 01-10-2013 | 4264177      | 3869915    | 4658439    |
 | 01-11-2013 | 4033806      | 3639542    | 4428070    |
 | 01-12-2013 | 4033625      | 3639358    | 4427892    |
 
-: Voorspelde waarden en betrouwbaarheidsgrenzen. {#tbl-voorspelling}
+: Voorspelde waarden en betrouwbaarheidsgrenzen.
 :::
+::::
 
 ## Opgaven {#sec-opg-prognoses}
 
