@@ -103,7 +103,7 @@ Kolomdiagrammen
 :   Hiermee kun je zowel absolute als relatieve frequenties weergeven. Bij een groot aantal categorieën kun je beter het horizontale staafdigram gebruiken.
 
 ::: {#prp-eda-rokers}
-[Hulpbestand]{.smallcaps}: `rokers.xlsx`
+[Bestand]{.smallcaps}: `rokers.xlsx`
 
 Bij een onderzoek naar rookgedrag is ook de leeftijd van de rokers verzameld. Een onderzoeksvraag is of het percentage rokers sterk verschilt per leeftijdscategorie. De leeftijdscategorieën waarin de onderzoeker in eerste instantie geïnteresseerd is zijn: t/m 15 jaar, 16-25 jaar, 25-45 jaar, 46-65 jaar, ouder dan 65 jaar.
 
@@ -158,7 +158,7 @@ Gegroepeerde staafdiagrammen
 :   Een van de twee categorische variabelen wordt als groep behandeld. Binnen elke groep worden staven voor de andere categorische variabele gemaakt.
 
 ::: {#prp-eda-haarkleur}
-[Hulpbestand]{.smallcaps}: `haarkleur.xlsx`
+[Bestand]{.smallcaps}: `haarkleur.xlsx`
 
 Van een groep van 90 mannen en vrouwen is de haarkleur genoteerd. Een onderzoeksvraag is of de verdeling van de kleuren sterk verschilt tussen mannen en vrouwen.
 
@@ -203,7 +203,7 @@ Boxplot
 :   Voor een visualisatie van de 5-getallensamenvatting.
 
 ::: {#prp-eda-maandinkomen}
-[Hulpbestand]{.smallcaps}: `maandinkomen.xlsx`
+[Bestand]{.smallcaps}: `maandinkomen.xlsx`
 
 Bij een steekproef van 715 personen is o.a. het netto maandinkomen verzameld. Je wilt een eerste indruk krijgen van de verdeling van de inkomens.
 
@@ -248,7 +248,7 @@ Boxplot (gegroepeerd)
 :   Voor het vergelijken van een variabele tusssen verschillende groepen.
 
 ::: {#prp-eda-lampen}
-[Hulpbestand]{.smallcaps}: `lampen.xlsx`
+[Bestand]{.smallcaps}: `lampen.xlsx`
 
 Bij een vergelijkend onderzoek van een lamptype van twee verschillende merken is ook de levensduur van de lamp getest. De onderzoeksvraag is of er een substantieel verschil in levensduur is tussen de twee merken.
 
@@ -275,7 +275,7 @@ Bij het vergelijken van twee kwantitatieve variabelen is er meestal eerst al naa
 Bij het onderzoek naar de relatie tussen twee kwantitatieve variabelen worden de variabelen in een grafiek tegen elkaar uitgezet. Hierna kan eventueel een vervolgonderzoek komen naar de aard van de relatie. In @sec-linregressie wordt op dit laatste verder ingegaan.
 
 ::: {#prp-eda-ijsverkoop}
-[Hulpbestand]{.smallcaps}: `ijsverkoop.xlsx`
+[Bestand]{.smallcaps}: `ijsverkoop.xlsx`
 
 Een ijsverkoper heeft gedurende 14 opeenvolgende dagen de dagtemperatuur en de dagelijkse verkoop aan ijs bijgehouden. De gegevens zijn te zien in @fig-ijsverkoop-data en staan in het bestand `ijsverkoop.xlsx`.
 

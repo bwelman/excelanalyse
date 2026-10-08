@@ -11,10 +11,10 @@ In Excel is Power Query beschikbaar onder de groep [Gegevens ophalen en transfor
 
 Deze aanbevolen werkwijze heeft de volgende voordelen:
 
--   De oorspronkelijke gegevens blijven onveranderd.
--   Omdat de uitgevoerde acties in een script zijn vastgelegd heb je tevens een vorm van documentatie van wat je met de gegevens gedaan hebt.
--   In het script kun je eenvoudig een stap wijzigen, ongedaan maken of een nieuwe stap toevoegen.
--   Wanneer er wijzigingen of aanvullingen in de brondata komen hoef je de query alleen maar opnieuw uit te voeren waarna de gewijzigde gegevens in het werkblad verschijnen.
+- De oorspronkelijke gegevens blijven onveranderd.
+- Omdat de uitgevoerde acties in een script zijn vastgelegd heb je tevens een vorm van documentatie van wat je met de gegevens gedaan hebt.
+- In het script kun je eenvoudig een stap wijzigen, ongedaan maken of een nieuwe stap toevoegen.
+- Wanneer er wijzigingen of aanvullingen in de brondata komen hoef je de query alleen maar opnieuw uit te voeren waarna de gewijzigde gegevens in het werkblad verschijnen.
 
 ## Gegevens ophalen en transformeren {#sec-import-lint}
 
@@ -23,8 +23,8 @@ Om Gegevens ophalen en transformeren in Excel te gebruiken, maak je eigenlijk ee
 De eerste stap is het maken van een verbinding met een gegevensbron. Wanneer de verbinding is gemaakt, krijg je een voorbeeld van de gegevens te zien. Daarna kun je stappen toevoegen om de gegevens te structureren en te transformeren. Hiervoor wordt een Query Editor gestart om een aantal instructies te maken die de acties uitvoeren. De laatste stap is het laden van de gegevens als een tabel in een werkblad.
 
 ::: {.callout-note title="Alternatieven"}
--   Je hebt ook de mogelijkheid om de gegevens te laden in het ingebouwde gegevensmodel.
--   Je kunt de query later ook wijzigen en/of de gegevens vernieuwen.
+- Je hebt ook de mogelijkheid om de gegevens te laden in het ingebouwde gegevensmodel.
+- Je kunt de query later ook wijzigen en/of de gegevens vernieuwen.
 :::
 
 Voor het maken van een query gebruik je de [tab Gegevens]{.uicontrol} in het lint, waarna je een van de mogelijke acties in de [Gegevens ophalen en transformeren]{.uicontrol} groep kiest.
@@ -40,15 +40,15 @@ De groep [Query's en verbindingen]{.uicontrol} heeft een knop voor het vernieuwe
 Veel gegevens in externe bronnen zijn beschikbaar als tekst (bestandstype `.txt`) of via komma (of karakter) gescheiden waarden (bestandstype `.csv`).
 
 :::: {#prp-imp-txtcsv}
-[Hulpbestand]{.smallcaps}: `SalesJan2009.csv`
+[Bestand]{.smallcaps}: `SalesJan2025.csv`
 
 1.  Open in Excel een nieuwe lege werkmap.
 
 2.  Kies [tab Gegevens \> Uit tekst/CSV (groep Gegevens ophalen en transformeren)]{.uicontrol}.
 
-3.  Blader naar het bestand `SalesJan2009.csv` en klik [Importeren]{.uicontrol}. Een voorbeeld van de gegevens wordt getoond.
+3.  Blader naar het bestand `SalesJan2025.csv` en klik [Importeren]{.uicontrol}. Een voorbeeld van de gegevens wordt getoond.
 
-![Voorbeeld van SalesJan2009 gegevens.](images/importdata/salesjan2009_preview.png){#fig-salesjan2009-preview}
+![Voorbeeld van SalesJan2025 gegevens.](images/importdata/salesjan2025_preview.png){#fig-salesjan2009-preview}
 
 4.  Klik op [Gegevens transformeren]{.uicontrol}. De Query Editor wordt gestart in een nieuw venster. In de rechterzijbalk [Queryinstellingen]{.uicontrol} zie je onder [Toegepaste Stappen]{.uicontrol} de stappen die reeds zijn uitgevoerd.
 
@@ -59,12 +59,12 @@ Als alternatief kun je de rechtermuisknop gebruiken en dan de gewenste actie uit
 
 In elke kolomkop zit aan de linkerkant een knopje welke het toegepaste gegevenstype weergeeft. Wanneer je een kolom selecteert zie je het gegevenstype ook op het lint. En dit is tevens de plek waar je het gegevenstype kunt wijzigen.
 
-Als bij het importeren het automatisch ontdekken van het gegevenstype goed gegaan is heeft kolom `Prijs` het gegevenstype `Geheel getal` (zie @fig-datatype-prijs), kolom `Transactie_Datum` het gegevenstype `Datum/Tijd` en de andere kolommen het gegevenstype `Tekst`.
+Als bij het importeren het automatisch ontdekken van het gegevenstype goed gegaan is heeft kolom `Prijs` het gegevenstype `Geheel getal` (zie @fig-datatype-prijs), kolom `Transactie_Tijdstip` het gegevenstype `Datum/Tijd` en de andere kolommen het gegevenstype `Tekst`.
 
 ![Gegevenstype.](images/importdata/ribbon_datatype_wholenumber.png){#fig-datatype-prijs}
 :::
 
-6.  Controleer dat kolom `Transactie_Datum` het juiste gegevenstype heeft. Zo niet, wijzig deze dan via [Gegevenstype (groep Transformeren) \> Datum/Tijd]{.uicontrol}. Wanneer er een dialoogscherm komt met de vraag of de bestaande conversie vervangen moet worden, kies dan voor [Vervangen van de huidige conversie]{.uicontrol}.
+6.  Controleer dat kolom `Transactie_Tijdstip` het juiste gegevenstype heeft. Zo niet, wijzig deze dan via [Gegevenstype (groep Transformeren) \> Datum/Tijd]{.uicontrol}. Wanneer er een dialoogscherm komt met de vraag of de bestaande conversie vervangen moet worden, kies dan voor [Vervangen van de huidige conversie]{.uicontrol}.
 
 7.  In kolom `Naam` beginnen de meeste namen met een hoofdletter, maar niet allemaal. Dat dient gecorrigeerd te worden. Selecteer kolom `Naam`, rechtermuisklik en kies [Transformeren \> Elk Woord Met Een Hoofdletter]{.uicontrol}.
 
@@ -111,7 +111,7 @@ Vervolgens kun je de gegevens naar behoefte structureren, wijzigen en opschonen.
 
 ## Importeren uit een Access database {#sec-import-accessdatabase}
 
-In een database zit de data in tabellen die meestal aan elkaar gekoppeld zijn. Via queries in de database kun je ook nog eens bepaalde gegevens selecteren en eventueel berekeningen op gegevens uitvoeren. In deze oefening wordt gewerkt met de eenvoudige database olympischesporten.accdb.
+In een database zit de data in tabellen die meestal aan elkaar gekoppeld zijn. Via queries in de database kun je ook nog eens bepaalde gegevens selecteren en eventueel berekeningen op gegevens uitvoeren. In deze oefening wordt gewerkt met de eenvoudige database `olympischesporten.accdb`.
 
 Deze database bevat de Engelstalige en Nederlandstalige namen van de olympische sporten en disciplines voor de twee versies van de spelen (zomer, winter), alsmede de afkorting van de sportbond, het beginjaar en het eventuele eindjaar van de disciplines.
 
@@ -122,7 +122,7 @@ De door het IOC gebruikte definitie van sport is een verzameling van disciplines
 ### Uit een query
 
 ::: {#prp-imp-access-query}
-[Hulpbestand]{.smallcaps}: `olympischesporten.accdb`
+[Bestand]{.smallcaps}: `olympischesporten.accdb`
 
 1.  Open in Excel een nieuwe lege werkmap.
 
@@ -140,7 +140,7 @@ De door het IOC gebruikte definitie van sport is een verzameling van disciplines
 ### Uit tabellen
 
 ::: {#prp-imp-access-tabel}
-[Hulpbestand]{.smallcaps}: `olympischesporten.accdb`
+[Bestand]{.smallcaps}: `olympischesporten.accdb`
 
 1.  Kies [tab Gegevens \> Gegevens ophalen (groep Gegevens ophalen en transformeren) \> Uit database \> Uit Microsoft Access-database]{.uicontrol}.
 
@@ -197,26 +197,26 @@ Gebruik de draaitabel om de volgende vragen te beantwoorden.
 
 ## Importeren van een JSON bestand {#sec-import-json}
 
-JSON staat voor **J**ava**S**cript **O**bject **N**otation, een tekst gebaseerd gegevensformaat dat leesbaar is voor mens en machine. Het werd ooit geïntroduceerd als onderdeel van Javascript, maar heeft zich geleidelijk aan uitgebreid tot een veel gebruikte standaard voor het uitwisselen van gegevens, vooral tussen een webserver en een webclient.
+JSON staat voor **J**ava**S**cript **O**bject **N**otation, een tekst gebaseerd gegevensformaat dat leesbaar is voor mens en machine. Het werd ooit geïntroduceerd als onderdeel van Javascript, maar heeft zich geleidelijk aan uitgebreid tot een veel gebruikte standaard voor het uitwisselen van gegevens. JSON bestanden worden zelden door 'gewone' kantoormedewerkers handmatig geopend. Deze bestanden draaien voornamelijk op de achtergrond van bedrijfssystemen, bijvoorbeeld wanneer een webshop bestellingen doorstuurt naar het magazijnbeheersysteem of de boekhouding (Exact online, AFAS).
 
-Een JSON object is een verzameling van **naam:waarde** paren (**key:value**) tussen accolades: `{ "naam": waarde }`
+Een JSON object is een verzameling van **naam:waarde** paren tussen accolades: `{ "naam": waarde }`.
 
 **Vereisten**
 
--   De **naam (key)** moet tussen dubbele aanhalingstekens staan.
+- De **naam (key)** moet tussen dubbele aanhalingstekens staan.
 
--   De **waarde (value)** moet een geldig JSON gegevenstype zijn:
+- De **waarde (value)** moet een geldig JSON gegevenstype zijn:
 
-    -   **string** (tussen aanhalingstekens, enkele of dubbele)
-    -   **getal** (decimaal scheidingssymbool is een punt)
-    -   **boolean** (`true` of `false`)
-    -   **array** (een lijst met waarden tussen blokhaken, waarden van elkaar gescheiden door een komma)
-    -   **object** (tussen accolades)
-    -   **null** (dit betekent geen waarde)
+  - **string** (tussen aanhalingstekens, enkele of dubbele)
+  - **getal** (decimaal scheidingssymbool is een punt)
+  - **boolean** (`true` of `false`)
+  - **array** (een lijst met waarden tussen blokhaken, waarden van elkaar gescheiden door een komma)
+  - **object** (tussen accolades)
+  - **null** (dit betekent geen waarde)
 
--   Tussen naam en waarde moet een **dubbele punt** staan.
+- Tussen naam en waarde moet een **dubbele punt** staan.
 
--   Paren worden onderling van elkaar gescheiden door een **komma**.
+- Paren worden onderling van elkaar gescheiden door een **komma**.
 
 Voor een schematische uitleg van de syntax zie [Inleiding tot JSON](https://www.json.org/json-nl.html).
 
@@ -226,21 +226,21 @@ Een voorbeeld van een JSON object:
 {{< include data/medewerkers-1.json >}}
 ```
 
-De waarde van `medewerker` is een array (list) van vier objecten.
+De waarde van `medewerker` is hier een array (list) van vier objecten.
 
 ::: {.callout-note title="JSON syntax"}
 Een andere manier om naar de JSON-syntax te kijken, is door de ogen van de computer die het leest. De volgende tekens ziet de computer als een instructie over hoe de gegevens gelezen moeten worden:
 
--   `{` (linker accolade) zegt "begin object"
--   `}` (rechter accolade) zegt "einde object"
--   `[` (linker vierkante haak) zegt "begin array"
--   `]` (rechter vierkante haak) zegt "einde array"
--   `:` (dubbele punt) zegt "scheiding van een naam en een waarde in een paar"
--   `,` (komma) zegt "scheiding van een naam:waarde paar in een object" of "scheiding van een waarde in een arrayy". Kan ook worden gelezen als "hier komt er nog een"
+- `{` (linker accolade) zegt "begin object"
+- `}` (rechter accolade) zegt "einde object"
+- `[` (linker vierkante haak) zegt "begin array"
+- `]` (rechter vierkante haak) zegt "einde array"
+- `:` (dubbele punt) zegt "scheiding van een naam en een waarde in een paar"
+- `,` (komma) zegt "scheiding van een naam:waarde paar in een object" of "scheiding van een waarde in een arrayy". Kan ook worden gelezen als "hier komt er nog een"
 :::
 
 ::: {#prp-imp-json}
-[Hulpbestand]{.smallcaps}: `medewerkers-1.json`
+[Bestand]{.smallcaps}: `medewerkers-1.json`
 
 1.  Open in Excel een nieuwe lege werkmap.
 
@@ -273,15 +273,14 @@ Een andere manier om naar de JSON-syntax te kijken, is door de ogen van de compu
 
 ## Importeren uit een afbeelding {#sec-import-afbeelding}
 
-Excel heeft een ingebouwde functie om tabellen op afbeeldingen te importeren. Deze maakt gebruik van OCR-technologie (Optical Character Recognition) en herkent de tekst en de structuur van de tabel in de afbeelding.
+Excel heeft een ingebouwde functie om tabellen in afbeeldingen te importeren. Deze maakt gebruik van OCR-technologie (Optical Character Recognition) en herkent de tekst en de structuur van de tabel in de afbeelding.
 
 ::: {.callout-tip title="Afbeelding bijsnijden"}
-Het is aan te raden om indien nodig vooraf de afbeelding te controleren bij te snijden zodat alleen de tabel in de afbeelding staat en alle overbodige tekst verwijderd is. De herkenning van de tabel verloopt daardoor beter.
+Het is aan te raden om indien nodig vooraf de afbeelding te controleren en bij te snijden zodat alleen de tabel in de afbeelding staat en alle overbodige tekst verwijderd is. De herkenning van de tabel verloopt daardoor beter.
 :::
 
-
-:::: {#prp-imp-txtcsv}
-[Hulpbestand]{.smallcaps}: `omzet_boeken.jpg`
+:::: {}
+[Bestand]{.smallcaps}: `omzet_boeken.jpg`
 
 1.  Open in Excel een nieuwe lege werkmap.
 
@@ -289,13 +288,12 @@ Het is aan te raden om indien nodig vooraf de afbeelding te controleren bij te s
 
 3.  Blader naar het bestand `omzet_boeken.jpg` en klik [Invoegen]{.uicontrol}. Aan de rechterkant verschijnt een paneel waarin de gegevens geanalyseerd worden.
 
-4. Klik op [Gegevens invoegen]{.uicontrol}. De gegevens verschijnen nu in een werkblad.
+4.  Klik op [Gegevens invoegen]{.uicontrol}. De gegevens verschijnen nu in een werkblad.
 
 ::: {.callout-note title="Controleren"}
 Het kan zijn dat er onderdelen zijn die niet goed kunnen worden herkend. In dat geval wordt de betreffende cel met een kleur gemarkeerd. Wanneer je vervolgens op de knop [Controleren]{.uicontrol} klikt verschijnt er een dialoogvenster waarin je de juiste waarde kunt invoeren.
 :::
-
-:::
+::::
 
 ## Opgaven {#sec-opg-importdata}
 
@@ -309,9 +307,9 @@ b.  Importeer de gegevens via [Gegevens ophalen en transformeren]{.uicontrol}.
 ::: {.content-visible when-format="html:js"}
 `r hide("Aanwijzingen")`
 
--   De veldnamen staan in de eerste rij. Om deze te veranderen in de kolomkoppen kies je [Start \> De eerste rij als veldnamen gebruiken (groep Transformeren) \> De eerste rij als veldnamen gebruiken]{.uicontrol}.
+- De veldnamen staan in de eerste rij. Om deze te veranderen in de kolomkoppen kies je [Start \> De eerste rij als veldnamen gebruiken (groep Transformeren) \> De eerste rij als veldnamen gebruiken]{.uicontrol}.
 
--   Door de transformatie naar veldnamen wordt ook het gegevenstype aangepast. Controleer of de kolommen naar het juiste gegevenstype zijn omgezet. Zo niet, wijzig dan het gevenstype. `r unhide()`
+- Door de transformatie naar veldnamen wordt ook het gegevenstype aangepast. Controleer of de kolommen naar het juiste gegevenstype zijn omgezet. Zo niet, wijzig dan het gevenstype. `r unhide()`
 :::
 
 c.  Bewaar het bestand voor later gebruik onder de naam **verkopen.xlsx**.
@@ -320,7 +318,7 @@ c.  Bewaar het bestand voor later gebruik onder de naam **verkopen.xlsx**.
 ::: {#exr-imp-access}
 **Een Access database importeren**
 
-a.  Open in Excel een nieuwe lege werkmap en importeer uit het bestand `snoeporders2010.accdb` de drie tabellen via [Gegevens ophalen en transformeren]{.uicontrol}.
+a.  Open in Excel een nieuwe lege werkmap en importeer uit het bestand `snoeporders2025.accdb` de drie tabellen via [Gegevens ophalen en transformeren]{.uicontrol}.
 
 b.  Maak via een draaitabel een lijngrafiek van het aantal orders per maand.
 

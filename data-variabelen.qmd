@@ -182,7 +182,7 @@ Het probleem is dus dat de waarden van de variabele `geslacht` in twee kolomkopp
 De eerste variabele `score` is al een kolom, dat moet dus zo blijven. Voor de variabelen `geslacht` en `aantal` moeten nieuwe kolommen gemaakt worden. Voor elke combinatie van `score` en `geslacht` moet een rij gemaakt worden.
 
 ::: {#prp-data-scores1}
-[Hulpbestand]{.smallcaps}: `scores1.xlsx`
+[Bestand]{.smallcaps}: `scores1.xlsx`
 
 1.  Open het hulpbestand.
 
@@ -230,7 +230,7 @@ flextable(scores2)
 ```
 
 ::: {#prp-data-scores2}
-[Hulpbestand]{.smallcaps}: `scores2.xlsx`
+[Bestand]{.smallcaps}: `scores2.xlsx`
 
 1.  Open het hulpbestand.
 
@@ -271,7 +271,7 @@ flextable(scores3)
 De eerste kolom met de variabele `naam` is in orde en moet zo blijven. De koppen van de laatste vijf kolommen zijn allemaal waarden van de variabele `klas`. De waarden in de tweede kolom, `tussentoets` en `eindtoets`, moeten eigen variabelen worden met als waarde de beoordeling van de student op dit onderdeel.
 
 ::: {#prp-data-scores3}
-[Hulpbestand]{.smallcaps}: `scores3.xlsx`
+[Bestand]{.smallcaps}: `scores3.xlsx`
 
 1.  Open het hulpbestand.
 
@@ -319,7 +319,7 @@ Deze gegevens wil je analyseren en bijvoorbeeld de ontwikkeling van de populatie
 Echter de gegevens staan niet in een goed gestructureerde Exceltabel. In feite heeft deze tabel vier variabelen: `Land`, `Geslacht`, `Jaar` en `Populatie`. De eerste twee variabelen staan in een eigen kolom, dat moet zo blijven. De laatste vier kolomkoppen zijn de waarden van de variabele `Jaar` en de inhoud van deze kolommen is de waarde van de variabele `Populatie`. De tabel moet dus eerst gestructureerd worden voordat met de analyse begonnen kan worden.
 
 :::: {#prp-data-benelux}
-[Hulpbestand]{.smallcaps}: `benelux-populatie.xlsx`
+[Bestand]{.smallcaps}: `benelux-populatie.xlsx`
 
 *Structureren data*
 

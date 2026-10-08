@@ -16,7 +16,7 @@ De vergelijking van de trendlijn is: $y = a \cdot x + b$ met
 -   $b$ = snijpunt met de verticale as
 
 ::: {#prp-xlstrend-lineair}
-[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+[Bestand]{.smallcaps}: `trendlijnen.xlsx`
 
 Verkoop van het aantal wasmachines door een bepaald bedrijf voor acht achtereenvolgende jaren.
 
@@ -58,7 +58,7 @@ Een logaritmische trendlijn is een zo goed mogelijk passende gebogen lijn die go
 De vergelijking van de trendlijn is: $y = a \cdot LN(x) + b$ met $a$ en $b$ als constanten.
 
 ::: {#prp-xlstrend-logaritme}
-[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+[Bestand]{.smallcaps}: `trendlijnen.xlsx`
 
 Groei van het aantal bacteriën in een kweek
 
@@ -96,7 +96,7 @@ De graad van de polynoom wordt bepaald door het aantal schommelingen (pieken en 
 In de praktijk zul je moeten experimenteren met de graad om uit te zoeken welke de best passende is.
 
 ::: {#prp-xlstrend-polynoom}
-[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+[Bestand]{.smallcaps}: `trendlijnen.xlsx`
 
 Prestatie (in km per liter brandstof) van een auto bij verschillende snelheden (in km/uur).
 
@@ -126,7 +126,7 @@ Een machtstrendlijn is een gebogen lijn die zeer geschikt is voor verzamelingen 
 De vergelijking van de trendlijn is: $y = a \cdot x^b$ waarbij $a$ en $b$ constanten zijn.
 
 ::: {#prp-xlstrend-macht}
-[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+[Bestand]{.smallcaps}: `trendlijnen.xlsx`
 
 Afgelegde afstand van een optrekkende raceauto in intervallen van steeds 1 seconde.
 
@@ -155,7 +155,7 @@ Een exponentiële trendlijn is een gebogen trendlijn die vooral geschikt is voor
 De vergelijking van de trendlijn is: $y = a \cdot e^{bx}$ waarbij $a$ en $b$ constanten zijn.
 
 ::: {#prp-xlstrend-exponentieel}
-[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+[Bestand]{.smallcaps}: `trendlijnen.xlsx`
 
 Aantal spelers in een tennistoernooi dat na elke ronde overblijft. Het toernooi is met 128 spelers begonnen.
 
@@ -188,7 +188,7 @@ Het zwevend gemiddelde is het gemiddelde van een vast aantal opeenvolgende waard
 Deze lijn heeft geen formule en ook de R-kwadraatswaarde kan niet berekend worden. Voor de beoordeling van de kwaliteit zijn andere methodes beschikbaar.
 
 ::: {#prp-xlstrend-ma}
-[Hulpbestand]{.smallcaps}: `trendlijnen.xlsx`
+[Bestand]{.smallcaps}: `trendlijnen.xlsx`
 
 Koers van een aandeel gedurende 20 dagen. Het zwevend gemiddelde wordt berekend voor een periode van 3 dagen. Zo kan de eerste waarde voor het zwevend gemiddelde pas op dag 3 berekend worden en de waarde is het gemiddelde van dag 1, 2 en 3. De volgende waarde bij dag 4 is het gemiddelde van de waarden op dag 2, 3 en 4. Enzovoorts.
 

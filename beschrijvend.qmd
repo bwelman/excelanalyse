@@ -14,7 +14,7 @@ Voor categoriale variabelen kun je geen zinvolle statistieken als gemiddelde, mi
 ### Frequentietabel {#sec-vakanties-frequentietabel}
 
 ::: {#prp-vakanties-frequenties}
-[Hulpbestand]{.smallcaps}: `vakanties.xlsx`
+[Bestand]{.smallcaps}: `vakanties.xlsx`
 
 Aan 200 personen van drie verschillende leeftijdsklasses (jong, middelbaar, oud) is gevraagd wat hun favoriete vakantieland (Griekenland, Spanje, Turkije, Italië) is.
 
@@ -46,7 +46,7 @@ Om een verband tussen twee categoriale veriabelen te onderzoeken gebruik je een 
 Behalve als aantal (= frequentie) kunnen de tellingen ook worden weergegeven als een percentage van het totale totaal, van het rijtotaal of van het kolomtotaal. Door deze weergave kun je patronen bestuderen die tussen de variabelen kunnen bestaan. Kruistabellen maak je ook het beste maken met draaitabellen.
 
 ::: {#prp-vakanties-kruistabel}
-[Hulpbestand]{.smallcaps}: `vakanties.xlsx`
+[Bestand]{.smallcaps}: `vakanties.xlsx`
 
 Maak een kruistabel van de variabelen `Leeftijdsklasse` en `Vakantieland.`
 
@@ -106,7 +106,7 @@ Het eerste argument is de matrix met de waarden waarvan je de frequenties wilt b
 Om een frequentieverdeling van de gegevens te maken moet je als voorbereiding eerst de intervallen (bins) vaststellen waarin de waarden moeten vallen. Hiervoor maak je een kolom met de bovengrenzen van de intervallen.
 
 :::: {#prp-freq-interval}
-[Hulpbestand]{.smallcaps}: `frequenties.xlsx`
+[Bestand]{.smallcaps}: `frequenties.xlsx`
 
 1.  Open het bestand `frequenties.xlsx` en daarin het werkblad *data*. De gegevens in de kolom `getal` zijn 25 willekeurige gehele getallen uit het interval \[1,10\].
 2.  Typ in cel C1 de tekst `bin` en in de cellen C2 t/m C6 de getallen 2,4,6,8,10. Dit zijn de bovengrenzen van de intervals.
@@ -127,7 +127,7 @@ Sluit de werkmap nog niet want je hebt deze nog nodig voor de volgende oefening.
 ### Draaitabel methode {#sec-draaitabel-methode}
 
 ::: {#prp-freq-draaitabel}
-[Hulpbestand]{.smallcaps}: `frequenties.xlsx`
+[Bestand]{.smallcaps}: `frequenties.xlsx`
 
 1.  Selecteer in het bestand `frequenties.xlsx` het gegevensgebied `A1:A26` en kies dan [tab Invoegen \> Draaitabel]{.uicontrol} en laat deze in een nieuw werkblad plaatsen.
 
@@ -393,7 +393,7 @@ Excel heeft twee mogelijkheden voor het genereren van een histogram:
 Ook voor deze methode moet er net als bij de functie `INTERVAL()` eerst handmatig een bereik voor de grenzen van de intervallen gemaakt zijn.
 
 ::: {#prp-histogram-gegevensanalyse}
-[Hulpbestand]{.smallcaps}: `frequenties.xlsx`
+[Bestand]{.smallcaps}: `frequenties.xlsx`
 
 1.  Open in het eerder gebruikte bestand `frequenties.xlsx` het werkblad `data`.
 2.  Kies dan [tab Gegevens \> Gegevensanalyse \> Histogram]{.uicontrol}.
@@ -419,7 +419,7 @@ De frequentieverdeling en histogram zijn statisch. Wanneer de brondata wijzigt v
 De nieuwere Excelversies hebben de mogelijkheid tot het invoegen van een *grafiektype Histogram*. Hiervoor heb je in principe alleen maar de brondata nodig. De verdeling in intervallen (**bins**) bepaalt Excel zelf automatisch. Maar je kunt ook via het eigenschappenvenster de binbreedte of het aantal bins zelf specificeren. De bijbehorende intervalgrenzen worden dan door Excel berekend. Wanneer je ook nog de grenswaarden zelf wilt bepalen, dan moet je daarvoor een aparte kolom in het werkblad opnemen.
 
 ::: {#prp-histogram-grafiektype}
-[Hulpbestand]{.smallcaps}: `frequenties.xlsx`
+[Bestand]{.smallcaps}: `frequenties.xlsx`
 
 1.  Open het eerder gebruikte bestand `frequenties.xlsx`.
 2.  Selecteer een cel in het gegevensgebied op werkblad `data`.
@@ -437,7 +437,7 @@ Er wordt geen tabel met frequenties gegenereerd. Je kunt desgewenst de frequenti
 De standaard grafiek in @fig-freq-grafiektype-histogram met drie intervallen laat te weinig details zien. In de volgende oefening wordt het aantal bins vergroot door de bin-breedte kleiner te maken.
 
 ::: {#prp-histogram-grafiektype-bins}
-[Hulpbestand]{.smallcaps}: `frequenties.xlsx`
+[Bestand]{.smallcaps}: `frequenties.xlsx`
 
 1.  [Selecteer horizontale as \> Rechter muisklik \> As opmaken]{.uicontrol}.\
     **Maak het eigenschappenvenster breed genoeg, anders zijn niet alle invulvelden zichtbaar!**
@@ -466,7 +466,7 @@ Vaak kom je ook iets anders getekende boxplots tegen waarbij de lijntjes aan de 
 Je kunt dit grafiektype voor 1 variabele gebruiken, maar de kracht ervan komt pas echt naar voren wanneer je meerdere groepen met elkaar wilt vergelijken.
 
 ::: {#prp-boxplot}
-[Hulpbestand]{.smallcaps}: `tablets.xlsx`
+[Bestand]{.smallcaps}: `tablets.xlsx`
 
 Bij een produktonderzoek zijn 3 groepen van elk 10 personen gevraagd om een merk tablet (A, B, C) te evalueren, elke groep één merk. De toegekende scores van elke persoon zijn te zien in @fig-tablets-data.
 

@@ -37,7 +37,7 @@ Je kunt niet zomaar een van deze kentallen als het beste kental beschouwen. In h
 Een van de meest eenvoudige prognosemethodes is de ***naïeve prognose***. Hierbij is de prognose op een bepaald tijdstip gelijk aan de waarde op het voorgaande tijdstip. Voor het bepalen hiervan heb je geen ingewikkelde formules nodig. Ondanks dat deze methode erg simpel is, zijn de resultaten vaak verrassend goed. Het is aan te raden om altijd hiermee te starten en daarna de resultaten van andere methodes hiermee te vergelijken.
 
 ::: {#prp-prog-naief}
-[Hulpbestand]{.smallcaps}: `benzineverkoop.xlsx`
+[Bestand]{.smallcaps}: `benzineverkoop.xlsx`
 
 In het bestand is gedurende drie maanden de wekelijkse verkoop van benzine door een brandstofhandelaar bijgehouden. De variabelen zijn `week` (het weeknummer) en `volume` (liters x 1000).
 

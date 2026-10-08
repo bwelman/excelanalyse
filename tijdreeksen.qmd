@@ -163,7 +163,7 @@ $log(T*S*C*R) = log(T) + log(S) + log(C) + log(R)$
 Er zijn verschillende methodes voor het bepalen van de afzonderlijke componenten. Het gewogen gemiddelde wordt meestal gebruikt om te corrigeren voor de seizoensinvloed. Hierna wordt de trend bepaald voor de seizoengecorrigeerde reeks. Wat er dan nog overblijft is de randomcomponent. Het uitvoeren van een decompositie valt buiten het bestek van dit studieboek.
 
 :::: {#prp-ts-ausbeer-1}
-[Hulpbestand]{.smallcaps}: `ausbeer56-73.xlsx`
+[Bestand]{.smallcaps}: `ausbeer56-73.xlsx`
 
 Als voorbeeld van een tijdreeks wordt de bierproductie (in megaliters) in Australie voor de jaren 1956-1973 bekeken en geanalyseerd.
 
@@ -292,7 +292,7 @@ In Excel kun je op drie manieren het voortschrijdend gemiddelde berekenen:
 Bij gebruik van de werkblad functie `GEMIDDELDE()` kun je zelf kiezen welke van de hiervoor genoemde twee methodes je wilt gebruiken.
 
 ::: {#prp-ma-gemiddelde}
-[Hulpbestand]{.smallcaps}: `omzet2020.xlsx`
+[Bestand]{.smallcaps}: `omzet2020.xlsx`
 
 In het bestand `omzet2020.xlsx` staan de maandomzetten voor het jaar 2020.Het resultaat van een 3-maands voortschrijdend gemiddelde is te zien in @fig-omzet2020-ma3. De werkwijze is als volgt.
 
@@ -313,7 +313,7 @@ Aan een lijndiagram of spreidingsdiagram kun je de trendlijn *Zwevend gemiddelde
 Voor meer uitleg en voorbeelden over de verschillende trendlijnen in Excel zie @sec-excel-trendlijnen.
 
 ::: {#prp-ma-trendlijn}
-[Hulpbestand]{.smallcaps}: `omzet2020.xlsx`
+[Bestand]{.smallcaps}: `omzet2020.xlsx`
 
 Maak een lijndiagram (met markeringen) van `omzet` tegen `tijdstip`. Voeg daarna een [trendlijn Zwevend gemiddelde]{.uicontrol} toe met [Periode]{.uicontrol} `3`.
 
@@ -325,7 +325,7 @@ Maak een lijndiagram (met markeringen) van `omzet` tegen `tijdstip`. Voeg daarna
 De methode via [Gegevens \> Gegevensanalyse \> Zwevend Gemiddelde]{.uicontrol} gebruikt ook het achterlopend zwevend gemiddelde.
 
 ::: {#prp-ma-gegevensanalyse}
-[Hulpbestand]{.smallcaps}: `omzet2020.xlsx`
+[Bestand]{.smallcaps}: `omzet2020.xlsx`
 
 Kies [Gegevens \> Gegevensanalyse \> Zwevend Gemiddelde]{.uicontrol}.
 
@@ -340,7 +340,7 @@ De waarden voor de zwevend gemiddeldes worden in het werkblad geplaatst, evenals
 
 ## TAAK: Autoverkopen {#sec-ts-ma-autoverkopen}
 
-[Hulpbestand]{.smallcaps}: `autoverkoop.xlsx`
+[Bestand]{.smallcaps}: `autoverkoop.xlsx`
 
 In het bestand staan de autoverkopen per kwartaal over vier jaar. De verkopen worden beïnvloed door het kwartaal. Om de trend te bestuderen wordt daarom een voortschrijdend gemiddelde gemaakt met een vensterbreedte van 4.
 
