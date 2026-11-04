@@ -25,7 +25,7 @@ Verkoop van het aantal wasmachines door een bepaald bedrijf voor acht achtereenv
 3.  Voeg een spreidingsdiagram in.
 4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
 5.  Selecteer bij Opties voor trendlijn [Lineair]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
-6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-lineair) is aangegeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-lineair is aangegeven.
 7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
 
 ![Voorbeeld lineaire trendlijn.](images/timeseries/vb-trend-lineair.png){#fig-vb-trend-lineair}
@@ -67,7 +67,7 @@ Groei van het aantal bacteriën in een kweek
 3.  Voeg een Spreidingsdiagram in.
 4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
 5.  Selecteer bij Opties voor trendlijn [Logaritmisch]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
-6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-logaritme) is aangegeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-logaritme is aangegeven.
 7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
 
 ![Voorbeeld logaritmische trendlijn.](images/timeseries/vb-trend-logaritme.png){#fig-vb-trend-logaritme}
@@ -105,7 +105,7 @@ Prestatie (in km per liter brandstof) van een auto bij verschillende snelheden (
 3.  Voeg een Spreidingsdiagram in.
 4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
 5.  Selecteer bij Opties voor trendlijn [Polynoom volgorde 3]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
-6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-polynoom) is aangegeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-polynoom is aangegeven.
 7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
 
 ![Voorbeeld polynoom trendlijn](images/timeseries/vb-trend-polynoom.png){#fig-vb-trend-polynoom}
@@ -135,7 +135,7 @@ Afgelegde afstand van een optrekkende raceauto in intervallen van steeds 1 secon
 3.  Voeg een Spreidingsdiagram in.
 4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
 5.  Selecteer bij Opties voor trendlijn [Macht]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
-6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-macht) is aangegeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-macht is aangegeven.
 7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
 
 ![Voorbeeld macht trendlijn.](images/timeseries/vb-trend-macht.png){#fig-vb-trend-macht}
@@ -164,7 +164,7 @@ Aantal spelers in een tennistoernooi dat na elke ronde overblijft. Het toernooi 
 3.  Voeg een Spreidingsdiagram in.
 4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
 5.  Selecteer bij Opties voor trendlijn [Exponentieel]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
-6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-exponentieel) is aangegeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-exponentieel is aangegeven.
 7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
 
 ![Voorbeeld exponentiële trendlijn.](images/timeseries/vb-trend-exponentieel.png){#fig-vb-trend-exponentieel}
@@ -197,7 +197,7 @@ Koers van een aandeel gedurende 20 dagen. Het zwevend gemiddelde wordt berekend 
 3.  Voeg een Spreidingsdiagram in.
 4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
 5.  Selecteer bij Opties voor trendlijn [Zwevend gemiddelde met Periode 3]{.uicontrol}.
-6.  Wijzig grafiektitel en astitels zoals in @fig-vb-zwevend-gemiddelde) is aangegeven.
+6.  Wijzig grafiektitel en astitels zoals in @fig-vb-zwevend-gemiddelde is aangegeven.
 7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
 
 ![Voorbeeld zwevend gemiddelde lijn.](images/timeseries/vb-zwevend-gemiddelde.png){#fig-vb-zwevend-gemiddelde}

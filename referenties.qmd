@@ -12,4 +12,4 @@
 **Tijdreeksen**
 
 -   [Dossier Conjunctuur (CBS)](https://www.cbs.nl/nl-nl/dossier/dossier-conjunctuur)
--   [Conjunctuurklok (CBS)](https://www.cbs.nl/nl-nl/visualisaties/conjunctuurklok)
+-   [Conjunctuurklok (CBS)](https://www.cbs.nl/nl-nl/visualisaties/dashboard-economie/conjunctuurklok)

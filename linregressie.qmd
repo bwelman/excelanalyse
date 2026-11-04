@@ -82,7 +82,7 @@ In @fig-sim1-basis zie je een spreidingsdiagram van 15 waarnemingen voor $x$ en 
 
 ![Dataset met 15 waarnemingen x en y, met een spreidingsdiagram.](images/linregressie/sim1-basis.png){#fig-sim1-basis}
 
-In @fig-sim1-regressie is een regressielijn (rood) getekend met daarnaast vertikale afstanden (blauwe lijnstukjes) tussen de echte y-waarde (de zwarte punt) en de voorspelde y-waarde (het punt op de rode lijn.
+In @fig-sim1-regressie is een regressielijn (rood) getekend met daarnaast vertikale afstanden (blauwe lijnstukjes) tussen de echte y-waarde (de zwarte punt) en de voorspelde y-waarde (het punt op de rode lijn).
 
 ![Spreidingsdiagram nu met regressielijn en afstandslijntjes.](images/linregressie/sim1-regressie.png){#fig-sim1-regressie width="500"}
 

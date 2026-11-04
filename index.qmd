@@ -26,19 +26,19 @@ Kortom: statistiek vertaalt ruwe data naar bruikbare informatie.
 
 Je kunt met Excel data-analyses uitvoeren, vooral voor eenvoudige tot middelmatig complexe analyses. Excel biedt veel functies en hulpmiddelen zoals:
 
--   **Formules en functies**
--   **Draaitabellen**: voor het samenvatten van data.
--   **Grafieken**: voor visualisaties.
--   **Invoegtoepassing Gegevensanalyse**: voor regressie, t-toetsen, variantie-analyse enz.
+- **Formules en functies**
+- **Draaitabellen**: voor het samenvatten van data.
+- **Grafieken**: voor visualisaties.
+- **Invoegtoepassing Gegevensanalyse**: voor regressie, t-toetsen, variantie-analyse enz.
 
 Excel heeft echter ook beperkingen bij data-analyse zoals
 
--   **Beperkte schaalbaarheid**: kan traag of instabiel worden bij grote datasets.
--   **Beperkte automatisering**: complexe of herhaalde analyses zijn moeilijk te automatiseren zonder VBA.
--   **Beperkte statistische diepgang**: niet geschikt voor geavanceerde analyses (machine learning, multivariate modellen).
--   **Foutgevoeligheid**: formules zijn handmatig, waardoor de kans op menselijke fouten groter is.
+- **Beperkte schaalbaarheid**: kan traag of instabiel worden bij grote datasets.
+- **Beperkte automatisering**: complexe of herhaalde analyses zijn moeilijk te automatiseren zonder VBA.
+- **Beperkte statistische diepgang**: niet geschikt voor geavanceerde analyses (machine learning, multivariate modellen).
+- **Foutgevoeligheid**: formules zijn handmatig, waardoor de kans op menselijke fouten groter is.
 
-Conclusie: Excel is prima voor basis- tot gemiddelde data-analyse, vooral bij kleinere datasets. Voor complexe of grootschalige analyses en machine learning is gespecialiseerde software zoals [R](https://www.r-project.org/), [Python](https://www.python.org/) of [SPSS](https://www.ibm.com/spss) beter geschikt.
+Conclusie: Excel is prima voor basis- tot gemiddelde data-analyse, vooral bij kleinere datasets. Voor complexe of grootschalige analyses en machine learning is gespecialiseerde software zoals [R](https://www.r-project.org/), [Python](https://www.python.org/) of [SPSS](https://www.ibm.com/products/spss) beter geschikt.
 
 ## Studieboek Data-analyse met Excel {.unnumbered}
 
@@ -48,9 +48,11 @@ Dit is geen cursus Excel. Er wordt vanuit gegaan dat je goed met Excel kunt werk
 
 Dit is ook geen cursus statistiek. Weliswaar worden statistische begrippen bij de onderdelen toegelicht, maar voor een verdere verdieping zul je bestaande studieboeken moeten raadplegen.
 
-Er komen interactieve onderdelen in het leerboek voor om je te helpen de inhoud beter te begrijpen. Deze interactieve inhoud werkt alleen als je dit materiaal opent via een webbrowser welke javascript ondersteunt. Dit is ook de reden dat het boek op dit moment niet beschikbaar is in PDF-, ePub- en Kindle-formaten.
-
-Dit studieboek is een levend document en zal regelmatig worden gecontroleerd en bijgewerkt voor verbeteringen.
+:::: {.content-visible when-format="html"}
+::: {.callout-note title="Javascript"}
+Er zijn interactieve onderdelen in het boek om je te helpen de inhoud beter te begrijpen. Deze interactieve inhoud werkt alleen als je dit materiaal opent via een webbrowser die Javascript ondersteunt.
+:::
+::::
 
 ::: {.callout-important title="Databestanden"}
 Bij dit studieboek horen databestanden. Deze heb je nodig om de oefeningen uit te voeren. Je kunt ze via één zipbestand downloaden: [Download databestanden](bestanden-excelanalyse.zip).
@@ -58,28 +60,8 @@ Bij dit studieboek horen databestanden. Deze heb je nodig om de oefeningen uit t
 
 ### Hulp
 
--   [Rapporteer een probleem](https://github.com/bwelman/excelanalyse/issues)
+- [Rapporteer een probleem](https://github.com/bwelman/excelanalyse/issues)
 
--   [Stel een vraag](https://github.com/bwelman/excelanalyse/discussions)
+- [Stel een vraag](https://github.com/bwelman/excelanalyse/discussions)
 
-### Licentie {.unnumbered}
-
-[![](images/creativecommons-by-nc-sa.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl)
-
-Dit werk valt onder een [Creative Commons Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal-licentie](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl).
-
-### Over de auteur {.unnumbered}
-
-![Ben Welman](images/benw2.png){.quarto-cover-image .image-fluid width="150"}Ik heb Chemische Technologie gestudeerd aan de THT, de huidige Universiteit Twente. Na eerst een aantal jaren scheikunde en wiskunde te hebben gegeven op middelbare scholen ben ik als docent informatica en statistiek gaan werken bij de opleiding Commercieel Technische Bedrijfskunde van de Hogeschool Enschede, nu Saxion Hogescholen. Van daaruit ben ik intern overgestapt naar MeetingPoint, dat zich richtte op de ontwikkeling en ondersteuning van e-learning. In 1993 heb ik [Softwijs](https://bwelman.github.io) opgericht waarmee ik eind 2018 ben gestopt.
-
-Sinds mijn pensioen geniet ik van mijn hobby's: biljarten, bridgen, bier brouwen, brood bakken en reizen (vooral met mijn camper en fiets). Naast het maken van leerboeken besteed ik ook tijd aan het analyseren van data, met name met [R](https://nl.wikipedia.org/wiki/R_(softwarepakket)) en in mindere mate met [Python](https://nl.wikipedia.org/wiki/Python_(programmeertaal)).
-
-Ben Welman
-
-Andere studieboeken:
-
-| Nederlandstalig | Engelstalig |
-|----|----|
-| [Leer Excel](https://leerexcel.netlify.app/) | [Learn Excel](https://learnexcel.netlify.app/) |
-| [Leer Access](https://leeraccess.netlify.app/) | [Learn Access](https://learnaccess.netlify.app/) |
-| [Cursus bierbrouwen](https://brouwjebier.netlify.app/) |  |
+{{< include _studieboek.qmd >}}

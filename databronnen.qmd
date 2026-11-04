@@ -5,17 +5,16 @@
 **Nederland**
 
 -   [CBS (Centraal Bureau voor de Statistiek)](https://www.cbs.nl/)
-    - [StatLine](https://opendata.cbs.nl/statline/#/CBS/nl/)
+    - [StatLine](https://opendata.cbs.nl/)
 -   [Dataregister van de Nederlandse Overheid](https://data.overheid.nl/) : Nationaal dataportaal Nederlandse overheid. Bevat datasets in veel domeinen (zorg, energie, verkeer, ...) en een zoekoptie.
 -   [Open data Tweede Kamer](https://opendata.tweedekamer.nl) : Open Data Portaal voor o.a. wetsvoorstellen, moties, amendementen, verslagen en de samenstelling van fracties en commissies.
 -   [DANS](https://dans.knaw.nl/nl/) : Nationaal expertisecentrum en repository voor onderzoeksdata.
--   [Open data van de Nederlandse Zorgautoriteit](https://www.opendisdata.nl/) : Zorg- en behandeldata van Nederlandse ziekenhuizen.
 -   [Compendium voor de Leefomgeving](https://www.clo.nl/) : Website met feiten en cijfers over milieu, natuur en ruimte in Nederland. Veel bijbehorende datasets kunnen gedownload worden.
 
 **Europa**
 
 -   [Eurostat (Europees Bureau voor de Statistiek)](https://ec.europa.eu/eurostat/web/main/home) : Statistische bureau van de Europese Unie.
--   [EEA (European Environment Agency)](https://www.eea.europa.eu/data-and-maps) : Europees Milieuagentschap, met data over het milieu.
+-   [EEA (European Environment Agency)](https://www.eea.europa.eu/en/analysis) : Europees Milieuagentschap, met data over het milieu.
 -   [data.europe.eu](https://data.europa.eu/nl) : Het officiële portaal voor Europese data.
 
 **UK**
@@ -45,11 +44,11 @@
 **Financieel**
 
 -   [Yahoo Finance](https://finance.yahoo.com) : Bevat veel interessante financiele data (ook historische) die je kunt downloaden, zoals
-    -  [AEX historische data](https://finance.yahoo.com/quote/%5EAEX/history?period1=1485817200&period2=1546210800&interval=1d&filter=history&frequency=1d)
+    -  [AEX historische data](https://finance.yahoo.com/quote/%5EAEX/history/?period1=1485817200&period2=1546210800&interval=1d&filter=history&frequency=1d)
 
 **Medisch**
 
--   [NKR (Nederlandse Kanker Registratie)](http://www.cijfersoverkanker.nl/)
+-   [NKR (Nederlandse Kanker Registratie)](https://iknl.nl/cijfers-over-kanker)
 
 **Klimaat/Weer**
 
@@ -59,7 +58,7 @@
 
 **Transport**
 
--   [openFlights.org](http://openflights.org/data.html) : Database met gegevens van meer dan 10000 vliegvelden, treinstations, veerboothavens over de hele wereld.
+-   [openFlights.org](http://openflights.org/data) : Database met gegevens van meer dan 10000 vliegvelden, treinstations, veerboothavens over de hele wereld.
 -   [BTS (Bureau of Transportation Statistics)](https://www.bts.gov/) : Statistieken over commerciële luchtvaart, multimodale vrachtactiviteit en transporteconomie.
 -   FAA (Federal Aviation Administration) : Transportorganisatie van de Amerikaanse overheid die de burgerluchtvaart reguleert.
     -  [Data and Research](https://www.faa.gov/data_research/) : Verschillende data over vluchten.
@@ -67,7 +66,7 @@
 
 ## Zoekmachines/Portalen {.unnumbered}
 
--   [Google Dataset Search](https://toolbox.google.com/datasetsearch) : Zoekmachine voor datasets.
+-   [Google Dataset Search](https://datasetsearch.research.google.com/) : Zoekmachine voor datasets.
 
 -   [Find Economic Articles with Data](https://ejd.econ.mathematik.uni-ulm.de/) : Economische artikelen met data zoeken, ook zoeken op gebruikte onderzoeksmethode is mogelijk, zie ook [Uitleg](https://skranz.github.io//r/2022/04/06/FindingEconomicArticles5.html)
 

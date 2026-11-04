@@ -1,0 +1,23 @@
+### Licentie {.unnumbered}
+
+CC NY-NC-SA 4.0
+
+Dit werk valt onder een <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.nl">Creative Commons Naamsvermelding-NietCommercieel-GelijkDelen 4.0 Internationaal-licentie.</a>.
+
+### Over de auteur {.unnumbered}
+
+Ik heb Chemische Technologie gestudeerd aan de THT, de huidige [Universiteit Twente](https://www.utwente.nl/). Na eerst een aantal jaren scheikunde en wiskunde te hebben gegeven op middelbare scholen ben ik als docent informatica en statistiek gaan werken bij de opleiding Commercieel Technische Bedrijfskunde van de Hogeschool Enschede, nu [Saxion Hogescholen](https://www.saxion.nl/). Van daaruit intern overgestapt naar MeetingPoint dat zich voornamelijk bezighield met het ontwikkelen en ondersteunen van e-learning. In 1993 heb ik *Softwijs* opgericht waarmee ik eind 2018 ben gestopt.
+
+Na mijn pensionering heb ik tijd voor mijn hobby's: biljarten, bridgen, bierbrouwen, broodbakken en reizen (vooral met de camper en de fiets mee). Daarnaast hou ik naast het maken van studieboeken nog wat tijd over om me te verdiepen in data analyse en dan vooral met [R](https://en.wikipedia.org/wiki/R_(programming_language)) en wat minder met [Python](https://www.python.org/).
+
+Ben Welman
+
+### Uitgebrachte studieboeken {.unnumbered}
+
+| Nederlandstalig | Engelstalig |
+|------------------------------------|------------------------------------|
+| [Leer Excel](https://leerexcel.netlify.app/) | [Learn Excel](https://learnexcel.netlify.app/) |
+| [Leer Access](https://leeraccess.netlify.app/) | [Learn Access](https://learnaccess.netlify.app/) |
+| [Data Analyse met Excel](https://excelanalyse.netlify.app/) |  |
+| [Leer Databases Ontwerpen](https://leerdbdesign.netlify.app/) |  |
+| [Cursus bierbrouwen](https://brouwjebier.netlify.app/) |  |

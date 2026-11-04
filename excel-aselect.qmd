@@ -34,7 +34,7 @@ Willekeurige getallen tussen 10 en 50
 
 In @fig-aselect zie je hoe willekeurige getallen in het interval `[10,50)` zijn gegenereerd met de formule `=10 + ASELECT()*40`.
 
-![Gegenereerde getallen uit het interval \[10,50) met de functie aselect.](images/app-aselect/aselect.png){#fig-aselect}
+![Gegenereerde getallen uit het interval \[10,50\) met de functie aselect.](images/app-aselect/aselect.png){#fig-aselect}
 
 ::: {.callout-tip title="Willekeurige gehele getallen"}
 
@@ -65,7 +65,7 @@ Met wat trucs kun je ook andere getallen dan gehele getallen genereren.
 ::: {#exm-geld1}
 Willekeurige geldbedragen
 
-Met de formule`=ASELECTTUSSEN(10100;90100)/100` kun je willekeurige geldbedragen met twee decimalen genereren tussen €10,00 en €90,00, zie @fig-aselecttussen-euro).
+Met de formule`=ASELECTTUSSEN(10100;90100)/100` kun je willekeurige geldbedragen met twee decimalen genereren tussen €10,00 en €90,00, zie @fig-aselecttussen-euro.
 
 ![Gegenereerde geldbedragen met functie ASELECTTUSSEN.](images/app-aselect/aselecttussen-euro.png){#fig-aselecttussen-euro}
 
