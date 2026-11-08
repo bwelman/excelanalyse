@@ -12,8 +12,8 @@ Een lineaire trendlijn is een zo goed mogelijk passende rechte lijn die gebruikt
 
 De vergelijking van de trendlijn is: $y = a \cdot x + b$ met
 
--   $a$ = richtingscoëfficient
--   $b$ = snijpunt met de verticale as
+- $a$ = richtingscoëfficient
+- $b$ = snijpunt met de verticale as
 
 ::: {#prp-xlstrend-lineair}
 [Bestand]{.smallcaps}: `trendlijnen.xlsx`
@@ -37,17 +37,17 @@ Vergelijking: $y = a \cdot x + b$
 
 Richtingscoëfficient $a$
 
--   `RICHTING(y-bekend;x-bekend)`
--   `INDEX(LIJNSCH(y-bekend ; x-bekend) ; 1; 1)`
+- `RICHTING(y-bekend;x-bekend)`
+- `INDEX(LIJNSCH(y-bekend ; x-bekend) ; 1; 1)`
 
 Snijpunt met Y-as $b$
 
--   `SNIJPUNT(y-bekend;x-bekend)`
--   `INDEX(LIJNSCH(y-bekend ; x-bekend) ; 1; 2))`
+- `SNIJPUNT(y-bekend;x-bekend)`
+- `INDEX(LIJNSCH(y-bekend ; x-bekend) ; 1; 2))`
 
 Correlatiecoëfficient $R$
 
--   `CORRELATIE(y-bekend ; x-bekend)`
+- `CORRELATIE(y-bekend ; x-bekend)`
 
 R-kwadraat vind je door de gevonden waarde te kwadrateren.
 
@@ -77,8 +77,8 @@ Groei van het aantal bacteriën in een kweek
 
 Vergelijking: $y = a \cdot LN(x) + b$
 
--   $a$ = `INDEX(LIJNSCH(y-bekend ; LN(x-bekend)) ; 1 ; 1)`
--   $b$ = `INDEX(LIJNSCH(y-bekend ; LN(x-bekend)) ; 1 ; 2)`
+- $a$ = `INDEX(LIJNSCH(y-bekend ; LN(x-bekend)) ; 1 ; 1)`
+- $b$ = `INDEX(LIJNSCH(y-bekend ; LN(x-bekend)) ; 1 ; 2)`
 
 ## Polynoom trendlijn {#sec-trendlijn-polynoom}
 
@@ -88,10 +88,10 @@ De vergelijking van de trendlijn heeft de vorm: $y = a_n \cdot x^n ... + a_2 \cd
 
 De graad van de polynoom wordt bepaald door het aantal schommelingen (pieken en dalen) in de gegevens:
 
--   1e graad, hetzelfde als de lineaire trendlijn.
--   2e graad, meestal slechts één piek of dal in de lijn. Lijn heet ook wel parabool.
--   3e graad, meestal één of twee pieken of dalen.
--   4e graad, meestal maximaal drie pieken of dalen.
+- 1e graad, hetzelfde als de lineaire trendlijn.
+- 2e graad, meestal slechts één piek of dal in de lijn. Lijn heet ook wel parabool.
+- 3e graad, meestal één of twee pieken of dalen.
+- 4e graad, meestal maximaal drie pieken of dalen.
 
 In de praktijk zul je moeten experimenteren met de graad om uit te zoeken welke de best passende is.
 
@@ -104,7 +104,7 @@ Prestatie (in km per liter brandstof) van een auto bij verschillende snelheden (
 2.  Selecteer een willekeurige cel in het gegevensgebied.
 3.  Voeg een Spreidingsdiagram in.
 4.  Selecteer de grafiekreeks door op een gegevenspunt te klikken. Dan rechtermuisklik en kies [Trendlijn toevoegen]{.uicontrol}.
-5.  Selecteer bij Opties voor trendlijn [Polynoom volgorde 3]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
+5.  Selecteer bij Opties voor trendlijn [Polynoom graad 2]{.uicontrol}. En laat de vergelijking en R-kwadraat in de grafiek weergeven.
 6.  Wijzig grafiektitel en astitels zoals in @fig-vb-trend-polynoom is aangegeven.
 7.  Versleep in de grafiek de vergelijking naar een overzichtelijke plaats.
 
@@ -115,9 +115,9 @@ Prestatie (in km per liter brandstof) van een auto bij verschillende snelheden (
 
 Vergelijking: $y = a \cdot x^2 + b \cdot x + c$
 
--   $a$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 1)`
--   $b$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 2)`
--   $c$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 3)`
+- $a$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 1)`
+- $b$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 2)`
+- $c$ = `INDEX(LIJNSCH(y-bekend ; x-bekend^{1\2}) ; 1 ; 3)`
 
 ## Machtstrendlijn {#sec-trendlijn-macht}
 
@@ -145,8 +145,8 @@ Afgelegde afstand van een optrekkende raceauto in intervallen van steeds 1 secon
 
 Vergelijking: $y = a \cdot x^b$
 
--   $a$ = `EXP(INDEX(LIJNSCH(LN(y-bekend) ; LN(x-bekend)) ; 2))`
--   $b$ = `INDEX(LIJNSCH(LN(y-bekend) ; LN(x-bekend)) ; 1)`
+- $a$ = `EXP(INDEX(LIJNSCH(LN(y-bekend) ; LN(x-bekend)) ; 2))`
+- $b$ = `INDEX(LIJNSCH(LN(y-bekend) ; LN(x-bekend)) ; 1)`
 
 ## Exponentiële trendlijn {#sec-trendlijn-exponentieel}
 
@@ -176,8 +176,8 @@ De trendlijn is hier perfect omdat er exacte waarden zijn gebruikt.
 
 Vergelijking: $y = a \cdot e^{bx}$
 
--   $a$ = `EXP(INDEX(LIJNSCH(LN(y-bekend) ; x-bekend) ; 1 ; 2))`
--   $b$ = `INDEX(LIJNSCH(LN(y-bekend) ; LN(x-bekend)) ; 1)`
+- $a$ = `EXP(INDEX(LIJNSCH(LN(y-bekend) ; x-bekend) ; 1 ; 2))`
+- $b$ = `INDEX(LIJNSCH(LN(y-bekend) ; x-bekend) ; 1)`
 
 ## Zwevend gemiddelde lijn {#sec-trendlijn-gemiddelde}
 

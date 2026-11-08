@@ -505,7 +505,7 @@ b.  bepaal de kenmerkende statistieken voor de variabelen `prijs` en `kmstand`.
 :::
 
 ::: {#exr-imp-desc-golfclub}
-Een steekproef van 20 leden van een golfclub naar hun lengte (in cm) heeft het volgende resultaat opgeleverd: 152, 173,175, 163,173,170, 173, 175, 196, 175, 175, 183, 175, 165, 165, 173, 163, 180,1 88, 188
+Een steekproef van 20 leden van een golfclub naar hun lengte (in cm) heeft het volgende resultaat opgeleverd: 152, 173,175, 163,173,170, 173, 175, 196, 175, 175, 183, 175, 165, 165, 173, 163, 180,188, 188
 
 a.  Maak een samenvattingsinfo van de belangrijkste statistische kenmerken via Gegevensanalyse.
 b.  Maak een boxplot en een histogram en beoordeel aan de hand hiervan of de data een normale verdeling volgen.
@@ -526,7 +526,7 @@ Van twee groepen van elk 50 personen is de lengte (in cm) gemeten. De resultaten
 ::: {#exr-imp-desc-boeken}
 In het bestand `boeken.xlsx` staan van een hoeveelheid boeken de volgende gegevens:
 
--   `boekid` - een unieke waarde uit het interval \[1015, 9875\]
+-   `boeknr` - een unieke waarde uit het interval \[1015, 9875\]
 -   `prijs` - de prijs van het boek
 -   `categorie` - kind, roman, studie
 

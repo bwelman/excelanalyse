@@ -11,7 +11,6 @@ Bij k-means is `k` het aantal clusters en wordt elke cluster gekenmerkt door een
 Er bestaan verschillende manieren om de afstand te bepalen. De meest gebruikte is de Euclidische afstand (bekend van de stelling van Pythagoras).
 
 ::: {.callout-note title="Euclidische afstand"}
-
 Heb je twee punten met de coördinaten $(x_1, x_2)$ en $(y_1, y_2)$ dan is de Euclidische afstand uit te rekenen via de bekende Stelling van Pythagoras.
 
 $$\text{afstand = } \sqrt{(x_1 - y_1)^2 + (x_2 - y_2)^2}$$
@@ -31,7 +30,7 @@ Het algoritme werkt als volgt.
 
 4.  Voor elke cluster wordt een nieuw centrum bepaald op basis van de gemiddelde waarden van alle waarnemingen binnen dat cluster.
 
-5.  De stappen 2 t/m 5 worden herhaald tot de positie van de clustercentra niet meer wijzigt.
+5.  De stappen 2 t/m 4 worden herhaald tot de positie van de clustercentra niet meer wijzigt.
 
 **Voorbeeld**
 
@@ -72,7 +71,7 @@ Nu voor elke cluster bekend is welke waarnemingen tot de cluster behoren, kan vo
 Nu kan het iteratieproces beginnen. Kopieer de nieuwe centrumwaarden naar B17:C19.
 
 ::: callout-important
-Let er op dat je de waarden kopieert via [Plakken Speciaal > Waarden plakken]{.uicontrol} en dat niet de formules gekopieerd worden.
+Let er op dat je de waarden kopieert via [Plakken Speciaal \> Waarden plakken]{.uicontrol} en dat niet de formules gekopieerd worden.
 :::
 
 Er worden nu weer nieuwe centrumwaarden berekend en ook neemt de som van de minimum afstanden af. In de grafiek kun je ook zien dat de drie centra verschuiven in de richting van de cluster.
@@ -87,7 +86,7 @@ En in @fig-kmeans-model-k3-diagram-eind kun je de lokaties van de clusters waarn
 
 **Model met 2 clusters (k=2)**
 
-Het handigste om een model met 2 clusters te maken is door te beginnen met het maken van een kopie van werkblad `model3` en deze te hernoemen naar `model2`. Vervolgens verwijder je de kolom D3 en de rijen voor cluster 3.
+Het handigste om een model met 2 clusters te maken is door te beginnen met het maken van een kopie van werkblad `model3` en deze te hernoemen naar `model2`. Vervolgens verwijder je de kolom F (die voor D3) en de twee rijen voor cluster 3.
 
 Start met willekeurig gekozen beginwaarden voor de clustercentra. De eindresultaten zijn te zien in @fig-kmeans-model-k2-eind en @fig-kmeans-model-k2-diagram-eind.
 
@@ -103,6 +102,8 @@ Om de beste waarde voor k te vinden wordt naar de som van de minimale afstanden 
 |-----|------------------------|
 | 2   | 25,241                 |
 | 3   | 17,218                 |
+
+Houd er rekening mee dat deze som altijd afneemt naarmate k groter wordt (bij k gelijk aan het aantal observaties is de som zelfs 0). In de praktijk zoek je daarom naar de waarde van k waarna de som nauwelijks nog verder afneemt: de zogenaamde *elleboogmethode*.
 
 ::: {.callout-note title="Oplosser van Excel"}
 In deze uitwerking heb je de iteraties handmatig uitgevoerd door steeds betere centrumwaarden te bepalen en deze weer in het model te gebruiken. In plaats daarvan zou je ook gebruik kunnen maken van de [Oplosser]{.uicontrol}, een met Excel meegeleverde invoegtoepassing. In dat geval is de te minimaliseren doelfunctie de cel met de som van de minimale afstanden en zijn de centrumwaarden de variabele cellen.

@@ -65,7 +65,7 @@ Met wat trucs kun je ook andere getallen dan gehele getallen genereren.
 ::: {#exm-geld1}
 Willekeurige geldbedragen
 
-Met de formule`=ASELECTTUSSEN(10100;90100)/100` kun je willekeurige geldbedragen met twee decimalen genereren tussen €10,00 en €90,00, zie @fig-aselecttussen-euro.
+Met de formule`=ASELECTTUSSEN(10*100;90*100)/100` kun je willekeurige geldbedragen met twee decimalen genereren tussen €10,00 en €90,00, zie @fig-aselecttussen-euro.
 
 ![Gegenereerde geldbedragen met functie ASELECTTUSSEN.](images/app-aselect/aselecttussen-euro.png){#fig-aselecttussen-euro}
 

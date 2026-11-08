@@ -187,7 +187,7 @@ De uitvoer verschijnt in een nieuw werkblad. Voor een betere leesbaarheid kun je
 
 ![Variantie-analyse regressie.](images/linregressie/sim1-anova.png){#fig-sim1-anova}
 
-Bij eenvoudige lineaire regressie is dit niet zo van belang. De waarde van `Significantie F` die hier nagenoeg 0 is, moet wel groter dan 0,05 zijn. Wanneer dat niet het geval is kun je onderzoeken of er een andere onafhankelijke variabele is die mogelijk geschikter is.
+Bij eenvoudige lineaire regressie is dit niet zo van belang. De waarde van `Significantie F` die hier nagenoeg 0 is, moet wel kleiner dan 0,05 zijn. Wanneer dat niet het geval is kun je onderzoeken of er een andere onafhankelijke variabele is die mogelijk geschikter is.
 
 #### Regressie-coëfficiënten {.unnumbered}
 

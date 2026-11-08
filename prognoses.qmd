@@ -120,7 +120,7 @@ Gelet op de nauwkeurigheidswaarden zijn dit tot nu toe de beste voorspellingen.
 :::
 
 ::: {.content-visible when-format="html:js"}
-**Vraag:** Wat is de verkoopprognose voor week 13 (op 1 decimaal nauwkeurig)? `r fitb(c("71,0", "71.0"))` `r hide("Hint")` De prognose voor week 13 is $\alpha * \text{laatste week} + (1-\alpha) * \text{een na laatste week}$ `r unhide()`
+**Vraag:** Wat is de verkoopprognose voor week 13 (op 1 decimaal nauwkeurig)? `r fitb(c("71,0", "71.0"))` `r hide("Hint")` De prognose voor week 13 is $\alpha * \text{werkelijke waarde van week 12} + (1-\alpha) * \text{prognose voor week 12}$ `r unhide()`
 :::
 
 ::: {.callout-tip title="Keuze alpha"}
@@ -183,26 +183,22 @@ Via het Voorspellingenblad wordt een nieuw werkblad gemaakt met daarin een tabel
 
 3.  Kies [tab Gegevens \> Voorspellingblad (groep Voorspelling)]{.uicontrol}. Het dialoogvenster ***Prognosewerkblad maken*** verschijnt.
 
+4.  Stel [Einde van prognose]{.uicontrol} in op 1 december 2025.
+
 ![Prognosewerkblad maken.](images/prognoses/sales_fcast_sheet.png){#fig-prognosewerkblad}
 
-In dit venster kun je een aantal keuzes maken. Zie @sec-excel-voorspellingenblad voor een toelichting.
+In dit venster kun je via de knop [Opties]{.uicontrol} een aantal keuzes maken. Zie @sec-excel-voorspellingenblad voor een toelichting.
 
-4.  Stel [Einde van prognose]{.uicontrol} in op 1 december 2013.
-
-5.  Klik op \[Opties{.uicontrol}.
-
-![Opties prognosewerkblad.](images/prognoses/sales_fcast_options.png){#fig-sales-fcast-options}
-
-6.  Klik op [Maken]{.uicontrol}. Er wordt een nieuw werkblad gemaakt met daarin de historische gegevens, de voorspelde waarden, betrouwbaarheidsgrenzen (standaard 95%) en een grafiek.
+5.  Klik op [Maken]{.uicontrol}. Er wordt een nieuw werkblad gemaakt met daarin de historische gegevens, de voorspelde waarden, betrouwbaarheidsgrenzen (standaard 95%) en een grafiek.
 
 De resultaten van de voorspellingen staan in @tbl-voorspelling weergegeven.
 
 ::: {#tbl-voorspelling}
 | Datum      | Voorspelling | Ondergrens | Bovengrens |
 |------------|--------------|------------|------------|
-| 01-10-2013 | 4264177      | 3869915    | 4658439    |
-| 01-11-2013 | 4033806      | 3639542    | 4428070    |
-| 01-12-2013 | 4033625      | 3639358    | 4427892    |
+| 01-10-2025 | 4264177      | 3869915    | 4658439    |
+| 01-11-2025 | 4033806      | 3639542    | 4428070    |
+| 01-12-2025 | 4033625      | 3639358    | 4427892    |
 
 : Voorspelde waarden en betrouwbaarheidsgrenzen.
 :::

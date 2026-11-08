@@ -99,7 +99,7 @@ Dit zijn regelmatige schommelingen (fluctuaties) per dag/maand/kwartaal (meestal
 
 In @fig-verkoop-paraplu is het seizoenspatroon van de kwartaalverkopen van paraplu's door een winkel over vijf jaar te zien. De gegevens zijn te vinden in bestand `paraplu.xlsx`.
 
-![Seizoencomponent aantal internationale vliegtuigpassagiers.](images/timeseries/paraplu.png){#fig-verkoop-paraplu}
+![Seizoencomponent kwartaalverkopen van paraplu's.](images/timeseries/paraplu.png){#fig-verkoop-paraplu}
 
 De grafiek wijst niet op een langetermijntrend in de verkoop. Oppervlakkig bekeken ziet het eruit als een horizontaal patroon met willekeurige fluctuaties. Wanneer je beter kijkt zie je een systematisch patroon. Zo heeft binnen elk jaar het 2^e^ kwartaal steeds de hoogste omzet en het 4^e^ kwartaal de laagste omzet. Er lijkt dus sprake van een kwartaalpatroon.
 
