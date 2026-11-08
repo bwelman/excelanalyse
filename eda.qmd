@@ -207,7 +207,7 @@ Boxplot
 
 Bij een steekproef van 715 personen is o.a. het netto maandinkomen verzameld. Je wilt een eerste indruk krijgen van de verdeling van de inkomens.
 
-1.  Open het bestand `maandinkomens.xlsx` en zet de kolom met gegevens om naar een Excel tabel en geef deze een zinvolle tabelnaam, bijvoorbeeld `Maandinkomens`.
+1.  Open het bestand `maandinkomen.xlsx` en zet de kolom met gegevens om naar een Excel tabel en geef deze een zinvolle tabelnaam, bijvoorbeeld `Maandinkomens`.
 
 2.  Selecteer een cel in de tabel en kies [Gegevens \> Gegevensanalyse \> Beschrijvende statistiek]{.uicontrol}.\
     Specificeer het invoerbereik en selecteer bij [Uitvoeropties]{.uicontrol} dat er een samenvattingsinfo op een nieuw werkblad gemaakt moet worden.

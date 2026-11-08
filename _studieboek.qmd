@@ -19,5 +19,5 @@ Ben Welman
 | [Leer Excel](https://leerexcel.netlify.app/) | [Learn Excel](https://learnexcel.netlify.app/) |
 | [Leer Access](https://leeraccess.netlify.app/) | [Learn Access](https://learnaccess.netlify.app/) |
 | [Data Analyse met Excel](https://excelanalyse.netlify.app/) |  |
-| [Leer Databases Ontwerpen](https://leerdbdesign.netlify.app/) |  |
+| [Leer Databases Ontwerpen](https://leerdbdesign.netlify.app/) | [Learn Database Design](https://learndbdesign.netlify.app/) |
 | [Cursus bierbrouwen](https://brouwjebier.netlify.app/) |  |

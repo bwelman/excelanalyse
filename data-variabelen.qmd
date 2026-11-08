@@ -33,7 +33,7 @@ flowchart LR
 
 **Nominaal**
 
-Een variabele op **nominaal niveau** (ook wel een **categorische** variabele genoemd) is een variabele waarbij de waarden (**categorien**) uit namen (naam in het Latijn is *nomen*) bestaan waarbij ook geen relatie tussen de mogelijkheden bestaat. De gegevens zijn kwalitatief of beschrijvend. De waarden hebben ook geen logische volgorde. Je kunt niet aangeven dat de ene waarde groter is dan de andere waarde, of de gemiddelde waarde berekenen. Het enige dat je kunt zeggen is dat de mogelijkheden van elkaar verschillen.
+Een variabele op **nominaal niveau** (ook wel een **categorische** variabele genoemd) is een variabele waarbij de waarden (**categorieën**) uit namen (naam in het Latijn is *nomen*) bestaan waarbij ook geen relatie tussen de mogelijkheden bestaat. De gegevens zijn kwalitatief of beschrijvend. De waarden hebben ook geen logische volgorde. Je kunt niet aangeven dat de ene waarde groter is dan de andere waarde, of de gemiddelde waarde berekenen. Het enige dat je kunt zeggen is dat de mogelijkheden van elkaar verschillen.
 
 Voorbeelden: geslacht, nationaliteit, godsdienst, woonplaats, burgerlijke staat, oogkleur, beroep, studierichting, industrietak, ....
 
@@ -41,7 +41,7 @@ Voorbeelden: geslacht, nationaliteit, godsdienst, woonplaats, burgerlijke staat,
 
 Variabelen op **ordinaal niveau** hebben iets meer structuur dan nominale variabelen, maar niet veel. Bij een ordinale variabele is er een natuurlijke zinvolle manier om de waarden te ordenen, bijvoorbeeld van klein naar groot of van meer dan minder. Voorbeelden: restaurantclassificatie (aantal sterren), enquêtevragen (*Likertschalen*: 1=zeer goed, 2=goed, ...), plaats in wedstrijduitslag (1, 2, 3, ...). Met de waarden kun je geen rekenkundige bewerkingen uitvoeren, zoals een gemiddelde berekenen.
 
-Zo is een restaurant met 2 sterren beter dan eentje met 1 ster, maar je kunt niet zomaar zeggen 2 keer beter. En bij de uitslag van een maraton is de eerste sneller dan de tweede en is deze weer sneller dan de derde, enz. Maar het verschil tussen de eerste plaats en de tweede plaats kan anders zijn dan het verschil tussen de tweede en de derde plaats.
+Zo is een restaurant met 2 sterren beter dan eentje met 1 ster, maar je kunt niet zomaar zeggen 2 keer beter. En bij de uitslag van een marathon is de eerste sneller dan de tweede en is deze weer sneller dan de derde, enz. Maar het verschil tussen de eerste plaats en de tweede plaats kan anders zijn dan het verschil tussen de tweede en de derde plaats.
 
 Voorbeelden: beoordeling (1=zeer slecht, 2=slecht, 3=matig, 4=goed, 5=zeer goed), medaille (goud, zilver, brons), T-shirt maten (S, M, L, XL), ...
 
@@ -61,12 +61,12 @@ Voorbeelden: inkomen, uitgaven, gewicht, lengte, snelheid, massa, reactietijd
 
 **Samengevat**
 
--   kwalitatieve variabele (nominaal, ordinaal)
-    -   wordt niet numeriek gemeten, elke waarde heet ook wel categorie
-    -   geen rekenkundige bewerkingen, wel aantallen tellen per categorie
--   kwantitatieve variabele (interval, ratio)
-    -   wordt numeriek gemeten
-    -   rekenkundige bewerkingen zijn mogelijk
+- kwalitatieve variabele (nominaal, ordinaal)
+  - wordt niet numeriek gemeten, elke waarde heet ook wel categorie
+  - geen rekenkundige bewerkingen, wel aantallen tellen per categorie
+- kwantitatieve variabele (interval, ratio)
+  - wordt numeriek gemeten
+  - rekenkundige bewerkingen zijn mogelijk
 
 ### Continue - discrete variabelen
 
@@ -77,12 +77,12 @@ Er is nog een tweede soort onderscheid waar je op bedacht moet zijn bij de typen
 - **Discrete variabele** is in feite een variabele die niet continu is. Bij een discrete variabele is het soms zo dat er daartussenin niets mogelijk is.
 
 ::: {#tbl-meetniveau}
-| meetniveau | continu    | discreet   |
-|------------|:----------:|:----------:|
-| nominaal   |            |$\checkmark$|
-| ordinaal   |            |$\checkmark$|
-| interval   |$\checkmark$|$\checkmark$|
-| ratio      |$\checkmark$|$\checkmark$|
+| meetniveau |   continu    |   discreet   |
+|------------|:------------:|:------------:|
+| nominaal   |              | $\checkmark$ |
+| ordinaal   |              | $\checkmark$ |
+| interval   | $\checkmark$ | $\checkmark$ |
+| ratio      | $\checkmark$ | $\checkmark$ |
 
 : Het verband tussen de meetschalen en het onderscheid tussen discreet en continu. Een vinkje geeft aan wat mogelijk is.
 :::
@@ -103,7 +103,7 @@ Een jaartal, bijvoorbeeld het bouwjaar van een auto, wordt doorgaans beschouwd a
 
 ## Gestructureerde gegevens
 
-Vaak zijn de gegevens zijn niet goed gestructureerd, waardoor je niet met draaitabellen kunt werken of de gewenste grafieken niet kunt maken. Wanneer de gegevens goed gestructureerd zijn kun je ze gemakkelijker modelleren, visualiseren en transformeren waardoor de analyse eenvoudiger wordt.
+Vaak zijn de gegevens niet goed gestructureerd, waardoor je niet met draaitabellen kunt werken of de gewenste grafieken niet kunt maken. Wanneer de gegevens goed gestructureerd zijn kun je ze gemakkelijker modelleren, visualiseren en transformeren waardoor de analyse eenvoudiger wordt.
 
 Gestructureerde gegevens moeten voldoen aan de volgende voorwaarden:
 
@@ -138,7 +138,7 @@ exp_w2 <- exp |>
 flextable(exp_w2) |> autofit()
 ```
 
-In feite telt deze gegevensverzameling drie variabelen: `Naam`, `Behandeling` en `Meetwaarde`. Gestructureerd ziet deze gegevensverzameling er uit zoals in @tbl-exp3.
+In feite telt deze gegevensverzameling drie variabelen: `Deelnemer`, `Behandeling` en `Meetwaarde`. Gestructureerd ziet deze gegevensverzameling er uit zoals in @tbl-exp3.
 
 ```{r}
 #| label: tbl-exp3
@@ -152,9 +152,9 @@ Dit maakt de waarden, variabelen en waarnemingen duidelijker.
 
 Echte gegevensverzamelingen zijn vaak op bijna elke denkbare manier in strijd met de voorwaarden voor gestructureerde gegevens. De meest voorkomende problemen bij niet goed gestructureerde gegevensverzamelingen zijn:
 
--   Kolomkoppen bevatten waarden van een variabele i.p.v. een variabelenaam.
--   Combinatie van variabelen in een kolom.
--   Variabelen in zowel rijen als kolommen.
+- Kolomkoppen bevatten waarden van een variabele i.p.v. een variabelenaam.
+- Combinatie van variabelen in een kolom.
+- Variabelen in zowel rijen als kolommen.
 
 In de taken hierna zullen in kleine voorbeelden deze problemen gedemonstreerd worden en opgelost worden met behulp van Power Query.
 
@@ -173,9 +173,9 @@ flextable(scores1)
 
 Deze gegevensverzameling heeft in feite drie variabelen:
 
--   `score` - met de waarden `A` t/m `E`
--   `geslacht` - met de waarden `man` en `vrouw`
--   `aantal` - met het aantal keren dat de score behaald is, de frequentie
+- `score` - met de waarden `A` t/m `E`
+- `geslacht` - met de waarden `man` en `vrouw`
+- `aantal` - met het aantal keren dat de score behaald is, de frequentie
 
 Het probleem is dus dat de waarden van de variabele `geslacht` in twee kolomkoppen staat.
 
@@ -184,7 +184,7 @@ De eerste variabele `score` is al een kolom, dat moet dus zo blijven. Voor de va
 ::: {#prp-data-scores1}
 [Bestand]{.smallcaps}: `scores1.xlsx`
 
-1.  Open het hulpbestand.
+1.  Open het Bestand.
 
 2.  Selecteer een willekeurige cel met gegevens en kies [tab Gegevens \> Vanaf blad (Gegevens ophalen en transformeren)]{.uicontrol}. Het dialoogvenster ***Tabel maken*** verschijnt, waarin de tabelgegevens gespecificeerd kunnen worden. Het gegevensgebied is standaard al goed ingevuld.
 
@@ -202,7 +202,6 @@ De eerste variabele `score` is al een kolom, dat moet dus zo blijven. Voor de va
 
 Het resultaat is een tabel met gestructureerde gegevens. Elke kolom is één variabele en elke rij is één waarneming.
 
-
 ```{r}
 #| label: tbl-scores1-tidy
 #| echo: false
@@ -213,7 +212,6 @@ scores1 |> pivot_longer(cols = -score,
 						values_to = "aantal") |>
 	       flextable()
 ```
-
 :::
 
 ### Kolomkoppen zijn gecombineerde variabelen
@@ -232,7 +230,7 @@ flextable(scores2)
 ::: {#prp-data-scores2}
 [Bestand]{.smallcaps}: `scores2.xlsx`
 
-1.  Open het hulpbestand.
+1.  Open het Bestand.
 
 2.  Selecteer een willekeurige cel met gegevens en kies [tab Gegevens \> Vanaf blad (Gegevens ophalen en transformeren)]{.uicontrol}. Het dialoogvenster ***Tabel maken*** verschijnt, waarin de tabelgegevens gespecificeerd kunnen worden. Het gegevensgebied is standaard al goed ingevuld.
 
@@ -273,7 +271,7 @@ De eerste kolom met de variabele `naam` is in orde en moet zo blijven. De koppen
 ::: {#prp-data-scores3}
 [Bestand]{.smallcaps}: `scores3.xlsx`
 
-1.  Open het hulpbestand.
+1.  Open het Bestand.
 
 2.  Selecteer een willekeurige cel met gegevens en kies [tab Gegevens \> Vanaf blad (Gegevens ophalen en transformeren)]{.uicontrol}. Het dialoogvenster ***Tabel maken*** verschijnt, waarin de tabelgegevens gespecificeerd kunnen worden. Het gegevensgebied is standaard al goed ingevuld.
 
@@ -309,7 +307,6 @@ Het resultaat is een tabel met gestructureerde gegevens. Elke kolom is één var
 #| echo: false
 #| tbl-cap: Populatie Benelux voor de jaren 2000, 2005, 2010 en 2015.
 
-bnl <- read_xlsx("data/scores1.xlsx")
 bnl <- read_xlsx("data/benelux-populatie.xlsx")
 flextable(bnl)
 ```
@@ -323,7 +320,7 @@ Echter de gegevens staan niet in een goed gestructureerde Exceltabel. In feite h
 
 *Structureren data*
 
-1.  Open het hulpbestand.
+1.  Open het Bestand.
 
 2.  Selecteer een willekeurige cel met gegevens en kies [tab Gegevens \> Vanaf blad (Gegevens ophalen en transformeren)]{.uicontrol}. Het dialoogvenster ***Tabel maken*** verschijnt, waarin de tabelgegevens gespecificeerd kunnen worden. Het gegevensgebied is standaard al goed ingevuld.
 
@@ -406,12 +403,12 @@ b.  Maak hiervan een gestructureerde dataset.
 :::: {#exr-data-levensonderhoud}
 **Kosten levensonderhoud**
 
-Om de kosten van levensonderhoud in Europa te vergelijken zijn via de website van [Numbeo](https://www.numbeo.com/cost-of-living/) voor een aantal plaatsen de gemiddelde marktprijzen verzameld voor brood (wit, 500 gram), kaas(lokaal, 1 kg), melk (gewoon, 1 liter) en rijst (wit, 1 kg). De data staan in het bestand `levensonderhoud.xlsx`. Voor de eerste 10 plaatsen zijn de gegevens te zien in de tabel in @tbl-levensonderhoud.
+Om de kosten van levensonderhoud in Europa te vergelijken zijn via de website van [Numbeo](https://www.numbeo.com/cost-of-living/) voor een aantal plaatsen de gemiddelde marktprijzen verzameld voor brood (wit, 500 gram), kaas (lokaal, 1 kg), melk (gewoon, 1 liter) en rijst (wit, 1 kg). De data staan in het bestand `levensonderhoud.xlsx`. Voor de eerste 8 plaatsen zijn de gegevens te zien in de tabel in @tbl-levensonderhoud.
 
 ```{r}
 #| label: tbl-levensonderhoud
 #| echo: false
-#| tbl-cap: Gemiddelde prijzen voor vier produkten (data download op 15-11-2025).
+#| tbl-cap: Gemiddelde prijzen voor vier producten (data download op 15-11-2025).
 
 levensonderhoud <- read_xlsx("data/levensonderhoud.xlsx")
 flextable(levensonderhoud[1:8,]) |> autofit()
@@ -428,7 +425,7 @@ De gegevens zijn geïmporteerd van de Numbeo website met Power Query. Desgewenst
 ::: {#exr-data-basisschool}
 **Toets basisschool**
 
-Op een bepaalde basischool krijgt elke leerling krijgt in elk kwartaal (Herfst, Winter en Lente) van elk jaar een toets voor rekenen en taal. Het bestand `rekenentaal.xlsx` bevat een beperkte gegevensverzameling hiervan en is te zien in de tabel in @tbl-rekenentaal.
+Op een bepaalde basisschool krijgt elke leerling in elk kwartaal (Herfst, Winter en Lente) van elk jaar een toets voor rekenen en taal. Het bestand `rekenentaal.xlsx` bevat een beperkte gegevensverzameling hiervan en is te zien in de tabel in @tbl-rekenentaal.
 
 ```{r}
 #| label: tbl-rekenentaal

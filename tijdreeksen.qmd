@@ -430,7 +430,7 @@ b.  Voeg een polynoom trendlijn toe. Experimenteer met een polynoom van de 2e, 3
 ::: {#exr-ts-smartphones}
 **Verkoop smartphones**
 
-Het bestand `smartphones.xlsx` bevat de kwartaalverkopen over 4 jaar van een telefoonwinkel.
+Het bestand `smartphone.xlsx` bevat de kwartaalverkopen over 4 jaar van een telefoonwinkel.
 
 a.  Maak een tijdreeksgrafiek van de verkopen.
 b.  Onderzoek welke componenten de tijdreeks bevat.

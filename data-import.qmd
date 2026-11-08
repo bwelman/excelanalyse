@@ -48,7 +48,7 @@ Veel gegevens in externe bronnen zijn beschikbaar als tekst (bestandstype `.txt`
 
 3.  Blader naar het bestand `SalesJan2025.csv` en klik [Importeren]{.uicontrol}. Een voorbeeld van de gegevens wordt getoond.
 
-![Voorbeeld van SalesJan2025 gegevens.](images/importdata/salesjan2025_preview.png){#fig-salesjan2009-preview}
+![Voorbeeld van SalesJan2025 gegevens.](images/importdata/salesjan2025_preview.png){#fig-salesjan2025-preview}
 
 4.  Klik op [Gegevens transformeren]{.uicontrol}. De Query Editor wordt gestart in een nieuw venster. In de rechterzijbalk [Queryinstellingen]{.uicontrol} zie je onder [Toegepaste Stappen]{.uicontrol} de stappen die reeds zijn uitgevoerd.
 
@@ -68,7 +68,7 @@ Als bij het importeren het automatisch ontdekken van het gegevenstype goed gegaa
 
 7.  In kolom `Naam` beginnen de meeste namen met een hoofdletter, maar niet allemaal. Dat dient gecorrigeerd te worden. Selecteer kolom `Naam`, rechtermuisklik en kies [Transformeren \> Elk Woord Met Een Hoofdletter]{.uicontrol}.
 
-8.  Kies [Sluiten en laden(groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
+8.  Kies [Sluiten en laden (groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
 ::::
 
 ::: callout-tip
@@ -104,7 +104,7 @@ Vervolgens kun je de gegevens naar behoefte structureren, wijzigen en opschonen.
 
 6.  Selecteer kolom `Winnaar` en klik op de filter keuzepijl in de kolomkop. Deselecteer de optie [leeg]{.uicontrol} en klik [OK]{.uicontrol}.
 
-7.  Kies [Sluiten en laden(groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
+7.  Kies [Sluiten en laden (groep Sluiten) \> Sluiten en laden]{.uicontrol}. De gegevens worden in een Excel tabel in een nieuw werkblad opgeslagen. Je kunt nu met de gegevens werken en de Excel map voor later gebruik opslaan.
 
 ![Tabel met winnaars van het EK voetbal voor mannen.](images/importdata/ek-voetbal-resultaat.png){#fig-ek-voetbal-resultaat}
 :::
@@ -150,7 +150,7 @@ De door het IOC gebruikte definitie van sport is een verzameling van disciplines
 
 4.  Kies [Laden \> Laden]{.uicontrol}. Je ziet nu de gegevens niet in het werkblad verschijnen, ze zitten wel in het *gegevensmodel*.
 
-Wanneer je meerdere tabellen tegelijk importeert, dan wordt er automatisch een *gegevensmodel* gemaakt met deze tabellen. Echter de **relatie tussen de tabellen** (zoals gedefinieerd in Access wordt **niet automatisch overgenomen** in het Excel-gegevensmodel.
+Wanneer je meerdere tabellen tegelijk importeert, dan wordt er automatisch een *gegevensmodel* gemaakt met deze tabellen. Echter de **relatie tussen de tabellen** (zoals gedefinieerd in Access) wordt **niet automatisch overgenomen** in het Excel-gegevensmodel.
 
 Je moet handmatig de relaties maken. In dit geval een een-op-veel relatie van tabel Sport naar tabel Discipline via het veld Sport-ID. Dit gaat als volgt.
 
@@ -207,7 +207,7 @@ Een JSON object is een verzameling van **naam:waarde** paren tussen accolades: `
 
 - De **waarde (value)** moet een geldig JSON gegevenstype zijn:
 
-  - **string** (tussen aanhalingstekens, enkele of dubbele)
+  - **string** (tussen dubbele aanhalingstekens)
   - **getal** (decimaal scheidingssymbool is een punt)
   - **boolean** (`true` of `false`)
   - **array** (een lijst met waarden tussen blokhaken, waarden van elkaar gescheiden door een komma)
@@ -236,7 +236,7 @@ Een andere manier om naar de JSON-syntax te kijken, is door de ogen van de compu
 - `[` (linker vierkante haak) zegt "begin array"
 - `]` (rechter vierkante haak) zegt "einde array"
 - `:` (dubbele punt) zegt "scheiding van een naam en een waarde in een paar"
-- `,` (komma) zegt "scheiding van een naam:waarde paar in een object" of "scheiding van een waarde in een arrayy". Kan ook worden gelezen als "hier komt er nog een"
+- `,` (komma) zegt "scheiding van een naam:waarde paar in een object" of "scheiding van een waarde in een array". Kan ook worden gelezen als "hier komt er nog een"
 :::
 
 ::: {#prp-imp-json}
@@ -244,7 +244,7 @@ Een andere manier om naar de JSON-syntax te kijken, is door de ogen van de compu
 
 1.  Open in Excel een nieuwe lege werkmap.
 
-2.  Kies [tab Gegevens \> Gegevens ophalen]{.uicontrol} \> Uit bestand \> Uit JSON
+2.  Kies [tab Gegevens \> Gegevens ophalen \> Uit bestand \> Uit JSON]{.uicontrol}
 
 3.  Blader naar het bestand `medewerkers-1.json` en klik [Importeren]{.uicontrol}. Power Query wordt geopend.
 
@@ -268,7 +268,7 @@ Een andere manier om naar de JSON-syntax te kijken, is door de ogen van de compu
 
 ![De gegevens in de vorm van rijen en kolommen.](images/importdata/json-05.png){#fig-json-05}
 
-8.  Klik to slot op [Sluiten en Laden]{.uicontrol}.
+9.  Klik tot slot op [Sluiten en Laden]{.uicontrol}.
 :::
 
 ## Importeren uit een afbeelding {#sec-import-afbeelding}
@@ -279,7 +279,7 @@ Excel heeft een ingebouwde functie om tabellen in afbeeldingen te importeren. De
 Het is aan te raden om indien nodig vooraf de afbeelding te controleren en bij te snijden zodat alleen de tabel in de afbeelding staat en alle overbodige tekst verwijderd is. De herkenning van de tabel verloopt daardoor beter.
 :::
 
-:::: {}
+:::: {#prp-imp-picture}
 [Bestand]{.smallcaps}: `omzet_boeken.jpg`
 
 1.  Open in Excel een nieuwe lege werkmap.
@@ -300,7 +300,7 @@ Het kan zijn dat er onderdelen zijn die niet goed kunnen worden herkend. In dat 
 :::: {#exr-imp-csv}
 **Een csv bestand importeren**
 
-a.  Open eerst het bestand `verkopen.csv` met een kale tekstverwerker (Kladblok, Notepad) om te onderzoeken hoe het bestand er uit ziet. Het is belangrijk om te weten is of er veldnamen in staan en welk scheidingssymbool gebruikt is. Meestal herkent Power Query dit zelf, maar het is toch wel nuttig om dit zelf eerst na te gaan.
+a.  Open eerst het bestand `verkopen.csv` met een kale tekstverwerker (Kladblok, Notepad) om te onderzoeken hoe het bestand er uit ziet. Het is belangrijk om te weten of er veldnamen in staan en welk scheidingssymbool gebruikt is. Meestal herkent Power Query dit zelf, maar het is toch wel nuttig om dit zelf eerst na te gaan.
 
 b.  Importeer de gegevens via [Gegevens ophalen en transformeren]{.uicontrol}.
 
@@ -309,7 +309,7 @@ b.  Importeer de gegevens via [Gegevens ophalen en transformeren]{.uicontrol}.
 
 - De veldnamen staan in de eerste rij. Om deze te veranderen in de kolomkoppen kies je [Start \> De eerste rij als veldnamen gebruiken (groep Transformeren) \> De eerste rij als veldnamen gebruiken]{.uicontrol}.
 
-- Door de transformatie naar veldnamen wordt ook het gegevenstype aangepast. Controleer of de kolommen naar het juiste gegevenstype zijn omgezet. Zo niet, wijzig dan het gevenstype. `r unhide()`
+- Door de transformatie naar veldnamen wordt ook het gegevenstype aangepast. Controleer of de kolommen naar het juiste gegevenstype zijn omgezet. Zo niet, wijzig dan het gegevenstype. `r unhide()`
 :::
 
 c.  Bewaar het bestand voor later gebruik onder de naam **verkopen.xlsx**.
